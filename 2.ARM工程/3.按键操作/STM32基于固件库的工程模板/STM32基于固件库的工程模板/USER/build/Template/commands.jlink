@@ -1,0 +1,6 @@
+r
+halt
+loadfile "e:\咸鱼先生的单片机开发文件\ARM工程\ADM彳亍1\STM32基于固件库的工程模板\STM32基于固件库的工程模板\USER\build\Template\USER.hex"
+r
+go
+exit

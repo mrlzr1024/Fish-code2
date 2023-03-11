@@ -1,0 +1,6 @@
+objcopy.exe --update-section ER_IROM1="e:\咸鱼先生的单片机开发文件\2.ARM工程\8.5110覆写\STM32工程文件\USER\build\Template\USER.bin" "e:\咸鱼先生的单片机开发文件\2.ARM工程\8.5110覆写\STM32工程文件\USER\build\Template\USER.axf" "e:\咸鱼先生的单片机开发文件\2.ARM工程\8.5110覆写\STM32工程文件\USER\build\Template\USER.elf"
+
+objcopy.exe: e:\咸鱼先生的单片机开发文件\2.ARM工程\8.5110覆写\STM32工程文件\USER\build\Template\USER.elf: warning: allocated section `RW_IRAM1' not in segment
+
+WARNING: The runtime version supported by this application is unavailable.
+Using default runtime: v4.0.30319

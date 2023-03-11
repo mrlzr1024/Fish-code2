@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\USER -I..\HALLIB\inc -I..\SYSTEM\sys -I..\SYSTEM\delay -I..\SYSTEM\usart
+-I E:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\RTE
+-I D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+-I D:\keil5\ARM\CMSIS\Include
+-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER
+-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d --feedback "..\OBJ\Template.fed" "..\SYSTEM\sys\sys.c"

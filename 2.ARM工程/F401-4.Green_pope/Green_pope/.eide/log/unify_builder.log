@@ -1,0 +1,135 @@
+[2022-01-20 22:45:33]	[done]
+	build successfully !
+
+[2022-01-20 22:51:45]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-4.Green_pope\Green_pope\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:90:26: error: 'him3' undeclared (first use in this function); did you mean 'htim3'?
+   HAL_TIM_Base_Start_IT(&him3);
+                          ^~~~
+                          htim3
+./Core/Src/main.c:90:26: note: each undeclared identifier is reported only once for each function it appears in
+
+[2022-01-20 22:52:05]	[done]
+	build successfully !
+
+[2022-01-20 22:58:24]	[done]
+	build successfully !
+
+[2022-01-20 23:00:45]	[done]
+	build successfully !
+
+[2022-01-20 23:02:14]	[done]
+	build successfully !
+
+[2022-01-20 23:03:07]	[done]
+	build successfully !
+
+[2022-01-20 23:06:45]	[done]
+	build successfully !
+
+[2022-01-20 23:18:58]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-4.Green_pope\Green_pope\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x000e4] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018cb] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:88:3: warning: implicit declaration of function 'HAL_TIM_Base_Start_IT'; did you mean 'HAL_DMA_Start_IT'? [-Wimplicit-function-declaration]
+   HAL_TIM_Base_Start_IT(&htim3);
+   ^~~~~~~~~~~~~~~~~~~~~
+   HAL_DMA_Start_IT
+./Core/Src/main.c:88:26: error: 'htim3' undeclared (first use in this function)
+   HAL_TIM_Base_Start_IT(&htim3);
+                          ^~~~~
+./Core/Src/main.c:88:26: note: each undeclared identifier is reported only once for each function it appears in
+
+[2022-01-20 23:19:05]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-4.Green_pope\Green_pope\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:88:3: warning: implicit declaration of function 'HAL_TIM_Base_Start_IT'; did you mean 'HAL_DMA_Start_IT'? [-Wimplicit-function-declaration]
+   HAL_TIM_Base_Start_IT(&htim3);
+   ^~~~~~~~~~~~~~~~~~~~~
+   HAL_DMA_Start_IT
+./Core/Src/main.c:88:26: error: 'htim3' undeclared (first use in this function)
+   HAL_TIM_Base_Start_IT(&htim3);
+                          ^~~~~
+./Core/Src/main.c:88:26: note: each undeclared identifier is reported only once for each function it appears in
+
+[2022-01-20 23:21:19]	[done]
+	build successfully !
+
+[2022-01-20 23:22:22]	[done]
+	build successfully !
+
+[2022-01-21 15:20:10]	[done]
+	build successfully !
+
+[2022-01-21 15:28:10]	[done]
+	build successfully !
+
+[2022-01-21 16:13:02]	[done]
+	build successfully !
+
+[2022-01-21 23:07:19]	[done]
+	build successfully !
+
+[2022-01-21 23:19:45]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x019f5] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1656 B        96 KB      1.68%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/stm32f4xx_it.o: in function `TIM3_IRQHandler':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-4.Green_pope\Green_pope/./Core/Src/stm32f4xx_it.c:210: undefined reference to `count'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:        5844 B       384 KB      1.49%
+
+
+[2022-01-21 23:20:24]	[done]
+	build successfully !
+
+[2022-01-21 23:22:54]	[done]
+	build successfully !
+
+[2022-01-22 17:23:58]	[done]
+	build successfully !
+
+[2022-01-22 17:24:16]	[done]
+	build successfully !
+
+[2022-01-22 17:25:52]	[done]
+	build successfully !
+
+[2022-01-22 17:48:45]	[done]
+	build successfully !
+
+[2022-01-22 17:49:16]	[done]
+	build successfully !
+
+[2022-01-22 18:35:01]	[done]
+	build successfully !
+
+[2022-01-22 21:41:03]	[done]
+	build successfully !
+
+[2022-01-22 21:49:51]	[done]
+	build successfully !
+
+[2022-01-22 21:51:53]	[done]
+	build successfully !
+
+[2022-01-22 21:52:05]	[done]
+	build successfully !
+
+[2022-01-22 21:53:20]	[done]
+	build successfully !
+
+[2022-01-22 21:54:35]	[done]
+	build successfully !
+
+[2022-01-22 21:56:08]	[done]
+	build successfully !
+
+[2022-01-22 22:04:13]	[done]
+	build successfully !
+

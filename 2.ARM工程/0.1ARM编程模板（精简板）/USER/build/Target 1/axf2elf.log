@@ -1,0 +1,6 @@
+objcopy.exe --update-section ER_IROM1="c:\Users\梁芝瑞\Desktop\天堂制造\咸鱼先生的图书馆\【正点原子】STM32F103最小系统板资料\4，程序源码\1，标准例程-寄存器版本\实验3 串口实验\USER\build\Target 1\USER.bin" "c:\Users\梁芝瑞\Desktop\天堂制造\咸鱼先生的图书馆\【正点原子】STM32F103最小系统板资料\4，程序源码\1，标准例程-寄存器版本\实验3 串口实验\USER\build\Target 1\USER.axf" "c:\Users\梁芝瑞\Desktop\天堂制造\咸鱼先生的图书馆\【正点原子】STM32F103最小系统板资料\4，程序源码\1，标准例程-寄存器版本\实验3 串口实验\USER\build\Target 1\USER.elf"
+
+objcopy.exe: c:\Users\梁芝瑞\Desktop\天堂制造\咸鱼先生的图书馆\【正点原子】STM32F103最小系统板资料\4，程序源码\1，标准例程-寄存器版本\实验3 串口实验\USER\build\Target 1\USER.elf: warning: allocated section `RW_IRAM1' not in segment
+
+WARNING: The runtime version supported by this application is unavailable.
+Using default runtime: v4.0.30319

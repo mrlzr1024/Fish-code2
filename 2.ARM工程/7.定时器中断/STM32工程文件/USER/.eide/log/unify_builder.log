@@ -1,0 +1,22 @@
+[2021-12-04 09:19:58]	compilation failed at : "e:\咸鱼先生的单片机开发文件\ARM工程\4.流水灯\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] doneList) [0x000e4] in <881485cd164b4f5a918f957d29d55652>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x011e7] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-04 09:50:46]	compilation failed at : "e:\咸鱼先生的单片机开发文件\ARM工程\4.流水灯\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-04 09:58:21]	compilation failed at : "e:\咸鱼先生的单片机开发文件\ARM工程\4.流水灯\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-04 12:43:30]	compilation failed at : "e:\咸鱼先生的单片机开发文件\ARM工程\4.流水灯\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-05 17:38:34]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\6.点阵覆写\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-05 20:41:19]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\7.定时器中断\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-07 18:34:22]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\7.定时器中断\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+

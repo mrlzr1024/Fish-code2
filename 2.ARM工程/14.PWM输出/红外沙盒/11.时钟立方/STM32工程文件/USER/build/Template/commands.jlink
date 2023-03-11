@@ -1,0 +1,6 @@
+r
+halt
+loadfile "e:\咸鱼先生的单片机开发文件\2.ARM工程\14.PWM输出\红外沙盒\11.时钟立方\STM32工程文件\USER\build\Template\USER.hex"
+r
+go
+exit

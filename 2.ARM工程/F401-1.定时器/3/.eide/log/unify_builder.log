@@ -1,0 +1,241 @@
+[2022-01-08 10:43:53]	[done]
+	build successfully !
+
+[2022-01-11 20:38:55]	[done]
+	build successfully !
+
+[2022-01-12 09:33:46]	[done]
+	build successfully !
+
+[2022-01-12 09:41:38]	[done]
+	build successfully !
+
+[2022-01-12 09:46:56]	[done]
+	build successfully !
+
+[2022-01-12 09:46:59]	[done]
+	build successfully !
+
+[2022-01-12 09:47:03]	[done]
+	build successfully !
+
+[2022-01-12 09:50:12]	[done]
+	build successfully !
+
+[2022-01-12 10:22:13]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x000e4] in <fbcc783eec884b32b6dbdce9196d9e61>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018cb] in <fbcc783eec884b32b6dbdce9196d9e61>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:92:29: error: 'TIMCHANNEL_1' undeclared (first use in this function); did you mean 'TIM_CHANNEL_1'?
+   HAL_TIM_PWM_Start(&htim3, TIMCHANNEL_1); //浣胯兘TIM3鐨凱WM Channel1 杈撳嚭銆伾                             ^~~~~~~~~~~~
+                             TIM_CHANNEL_1
+./Core/Src/main.c:92:29: note: each undeclared identifier is reported only once for each function it appears in
+./Core/Src/main.c:68:11: warning: unused variable 'dir' [-Wunused-variable]
+   uint8_t dir = 1;
+           ^~~
+
+[2022-01-12 10:22:56]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x019f5] in <fbcc783eec884b32b6dbdce9196d9e61>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1656 B        96 KB      1.68%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/main.o: in function `main':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/main.c:92: undefined reference to `HAL_TIM_PWM_Start'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/tim.o: in function `MX_TIM3_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/tim.c:49: undefined reference to `HAL_TIM_PWM_Init'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/tim.c:55: undefined reference to `HAL_TIMEx_MasterConfigSynchronization'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/tim.c:63: undefined reference to `HAL_TIM_PWM_ConfigChannel'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:        4584 B       384 KB      1.17%
+
+
+[2022-01-12 10:24:30]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x019f5] in <fbcc783eec884b32b6dbdce9196d9e61>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1656 B        96 KB      1.68%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/main.o: in function `main':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/main.c:92: undefined reference to `HAL_TIM_PWM_Start'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/tim.o: in function `MX_TIM3_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/tim.c:49: undefined reference to `HAL_TIM_PWM_Init'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/tim.c:55: undefined reference to `HAL_TIMEx_MasterConfigSynchronization'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/tim.c:63: undefined reference to `HAL_TIM_PWM_ConfigChannel'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:        4584 B       384 KB      1.17%
+
+
+[2022-01-12 10:24:53]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x019f5] in <fbcc783eec884b32b6dbdce9196d9e61>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1656 B        96 KB      1.68%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/main.o: in function `main':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/main.c:91: undefined reference to `HAL_TIM_PWM_Start'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/tim.o: in function `MX_TIM3_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/tim.c:49: undefined reference to `HAL_TIM_PWM_Init'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/tim.c:55: undefined reference to `HAL_TIMEx_MasterConfigSynchronization'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3/./Core/Src/tim.c:63: undefined reference to `HAL_TIM_PWM_ConfigChannel'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:        4584 B       384 KB      1.17%
+
+
+[2022-01-12 10:27:04]	[done]
+	build successfully !
+
+[2022-01-12 10:55:42]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <fbcc783eec884b32b6dbdce9196d9e61>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:105:83: error: stray '\344' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                   ^
+./Core/Src/main.c:105:84: error: stray '\270' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                    ^
+./Core/Src/main.c:105:85: error: stray '\216' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                     ^
+./Core/Src/main.c:105:86: error: stray '\344' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                      ^
+./Core/Src/main.c:105:87: error: stray '\270' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                       ^
+./Core/Src/main.c:105:88: error: stray '\212' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                        ^
+./Core/Src/main.c:105:89: error: stray '\346' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                         ^
+./Core/Src/main.c:105:90: error: stray '\226' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                          ^
+./Core/Src/main.c:105:91: error: stray '\271' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                           ^
+./Core/Src/main.c:105:92: error: stray '\347' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                            ^
+./Core/Src/main.c:105:93: error: stray '\233' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                             ^
+./Core/Src/main.c:105:94: error: stray '\270' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                              ^
+./Core/Src/main.c:105:95: error: stray '\345' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                               ^
+./Core/Src/main.c:105:96: error: stray '\220' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                                ^
+./Core/Src/main.c:105:97: error: stray '\214' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                                 ^
+./Core/Src/main.c:112:85: error: stray '\344' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                     ^
+./Core/Src/main.c:112:86: error: stray '\270' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                      ^
+./Core/Src/main.c:112:87: error: stray '\216' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                       ^
+./Core/Src/main.c:112:88: error: stray '\344' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                        ^
+./Core/Src/main.c:112:89: error: stray '\270' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                         ^
+./Core/Src/main.c:112:90: error: stray '\212' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                          ^
+./Core/Src/main.c:112:91: error: stray '\346' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                           ^
+./Core/Src/main.c:112:92: error: stray '\226' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                            ^
+./Core/Src/main.c:112:93: error: stray '\271' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                             ^
+./Core/Src/main.c:112:94: error: stray '\347' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                              ^
+./Core/Src/main.c:112:95: error: stray '\233' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                               ^
+./Core/Src/main.c:112:96: error: stray '\270' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                                ^
+./Core/Src/main.c:112:97: error: stray '\345' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                                 ^
+./Core/Src/main.c:112:98: error: stray '\220' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                                  ^
+./Core/Src/main.c:112:99: error: stray '\214' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                                   ^
+
+[2022-01-12 10:55:49]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x000e4] in <fbcc783eec884b32b6dbdce9196d9e61>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018cb] in <fbcc783eec884b32b6dbdce9196d9e61>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:105:83: error: stray '\344' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                   ^
+./Core/Src/main.c:105:84: error: stray '\270' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                    ^
+./Core/Src/main.c:105:85: error: stray '\216' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                     ^
+./Core/Src/main.c:105:86: error: stray '\344' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                      ^
+./Core/Src/main.c:105:87: error: stray '\270' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                       ^
+./Core/Src/main.c:105:88: error: stray '\212' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                        ^
+./Core/Src/main.c:105:89: error: stray '\346' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                         ^
+./Core/Src/main.c:105:90: error: stray '\226' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                          ^
+./Core/Src/main.c:105:91: error: stray '\271' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                           ^
+./Core/Src/main.c:105:92: error: stray '\347' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                            ^
+./Core/Src/main.c:105:93: error: stray '\233' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                             ^
+./Core/Src/main.c:105:94: error: stray '\270' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                              ^
+./Core/Src/main.c:105:95: error: stray '\345' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                               ^
+./Core/Src/main.c:105:96: error: stray '\220' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                                ^
+./Core/Src/main.c:105:97: error: stray '\214' in program
+                                                           TIM3->CCR1 = pwmVal;    涓庝笂鏂圭浉鍚嬌                                                                                                 ^
+./Core/Src/main.c:112:85: error: stray '\344' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                     ^
+./Core/Src/main.c:112:86: error: stray '\270' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                      ^
+./Core/Src/main.c:112:87: error: stray '\216' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                       ^
+./Core/Src/main.c:112:88: error: stray '\344' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                        ^
+./Core/Src/main.c:112:89: error: stray '\270' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                         ^
+./Core/Src/main.c:112:90: error: stray '\212' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                          ^
+./Core/Src/main.c:112:91: error: stray '\346' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                           ^
+./Core/Src/main.c:112:92: error: stray '\226' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                            ^
+./Core/Src/main.c:112:93: error: stray '\271' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                             ^
+./Core/Src/main.c:112:94: error: stray '\347' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                              ^
+./Core/Src/main.c:112:95: error: stray '\233' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                               ^
+./Core/Src/main.c:112:96: error: stray '\270' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                                ^
+./Core/Src/main.c:112:97: error: stray '\345' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                                 ^
+./Core/Src/main.c:112:98: error: stray '\220' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                                  ^
+./Core/Src/main.c:112:99: error: stray '\214' in program
+                                                            TIM3->CCR1 = pwmVal;     涓庝笂鏂圭浉鍚嬌                                                                                                   ^
+
+[2022-01-12 10:56:08]	[done]
+	build successfully !
+
+[2022-01-12 10:58:19]	[done]
+	build successfully !
+
+[2022-01-12 10:58:35]	[done]
+	build successfully !
+
+[2022-01-12 11:00:29]	[done]
+	build successfully !
+
+[2022-01-12 11:03:15]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-1.定时器\3\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <fbcc783eec884b32b6dbdce9196d9e61>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:108:30: error: 'GPIO_Pin_13' undeclared (first use in this function); did you mean 'GPIO_PIN_13'?
+     HAL_GPIO_TogglePin(GPIOC,GPIO_Pin_13);
+                              ^~~~~~~~~~~
+                              GPIO_PIN_13
+./Core/Src/main.c:108:30: note: each undeclared identifier is reported only once for each function it appears in
+
+[2022-01-12 11:04:43]	[done]
+	build successfully !
+

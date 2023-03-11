@@ -1,0 +1,1 @@
+--apcs=interwork --cpu Cortex-M3 --li --pd "__MICROLIB SETA 1" -g -I.\..\CORE -Id:\天堂制造\时钟立方沙盒\红外沙盒\11.时钟立方\STM32工程文件\USER\. -I.\..\HALLIB\inc -I.\..\SYSTEM\sys -I.\..\SYSTEM\delay -I.\..\SYSTEM\usart -I.\.eide\deps -o .\build\Template\obj\startup_stm32f10x_hd.o --depend .\build\Template\obj\startup_stm32f10x_hd.d d:\天堂制造\时钟立方沙盒\红外沙盒\11.时钟立方\STM32工程文件\CORE\startup_stm32f10x_hd.s

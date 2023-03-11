@@ -1,0 +1,129 @@
+[2022-02-12 09:57:22]	[done]
+	build successfully !
+
+[2022-02-12 10:01:28]	[done]
+	build successfully !
+
+[2022-02-12 10:02:26]	[done]
+	build successfully !
+
+[2022-02-12 10:02:52]	[done]
+	build successfully !
+
+[2022-02-12 10:03:18]	[done]
+	build successfully !
+
+[2022-02-12 10:03:38]	[done]
+	build successfully !
+
+[2022-02-12 10:03:59]	[done]
+	build successfully !
+
+[2022-02-12 10:04:35]	[done]
+	build successfully !
+
+[2022-02-12 10:11:25]	[done]
+	build successfully !
+
+[2022-02-12 10:12:03]	[done]
+	build successfully !
+
+[2022-02-12 10:16:11]	[done]
+	build successfully !
+
+[2022-02-12 10:18:00]	[done]
+	build successfully !
+
+[2022-02-12 10:21:10]	[done]
+	build successfully !
+
+[2022-02-12 10:28:07]	[done]
+	build successfully !
+
+[2022-02-12 10:32:53]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-4.UART\UART\Core\Src\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/usart.c: In function 'Uart1_Printf':
+./Core/Src/usart.c:122:5: error: unknown type name 'va_list'
+     va_list args;
+     ^~~~~~~
+./Core/Src/usart.c:122:5: note: 'va_list' is defined in header '<stdarg.h>'; did you forget to '#include <stdarg.h>'?
+./Core/Src/usart.c:25:1:
++#include <stdarg.h>
+ /* USER CODE END 0 */
+./Core/Src/usart.c:122:5:
+     va_list args;
+     ^~~~~~~
+./Core/Src/usart.c:123:5: warning: implicit declaration of function 'va_start' [-Wimplicit-function-declaration]
+     va_start(args, fmt);
+     ^~~~~~~~
+./Core/Src/usart.c:124:63: error: incompatible type for argument 4 of 'vsnprintf'
+     vsnprintf((char *)Uart_Printf_Buf, BUF_SIZE, (char *)fmt, args);
+                                                               ^~~~
+In file included from ./Core/Src/usart.c:24:
+c:\users\梁芝瑞\.eide\tools\gcc_arm\arm-none-eabi\include\stdio.h:268:66: note: expected '__gnuc_va_list' {aka '__va_list'} but argument is of type 'int'
+ int vsnprintf (char *__restrict, size_t, const char *__restrict, __VALIST)
+                                                                  ^~~~~~~~
+./Core/Src/usart.c:125:5: warning: implicit declaration of function 'va_end' [-Wimplicit-function-declaration]
+     va_end(args);
+     ^~~~~~
+./Core/Src/usart.c: In function '_write':
+./Core/Src/usart.c:130:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+     HAL_UART_Transmit(&huart1, pBuffer, size, 0xff);
+                                ^~~~~~~
+In file included from ./Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ./Core/Inc/main.h:30,
+                 from ./Core/Inc/usart.h:29,
+                 from ./Core/Src/usart.c:21:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:723:19: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+
+[2022-02-12 10:33:35]	[done]
+	build successfully !
+
+[2022-02-12 10:37:20]	[done]
+	build successfully !
+
+[2022-02-12 10:38:51]	[done]
+	build successfully !
+
+[2022-02-12 10:39:05]	[done]
+	build successfully !
+
+[2022-02-12 10:40:27]	[done]
+	build successfully !
+
+[2022-02-12 10:47:22]	[done]
+	build successfully !
+
+[2022-02-12 10:48:36]	[done]
+	build successfully !
+
+[2022-02-12 10:50:53]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        2216 B        96 KB      2.25%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/main.o: in function `main':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-4.UART\UART/./Core/Src/main.c:106: undefined reference to `log_r'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:       11912 B       384 KB      3.03%
+
+
+[2022-02-12 10:51:03]	[done]
+	build successfully !
+
+[2022-02-12 10:51:38]	[done]
+	build successfully !
+
+[2022-02-12 10:52:55]	[done]
+	build successfully !
+
+[2022-02-12 10:53:09]	[done]
+	build successfully !
+
+[2022-02-12 10:54:33]	[done]
+	build successfully !
+

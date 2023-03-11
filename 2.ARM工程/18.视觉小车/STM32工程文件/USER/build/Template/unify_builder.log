@@ -1,0 +1,3726 @@
+[2022-06-16 17:19:18]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6218E: Undefined symbol delay (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-06-16 17:19:54]	[done]
+	build successfully !
+
+[2022-06-16 17:20:26]	[done]
+	build successfully !
+
+[2022-06-16 17:22:18]	[done]
+	build successfully !
+
+[2022-06-16 17:22:22]	[done]
+	build successfully !
+
+[2022-06-16 17:31:05]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 115: Warning:  #223-D: function "PBout" declared implicitly
+      PBout(12) = 1;
+      ^
+".\My_Car.c", line 115: Error:  #137: expression must be a modifiable lvalue
+      PBout(12) = 1;
+      ^
+".\My_Car.c", line 116: Error:  #137: expression must be a modifiable lvalue
+      PBout(13) = 0;
+      ^
+".\My_Car.c", line 117: Error:  #137: expression must be a modifiable lvalue
+      PBout(14) = 0;
+      ^
+".\My_Car.c", line 118: Error:  #137: expression must be a modifiable lvalue
+      PBout(15) = 1;
+      ^
+".\My_Car.c", line 120: Warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(100);
+      ^
+".\My_Car.c", line 124: Warning:  #223-D: function "PBout" declared implicitly
+      PBout(12) = 0;
+      ^
+".\My_Car.c", line 124: Error:  #137: expression must be a modifiable lvalue
+      PBout(12) = 0;
+      ^
+".\My_Car.c", line 125: Error:  #137: expression must be a modifiable lvalue
+      PBout(13) = 1;
+      ^
+".\My_Car.c", line 126: Error:  #137: expression must be a modifiable lvalue
+      PBout(14) = 0;
+      ^
+".\My_Car.c", line 127: Error:  #137: expression must be a modifiable lvalue
+      PBout(15) = 1;
+      ^
+".\My_Car.c", line 129: Error:  #20: identifier "input" is undefined
+      while(input[0]!='b'&&input[0]!='a')
+            ^
+".\My_Car.c", line 136: Warning:  #223-D: function "PBout" declared implicitly
+      PBout(12) = 1;
+      ^
+".\My_Car.c", line 136: Error:  #137: expression must be a modifiable lvalue
+      PBout(12) = 1;
+      ^
+".\My_Car.c", line 137: Error:  #137: expression must be a modifiable lvalue
+      PBout(13) = 0;
+      ^
+".\My_Car.c", line 138: Error:  #137: expression must be a modifiable lvalue
+      PBout(14) = 1;
+      ^
+".\My_Car.c", line 139: Error:  #137: expression must be a modifiable lvalue
+      PBout(15) = 0;
+      ^
+".\My_Car.c", line 141: Error:  #20: identifier "input" is undefined
+      while(input[0]!='b'&&input[0]!='a')
+            ^
+".\My_Car.c", line 146: Warning:  #223-D: function "PBout" declared implicitly
+      PBout(12) = 0;
+      ^
+".\My_Car.c", line 146: Error:  #137: expression must be a modifiable lvalue
+      PBout(12) = 0;
+      ^
+".\My_Car.c", line 147: Error:  #137: expression must be a modifiable lvalue
+      PBout(13) = 1;
+      ^
+".\My_Car.c", line 148: Error:  #137: expression must be a modifiable lvalue
+      PBout(14) = 1;
+      ^
+".\My_Car.c", line 149: Error:  #137: expression must be a modifiable lvalue
+      PBout(15) = 0;
+      ^
+.\My_Car.c: 5 warnings, 18 errors
+
+[2022-06-16 17:31:54]	[done]
+	build successfully !
+
+[2022-06-16 17:33:12]	[done]
+	build successfully !
+
+[2022-06-16 17:41:09]	[done]
+	build successfully !
+
+[2022-06-16 17:41:43]	[done]
+	build successfully !
+
+[2022-06-18 17:00:41]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6218E: Undefined symbol PID_Calc_Left (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-06-18 17:02:19]	[done]
+	build successfully !
+
+[2022-06-18 17:19:15]	[done]
+	build successfully !
+
+[2022-06-18 17:19:38]	[done]
+	build successfully !
+
+[2022-06-18 17:23:08]	[done]
+	build successfully !
+
+[2022-06-18 17:23:26]	[done]
+	build successfully !
+
+[2022-06-18 17:24:50]	[done]
+	build successfully !
+
+[2022-06-18 17:26:54]	[done]
+	build successfully !
+
+[2022-06-18 17:28:34]	[done]
+	build successfully !
+
+[2022-06-18 17:29:51]	[done]
+	build successfully !
+
+[2022-06-18 17:31:25]	[done]
+	build successfully !
+
+[2022-06-18 17:34:29]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6200E: Symbol USART1_IRQHandler multiply defined (by main.o and My_USART.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-06-18 17:34:44]	[done]
+	build successfully !
+
+[2022-06-18 17:36:08]	[done]
+	build successfully !
+
+[2022-06-18 17:39:21]	[done]
+	build successfully !
+
+[2022-06-18 17:39:26]	[done]
+	build successfully !
+
+[2022-06-18 17:41:26]	[done]
+	build successfully !
+
+[2022-06-18 17:41:56]	[done]
+	build successfully !
+
+[2022-06-18 17:42:51]	[done]
+	build successfully !
+
+[2022-06-18 17:43:36]	[done]
+	build successfully !
+
+[2022-06-18 17:44:13]	[done]
+	build successfully !
+
+[2022-06-18 17:49:11]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 129: Error:  #20: identifier "input" is undefined
+      while(input[0]!='b'&&input[0]!='a')
+            ^
+".\My_Car.c", line 141: Error:  #20: identifier "input" is undefined
+      while(input[0]!='b'&&input[0]!='a')
+            ^
+.\My_Car.c: 0 warnings, 2 errors
+
+[2022-06-18 17:49:48]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\main.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\main.c", line 104: Error:  #140: too many arguments in function call
+    MyUSART_Init(USART0, NVIC0);
+                 ^
+".\main.c", line 93: Warning:  #177-D: variable "count" was declared but never referenced
+    int count = 0;
+        ^
+.\main.c: 1 warning, 1 error
+
+[2022-06-18 17:50:16]	[done]
+	build successfully !
+
+[2022-06-18 17:51:26]	[done]
+	build successfully !
+
+[2022-06-18 17:52:06]	[done]
+	build successfully !
+
+[2022-06-18 17:52:30]	[done]
+	build successfully !
+
+[2022-06-18 17:54:42]	[done]
+	build successfully !
+
+[2022-06-18 17:56:01]	[done]
+	build successfully !
+
+[2022-06-18 17:58:10]	[done]
+	build successfully !
+
+[2022-06-18 17:59:14]	[done]
+	build successfully !
+
+[2022-06-18 18:00:34]	[done]
+	build successfully !
+
+[2022-06-18 18:02:17]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_USART.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_USART.c", line 79: Error:  #167: argument of type "unsigned char *" is incompatible with parameter of type "uint16_t"
+  		USART_SendData(USART1,input);
+  		                      ^
+.\My_USART.c: 0 warnings, 1 error
+
+[2022-06-18 18:02:50]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_USART.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_USART.c", line 79: Error:  #167: argument of type "unsigned char" is incompatible with parameter of type "const char *restrict"
+  		printf(input[i]);
+  		       ^
+.\My_USART.c: 0 warnings, 1 error
+
+[2022-06-18 18:03:14]	[done]
+	build successfully !
+
+[2022-06-18 18:03:47]	[done]
+	build successfully !
+
+[2022-06-18 18:04:48]	[done]
+	build successfully !
+
+[2022-06-18 18:05:11]	[done]
+	build successfully !
+
+[2022-06-18 18:06:28]	[done]
+	build successfully !
+
+[2022-06-18 18:07:55]	[done]
+	build successfully !
+
+[2022-06-18 18:08:41]	[done]
+	build successfully !
+
+[2022-06-18 18:09:31]	[done]
+	build successfully !
+
+[2022-06-18 18:47:40]	[done]
+	build successfully !
+
+[2022-06-18 18:50:07]	[done]
+	build successfully !
+
+[2022-06-18 18:51:05]	[done]
+	build successfully !
+
+[2022-06-18 18:51:57]	[done]
+	build successfully !
+
+[2022-06-18 18:53:26]	[done]
+	build successfully !
+
+[2022-06-18 18:54:31]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\main.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\main.c", line 101: Error:  #25: quoted string should contain at least one character
+    USART_SendData(USART1,'');
+                          ^
+".\main.c", line 108: Warning:  #177-D: variable "count" was declared but never referenced
+    int count = 0;
+        ^
+".\main.c", line 111: Warning:  #177-D: variable "NVIC0" was declared but never referenced
+    NVIC_InitTypeDef NVIC0;
+                     ^
+".\main.c", line 112: Warning:  #177-D: variable "USART0" was declared but never referenced
+    USART_InitTypeDef USART0;
+                      ^
+.\main.c: 3 warnings, 1 error
+
+[2022-06-18 18:54:49]	[done]
+	build successfully !
+
+[2022-06-18 18:58:42]	[done]
+	build successfully !
+
+[2022-06-18 18:59:11]	[done]
+	build successfully !
+
+[2022-06-18 18:59:53]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\main.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\main.c", line 84: Error:  #20: identifier "length" is undefined
+    for ( i = 1; i <= length; i++)
+                      ^
+".\main.c", line 83: Warning:  #550-D: variable "num" was set but never used
+    char num[10];
+         ^
+".\main.c", line 105: Warning:  #223-D: function "My_Usart_Init" declared implicitly
+    My_Usart_Init(USART0, NVIC0);
+    ^
+.\main.c: 2 warnings, 1 error
+
+[2022-06-18 19:00:16]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\main.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\main.c", line 84: Error:  #20: identifier "length" is undefined
+    for ( i = 1; i <= length; i++)
+                      ^
+".\main.c", line 83: Warning:  #550-D: variable "num" was set but never used
+    char num[10];
+         ^
+".\main.c", line 97: Warning:  #177-D: variable "NVIC0" was declared but never referenced
+    NVIC_InitTypeDef NVIC0;
+                     ^
+".\main.c", line 98: Warning:  #177-D: variable "USART0" was declared but never referenced
+    USART_InitTypeDef USART0;
+                      ^
+.\main.c: 3 warnings, 1 error
+
+[2022-06-18 19:00:54]	[done]
+	build successfully !
+
+[2022-06-18 19:01:34]	[done]
+	build successfully !
+
+[2022-06-18 19:03:40]	[done]
+	build successfully !
+
+[2022-06-18 19:04:15]	[done]
+	build successfully !
+
+[2022-06-18 19:04:46]	[done]
+	build successfully !
+
+[2022-06-18 19:05:09]	[done]
+	build successfully !
+
+[2022-06-18 19:06:24]	[done]
+	build successfully !
+
+[2022-06-18 19:07:19]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6218E: Undefined symbol My_Usart_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-06-18 19:07:31]	[done]
+	build successfully !
+
+[2022-06-18 19:08:09]	[done]
+	build successfully !
+
+[2022-06-18 19:09:00]	[done]
+	build successfully !
+
+[2022-06-18 19:09:52]	[done]
+	build successfully !
+
+[2022-06-18 19:11:48]	[done]
+	build successfully !
+
+[2022-06-18 19:13:01]	[done]
+	build successfully !
+
+[2022-06-18 19:14:10]	[done]
+	build successfully !
+
+[2022-06-18 19:14:53]	[done]
+	build successfully !
+
+[2022-06-18 19:17:16]	[done]
+	build successfully !
+
+[2022-06-18 19:17:39]	[done]
+	build successfully !
+
+[2022-06-18 19:18:11]	[done]
+	build successfully !
+
+[2022-06-18 19:21:52]	[done]
+	build successfully !
+
+[2022-06-18 19:22:26]	[done]
+	build successfully !
+
+[2022-06-18 19:23:41]	[done]
+	build successfully !
+
+[2022-06-18 19:27:56]	[done]
+	build successfully !
+
+[2022-06-18 19:28:27]	[done]
+	build successfully !
+
+[2022-06-18 19:29:06]	[done]
+	build successfully !
+
+[2022-06-18 19:31:16]	[done]
+	build successfully !
+
+[2022-06-18 19:32:03]	[done]
+	build successfully !
+
+[2022-06-18 19:32:58]	[done]
+	build successfully !
+
+[2022-06-18 19:34:59]	[done]
+	build successfully !
+
+[2022-06-18 19:38:03]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\main.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\main.c", line 78: Error:  #65: expected a ";"
+  }
+  ^
+".\main.c", line 89: Warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+    right = Atoi(input,0);
+                 ^
+".\main.c", line 83: Warning:  #177-D: variable "i" was declared but never referenced
+  	int i=0;
+  	    ^
+".\main.c", line 84: Warning:  #177-D: variable "num" was declared but never referenced
+    char num[10];
+         ^
+".\main.c", line 98: Warning:  #177-D: variable "count" was declared but never referenced
+    int count = 0;
+        ^
+".\main.c", line 99: Warning:  #177-D: variable "angle" was declared but never referenced
+    int angle = 0;
+        ^
+".\main.c", line 100: Warning:  #177-D: variable "left_throttle" was declared but never referenced
+    int left_throttle = 0, righ_throttle = 0;
+        ^
+".\main.c", line 100: Warning:  #177-D: variable "righ_throttle" was declared but never referenced
+    int left_throttle = 0, righ_throttle = 0;
+                           ^
+".\main.c", line 101: Warning:  #177-D: variable "NVIC0" was declared but never referenced
+    NVIC_InitTypeDef NVIC0;
+                     ^
+".\main.c", line 102: Warning:  #177-D: variable "USART0" was declared but never referenced
+    USART_InitTypeDef USART0;
+                      ^
+.\main.c: 9 warnings, 1 error
+
+[2022-06-18 19:38:19]	[done]
+	build successfully !
+
+[2022-06-18 19:39:18]	[done]
+	build successfully !
+
+[2022-06-18 19:41:05]	[done]
+	build successfully !
+
+[2022-06-18 19:41:40]	[done]
+	build successfully !
+
+[2022-06-18 19:44:53]	[done]
+	build successfully !
+
+[2022-06-18 19:46:26]	[done]
+	build successfully !
+
+[2022-06-18 19:51:09]	[done]
+	build successfully !
+
+[2022-06-18 19:52:55]	[done]
+	build successfully !
+
+[2022-06-18 19:53:42]	[done]
+	build successfully !
+
+[2022-06-18 19:56:29]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\main.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\main.c", line 76: Error:  #140: too many arguments in function call
+    PWM_Out(PID_Calc_Left((Read_Encoder(2)-30000)*10, (throttle + left)*10, PID_Calc_Right((Read_Encoder(3)-30000)*10, (throttle + right)*10));
+                                                                            ^
+".\main.c", line 76: Error:  #165: too few arguments in function call
+    PWM_Out(PID_Calc_Left((Read_Encoder(2)-30000)*10, (throttle + left)*10, PID_Calc_Right((Read_Encoder(3)-30000)*10, (throttle + right)*10));
+                                                                                                                                              ^
+".\main.c", line 76: Error:  #18: expected a ")"
+    PWM_Out(PID_Calc_Left((Read_Encoder(2)-30000)*10, (throttle + left)*10, PID_Calc_Right((Read_Encoder(3)-30000)*10, (throttle + right)*10));
+                                                                                                                                              ^
+".\main.c", line 91: Warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+    right = Atoi(input,0);
+                 ^
+".\main.c", line 85: Warning:  #177-D: variable "i" was declared but never referenced
+  	int i=0;
+  	    ^
+".\main.c", line 86: Warning:  #177-D: variable "num" was declared but never referenced
+    char num[10];
+         ^
+".\main.c", line 99: Warning:  #177-D: variable "count" was declared but never referenced
+    int count = 0;
+        ^
+".\main.c", line 100: Warning:  #177-D: variable "angle" was declared but never referenced
+    int angle = 0;
+        ^
+".\main.c", line 101: Warning:  #177-D: variable "left_throttle" was declared but never referenced
+    int left_throttle = 0, righ_throttle = 0;
+        ^
+".\main.c", line 101: Warning:  #177-D: variable "righ_throttle" was declared but never referenced
+    int left_throttle = 0, righ_throttle = 0;
+                           ^
+".\main.c", line 102: Warning:  #177-D: variable "NVIC0" was declared but never referenced
+    NVIC_InitTypeDef NVIC0;
+                     ^
+".\main.c", line 103: Warning:  #177-D: variable "USART0" was declared but never referenced
+    USART_InitTypeDef USART0;
+                      ^
+.\main.c: 9 warnings, 3 errors
+
+[2022-06-18 19:56:59]	[done]
+	build successfully !
+
+[2022-06-18 19:59:50]	[done]
+	build successfully !
+
+[2022-06-18 20:00:39]	[done]
+	build successfully !
+
+[2022-06-18 20:01:59]	[done]
+	build successfully !
+
+[2022-06-19 09:16:53]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6218E: Undefined symbol Speed_L (referred from My_Car.o).
+Error: L6218E: Undefined symbol Speed_R (referred from My_Car.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-06-19 09:18:15]	[done]
+	build successfully !
+
+[2022-06-19 09:23:06]	[done]
+	build successfully !
+
+[2022-06-19 09:24:51]	[done]
+	build successfully !
+
+[2022-06-19 09:25:14]	[done]
+	build successfully !
+
+[2022-06-19 09:26:50]	[done]
+	build successfully !
+
+[2022-06-19 09:27:36]	[done]
+	build successfully !
+
+[2022-06-19 09:43:36]	[done]
+	build successfully !
+
+[2022-06-19 09:45:17]	[done]
+	build successfully !
+
+[2022-06-19 09:57:43]	[done]
+	build successfully !
+
+[2022-06-19 10:04:00]	[done]
+	build successfully !
+
+[2022-06-19 10:05:09]	[done]
+	build successfully !
+
+[2022-06-19 10:05:41]	[done]
+	build successfully !
+
+[2022-06-19 10:06:14]	[done]
+	build successfully !
+
+[2022-06-19 10:11:30]	[done]
+	build successfully !
+
+[2022-06-19 10:12:50]	[done]
+	build successfully !
+
+[2022-06-19 10:15:01]	[done]
+	build successfully !
+
+[2022-06-19 10:32:31]	[done]
+	build successfully !
+
+[2022-06-19 10:34:44]	[done]
+	build successfully !
+
+[2022-06-19 10:38:56]	[done]
+	build successfully !
+
+[2022-06-19 10:48:54]	[done]
+	build successfully !
+
+[2022-06-19 10:50:08]	[done]
+	build successfully !
+
+[2022-06-19 10:52:46]	[done]
+	build successfully !
+
+[2022-06-19 10:55:56]	[done]
+	build successfully !
+
+[2022-06-19 10:56:15]	[done]
+	build successfully !
+
+[2022-06-19 11:00:20]	[done]
+	build successfully !
+
+[2022-06-19 11:00:49]	[done]
+	build successfully !
+
+[2022-06-19 16:30:02]	[done]
+	build successfully !
+
+[2022-06-19 16:30:57]	[done]
+	build successfully !
+
+[2022-06-19 16:49:47]	[done]
+	build successfully !
+
+[2022-06-19 16:54:50]	[done]
+	build successfully !
+
+[2022-06-19 17:03:36]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 265: Error:  #20: identifier "c_l" is undefined
+          Current_r = 30000 - c_l;
+                              ^
+".\My_Car.c", line 273: Error:  #20: identifier "c_r" is undefined
+          Current_l = 30000 - c_r;
+                              ^
+".\My_Car.c", line 308: Warning:  #550-D: variable "left" was set but never used
+      int left = 0, right = 0;
+          ^
+.\My_Car.c: 1 warning, 2 errors
+
+[2022-06-19 17:04:32]	[done]
+	build successfully !
+
+[2022-06-19 17:06:48]	[done]
+	build successfully !
+
+[2022-06-19 17:08:24]	[done]
+	build successfully !
+
+[2022-06-19 17:09:31]	[done]
+	build successfully !
+
+[2022-06-19 17:14:43]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 287: Error:  #65: expected a ";"
+      Moto_Right=Set_Left+(Set_Left-Current_r)
+      ^
+".\My_Car.c", line 310: Warning:  #550-D: variable "left" was set but never used
+      int left = 0, right = 0;
+          ^
+.\My_Car.c: 1 warning, 1 error
+
+[2022-06-19 17:15:01]	[done]
+	build successfully !
+
+[2022-06-19 17:16:16]	[done]
+	build successfully !
+
+[2022-06-19 17:18:30]	[done]
+	build successfully !
+
+[2022-06-19 17:20:05]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 115: Error:  #101: "c_l" has already been declared in the current scope
+      int c_l = Read_Encoder(2);
+          ^
+".\My_Car.c", line 116: Error:  #101: "c_r" has already been declared in the current scope
+      int c_r = Read_Encoder(3);
+          ^
+".\My_Car.c", line 310: Warning:  #550-D: variable "left" was set but never used
+      int left = 0, right = 0;
+          ^
+.\My_Car.c: 1 warning, 2 errors
+
+[2022-06-19 17:20:23]	[done]
+	build successfully !
+
+[2022-06-19 17:26:25]	[done]
+	build successfully !
+
+[2022-06-19 17:27:58]	[done]
+	build successfully !
+
+[2022-06-19 17:30:23]	[done]
+	build successfully !
+
+[2022-06-19 17:33:07]	[done]
+	build successfully !
+
+[2022-06-19 17:34:16]	[done]
+	build successfully !
+
+[2022-06-19 17:36:24]	[done]
+	build successfully !
+
+[2022-06-19 17:47:10]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Time_init.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Time_init.c", line 139: Warning:  #223-D: function "NVIC_Config" declared implicitly
+      NVIC_Config(void);
+      ^
+".\My_Time_init.c", line 139: Error:  #29: expected an expression
+      NVIC_Config(void);
+                  ^
+".\My_Time_init.c", line 156: Error:  #159: declaration is incompatible with previous "NVIC_Config" (declared at line 139)
+  void NVIC_Config(void)
+       ^
+".\My_Time_init.c", line 158: Warning:  #223-D: function "NVIC_TIM1_Config" declared implicitly
+      NVIC_TIM1_Config();
+      ^
+".\My_Time_init.c", line 161: Error:  #159: declaration is incompatible with previous "NVIC_TIM1_Config" (declared at line 158)
+  void NVIC_TIM1_Config(void)
+       ^
+".\My_Time_init.c", line 178: Warning:  #223-D: function "Turning" declared implicitly
+          Turning(2500, 2500);
+          ^
+.\My_Time_init.c: 3 warnings, 3 errors
+
+[2022-06-19 17:48:01]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Time_init.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Time_init.c", line 143: Error:  #29: expected an expression
+      NVIC_Config(void);
+                  ^
+".\My_Time_init.c", line 143: Error:  #140: too many arguments in function call
+      NVIC_Config(void);
+                      ^
+".\My_Time_init.c", line 182: Warning:  #223-D: function "Turning" declared implicitly
+          Turning(2500, 2500);
+          ^
+.\My_Time_init.c: 1 warning, 2 errors
+
+[2022-06-19 17:48:38]	[done]
+	build successfully !
+
+[2022-06-19 17:51:25]	[done]
+	build successfully !
+
+[2022-06-19 17:52:35]	[done]
+	build successfully !
+
+[2022-06-19 17:53:49]	[done]
+	build successfully !
+
+[2022-06-19 17:54:54]	[done]
+	build successfully !
+
+[2022-06-19 17:57:32]	[done]
+	build successfully !
+
+[2022-06-19 17:58:04]	[done]
+	build successfully !
+
+[2022-06-19 17:59:08]	[done]
+	build successfully !
+
+[2022-06-19 18:03:10]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 260: Error:  #20: identifier "temp1" is undefined
+      temp1++;
+      ^
+".\My_Car.c", line 279: Error:  #20: identifier "SetPointL" is undefined
+  			para_L=PID_Calc_Left(Encoder_L,SetPointL);	       //宸︾數鏈猴紝璁℃暟寰楀埌澧為噺寮廝ID鐨勫閲忔暟鍊?  			                               ^
+".\My_Car.c", line 280: Error:  #20: identifier "SetPointR" is undefined
+  		  para_R=PID_Calc_Right(Encoder_R,SetPointR);	       //鍙崇數鏈猴紝璁℃暟寰楀埌澧為噺寮廝ID鐨勫閲忔暟鍊?  		                                  ^
+".\My_Car.c", line 297: Error:  #20: identifier "OutData" is undefined
+  			OutData[0] = Set_L;//鎵撳嵃璁惧畾鍊?  			^
+".\My_Car.c", line 297: Error:  #20: identifier "Set_L" is undefined
+  			OutData[0] = Set_L;//鎵撳嵃璁惧畾鍊?  			             ^
+".\My_Car.c", line 298: Error:  #20: identifier "Set_R" is undefined
+  			OutData[1] = Set_R;
+  			             ^
+".\My_Car.c", line 301: Error:  #20: identifier "JSB" is undefined
+  			Speed_L=Encoder_L*6000/JSB;
+  			                       ^
+".\My_Car.c", line 380: Warning:  #550-D: variable "left" was set but never used
+      int left = 0, right = 0;
+          ^
+.\My_Car.c: 1 warning, 7 errors
+
+[2022-06-19 18:04:10]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 300: Error:  #20: identifier "OutData" is undefined
+  			OutData[0] = Set_L;//鎵撳嵃璁惧畾鍊?  			^
+".\My_Car.c", line 383: Warning:  #550-D: variable "left" was set but never used
+      int left = 0, right = 0;
+          ^
+.\My_Car.c: 1 warning, 1 error
+
+[2022-06-19 18:04:24]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6218E: Undefined symbol Speed_L (referred from My_Car.o).
+Error: L6218E: Undefined symbol Speed_R (referred from My_Car.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-06-19 18:04:42]	[done]
+	build successfully !
+
+[2022-06-19 18:05:49]	[done]
+	build successfully !
+
+[2022-06-19 18:46:43]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6218E: Undefined symbol NVIC_Config (referred from My_Time_init.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-06-19 18:47:23]	[done]
+	build successfully !
+
+[2022-06-19 18:48:41]	[done]
+	build successfully !
+
+[2022-06-19 18:50:49]	[done]
+	build successfully !
+
+[2022-06-19 21:15:57]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 257: Error:  #20: identifier "Encoder_L" is undefined
+      Encoder_L = (-(Read_Encoder(3) - 30000)); //璇诲彇缂栫爜鍣紝璁＄畻鍑哄彉鍖栭噺,璐熷彿鏄洜涓轰袱涓數鏈?鐩稿浣嶇疆180掳
+      ^
+".\My_Car.c", line 258: Error:  #20: identifier "Encoder_R" is undefined
+      Encoder_R = Read_Encoder(2) - 30000;      //璇诲彇缂栫爜鍣紝璁＄畻鍑哄彉鍖栭噺
+      ^
+.\My_Car.c: 0 warnings, 2 errors
+
+[2022-06-19 21:16:26]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 257: Error:  #20: identifier "Encoder_L" is undefined
+      Encoder_L = (-(Read_Encoder(3) - 30000)); //璇诲彇缂栫爜鍣紝璁＄畻鍑哄彉鍖栭噺,璐熷彿鏄洜涓轰袱涓數鏈?鐩稿浣嶇疆180掳
+      ^
+".\My_Car.c", line 258: Error:  #20: identifier "Encoder_R" is undefined
+      Encoder_R = Read_Encoder(2) - 30000;      //璇诲彇缂栫爜鍣紝璁＄畻鍑哄彉鍖栭噺
+      ^
+.\My_Car.c: 0 warnings, 2 errors
+
+[2022-06-19 21:16:55]	[done]
+	build successfully !
+
+[2022-06-19 22:01:56]	[done]
+	build successfully !
+
+[2022-06-19 22:05:13]	[done]
+	build successfully !
+
+[2022-06-19 22:07:01]	[done]
+	build successfully !
+
+[2022-06-19 22:07:47]	[done]
+	build successfully !
+
+[2022-06-19 22:09:57]	[done]
+	build successfully !
+
+[2022-06-19 22:15:30]	[done]
+	build successfully !
+
+[2022-06-19 22:17:11]	[done]
+	build successfully !
+
+[2022-06-19 22:20:40]	[done]
+	build successfully !
+
+[2022-06-19 22:22:10]	[done]
+	build successfully !
+
+[2022-06-19 22:31:50]	[done]
+	build successfully !
+
+[2022-06-19 22:32:35]	[done]
+	build successfully !
+
+[2022-06-19 22:37:43]	[done]
+	build successfully !
+
+[2022-06-19 22:37:48]	[done]
+	build successfully !
+
+[2022-06-19 22:39:49]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\pid.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\pid.c", line 53: Error:  #20: identifier "LastError" is undefined
+    LastError = iError_r;
+    ^
+.\pid.c: 0 warnings, 1 error
+
+[2022-06-19 22:40:05]	[done]
+	build successfully !
+
+[2022-06-20 09:37:29]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\pid.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\pid.c", line 36: Warning:  #223-D: function "new" declared implicitly
+    int *q=new(int);
+           ^
+".\pid.c", line 36: Error:  #29: expected an expression
+    int *q=new(int);
+               ^
+".\pid.c", line 36: Error:  #144: a value of type "int" cannot be used to initialize an entity of type "int *"
+    int *q=new(int);
+           ^
+.\pid.c: 1 warning, 2 errors
+
+[2022-06-20 09:37:50]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\pid.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\pid.c", line 36: Warning:  #223-D: function "molloc" declared implicitly
+    int *q=molloc(int);
+           ^
+".\pid.c", line 36: Error:  #29: expected an expression
+    int *q=molloc(int);
+                  ^
+".\pid.c", line 36: Error:  #144: a value of type "int" cannot be used to initialize an entity of type "int *"
+    int *q=molloc(int);
+           ^
+.\pid.c: 1 warning, 2 errors
+
+[2022-06-20 09:52:07]	[done]
+	build successfully !
+
+[2022-06-20 11:36:31]	[done]
+	build successfully !
+
+[2022-06-26 08:50:05]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6218E: Undefined symbol PID_Calc_Left (referred from My_Car.o).
+Error: L6218E: Undefined symbol PID_Calc_Right (referred from My_Car.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-06-26 08:51:26]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\pid.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\pid.c", line 38: Error:  #20: identifier "Prop" is undefined
+    Outpid = (Prop ortion * iError)       // E[k]项
+              ^
+".\pid.c", line 38: Error:  #18: expected a ")"
+    Outpid = (Prop ortion * iError)       // E[k]项
+                   ^
+.\pid.c: 0 warnings, 2 errors
+
+[2022-06-26 08:52:06]	[done]
+	build successfully !
+
+[2022-06-26 08:55:14]	[done]
+	build successfully !
+
+[2022-06-26 08:56:00]	[done]
+	build successfully !
+
+[2022-06-26 08:57:57]	[done]
+	build successfully !
+
+[2022-06-26 08:58:37]	[done]
+	build successfully !
+
+[2022-06-26 08:59:33]	[done]
+	build successfully !
+
+[2022-06-26 09:00:06]	[done]
+	build successfully !
+
+[2022-06-26 09:01:38]	[done]
+	build successfully !
+
+[2022-06-26 09:04:20]	[done]
+	build successfully !
+
+[2022-06-26 09:05:42]	[done]
+	build successfully !
+
+[2022-06-26 09:06:15]	[done]
+	build successfully !
+
+[2022-06-26 09:07:09]	[done]
+	build successfully !
+
+[2022-06-26 09:10:08]	[done]
+	build successfully !
+
+[2022-06-26 09:10:53]	[done]
+	build successfully !
+
+[2022-06-26 09:12:00]	[done]
+	build successfully !
+
+[2022-06-26 09:14:52]	[done]
+	build successfully !
+
+[2022-06-26 09:16:41]	[done]
+	build successfully !
+
+[2022-06-26 09:17:56]	[done]
+	build successfully !
+
+[2022-06-26 09:18:58]	[done]
+	build successfully !
+
+[2022-06-26 09:25:37]	[done]
+	build successfully !
+
+[2022-06-26 09:26:11]	[done]
+	build successfully !
+
+[2022-06-26 09:27:23]	[done]
+	build successfully !
+
+[2022-06-26 09:28:56]	[done]
+	build successfully !
+
+[2022-06-26 09:29:36]	[done]
+	build successfully !
+
+[2022-06-26 09:30:27]	[done]
+	build successfully !
+
+[2022-06-26 09:30:58]	[done]
+	build successfully !
+
+[2022-06-26 09:34:05]	[done]
+	build successfully !
+
+[2022-06-26 09:34:53]	[done]
+	build successfully !
+
+[2022-06-26 09:35:58]	[done]
+	build successfully !
+
+[2022-06-26 09:37:11]	[done]
+	build successfully !
+
+[2022-06-26 09:37:19]	[done]
+	build successfully !
+
+[2022-06-26 09:37:57]	[done]
+	build successfully !
+
+[2022-06-26 09:38:38]	[done]
+	build successfully !
+
+[2022-06-26 09:39:37]	[done]
+	build successfully !
+
+[2022-06-26 09:40:26]	[done]
+	build successfully !
+
+[2022-06-26 09:42:12]	[done]
+	build successfully !
+
+[2022-06-26 09:43:55]	[done]
+	build successfully !
+
+[2022-06-26 09:44:36]	[done]
+	build successfully !
+
+[2022-06-26 09:45:30]	[done]
+	build successfully !
+
+[2022-06-26 09:46:05]	[done]
+	build successfully !
+
+[2022-06-26 09:51:22]	[done]
+	build successfully !
+
+[2022-06-26 09:52:04]	[done]
+	build successfully !
+
+[2022-06-26 09:53:03]	[done]
+	build successfully !
+
+[2022-06-26 09:54:02]	[done]
+	build successfully !
+
+[2022-06-26 09:55:02]	[done]
+	build successfully !
+
+[2022-06-26 09:55:52]	[done]
+	build successfully !
+
+[2022-06-26 09:56:43]	[done]
+	build successfully !
+
+[2022-06-26 09:57:28]	[done]
+	build successfully !
+
+[2022-06-26 09:58:22]	[done]
+	build successfully !
+
+[2022-06-26 09:59:13]	[done]
+	build successfully !
+
+[2022-06-26 09:59:48]	[done]
+	build successfully !
+
+[2022-06-26 10:00:49]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\pid.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\pid.c", line 18: Error:  #65: expected a ";"
+  float Derivative = 10; //微分常数 Derivative Const
+  ^
+".\pid.c", line 43: Error:  #20: identifier "Derivative" is undefined
+             + (Derivative * PrevError); // E[k-2]项
+                ^
+".\pid.c", line 60: Error:  #20: identifier "Derivative" is undefined
+             + (Derivative * PrevError_r); // E[k-2]项
+                ^
+.\pid.c: 0 warnings, 3 errors
+
+[2022-06-26 10:01:00]	[done]
+	build successfully !
+
+[2022-06-26 10:01:41]	[done]
+	build successfully !
+
+[2022-06-26 10:02:26]	[done]
+	build successfully !
+
+[2022-06-26 10:03:18]	[done]
+	build successfully !
+
+[2022-06-26 10:03:52]	[done]
+	build successfully !
+
+[2022-06-26 10:04:48]	[done]
+	build successfully !
+
+[2022-06-26 10:04:58]	[done]
+	build successfully !
+
+[2022-06-26 10:06:00]	[done]
+	build successfully !
+
+[2022-06-26 10:07:21]	[done]
+	build successfully !
+
+[2022-06-26 10:08:16]	[done]
+	build successfully !
+
+[2022-06-26 10:09:15]	[done]
+	build successfully !
+
+[2022-06-26 10:09:56]	[done]
+	build successfully !
+
+[2022-06-26 10:10:46]	[done]
+	build successfully !
+
+[2022-06-26 10:11:38]	[done]
+	build successfully !
+
+[2022-06-26 10:11:43]	[done]
+	build successfully !
+
+[2022-06-26 10:12:17]	[done]
+	build successfully !
+
+[2022-06-26 10:12:54]	[done]
+	build successfully !
+
+[2022-06-26 10:13:09]	[done]
+	build successfully !
+
+[2022-06-26 10:14:01]	[done]
+	build successfully !
+
+[2022-06-26 10:14:40]	[done]
+	build successfully !
+
+[2022-06-26 10:15:34]	[done]
+	build successfully !
+
+[2022-06-26 10:16:24]	[done]
+	build successfully !
+
+[2022-06-26 10:17:34]	[done]
+	build successfully !
+
+[2022-06-26 10:18:16]	[done]
+	build successfully !
+
+[2022-06-26 10:18:52]	[done]
+	build successfully !
+
+[2022-06-26 10:19:37]	[done]
+	build successfully !
+
+[2022-06-26 10:20:07]	[done]
+	build successfully !
+
+[2022-06-26 10:20:58]	[done]
+	build successfully !
+
+[2022-06-26 10:21:02]	[done]
+	build successfully !
+
+[2022-06-26 10:21:34]	[done]
+	build successfully !
+
+[2022-06-26 10:22:02]	[done]
+	build successfully !
+
+[2022-06-26 10:22:40]	[done]
+	build successfully !
+
+[2022-06-26 10:23:10]	[done]
+	build successfully !
+
+[2022-06-26 10:23:35]	[done]
+	build successfully !
+
+[2022-06-26 10:24:04]	[done]
+	build successfully !
+
+[2022-06-26 10:24:29]	[done]
+	build successfully !
+
+[2022-06-26 10:25:03]	[done]
+	build successfully !
+
+[2022-06-26 10:25:25]	[done]
+	build successfully !
+
+[2022-06-26 10:25:50]	[done]
+	build successfully !
+
+[2022-06-26 10:26:25]	[done]
+	build successfully !
+
+[2022-06-26 10:26:49]	[done]
+	build successfully !
+
+[2022-06-26 10:27:34]	[done]
+	build successfully !
+
+[2022-06-26 10:32:50]	[done]
+	build successfully !
+
+[2022-06-26 10:33:36]	[done]
+	build successfully !
+
+[2022-06-26 10:33:55]	[done]
+	build successfully !
+
+[2022-06-26 10:37:22]	[done]
+	build successfully !
+
+[2022-06-26 10:38:15]	[done]
+	build successfully !
+
+[2022-06-26 10:39:04]	[done]
+	build successfully !
+
+[2022-06-26 10:39:43]	[done]
+	build successfully !
+
+[2022-06-26 10:40:23]	[done]
+	build successfully !
+
+[2022-06-26 10:41:07]	[done]
+	build successfully !
+
+[2022-06-26 10:41:13]	[done]
+	build successfully !
+
+[2022-06-26 10:41:39]	[done]
+	build successfully !
+
+[2022-06-26 10:42:11]	[done]
+	build successfully !
+
+[2022-06-26 10:42:52]	[done]
+	build successfully !
+
+[2022-06-26 10:43:52]	[done]
+	build successfully !
+
+[2022-06-26 10:44:18]	[done]
+	build successfully !
+
+[2022-06-26 10:44:45]	[done]
+	build successfully !
+
+[2022-06-26 10:45:23]	[done]
+	build successfully !
+
+[2022-06-26 10:45:50]	[done]
+	build successfully !
+
+[2022-06-26 10:46:53]	[done]
+	build successfully !
+
+[2022-06-26 10:47:25]	[done]
+	build successfully !
+
+[2022-06-26 10:48:05]	[done]
+	build successfully !
+
+[2022-06-26 10:48:51]	[done]
+	build successfully !
+
+[2022-06-26 10:49:26]	[done]
+	build successfully !
+
+[2022-06-26 10:50:38]	[done]
+	build successfully !
+
+[2022-06-26 10:54:53]	[done]
+	build successfully !
+
+[2022-06-26 10:56:11]	[done]
+	build successfully !
+
+[2022-06-26 11:03:13]	[done]
+	build successfully !
+
+[2022-06-26 11:15:08]	[done]
+	build successfully !
+
+[2022-06-26 14:54:51]	[done]
+	build successfully !
+
+[2022-06-26 15:12:05]	[done]
+	build successfully !
+
+[2022-06-26 15:13:11]	[done]
+	build successfully !
+
+[2022-06-26 15:14:26]	[done]
+	build successfully !
+
+[2022-06-26 15:15:12]	[done]
+	build successfully !
+
+[2022-06-26 15:15:54]	[done]
+	build successfully !
+
+[2022-06-26 15:17:32]	[done]
+	build successfully !
+
+[2022-06-26 15:20:45]	[done]
+	build successfully !
+
+[2022-06-26 15:23:15]	[done]
+	build successfully !
+
+[2022-06-26 15:24:46]	[done]
+	build successfully !
+
+[2022-06-26 15:26:39]	[done]
+	build successfully !
+
+[2022-06-26 15:27:19]	[done]
+	build successfully !
+
+[2022-06-26 15:27:58]	[done]
+	build successfully !
+
+[2022-06-26 15:28:37]	[done]
+	build successfully !
+
+[2022-06-26 15:29:36]	[done]
+	build successfully !
+
+[2022-06-26 15:30:07]	[done]
+	build successfully !
+
+[2022-06-26 15:31:07]	[done]
+	build successfully !
+
+[2022-06-26 15:32:28]	[done]
+	build successfully !
+
+[2022-06-26 15:33:37]	[done]
+	build successfully !
+
+[2022-06-26 15:37:02]	[done]
+	build successfully !
+
+[2022-06-26 15:38:37]	[done]
+	build successfully !
+
+[2022-06-26 15:41:26]	[done]
+	build successfully !
+
+[2022-06-26 15:43:41]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Time_init.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Time_init.c", line 183: Warning:  #223-D: function "printf" declared implicitly
+            printf("%d \r\n", Encoder_L);
+            ^
+".\My_Time_init.c", line 183: Error:  #20: identifier "Encoder_L" is undefined
+            printf("%d \r\n", Encoder_L);
+                              ^
+.\My_Time_init.c: 1 warning, 1 error
+
+[2022-06-26 15:44:11]	[done]
+	build successfully !
+
+[2022-06-26 15:45:11]	[done]
+	build successfully !
+
+[2022-06-26 15:46:14]	[done]
+	build successfully !
+
+[2022-06-26 15:47:55]	[done]
+	build successfully !
+
+[2022-06-26 15:48:55]	[done]
+	build successfully !
+
+[2022-06-26 15:49:53]	[done]
+	build successfully !
+
+[2022-06-26 15:51:00]	[done]
+	build successfully !
+
+[2022-06-26 15:52:05]	[done]
+	build successfully !
+
+[2022-06-26 15:54:36]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 255: Error:  #65: expected a ";"
+  void Turning(u16 Set_Left, u16 Set_Right)
+  ^
+".\My_Car.c", line 277: Warning:  #12-D: parsing restarts here after previous syntax error
+      Moto_Right += para_R;
+                          ^
+".\My_Car.c", line 278: Error:  #169: expected a declaration
+      if (Moto_Left > 3500)
+      ^
+".\My_Car.c", line 280: Error:  #169: expected a declaration
+      else if (Moto_Left <= 100)
+      ^
+".\My_Car.c", line 285: Warning:  #12-D: parsing restarts here after previous syntax error
+          Moto_Right = 3500; //闄愬箙
+                           ^
+".\My_Car.c", line 286: Error:  #169: expected a declaration
+      else if (Moto_Right <= 100)
+      ^
+".\My_Car.c", line 290: Warning:  #12-D: parsing restarts here after previous syntax error
+      TIM4->CCR4 = Moto_Left;  //鏇存柊pwm
+                            ^
+".\My_Car.c", line 291: Error:  #18: expected a ")"
+      TIM4->CCR3 = Moto_Right; //鏇存柊pwm
+      ^
+".\My_Car.c", line 291: Error:  #79: expected a type specifier
+      TIM4->CCR3 = Moto_Right; //鏇存柊pwm
+      ^
+".\My_Car.c", line 291: Error:  #260-D: explicit type is missing ("int" assumed)
+      TIM4->CCR3 = Moto_Right; //鏇存柊pwm
+      ^
+".\My_Car.c", line 291: Error:  #101: "TIM_TypeDef" has already been declared in the current scope
+      TIM4->CCR3 = Moto_Right; //鏇存柊pwm
+      ^
+".\My_Car.c", line 291: Error:  #141-D: unnamed prototyped parameters not allowed when body is present
+      TIM4->CCR3 = Moto_Right; //鏇存柊pwm
+      ^
+".\My_Car.c", line 291: Error:  #130: expected a "{"
+      TIM4->CCR3 = Moto_Right; //鏇存柊pwm
+          ^
+".\My_Car.c", line 302: Warning:  #12-D: parsing restarts here after previous syntax error
+  }
+  ^
+".\My_Car.c", line 313: Error:  #29: expected an expression
+      TIM4->CCR4 = throttle + right; //鏇存柊pwm
+      ^
+".\My_Car.c", line 313: Error:  #32: expression must have arithmetic type
+      TIM4->CCR4 = throttle + right; //鏇存柊pwm
+      ^
+".\My_Car.c", line 314: Error:  #29: expected an expression
+      TIM4->CCR3 = throttle + left;  //鏇存柊pwm
+      ^
+".\My_Car.c", line 314: Error:  #32: expression must have arithmetic type
+      TIM4->CCR3 = throttle + left;  //鏇存柊pwm
+      ^
+.\My_Car.c: 4 warnings, 14 errors
+
+[2022-06-26 15:54:59]	[done]
+	build successfully !
+
+[2022-06-26 15:58:49]	[done]
+	build successfully !
+
+[2022-06-26 15:59:41]	[done]
+	build successfully !
+
+[2022-06-26 15:59:57]	[done]
+	build successfully !
+
+[2022-06-26 16:00:38]	[done]
+	build successfully !
+
+[2022-06-26 16:01:10]	[done]
+	build successfully !
+
+[2022-06-26 16:01:43]	[done]
+	build successfully !
+
+[2022-06-26 16:02:17]	[done]
+	build successfully !
+
+[2022-06-26 16:02:44]	[done]
+	build successfully !
+
+[2022-06-26 16:03:14]	[done]
+	build successfully !
+
+[2022-06-26 16:03:50]	[done]
+	build successfully !
+
+[2022-06-26 16:04:41]	[done]
+	build successfully !
+
+[2022-06-26 16:05:09]	[done]
+	build successfully !
+
+[2022-06-26 16:05:53]	[done]
+	build successfully !
+
+[2022-06-26 16:06:40]	[done]
+	build successfully !
+
+[2022-06-26 16:07:22]	[done]
+	build successfully !
+
+[2022-06-26 16:08:18]	[done]
+	build successfully !
+
+[2022-06-26 16:09:17]	[done]
+	build successfully !
+
+[2022-06-26 16:09:28]	[done]
+	build successfully !
+
+[2022-06-26 16:10:10]	[done]
+	build successfully !
+
+[2022-06-26 16:10:59]	[done]
+	build successfully !
+
+[2022-06-26 16:11:28]	[done]
+	build successfully !
+
+[2022-06-26 16:12:03]	[done]
+	build successfully !
+
+[2022-06-26 16:13:26]	[done]
+	build successfully !
+
+[2022-06-26 16:13:51]	[done]
+	build successfully !
+
+[2022-06-26 16:14:38]	[done]
+	build successfully !
+
+[2022-06-26 16:15:06]	[done]
+	build successfully !
+
+[2022-06-26 16:15:39]	[done]
+	build successfully !
+
+[2022-06-26 16:16:05]	[done]
+	build successfully !
+
+[2022-06-26 16:16:52]	[done]
+	build successfully !
+
+[2022-06-26 16:17:15]	[done]
+	build successfully !
+
+[2022-06-26 16:17:57]	[done]
+	build successfully !
+
+[2022-06-26 16:18:41]	[done]
+	build successfully !
+
+[2022-06-26 16:19:33]	[done]
+	build successfully !
+
+[2022-06-26 16:19:39]	[done]
+	build successfully !
+
+[2022-06-26 16:20:23]	[done]
+	build successfully !
+
+[2022-06-26 16:21:05]	[done]
+	build successfully !
+
+[2022-06-26 16:21:31]	[done]
+	build successfully !
+
+[2022-06-26 16:21:58]	[done]
+	build successfully !
+
+[2022-06-26 16:22:33]	[done]
+	build successfully !
+
+[2022-06-26 16:22:53]	[done]
+	build successfully !
+
+[2022-06-26 16:23:23]	[done]
+	build successfully !
+
+[2022-06-26 16:23:45]	[done]
+	build successfully !
+
+[2022-06-26 16:24:14]	[done]
+	build successfully !
+
+[2022-06-26 16:24:17]	[done]
+	build successfully !
+
+[2022-06-26 16:24:45]	[done]
+	build successfully !
+
+[2022-06-26 16:28:18]	[done]
+	build successfully !
+
+[2022-06-26 16:28:51]	[done]
+	build successfully !
+
+[2022-06-26 16:29:30]	[done]
+	build successfully !
+
+[2022-06-26 16:29:59]	[done]
+	build successfully !
+
+[2022-06-26 16:30:51]	[done]
+	build successfully !
+
+[2022-06-26 16:31:47]	[done]
+	build successfully !
+
+[2022-06-26 16:32:45]	[done]
+	build successfully !
+
+[2022-06-26 16:33:47]	[done]
+	build successfully !
+
+[2022-06-26 16:34:32]	[done]
+	build successfully !
+
+[2022-06-26 16:35:29]	[done]
+	build successfully !
+
+[2022-06-26 16:36:24]	[done]
+	build successfully !
+
+[2022-06-26 16:36:55]	[done]
+	build successfully !
+
+[2022-06-26 16:38:07]	[done]
+	build successfully !
+
+[2022-06-26 16:38:34]	[done]
+	build successfully !
+
+[2022-06-26 16:42:38]	[done]
+	build successfully !
+
+[2022-06-26 16:43:10]	[done]
+	build successfully !
+
+[2022-06-26 16:43:56]	[done]
+	build successfully !
+
+[2022-06-26 16:45:01]	[done]
+	build successfully !
+
+[2022-06-26 16:45:44]	[done]
+	build successfully !
+
+[2022-06-26 16:48:57]	[done]
+	build successfully !
+
+[2022-06-26 16:49:32]	[done]
+	build successfully !
+
+[2022-06-26 16:50:17]	[done]
+	build successfully !
+
+[2022-06-26 16:51:23]	[done]
+	build successfully !
+
+[2022-06-26 16:51:41]	[done]
+	build successfully !
+
+[2022-06-26 16:52:38]	[done]
+	build successfully !
+
+[2022-06-26 16:52:55]	[done]
+	build successfully !
+
+[2022-06-26 16:53:30]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 259: Error:  #65: expected a ";"
+       Encoder_L = abs(Read_Encoder(2)) - 30000); //璇诲彇缂栫爜鍣紝璁＄畻鍑哄彉鍖栭噺,璐熷彿鏄洜涓轰袱涓數鏈?鐩稿浣嶇疆180掳
+                                               ^
+.\My_Car.c: 0 warnings, 1 error
+
+[2022-06-26 16:53:42]	[done]
+	build successfully !
+
+[2022-06-26 16:55:11]	[done]
+	build successfully !
+
+[2022-06-26 16:55:55]	[done]
+	build successfully !
+
+[2022-06-26 16:57:14]	[done]
+	build successfully !
+
+[2022-06-26 16:58:41]	[done]
+	build successfully !
+
+[2022-06-26 16:59:29]	[done]
+	build successfully !
+
+[2022-06-26 17:00:08]	[done]
+	build successfully !
+
+[2022-06-26 17:01:01]	[done]
+	build successfully !
+
+[2022-06-26 17:02:01]	[done]
+	build successfully !
+
+[2022-06-26 17:03:23]	[done]
+	build successfully !
+
+[2022-06-26 17:04:08]	[done]
+	build successfully !
+
+[2022-06-26 17:04:32]	[done]
+	build successfully !
+
+[2022-06-26 17:05:00]	[done]
+	build successfully !
+
+[2022-06-26 17:09:17]	[done]
+	build successfully !
+
+[2022-06-26 17:16:37]	[done]
+	build successfully !
+
+[2022-06-26 17:17:29]	[done]
+	build successfully !
+
+[2022-06-26 17:21:45]	[done]
+	build successfully !
+
+[2022-06-26 17:22:36]	[done]
+	build successfully !
+
+[2022-06-26 17:24:43]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 259: Error:  #65: expected a ";"
+       Encoder_L = (Read_Encoder(2)) - 30000); //璇诲彇缂栫爜鍣紝璁＄畻鍑哄彉鍖栭噺,璐熷彿鏄洜涓轰袱涓數鏈?鐩稿浣嶇疆180掳
+                                            ^
+.\My_Car.c: 0 warnings, 1 error
+
+[2022-06-26 17:24:56]	[done]
+	build successfully !
+
+[2022-06-26 17:27:01]	[done]
+	build successfully !
+
+[2022-06-26 17:31:15]	[done]
+	build successfully !
+
+[2022-06-26 17:32:31]	[done]
+	build successfully !
+
+[2022-06-26 17:33:25]	[done]
+	build successfully !
+
+[2022-06-26 17:36:32]	[done]
+	build successfully !
+
+[2022-06-26 17:37:20]	[done]
+	build successfully !
+
+[2022-06-26 17:38:30]	[done]
+	build successfully !
+
+[2022-06-26 17:39:53]	[done]
+	build successfully !
+
+[2022-06-26 17:40:51]	[done]
+	build successfully !
+
+[2022-06-26 17:42:49]	[done]
+	build successfully !
+
+[2022-06-26 17:43:08]	[done]
+	build successfully !
+
+[2022-06-26 17:43:34]	[done]
+	build successfully !
+
+[2022-06-26 17:44:25]	[done]
+	build successfully !
+
+[2022-06-26 17:44:56]	[done]
+	build successfully !
+
+[2022-06-26 17:46:06]	[done]
+	build successfully !
+
+[2022-06-26 17:46:47]	[done]
+	build successfully !
+
+[2022-06-26 17:47:52]	[done]
+	build successfully !
+
+[2022-06-26 17:49:24]	[done]
+	build successfully !
+
+[2022-06-26 17:50:25]	[done]
+	build successfully !
+
+[2022-06-26 17:51:33]	[done]
+	build successfully !
+
+[2022-06-26 17:52:33]	[done]
+	build successfully !
+
+[2022-06-26 17:53:27]	[done]
+	build successfully !
+
+[2022-06-26 17:54:12]	[done]
+	build successfully !
+
+[2022-06-26 17:55:10]	[done]
+	build successfully !
+
+[2022-06-26 17:55:59]	[done]
+	build successfully !
+
+[2022-06-26 17:56:16]	[done]
+	build successfully !
+
+[2022-06-26 17:56:53]	[done]
+	build successfully !
+
+[2022-06-26 17:57:03]	[done]
+	build successfully !
+
+[2022-06-26 20:46:39]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 315: Error:  #29: expected an expression
+          while()
+                ^
+".\My_Car.c", line 316: Error:  #127: expected a statement
+      }
+      ^
+".\My_Car.c", line 309: Warning:  #177-D: variable "left" was declared but never referenced
+      int left = 0, s = 0;
+          ^
+".\My_Car.c", line 326: Error:  #247: function "forward" has already been defined
+  void forward()
+       ^
+.\My_Car.c: 1 warning, 3 errors
+
+[2022-06-26 20:49:10]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 315: Error:  #29: expected an expression
+          while()
+                ^
+".\My_Car.c", line 316: Error:  #127: expected a statement
+      }
+      ^
+".\My_Car.c", line 309: Warning:  #177-D: variable "left" was declared but never referenced
+      int left = 0, s = 0;
+          ^
+".\My_Car.c", line 326: Error:  #247: function "forward" has already been defined
+  void forward()
+       ^
+.\My_Car.c: 1 warning, 3 errors
+
+[2022-06-26 20:49:22]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 309: Warning:  #177-D: variable "left" was declared but never referenced
+      int left = 0, s = 0;
+          ^
+".\My_Car.c", line 326: Error:  #247: function "forward" has already been defined
+  void forward()
+       ^
+.\My_Car.c: 1 warning, 1 error
+
+[2022-06-26 20:50:52]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 309: Warning:  #177-D: variable "left" was declared but never referenced
+      int left = 0, s = 0;
+          ^
+".\My_Car.c", line 309: Warning:  #550-D: variable "s" was set but never used
+      int left = 0, s = 0;
+                    ^
+".\My_Car.c", line 326: Error:  #247: function "forward" has already been defined
+  void forward()
+       ^
+.\My_Car.c: 2 warnings, 1 error
+
+[2022-06-26 20:51:19]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 316: Error:  #247: function "forward" has already been defined
+  void forward()
+       ^
+.\My_Car.c: 0 warnings, 1 error
+
+[2022-06-26 20:51:45]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\main.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\main.c", line 100: Error:  #169: expected a declaration
+  }
+  ^
+.\main.c: 0 warnings, 1 error
+
+[2022-06-26 20:52:22]	[done]
+	build successfully !
+
+[2022-06-26 20:52:36]	[done]
+	build successfully !
+
+[2022-06-26 21:10:45]	[done]
+	build successfully !
+
+[2022-06-26 21:10:57]	[done]
+	build successfully !
+
+[2022-06-26 21:13:05]	[done]
+	build successfully !
+
+[2022-06-26 21:15:03]	[done]
+	build successfully !
+
+[2022-06-26 21:16:23]	[done]
+	build successfully !
+
+[2022-06-26 21:17:31]	[done]
+	build successfully !
+
+[2022-06-26 21:18:03]	[done]
+	build successfully !
+
+[2022-06-26 21:29:18]	[done]
+	build successfully !
+
+[2022-06-26 21:31:56]	[done]
+	build successfully !
+
+[2022-06-26 21:33:43]	[done]
+	build successfully !
+
+[2022-06-26 21:34:29]	[done]
+	build successfully !
+
+[2022-06-26 21:36:05]	[done]
+	build successfully !
+
+[2022-06-26 21:36:38]	[done]
+	build successfully !
+
+[2022-06-26 21:37:04]	[done]
+	build successfully !
+
+[2022-06-26 21:37:48]	[done]
+	build successfully !
+
+[2022-06-26 21:38:39]	[done]
+	build successfully !
+
+[2022-06-26 21:39:04]	[done]
+	build successfully !
+
+[2022-06-26 21:39:37]	[done]
+	build successfully !
+
+[2022-06-26 21:40:07]	[done]
+	build successfully !
+
+[2022-06-26 21:41:04]	[done]
+	build successfully !
+
+[2022-06-26 21:41:30]	[done]
+	build successfully !
+
+[2022-06-26 21:41:53]	[done]
+	build successfully !
+
+[2022-06-26 21:42:30]	[done]
+	build successfully !
+
+[2022-06-26 21:43:05]	[done]
+	build successfully !
+
+[2022-06-26 21:43:51]	[done]
+	build successfully !
+
+[2022-06-26 21:44:15]	[done]
+	build successfully !
+
+[2022-06-26 21:45:18]	[done]
+	build successfully !
+
+[2022-06-26 21:55:38]	[done]
+	build successfully !
+
+[2022-06-26 21:57:10]	[done]
+	build successfully !
+
+[2022-06-26 21:58:36]	[done]
+	build successfully !
+
+[2022-06-26 21:59:23]	[done]
+	build successfully !
+
+[2022-06-26 22:03:48]	[done]
+	build successfully !
+
+[2022-06-26 22:04:50]	[done]
+	build successfully !
+
+[2022-06-26 22:07:00]	[done]
+	build successfully !
+
+[2022-06-26 22:10:12]	[done]
+	build successfully !
+
+[2022-06-26 22:14:01]	[done]
+	build successfully !
+
+[2022-06-26 22:14:33]	[done]
+	build successfully !
+
+[2022-06-26 22:25:06]	[done]
+	build successfully !
+
+[2022-06-26 22:31:10]	[done]
+	build successfully !
+
+[2022-06-26 22:31:26]	[done]
+	build successfully !
+
+[2022-06-26 22:34:21]	[done]
+	build successfully !
+
+[2022-06-26 22:42:28]	[done]
+	build successfully !
+
+[2022-06-26 22:44:50]	[done]
+	build successfully !
+
+[2022-06-27 09:39:43]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 319: Error:  #65: expected a ";"
+              break;
+              ^
+.\My_Car.c: 0 warnings, 1 error
+
+[2022-06-27 09:39:56]	[done]
+	build successfully !
+
+[2022-06-27 09:46:05]	[done]
+	build successfully !
+
+[2022-06-27 09:47:54]	[done]
+	build successfully !
+
+[2022-06-27 09:48:20]	[done]
+	build successfully !
+
+[2022-06-27 10:02:59]	[done]
+	build successfully !
+
+[2022-06-27 10:06:08]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 334: Error:  #167: argument of type "int" is incompatible with parameter of type "const char *restrict"
+      printf(P);
+             ^
+".\My_Car.c", line 342: Error:  #167: argument of type "int" is incompatible with parameter of type "const char *restrict"
+      printf(P);
+             ^
+.\My_Car.c: 0 warnings, 2 errors
+
+[2022-06-27 10:06:38]	[done]
+	build successfully !
+
+[2022-06-27 10:10:01]	[done]
+	build successfully !
+
+[2022-06-27 10:14:16]	[done]
+	build successfully !
+
+[2022-06-27 10:17:36]	[done]
+	build successfully !
+
+[2022-06-27 10:19:15]	[done]
+	build successfully !
+
+[2022-06-27 10:19:30]	[done]
+	build successfully !
+
+[2022-06-27 10:20:57]	[done]
+	build successfully !
+
+[2022-06-27 10:26:24]	[done]
+	build successfully !
+
+[2022-06-27 10:29:16]	[done]
+	build successfully !
+
+[2022-06-27 10:30:50]	[done]
+	build successfully !
+
+[2022-06-27 10:31:04]	[done]
+	build successfully !
+
+[2022-06-27 10:44:46]	[done]
+	build successfully !
+
+[2022-06-27 10:45:49]	[done]
+	build successfully !
+
+[2022-06-27 10:46:06]	[done]
+	build successfully !
+
+[2022-06-27 10:49:06]	[done]
+	build successfully !
+
+[2022-06-27 10:50:09]	[done]
+	build successfully !
+
+[2022-06-27 11:08:12]	[done]
+	build successfully !
+
+[2022-06-27 11:15:32]	[done]
+	build successfully !
+
+[2022-06-27 11:15:51]	[done]
+	build successfully !
+
+[2022-06-27 11:16:44]	[done]
+	build successfully !
+
+[2022-06-27 11:18:05]	[done]
+	build successfully !
+
+[2022-06-27 11:20:36]	[done]
+	build successfully !
+
+[2022-06-27 11:23:11]	[done]
+	build successfully !
+
+[2022-06-27 11:28:34]	[done]
+	build successfully !
+
+[2022-06-27 11:33:46]	[done]
+	build successfully !
+
+[2022-06-27 11:34:08]	[done]
+	build successfully !
+
+[2022-06-27 11:38:01]	[done]
+	build successfully !
+
+[2022-06-27 11:38:20]	[done]
+	build successfully !
+
+[2022-06-27 11:39:45]	[done]
+	build successfully !
+
+[2022-06-27 11:40:14]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 378: Error:  #247: function "stop" has already been defined
+  void stop(){
+       ^
+.\My_Car.c: 0 warnings, 1 error
+
+[2022-06-27 11:40:57]	[done]
+	build successfully !
+
+[2022-06-27 11:54:08]	[done]
+	build successfully !
+
+[2022-06-27 12:00:31]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 345: Error:  #79: expected a type specifier
+  TIM4->CCR3 = 2300;
+  ^
+".\My_Car.c", line 345: Error:  #18: expected a ")"
+  TIM4->CCR3 = 2300;
+             ^
+".\My_Car.c", line 346: Error:  #18: expected a ")"
+      TIM4->CCR4 = 0;
+      ^
+".\My_Car.c", line 346: Error:  #79: expected a type specifier
+      TIM4->CCR4 = 0;
+      ^
+".\My_Car.c", line 346: Error:  #260-D: explicit type is missing ("int" assumed)
+      TIM4->CCR4 = 0;
+      ^
+".\My_Car.c", line 346: Error:  #101: "TIM_TypeDef" has already been declared in the current scope
+      TIM4->CCR4 = 0;
+      ^
+".\My_Car.c", line 346: Error:  #141-D: unnamed prototyped parameters not allowed when body is present
+      TIM4->CCR4 = 0;
+      ^
+".\My_Car.c", line 346: Error:  #130: expected a "{"
+      TIM4->CCR4 = 0;
+          ^
+".\My_Car.c", line 366: Error:  #165: too few arguments in function call
+          right();
+                ^
+".\My_Car.c", line 381: Error:  #165: too few arguments in function call
+          right();
+                ^
+.\My_Car.c: 0 warnings, 10 errors
+
+[2022-06-27 12:01:20]	[done]
+	build successfully !
+
+[2022-06-27 12:01:35]	[done]
+	build successfully !
+
+[2022-06-27 12:03:35]	[done]
+	build successfully !
+
+[2022-06-27 12:04:32]	[done]
+	build successfully !
+
+[2022-06-27 12:07:41]	[done]
+	build successfully !
+
+[2022-06-27 12:07:51]	[done]
+	build successfully !
+
+[2022-06-27 12:09:02]	[done]
+	build successfully !
+
+[2022-06-27 12:09:21]	[done]
+	build successfully !
+
+[2022-06-27 12:10:15]	[done]
+	build successfully !
+
+[2022-06-27 12:11:23]	[done]
+	build successfully !
+
+[2022-06-27 12:15:13]	[done]
+	build successfully !
+
+[2022-06-27 12:16:52]	[done]
+	build successfully !
+
+[2022-06-27 12:17:03]	[done]
+	build successfully !
+
+[2022-06-27 12:19:32]	[done]
+	build successfully !
+
+[2022-06-27 12:19:48]	[done]
+	build successfully !
+
+[2022-06-27 12:22:03]	[done]
+	build successfully !
+
+[2022-06-27 12:22:16]	[done]
+	build successfully !
+
+[2022-06-27 12:23:12]	[done]
+	build successfully !
+
+[2022-06-27 12:25:13]	[done]
+	build successfully !
+
+[2022-06-27 12:27:28]	[done]
+	build successfully !
+
+[2022-06-27 12:31:01]	[done]
+	build successfully !
+
+[2022-06-27 12:32:08]	[done]
+	build successfully !
+
+[2022-06-27 12:33:06]	[done]
+	build successfully !
+
+[2022-06-27 12:34:14]	[done]
+	build successfully !
+
+[2022-06-27 12:37:37]	[done]
+	build successfully !
+
+[2022-06-27 12:38:41]	[done]
+	build successfully !
+
+[2022-06-27 12:40:25]	[done]
+	build successfully !
+
+[2022-06-27 12:43:09]	[done]
+	build successfully !
+
+[2022-06-27 12:43:38]	[done]
+	build successfully !
+
+[2022-06-27 13:22:07]	[done]
+	build successfully !
+
+[2022-06-27 13:22:25]	[done]
+	build successfully !
+
+[2022-06-27 13:27:50]	[done]
+	build successfully !
+
+[2022-06-27 13:39:04]	[done]
+	build successfully !
+
+[2022-06-27 13:39:30]	[done]
+	build successfully !
+
+[2022-06-27 13:45:29]	[done]
+	build successfully !
+
+[2022-06-27 13:45:54]	[done]
+	build successfully !
+
+[2022-06-27 13:46:13]	[done]
+	build successfully !
+
+[2022-06-27 14:02:56]	[done]
+	build successfully !
+
+[2022-06-27 14:04:53]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 383: Error:  #7: unrecognized token
+  ;`
+   ^
+".\My_Car.c", line 383: Warning:  #111-D: statement is unreachable
+  ;`
+   ^
+".\My_Car.c", line 383: Error:  #29: expected an expression
+  ;`
+   ^
+".\My_Car.c", line 403: Warning:  #12-D: parsing restarts here after previous syntax error
+  }
+  ^
+".\My_Car.c", line 403: Error:  #65: expected a ";"
+  }
+  ^
+.\My_Car.c: 2 warnings, 3 errors
+
+[2022-06-27 14:04:57]	[done]
+	build successfully !
+
+[2022-06-27 14:05:30]	[done]
+	build successfully !
+
+[2022-06-27 14:07:24]	[done]
+	build successfully !
+
+[2022-06-27 14:22:51]	[done]
+	build successfully !
+
+[2022-06-27 14:45:13]	[done]
+	build successfully !
+
+[2022-06-27 14:49:58]	[done]
+	build successfully !
+
+[2022-06-27 14:51:43]	[done]
+	build successfully !
+
+[2022-06-27 14:53:45]	[done]
+	build successfully !
+
+[2022-06-27 14:55:26]	[done]
+	build successfully !
+
+[2022-06-27 14:57:18]	[done]
+	build successfully !
+
+[2022-06-27 14:58:26]	[done]
+	build successfully !
+
+[2022-06-27 14:58:46]	[done]
+	build successfully !
+
+[2022-06-27 15:00:01]	[done]
+	build successfully !
+
+[2022-06-27 15:00:41]	[done]
+	build successfully !
+
+[2022-06-27 15:02:37]	[done]
+	build successfully !
+
+[2022-06-27 15:02:56]	[done]
+	build successfully !
+
+[2022-06-27 15:03:34]	[done]
+	build successfully !
+
+[2022-06-27 15:04:21]	[done]
+	build successfully !
+
+[2022-06-27 15:05:05]	[done]
+	build successfully !
+
+[2022-06-27 15:05:52]	[done]
+	build successfully !
+
+[2022-06-27 15:06:50]	[done]
+	build successfully !
+
+[2022-06-27 15:07:22]	[done]
+	build successfully !
+
+[2022-06-27 15:08:30]	[done]
+	build successfully !
+
+[2022-06-27 15:08:42]	[done]
+	build successfully !
+
+[2022-06-27 15:10:59]	[done]
+	build successfully !
+
+[2022-06-27 15:21:22]	[done]
+	build successfully !
+
+[2022-06-27 15:36:51]	[done]
+	build successfully !
+
+[2022-06-27 15:37:06]	[done]
+	build successfully !
+
+[2022-06-27 15:37:35]	[done]
+	build successfully !
+
+[2022-06-27 15:40:46]	[done]
+	build successfully !
+
+[2022-06-27 15:43:48]	[done]
+	build successfully !
+
+[2022-06-27 15:45:49]	[done]
+	build successfully !
+
+[2022-06-27 15:50:43]	[done]
+	build successfully !
+
+[2022-06-27 16:19:33]	[done]
+	build successfully !
+
+[2022-06-27 16:21:54]	[done]
+	build successfully !
+
+[2022-06-27 16:22:13]	[done]
+	build successfully !
+
+[2022-06-27 16:23:49]	[done]
+	build successfully !
+
+[2022-06-27 16:24:24]	[done]
+	build successfully !
+
+[2022-06-27 16:30:46]	[done]
+	build successfully !
+
+[2022-06-27 16:31:08]	[done]
+	build successfully !
+
+[2022-06-27 16:36:59]	[done]
+	build successfully !
+
+[2022-06-27 16:39:13]	[done]
+	build successfully !
+
+[2022-06-27 16:39:22]	[done]
+	build successfully !
+
+[2022-06-27 16:39:33]	[done]
+	build successfully !
+
+[2022-06-27 16:41:30]	[done]
+	build successfully !
+
+[2022-06-27 16:42:08]	[done]
+	build successfully !
+
+[2022-06-27 16:44:39]	[done]
+	build successfully !
+
+[2022-06-27 16:47:47]	[done]
+	build successfully !
+
+[2022-06-27 16:48:01]	[done]
+	build successfully !
+
+[2022-06-27 16:51:14]	[done]
+	build successfully !
+
+[2022-06-27 17:01:13]	[done]
+	build successfully !
+
+[2022-06-27 17:01:28]	[done]
+	build successfully !
+
+[2022-06-27 17:02:59]	[done]
+	build successfully !
+
+[2022-06-27 17:04:55]	[done]
+	build successfully !
+
+[2022-06-27 17:21:38]	[done]
+	build successfully !
+
+[2022-06-27 17:22:09]	[done]
+	build successfully !
+
+[2022-06-27 17:22:13]	[done]
+	build successfully !
+
+[2022-06-27 17:26:54]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 382: Error:  #29: expected an expression
+      while()
+            ^
+.\My_Car.c: 0 warnings, 1 error
+
+[2022-06-27 17:27:01]	[done]
+	build successfully !
+
+[2022-06-27 17:27:13]	[done]
+	build successfully !
+
+[2022-06-27 18:17:53]	[done]
+	build successfully !
+
+[2022-06-27 18:18:17]	[done]
+	build successfully !
+
+[2022-06-27 18:28:56]	[done]
+	build successfully !
+
+[2022-06-27 18:31:15]	[done]
+	build successfully !
+
+[2022-06-27 18:35:40]	[done]
+	build successfully !
+
+[2022-06-27 18:36:33]	[done]
+	build successfully !
+
+[2022-06-27 18:36:47]	[done]
+	build successfully !
+
+[2022-06-27 19:46:27]	[done]
+	build successfully !
+
+[2022-06-27 19:50:21]	[done]
+	build successfully !
+
+[2022-06-27 19:53:34]	[done]
+	build successfully !
+
+[2022-06-27 19:54:06]	[done]
+	build successfully !
+
+[2022-06-27 19:57:52]	[done]
+	build successfully !
+
+[2022-06-27 19:58:03]	[done]
+	build successfully !
+
+[2022-06-27 20:00:36]	[done]
+	build successfully !
+
+[2022-06-27 20:00:46]	[done]
+	build successfully !
+
+[2022-06-27 20:13:23]	[done]
+	build successfully !
+
+[2022-06-27 20:17:03]	[done]
+	build successfully !
+
+[2022-06-27 20:19:32]	[done]
+	build successfully !
+
+[2022-06-27 20:22:55]	[done]
+	build successfully !
+
+[2022-06-27 20:23:46]	[done]
+	build successfully !
+
+[2022-06-27 20:26:11]	[done]
+	build successfully !
+
+[2022-06-27 20:29:24]	[done]
+	build successfully !
+
+[2022-06-27 20:34:07]	[done]
+	build successfully !
+
+[2022-06-27 20:36:46]	[done]
+	build successfully !
+
+[2022-06-27 20:38:47]	[done]
+	build successfully !
+
+[2022-06-27 20:38:58]	[done]
+	build successfully !
+
+[2022-06-27 20:40:33]	[done]
+	build successfully !
+
+[2022-06-27 20:40:53]	[done]
+	build successfully !
+
+[2022-06-27 20:44:21]	[done]
+	build successfully !
+
+[2022-06-27 20:44:33]	[done]
+	build successfully !
+
+[2022-06-27 20:44:42]	[done]
+	build successfully !
+
+[2022-06-27 20:47:21]	[done]
+	build successfully !
+
+[2022-06-27 20:48:19]	[done]
+	build successfully !
+
+[2022-06-27 20:48:52]	[done]
+	build successfully !
+
+[2022-06-27 20:50:18]	[done]
+	build successfully !
+
+[2022-06-27 20:52:04]	[done]
+	build successfully !
+
+[2022-06-28 16:38:05]	[done]
+	build successfully !
+
+[2022-06-28 16:38:16]	[done]
+	build successfully !
+
+[2022-06-28 16:40:21]	[done]
+	build successfully !
+
+[2022-06-28 16:41:45]	[done]
+	build successfully !
+
+[2022-06-28 16:42:10]	[done]
+	build successfully !
+
+[2022-06-28 16:45:53]	[done]
+	build successfully !
+
+[2022-06-28 16:48:20]	[done]
+	build successfully !
+
+[2022-06-28 16:50:51]	[done]
+	build successfully !
+
+[2022-06-28 16:52:38]	[done]
+	build successfully !
+
+[2022-06-28 16:55:53]	[done]
+	build successfully !
+
+[2022-06-28 16:57:49]	[done]
+	build successfully !
+
+[2022-06-28 16:58:02]	[done]
+	build successfully !
+
+[2022-06-28 17:00:51]	[done]
+	build successfully !
+
+[2022-06-28 17:02:36]	[done]
+	build successfully !
+
+[2022-06-28 17:02:47]	[done]
+	build successfully !
+
+[2022-06-28 17:07:14]	[done]
+	build successfully !
+
+[2022-06-28 17:07:54]	[done]
+	build successfully !
+
+[2022-06-28 17:08:30]	[done]
+	build successfully !
+
+[2022-06-28 17:09:50]	[done]
+	build successfully !
+
+[2022-06-28 17:10:18]	[done]
+	build successfully !
+
+[2022-06-28 18:44:22]	[done]
+	build successfully !
+
+[2022-06-29 16:12:03]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 301: Warning:  #223-D: function "left_r" declared implicitly
+          left_r();
+          ^
+".\My_Car.c", line 305: Warning:  #223-D: function "right_r" declared implicitly
+          right_r();
+          ^
+".\My_Car.c", line 384: Error:  #159: declaration is incompatible with previous "left_r" (declared at line 301)
+  void left_r(void)
+       ^
+".\My_Car.c", line 393: Error:  #159: declaration is incompatible with previous "right_r" (declared at line 305)
+  void right_r(void)
+       ^
+.\My_Car.c: 2 warnings, 2 errors
+
+[2022-06-29 16:13:05]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6218E: Undefined symbol PID_Calc_Left (referred from My_Car.o).
+Error: L6218E: Undefined symbol PID_Calc_Right (referred from My_Car.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-06-29 16:13:24]	[done]
+	build successfully !
+
+[2022-06-29 17:25:53]	[done]
+	build successfully !
+
+[2022-06-29 17:25:58]	[done]
+	build successfully !
+
+[2022-06-30 09:57:57]	[done]
+	build successfully !
+
+[2022-06-30 10:02:37]	[done]
+	build successfully !
+
+[2022-06-30 10:03:44]	[done]
+	build successfully !
+
+[2022-06-30 17:42:39]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 185: Error:  #18: expected a ")"
+      PWM_Out(2500, 2600v);
+                        ^
+.\My_Car.c: 0 warnings, 1 error
+
+[2022-06-30 17:42:41]	[done]
+	build successfully !
+
+[2022-06-30 17:51:11]	[done]
+	build successfully !
+
+[2022-06-30 17:51:44]	[done]
+	build successfully !
+
+[2022-06-30 18:23:07]	[done]
+	build successfully !
+
+[2022-06-30 18:28:26]	[done]
+	build successfully !
+
+[2022-06-30 18:31:20]	[done]
+	build successfully !
+
+[2022-06-30 18:36:07]	[done]
+	build successfully !
+
+[2022-06-30 18:36:17]	[done]
+	build successfully !
+
+[2022-06-30 18:39:01]	[done]
+	build successfully !
+
+[2022-06-30 18:46:01]	[done]
+	build successfully !
+
+[2022-06-30 18:46:38]	[done]
+	build successfully !
+
+[2022-06-30 18:46:48]	[done]
+	build successfully !
+
+[2022-07-01 09:39:05]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 315: Error:  #260-D: explicit type is missing ("int" assumed)
+      static count_r = 0;
+             ^
+.\My_Car.c: 0 warnings, 1 error
+
+[2022-07-01 09:39:16]	[done]
+	build successfully !
+
+[2022-07-01 09:51:37]	[done]
+	build successfully !
+
+[2022-07-01 09:55:23]	[done]
+	build successfully !
+
+[2022-07-01 09:58:13]	[done]
+	build successfully !
+
+[2022-07-01 09:58:38]	[done]
+	build successfully !
+
+[2022-07-01 09:58:48]	[done]
+	build successfully !
+
+[2022-07-01 10:00:23]	[done]
+	build successfully !
+
+[2022-07-01 10:03:32]	[done]
+	build successfully !
+
+[2022-07-01 10:09:14]	[done]
+	build successfully !
+
+[2022-07-01 10:09:26]	[done]
+	build successfully !
+
+[2022-07-01 10:15:05]	[done]
+	build successfully !
+
+[2022-07-01 10:19:09]	[done]
+	build successfully !
+
+[2022-07-01 10:21:37]	[done]
+	build successfully !
+
+[2022-07-01 10:22:10]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 302: Error:  #8: missing closing quote
+          printf("鎵鹃澏蹇?);
+                 ^
+".\My_Car.c", line 303: Error:  #18: expected a ")"
+          PWM_Out(2050, 2050);
+          ^
+.\My_Car.c: 0 warnings, 2 errors
+
+[2022-07-01 10:22:51]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\18.视觉小车\STM32工程文件\USER\My_Car.c", exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+".\My_Car.c", line 302: Error:  #8: missing closing quote
+          printf("鎵鹃澏蹇?);
+                 ^
+".\My_Car.c", line 303: Error:  #18: expected a ")"
+          PWM_Out(2050, 2050);
+          ^
+.\My_Car.c: 0 warnings, 2 errors
+
+[2022-07-01 10:23:27]	[done]
+	build successfully !
+
+[2022-07-01 10:24:12]	[done]
+	build successfully !
+
+[2022-07-01 10:24:39]	[done]
+	build successfully !
+
+[2022-07-01 10:24:57]	[done]
+	build successfully !
+
+[2022-07-01 10:25:08]	[done]
+	build successfully !
+
+[2022-07-01 10:25:16]	[done]
+	build successfully !
+
+[2022-07-01 10:25:23]	[done]
+	build successfully !
+
+[2022-07-01 10:25:30]	[done]
+	build successfully !
+
+[2022-07-01 10:25:54]	[done]
+	build successfully !
+
+[2022-07-01 10:26:01]	[done]
+	build successfully !
+
+[2022-07-01 10:28:34]	[done]
+	build successfully !
+
+[2022-07-01 10:30:52]	[done]
+	build successfully !
+
+[2022-07-01 10:31:21]	[done]
+	build successfully !
+
+[2022-07-01 10:36:00]	[done]
+	build successfully !
+
+[2022-07-01 11:13:30]	[done]
+	build successfully !
+
+[2022-07-01 11:19:00]	[done]
+	build successfully !
+
+[2022-07-01 11:19:17]	[done]
+	build successfully !
+
+[2022-07-01 11:41:22]	[done]
+	build successfully !
+
+[2022-07-01 11:41:56]	[done]
+	build successfully !
+
+[2022-07-01 11:45:37]	[done]
+	build successfully !
+
+[2022-07-01 11:48:09]	[done]
+	build successfully !
+
+[2022-07-12 13:35:46]	[done]
+	build successfully !
+
+[2022-07-12 13:38:43]	[done]
+	build successfully !
+
+[2022-07-12 13:41:52]	[done]
+	build successfully !
+
+[2022-07-12 13:59:41]	[done]
+	build successfully !
+
+[2022-07-12 14:01:08]	[done]
+	build successfully !
+
+[2022-07-12 14:02:27]	[done]
+	build successfully !
+
+[2022-07-12 14:07:54]	[done]
+	build successfully !
+
+[2022-07-12 14:08:44]	[done]
+	build successfully !
+
+[2022-07-12 14:11:26]	[done]
+	build successfully !
+
+[2022-07-12 14:12:22]	[done]
+	build successfully !
+
+[2022-07-12 14:13:21]	[done]
+	build successfully !
+
+[2022-07-12 14:17:46]	[done]
+	build successfully !
+
+[2022-07-12 14:19:29]	[done]
+	build successfully !
+
+[2022-07-12 14:20:11]	[done]
+	build successfully !
+
+[2022-07-12 14:22:01]	[done]
+	build successfully !
+
+[2022-07-12 14:26:54]	[done]
+	build successfully !
+
+[2022-07-12 15:34:20]	[done]
+	build successfully !
+
+[2022-07-12 15:46:30]	[done]
+	build successfully !
+
+[2022-07-12 15:46:54]	[done]
+	build successfully !
+
+[2022-07-12 15:49:40]	[done]
+	build successfully !
+
+[2022-07-12 16:38:01]	[done]
+	build successfully !
+
+[2022-07-12 16:42:59]	[done]
+	build successfully !
+
+[2022-07-12 16:43:27]	[done]
+	build successfully !
+
+[2022-07-12 16:56:27]	[done]
+	build successfully !
+
+[2022-07-12 18:53:20]	[done]
+	build successfully !
+
+[2022-07-12 18:55:32]	[done]
+	build successfully !
+
+[2022-07-12 19:24:51]	[done]
+	build successfully !
+
+[2022-07-12 19:30:55]	[done]
+	build successfully !
+
+[2022-07-12 19:51:01]	[done]
+	build successfully !
+
+[2022-07-12 19:59:41]	[done]
+	build successfully !
+
+[2022-07-12 20:02:38]	[done]
+	build successfully !
+
+[2022-07-12 20:02:51]	[done]
+	build successfully !
+
+[2022-07-12 20:05:42]	[done]
+	build successfully !
+
+[2022-07-12 20:08:12]	[done]
+	build successfully !
+
+[2022-07-12 20:08:31]	[done]
+	build successfully !
+
+[2022-07-12 20:09:39]	[done]
+	build successfully !
+
+[2022-07-12 20:10:53]	[done]
+	build successfully !
+
+[2022-07-12 20:11:01]	[done]
+	build successfully !
+
+[2022-07-12 20:12:16]	[done]
+	build successfully !
+
+[2022-07-12 20:12:46]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6218E: Undefined symbol delay (referred from My_Car.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-07-12 20:13:35]	[done]
+	build successfully !
+
+[2022-07-12 20:14:29]	[done]
+	build successfully !
+
+[2022-07-12 20:14:42]	[done]
+	build successfully !
+
+[2022-07-12 20:15:47]	[done]
+	build successfully !
+
+[2022-07-12 20:18:40]	[done]
+	build successfully !
+
+[2022-07-12 20:18:51]	[done]
+	build successfully !
+
+[2022-07-12 20:19:08]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6218E: Undefined symbol delay (referred from My_Car.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-07-12 20:19:19]	[done]
+	build successfully !
+
+[2022-07-12 20:21:37]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args)
+---
+Error: L6218E: Undefined symbol delay (referred from My_Car.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-07-12 20:21:48]	[done]
+	build successfully !
+
+[2022-07-12 20:22:04]	[done]
+	build successfully !
+
+[2022-07-12 20:23:22]	[done]
+	build successfully !
+
+[2022-07-12 20:23:32]	[done]
+	build successfully !
+
+[2022-07-12 20:24:54]	[done]
+	build successfully !
+
+[2022-07-12 20:25:09]	[done]
+	build successfully !
+
+[2022-07-12 20:28:07]	[done]
+	build successfully !
+
+[2022-07-12 20:28:21]	[done]
+	build successfully !
+
+[2022-07-12 20:29:21]	[done]
+	build successfully !
+
+[2022-07-12 20:29:33]	[done]
+	build successfully !
+
+[2022-07-12 20:31:18]	[done]
+	build successfully !
+
+[2022-07-12 20:31:31]	[done]
+	build successfully !
+
+[2022-07-12 20:32:30]	[done]
+	build successfully !
+
+[2022-07-12 20:32:37]	[done]
+	build successfully !
+
+[2022-07-12 20:35:01]	[done]
+	build successfully !
+
+[2022-07-12 20:35:11]	[done]
+	build successfully !
+
+[2022-07-12 20:44:31]	[done]
+	build successfully !
+
+[2022-07-12 20:44:43]	[done]
+	build successfully !
+
+[2022-07-12 20:46:07]	[done]
+	build successfully !
+
+[2022-07-12 20:47:37]	[done]
+	build successfully !
+
+[2022-07-12 20:47:50]	[done]
+	build successfully !
+
+[2022-07-12 20:49:41]	[done]
+	build successfully !
+
+[2022-07-12 20:50:57]	[done]
+	build successfully !
+
+[2022-07-12 20:52:19]	[done]
+	build successfully !
+
+[2022-07-12 20:52:32]	[done]
+	build successfully !
+
+[2022-07-12 20:58:12]	[done]
+	build successfully !
+
+[2022-07-12 20:58:23]	[done]
+	build successfully !
+
+[2022-07-12 21:01:36]	[done]
+	build successfully !
+
+[2022-07-12 22:17:28]	[done]
+	build successfully !
+
+[2022-07-12 22:18:15]	[done]
+	build successfully !
+
+[2022-07-12 22:18:32]	[done]
+	build successfully !
+
+[2022-07-12 22:20:45]	[done]
+	build successfully !
+
+[2022-07-12 22:21:01]	[done]
+	build successfully !
+
+[2022-07-12 22:23:30]	[done]
+	build successfully !
+
+[2022-07-13 10:01:55]	[done]
+	build successfully !
+
+[2022-07-13 10:02:13]	[done]
+	build successfully !
+
+[2022-07-13 10:07:13]	[done]
+	build successfully !
+
+[2022-07-13 10:07:28]	[done]
+	build successfully !
+
+[2022-07-13 10:08:54]	[done]
+	build successfully !
+
+[2022-07-13 10:10:06]	[done]
+	build successfully !
+
+[2022-07-13 10:10:15]	[done]
+	build successfully !
+
+[2022-07-13 10:15:04]	[done]
+	build successfully !
+
+[2022-07-13 10:21:54]	[done]
+	build successfully !
+
+[2022-07-13 10:22:06]	[done]
+	build successfully !
+
+[2022-07-13 10:31:58]	[done]
+	build successfully !
+
+[2022-07-13 10:32:08]	[done]
+	build successfully !
+
+[2022-07-13 10:43:45]	[done]
+	build successfully !
+
+[2022-07-13 10:46:54]	[done]
+	build successfully !
+
+[2022-07-13 10:47:17]	[done]
+	build successfully !
+
+[2022-07-13 11:13:37]	[done]
+	build successfully !
+
+[2022-07-13 11:13:55]	[done]
+	build successfully !
+
+[2022-07-13 11:37:42]	[done]
+	build successfully !
+
+[2022-07-13 11:50:16]	[done]
+	build successfully !
+
+[2022-07-13 11:50:34]	[done]
+	build successfully !
+
+[2022-07-13 12:10:58]	[done]
+	build successfully !
+
+[2022-07-13 12:11:15]	[done]
+	build successfully !
+
+[2022-07-13 12:18:43]	[done]
+	build successfully !
+
+[2022-07-13 12:21:57]	[done]
+	build successfully !
+
+[2022-07-13 12:53:28]	[done]
+	build successfully !
+
+[2022-07-13 13:03:56]	[done]
+	build successfully !
+
+[2022-07-13 13:06:16]	[done]
+	build successfully !
+
+[2022-07-13 13:08:55]	[done]
+	build successfully !
+
+[2022-07-13 13:09:01]	[done]
+	build successfully !
+
+[2022-07-13 13:09:16]	[done]
+	build successfully !
+
+[2022-07-13 13:10:19]	[done]
+	build successfully !
+
+[2022-07-13 13:11:49]	[done]
+	build successfully !
+
+[2022-07-13 13:11:58]	[done]
+	build successfully !
+
+[2022-07-13 13:14:17]	[done]
+	build successfully !
+
+[2022-07-13 13:14:29]	[done]
+	build successfully !
+
+[2022-07-13 13:16:20]	[done]
+	build successfully !
+
+[2022-07-13 13:16:39]	[done]
+	build successfully !
+
+[2022-07-13 13:18:19]	[done]
+	build successfully !
+
+[2022-07-13 13:18:44]	[done]
+	build successfully !
+
+[2022-07-13 13:21:24]	[done]
+	build successfully !
+
+[2022-07-13 13:21:38]	[done]
+	build successfully !
+
+[2022-07-13 13:27:38]	[done]
+	build successfully !
+
+[2022-07-13 13:29:19]	[done]
+	build successfully !
+
+[2022-07-13 13:34:18]	[done]
+	build successfully !
+
+[2022-07-13 13:42:05]	[done]
+	build successfully !
+
+[2022-07-13 13:44:21]	[done]
+	build successfully !
+
+[2022-07-13 13:45:03]	[done]
+	build successfully !
+
+[2022-07-13 19:41:25]	[done]
+	build successfully !
+
+[2022-07-13 20:28:22]	[done]
+	build successfully !
+
+[2022-07-13 20:28:44]	[done]
+	build successfully !
+
+[2022-07-13 20:34:04]	[done]
+	build successfully !
+
+[2022-07-13 20:34:25]	[done]
+	build successfully !
+
+[2022-07-13 20:36:33]	[done]
+	build successfully !
+
+[2022-07-13 20:36:52]	[done]
+	build successfully !
+
+[2022-07-13 20:49:06]	[done]
+	build successfully !
+
+[2022-07-13 21:29:42]	[done]
+	build successfully !
+
+[2022-07-13 21:43:03]	[done]
+	build successfully !
+
+[2022-07-13 21:46:19]	[done]
+	build successfully !
+
+[2022-07-13 21:46:37]	[done]
+	build successfully !
+
+[2022-07-13 21:52:32]	[done]
+	build successfully !
+
+[2022-07-13 21:57:22]	[done]
+	build successfully !
+
+[2022-07-13 21:59:40]	[done]
+	build successfully !
+
+[2022-07-13 22:02:28]	[done]
+	build successfully !
+
+[2022-07-13 22:05:39]	[done]
+	build successfully !
+
+[2022-07-13 22:07:59]	[done]
+	build successfully !
+
+[2022-07-13 22:09:56]	[done]
+	build successfully !
+
+[2022-07-13 22:10:09]	[done]
+	build successfully !
+
+[2022-07-13 22:10:58]	[done]
+	build successfully !
+
+[2022-07-13 22:11:11]	[done]
+	build successfully !
+
+[2022-07-13 22:13:09]	[done]
+	build successfully !
+
+[2022-07-13 22:13:33]	[done]
+	build successfully !
+
+[2022-07-13 22:16:39]	[done]
+	build successfully !
+
+[2022-07-13 22:27:56]	[done]
+	build successfully !
+
+[2022-07-13 22:30:30]	[done]
+	build successfully !
+
+[2022-07-13 22:30:39]	[done]
+	build successfully !
+
+[2022-07-13 22:31:01]	[done]
+	build successfully !
+
+[2022-07-13 22:32:25]	[done]
+	build successfully !
+
+[2022-07-13 22:32:34]	[done]
+	build successfully !
+
+[2022-07-13 22:35:05]	[done]
+	build successfully !
+
+[2022-07-13 22:36:26]	[done]
+	build successfully !
+
+[2022-07-13 22:36:37]	[done]
+	build successfully !
+
+[2022-07-14 02:19:41]	[done]
+	build successfully !
+
+[2022-07-14 06:10:34]	[done]
+	build successfully !
+
+[2022-07-14 06:15:08]	[done]
+	build successfully !
+
+[2022-07-14 06:15:21]	[done]
+	build successfully !
+
+[2022-07-14 06:17:50]	[done]
+	build successfully !
+
+[2022-07-14 06:19:52]	[done]
+	build successfully !
+
+[2022-07-14 06:26:19]	[done]
+	build successfully !
+
+[2022-07-14 06:28:43]	[done]
+	build successfully !
+
+[2022-07-14 06:34:55]	[done]
+	build successfully !
+
+[2022-07-14 06:42:50]	[done]
+	build successfully !
+
+[2022-07-14 06:44:28]	[done]
+	build successfully !
+
+[2022-07-14 09:20:08]	[done]
+	build successfully !
+
+[2022-07-14 09:22:49]	[done]
+	build successfully !
+
+[2022-07-14 09:24:07]	[done]
+	build successfully !
+
+[2022-07-14 09:38:50]	[done]
+	build successfully !
+
+[2022-07-14 09:40:21]	[done]
+	build successfully !
+
+[2022-07-14 09:43:02]	[done]
+	build successfully !
+
+[2022-07-14 09:43:20]	[done]
+	build successfully !
+
+[2022-07-14 09:44:57]	[done]
+	build successfully !
+
+[2022-07-14 09:48:20]	[done]
+	build successfully !
+
+[2022-07-14 09:48:40]	[done]
+	build successfully !
+
+[2022-07-14 09:49:14]	[done]
+	build successfully !
+
+[2022-07-14 09:50:15]	[done]
+	build successfully !
+
+[2022-07-14 09:50:35]	[done]
+	build successfully !
+
+[2022-07-14 09:51:34]	[done]
+	build successfully !
+
+[2022-07-14 09:51:44]	[done]
+	build successfully !
+
+[2022-07-14 09:51:59]	[done]
+	build successfully !
+
+[2022-07-14 09:53:32]	[done]
+	build successfully !
+
+[2022-07-14 09:53:45]	[done]
+	build successfully !
+
+[2022-07-14 09:55:01]	[done]
+	build successfully !
+
+[2022-07-14 09:55:16]	[done]
+	build successfully !
+
+[2022-07-14 10:40:58]	[done]
+	build successfully !
+
+[2022-07-14 10:42:14]	[done]
+	build successfully !
+
+[2022-07-14 10:43:25]	[done]
+	build successfully !
+
+[2022-07-14 10:43:40]	[done]
+	build successfully !
+
+[2022-07-14 10:44:12]	[done]
+	build successfully !
+
+[2022-07-14 10:45:45]	[done]
+	build successfully !
+
+[2022-07-14 10:50:32]	[done]
+	build successfully !
+
+[2022-07-14 10:51:07]	[done]
+	build successfully !
+
+[2022-07-14 10:53:58]	[done]
+	build successfully !
+
+[2022-07-14 10:54:04]	[done]
+	build successfully !
+
+[2022-07-14 10:57:00]	[done]
+	build successfully !
+
+[2022-07-14 10:58:30]	[done]
+	build successfully !
+
+[2022-07-14 10:58:42]	[done]
+	build successfully !
+
+[2022-07-14 11:01:01]	[done]
+	build successfully !
+
+[2022-07-14 11:02:08]	[done]
+	build successfully !
+
+[2022-07-14 11:02:35]	[done]
+	build successfully !
+
+[2022-07-14 11:08:47]	[done]
+	build successfully !
+
+[2022-07-14 11:08:57]	[done]
+	build successfully !
+
+[2022-07-14 11:10:56]	[done]
+	build successfully !
+
+[2022-07-14 11:15:32]	[done]
+	build successfully !
+
+[2022-07-14 11:25:45]	[done]
+	build successfully !
+
+[2022-07-14 11:26:44]	[done]
+	build successfully !
+
+[2022-07-14 11:27:46]	[done]
+	build successfully !
+
+[2022-07-14 11:28:42]	[done]
+	build successfully !
+
+[2022-07-14 11:28:50]	[done]
+	build successfully !
+
+[2022-07-14 11:30:35]	[done]
+	build successfully !
+
+[2022-07-14 11:30:44]	[done]
+	build successfully !
+
+[2022-07-14 11:33:33]	[done]
+	build successfully !
+
+[2022-07-14 11:35:23]	[done]
+	build successfully !
+
+[2022-07-14 11:39:31]	[done]
+	build successfully !
+
+[2022-07-14 11:41:45]	[done]
+	build successfully !
+
+[2022-07-14 11:43:33]	[done]
+	build successfully !
+
+[2022-07-14 11:43:46]	[done]
+	build successfully !
+
+[2022-07-14 11:50:09]	[done]
+	build successfully !
+
+[2022-07-14 11:52:32]	[done]
+	build successfully !
+
+[2022-07-14 11:57:42]	[done]
+	build successfully !
+
+[2022-07-14 11:57:52]	[done]
+	build successfully !
+
+[2022-07-14 12:01:31]	[done]
+	build successfully !
+
+[2022-07-14 12:01:44]	[done]
+	build successfully !
+
+[2022-07-14 12:40:54]	[done]
+	build successfully !
+
+[2022-07-14 12:40:58]	[done]
+	build successfully !
+
+[2022-07-14 12:43:24]	[done]
+	build successfully !
+
+[2022-07-14 13:09:20]	[done]
+	build successfully !
+
+[2022-07-14 13:12:02]	[done]
+	build successfully !
+
+[2022-07-14 13:24:22]	[done]
+	build successfully !
+
+[2022-07-14 13:27:33]	[done]
+	build successfully !
+
+[2022-07-14 13:27:43]	[done]
+	build successfully !
+

@@ -1,0 +1,1 @@
+--apcs=interwork --cpu Cortex-M3 --pd "__MICROLIB SETA 1" -g -I.\..\CORE -I.\. -I.\..\HALLIB\inc -I.\..\SYSTEM\sys -I.\..\SYSTEM\delay -I.\..\SYSTEM\usart -I.\..\HAREWEAR\LED -I.\.eide\deps -o .\build\Template\startup_stm32f10x_hd.o --depend .\build\Template\startup_stm32f10x_hd.d e:\咸鱼先生的单片机开发文件\2.ARM工程\1.库函数点灯\STM32基于固件库的工程模板\STM32基于固件库的工程模板\CORE\startup_stm32f10x_hd.s

@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "compilerPath": "",
+            "intelliSenseMode": "${default}",
+            "configurationProvider": "cl.eide"
+        }
+    ],
+    "version": 4
+}

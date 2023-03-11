@@ -1,0 +1,59 @@
+C51 COMPILER V9.57.0.0   MAIN                                                              04/08/2022 13:38:58 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN ..\输出文件Output\main.obj
+COMPILER INVOKED BY: D:\keil5B\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main.
+                    -lst) TABS(2) OBJECT(..\输出文件Output\main.obj)
+
+line level    source
+
+   1          /**************************************************************************
+   2                                  PCA9685模块简单应用
+   3                          平台：STC89C52RC，晶振：11.0592
+   4                          V+===3.3v-5v
+   5                          Vcc====5v
+   6                          GND===GND
+   7                          SDA===SDA
+   8                          SCL===SCL
+   9          ***************************************************************************/
+  10          #include"main.h"
+  11          /*---------------------------------------------------------------
+  12                                主函数
+  13          ----------------------------------------------------------------*/
+  14          void main()
+  15          {
+  16   1          uint i,j;
+  17   1          init();
+  18   1          begin();
+  19   1          setPWMFreq(50);  
+  20   1          /*//例如要求舵机转到x度，这么算，x度对应的脉宽=0.5ms+(x/180)*(2.5ms-0.5ms)=1.1666ms(x=60)
+  21   1          //利用占空比=1.1666ms/20ms=off/4096,off=239,50hz对应周期20ms
+  22   1          //setPWM(num,0,239);;;;当然也可以利用SERVO000和SERVO180计算*/
+  23   1          while(1) 
+  24   1          {
+  25   2              for(i=0;i<=180;i+=10)
+  26   2              {
+  27   3                  servo_control(1,i);//num为管脚号
+  28   3                  delayms(10);
+  29   3                for(j=0;j<=90;j++){
+  30   4                  servo_control(0,j);//num为管脚号
+  31   4                  delayms(10);
+  32   4                }
+  33   3              }
+  34   2          }                
+  35   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     96    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,8 @@
+--cpu Cortex-M3 --library_type=microlib --scatter "c:/Users/梁芝瑞/Desktop/天堂制造/咸鱼先生的图书馆/【正点原子】STM32F103最小系统板资料/4，程序源码/1，标准例程-寄存器版本/实验3 串口实验/USER/build/Target 1/USER.sct" --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+--list ".\build\Target 1\USER.map"
+".\build\Target 1\led.o"
+".\build\Target 1\delay.o"
+".\build\Target 1\sys.o"
+".\build\Target 1\usart.o"
+".\build\Target 1\test.o"
+".\build\Target 1\startup_stm32f10x_hd.o" -o ".\build\Target 1\USER.axf"

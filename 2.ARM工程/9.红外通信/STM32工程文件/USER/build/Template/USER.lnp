@@ -1,0 +1,14 @@
+--cpu Cortex-M3 --library_type=microlib --scatter "e:/咸鱼先生的单片机开发文件/2.ARM工程/9.红外通信/STM32工程文件/USER/build/Template/USER.sct" --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+--list .\build\Template\USER.map
+.\build\Template\obj\core_cm3.o
+.\build\Template\obj\misc.o
+.\build\Template\obj\stm32f10x_exti.o
+.\build\Template\obj\stm32f10x_gpio.o
+.\build\Template\obj\stm32f10x_rcc.o
+.\build\Template\obj\delay.o
+.\build\Template\obj\sys.o
+.\build\Template\GPIOBIint.o
+.\build\Template\main.o
+.\build\Template\stm32f10x_it.o
+.\build\Template\system_stm32f10x.o
+.\build\Template\obj\startup_stm32f10x_hd.o -o .\build\Template\USER.axf

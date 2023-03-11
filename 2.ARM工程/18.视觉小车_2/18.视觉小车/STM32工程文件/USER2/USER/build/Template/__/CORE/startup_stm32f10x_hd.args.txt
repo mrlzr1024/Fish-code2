@@ -1,0 +1,1 @@
+--apcs=interwork --cpu Cortex-M3 --li --pd "__MICROLIB SETA 1" -g -I.\..\CORE -I.\ -I.\..\HALLIB\inc -I.\..\SYSTEM\sys -I.\..\SYSTEM\delay -I.\..\SYSTEM\usart -I.\.eide\deps -o .\build\Template\__\CORE\startup_stm32f10x_hd.o --depend .\build\Template\__\CORE\startup_stm32f10x_hd.d .\..\CORE\startup_stm32f10x_hd.s

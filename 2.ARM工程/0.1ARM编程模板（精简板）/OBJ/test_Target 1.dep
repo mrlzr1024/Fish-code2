@@ -1,0 +1,43 @@
+Dependencies for Project 'test', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_stm32f10x_hd.s)(0x5822B9AC)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I E:\咸鱼先生的单片机开发文件\2.ARM工程\0.1ARM编程模板（精简板）\USER\RTE-I D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I D:\keil5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514" --pd "STM32F10X_HD SETA 1"--list ..\obj\startup_stm32f10x_hd.lst --xref -o ..\obj\startup_stm32f10x_hd.o --depend ..\obj\startup_stm32f10x_hd.d)
+F (.\test.c)(0x61AC80DF)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\LED -I..\HARDWARE\BEEP -I..\HARDWARE\KEY-I E:\咸鱼先生的单片机开发文件\2.ARM工程\0.1ARM编程模板（精简板）\USER\RTE-I D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I D:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\test.o --omf_browse ..\obj\test.crf --depend ..\obj\test.d)
+I (..\SYSTEM\sys\sys.h)(0x5822B9AC)
+I (..\SYSTEM\sys\stm32f10x.h)(0x5822B9AC)
+I (..\SYSTEM\sys\core_cm3.h)(0x5822B9AC)
+I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x5822B9AC)
+I (..\SYSTEM\usart\usart.h)(0x5822B9AC)
+I (D:\keil5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\SYSTEM\delay\delay.h)(0x5822B9AC)
+I (..\HARDWARE\LED\led.h)(0x61AC8097)
+I (..\HARDWARE\BEEP\beep.h)(0x5822B9AC)
+I (..\HARDWARE\KEY\key.h)(0x5822B9A8)
+F (..\SYSTEM\delay\delay.c)(0x5822B9AC)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\LED -I..\HARDWARE\BEEP -I..\HARDWARE\KEY-I E:\咸鱼先生的单片机开发文件\2.ARM工程\0.1ARM编程模板（精简板）\USER\RTE-I D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I D:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
+I (..\SYSTEM\delay\delay.h)(0x5822B9AC)
+I (..\SYSTEM\sys\sys.h)(0x5822B9AC)
+I (..\SYSTEM\sys\stm32f10x.h)(0x5822B9AC)
+I (..\SYSTEM\sys\core_cm3.h)(0x5822B9AC)
+I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x5822B9AC)
+F (..\SYSTEM\sys\sys.c)(0x5822B9AC)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\LED -I..\HARDWARE\BEEP -I..\HARDWARE\KEY-I E:\咸鱼先生的单片机开发文件\2.ARM工程\0.1ARM编程模板（精简板）\USER\RTE-I D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I D:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
+I (..\SYSTEM\sys\sys.h)(0x5822B9AC)
+I (..\SYSTEM\sys\stm32f10x.h)(0x5822B9AC)
+I (..\SYSTEM\sys\core_cm3.h)(0x5822B9AC)
+I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x5822B9AC)
+F (..\SYSTEM\usart\usart.c)(0x61AC7EBD)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\LED -I..\HARDWARE\BEEP -I..\HARDWARE\KEY-I E:\咸鱼先生的单片机开发文件\2.ARM工程\0.1ARM编程模板（精简板）\USER\RTE-I D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I D:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
+I (..\SYSTEM\usart\usart.h)(0x5822B9AC)
+I (..\SYSTEM\sys\sys.h)(0x5822B9AC)
+I (..\SYSTEM\sys\stm32f10x.h)(0x5822B9AC)
+I (..\SYSTEM\sys\core_cm3.h)(0x5822B9AC)
+I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x5822B9AC)
+I (D:\keil5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+F (..\HARDWARE\LED\led.c)(0x5822B9AC)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\LED -I..\HARDWARE\BEEP -I..\HARDWARE\KEY-I E:\咸鱼先生的单片机开发文件\2.ARM工程\0.1ARM编程模板（精简板）\USER\RTE-I D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I D:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d)
+I (..\HARDWARE\LED\led.h)(0x61AC8097)
+I (..\SYSTEM\sys\sys.h)(0x5822B9AC)
+I (..\SYSTEM\sys\stm32f10x.h)(0x5822B9AC)
+I (..\SYSTEM\sys\core_cm3.h)(0x5822B9AC)
+I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x5822B9AC)
+F (..\README.TXT)(0x5822B9AC)()
