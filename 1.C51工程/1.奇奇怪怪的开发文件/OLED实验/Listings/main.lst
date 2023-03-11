@@ -1,0 +1,319 @@
+C51 COMPILER V9.57.0.0   MAIN                                                              11/23/2021 17:36:39 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.EXE main.c LARGE OPTIMIZE(8,SPEED) BROWSE INCDIR(.\I2C;..\OLEDÊµÑé) DEBUG OBJE
+                    -CTEXTEND PRINT(.\Listings\main.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          //////////////////////////////////////////////////////////////////////////////////         
+   2          //±¾³ÌÐòÖ»¹©Ñ§Ï°Ê¹ÓÃ£¬Î´¾­×÷ÕßÐí¿É£¬²»µÃÓÃÓÚÆäËüÈÎºÎÓÃÍ¾
+   3          //ÖÐ¾°Ô°µç×Ó
+   4          //  ÎÄ ¼þ Ãû   : main.c
+   5          //  °æ ±¾ ºÅ   : v2.0
+   6          //  ×÷    Õß   : HuangKai
+   7          //  Éú³ÉÈÕÆÚ   : 2014-0101
+   8          //  ×î½üÐÞ¸Ä   :
+   9          //  ¹¦ÄÜÃèÊö   : OLED IIC½Ó¿ÚÑÝÊ¾Àý³Ì(51ÏµÁÐ)
+  10          // ÐÞ¸ÄÀúÊ·   :
+  11          // ÈÕ    ÆÚ   :
+  12          // ×÷    Õß   : HuangKai
+  13          // ÐÞ¸ÄÄÚÈÝ   : ´´½¨ÎÄ¼þ
+  14          //°æÈ¨ËùÓÐ£¬µÁ°æ±Ø¾¿¡£
+  15          //Copyright(C) ÖÐ¾°Ô°µç×Ó2014/3/16
+  16          //All rights reserved
+  17          //******************************************************************************/
+  18          #include "reg52.h"
+  19          #include<string.h>
+  20          #define high 1
+  21          #define low 0
+  22          /*************Pin Define***************/
+  23          sbit SCL=P3^6;
+  24          sbit SDA=P3^7;
+  25          /****************************************************/
+  26          void Initial_LY096BG30();
+  27          void Delay_50ms(unsigned int Del_50ms);
+  28          void Delay_1ms(unsigned int Del_1ms);
+  29          void fill_picture(unsigned char fill_Data);
+  30          void Picture_1();
+  31          void IIC_Start();
+  32          void IIC_Stop();
+  33          void Write_IIC_Command(unsigned char IIC_Command);
+  34          void Write_IIC_Data(unsigned char IIC_Data);
+  35          void Write_IIC_Byte(unsigned char IIC_Byte);
+  36          /***********************Initial code*********************/
+  37          void Initial_LY096BG30()
+  38          {
+  39   1              Write_IIC_Command(0xAE);//display off£¨¹ØÏÔÊ¾£©||0xAE¹Ø±ÕÆÁÄ»
+  40   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  41   1              Write_IIC_Command(0x20);//Set Memory Addressing Mode£¨ÉèÖÃÄÚ´æÑ°Ö·Ä£Ê½£©       
+  42   1              Write_IIC_Command(0x10);//£¨00£¬Ë®Æ½Ñ°Ö·Ä£Ê½£»01£¬´¹Ö±Ñ°Ö··½Ê½£»10¡¢Ò³ÃæÑ°Ö·Ä£Ê½£¨¸´Î»£©£»11£¬ÎÞÐ§
+             -£©
+  43   1                                      //00,Horizontal Addressing Mode;01,Vertical Addressing Mode;10,Page Addressing Mode (RESE
+             -T);11,Invalid
+  44   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  45   1              Write_IIC_Command(0xb0);/*(ÉèÖÃÒ³ÃæÑ°Ö·Ä£Ê½µÄÒ³ÃæÆðÊ¼µØÖ·£¬0-7)
+  46   1                                      Set Page Start Address for Page Addressing Mode,0-7*/
+  47   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+C51 COMPILER V9.57.0.0   MAIN                                                              11/23/2021 17:36:39 PAGE 2   
+
+             -¡ª¡ª¡ª¡ª¡ª*/
+  48   1              Write_IIC_Command(0xc8);//(ÉèÖÃCOMÊä³öÉ¨Ãè·½Ïò)Set COM Output Scan Direction
+  49   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  50   1              Write_IIC_Command(0x00);//---(ÉèÖÃµÍÁÐµØÖ·)set low column address
+  51   1              Write_IIC_Command(0x10);//---(ÉèÖÃ¸ßÁÐµØÖ·)set high column address
+  52   1              Write_IIC_Command(0x40);//--£¨ÉèÖÃÆðÊ¼ÐÐµØÖ·£©set start line address
+  53   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  54   1              Write_IIC_Command(0x81);//--£¨ÉèÖÃ¶Ô±È¶È¿ØÖÆ¼Ä´æÆ÷£©set contrast control register
+  55   1              Write_IIC_Command(0x7f);/*ÉèÖÃ¶Ô±È¶È £¨81H+A[7:0]£©
+  56   1                                        ÕâÊÇÒ»ÌõË«×Ö½ÚÖ¸Áî£¬ÓÉµÚ¶þÌõÖ¸ÁîÖ¸¶¨ÒªÉèÖÃµÄ¶Ô±È¶È¼¶Êý¡£
+  57   1                                        A[7:0] ´Ó 00H~FFH ·Ö±ðÖ¸¶¨¶Ô±È¶ÈÎª 1~256 ¼¶¡£SEG£¨¶Î£©
+  58   1                                        Êä³öµÄµçÁ÷´óÐ¡Ëæ¶Ô±È¶È¼¶ÊýµÄÔö¼Ó¶øÔö¼Ó¡£*/
+  59   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  60   1              Write_IIC_Command(0xa1);//--£¨½«¶ÎÖØÐÂÓ³Éä0ÉèÖÃÎª127£©set segment re-map 0 to 127
+  61   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  62   1              Write_IIC_Command(0xa6);//--£¨ÉèÖÃÕý³£ÏÔÊ¾£©set normal display
+  63   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  64   1              Write_IIC_Command(0xa8);//--£¨ÉèÖÃ¶àÂ·¸´ÓÃ±ÈÂÊ£¨1µ½64£©£©set multiplex ratio(1 to 64)
+  65   1              Write_IIC_Command(0x3F);/*ÉèÖÃ¸´ÓÃÂÊ £¨A8H+A[5:0]£©
+  66   1                                        ÕâÊÇÒ»ÌõË«×Ö½ÚÖ¸Áî£¬ÓÉA[5:0]Ö¸¶¨ÒªÉèÖÃµÄ¸´ÓÃÂÊ
+  67   1                                        ¸´ÓÃÂÊ£¨MUX ratio£©¼´Ñ¡Í¨µÄCOMÐÐÊý£¬²»ÄÜµÍÓÚ16£¬
+  68   1                                        Í¨¹ýA[5:0]À´Ö¸¶¨¡£
+  69   1                                        A[5:0] ¸ßÁ½Î»ÎÞ¹æ¶¨ÊÓÎª0£¬ËùÒÔµÚ¶þÌõÖ¸Áî´Ó 0FH~3FH 
+  70   1                                        µÄÈ¡ÖµÉèÖÃ¸´ÓÃÂÊÎª 1~64£¨¼´A[5:0]+1£©¡£A[5:0]´Ó0µ½14µÄÈ¡Öµ¶¼ÊÇÎÞÐ§µÄ¡£*/
+  71   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  72   1              Write_IIC_Command(0xa4);//£¨0xa4£¬Êä³ö¸úËæRAMÄÚÈÝ£»0xa5£¬Êä³öºöÂÔRAMÄÚÈÝ£©0xa4,Output follows RAM 
+             -content;0xa5,Output ignores RAM content
+  73   1              Write_IIC_Command(0xd3);//-£¨ÉèÖÃÏÔÊ¾Æ«ÒÆÁ¿£©set display offset
+  74   1              Write_IIC_Command(0x00);//-£¨Ã»ÓÐÆ«ÒÆÁ¿£©not offset
+  75   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  76   1              Write_IIC_Command(0xd5);//--£¨ÉèÖÃÏÔÊ¾Ê±ÖÓ·ÖÆµ±È/Õñµ´Æ÷ÆµÂÊC£©set display clock divide ratio/oscil
+             -lator frequency
+  77   1              Write_IIC_Command(0xf0);//--£¨Éè¶¨·Ö¸î±ÈÂÊ£©set divide ratio
+  78   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  79   1              Write_IIC_Command(0xd9);//--£¨ÉèÖÃÔ¤³äµçÖÜÆÚ £¨D9H+A[7:0]£©£©set pre-charge period
+  80   1              Write_IIC_Command(0x22);//
+  81   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  82   1              Write_IIC_Command(0xda);//--£¨ÉèÖÃcomÒý½ÅÓ²¼þÅäÖÃ£©set com pins hardware configuration
+  83   1              Write_IIC_Command(0x12);/*6.ÉèÖÃCOMÓ²¼þÅäÖÃ £¨DAH+A[5:4]£©
+  84   1                                        ÕâÊÇÒ»ÌõË«×Ö½ÚÖ¸Áî£¬ÓÉA[5:4]½øÐÐÉèÖÃ¡£
+  85   1                                        A[5] Î»ÉèÖÃCOM×óÓÒ·´ÖÃ£¬A[4] ÓÃÀ´ÉèÖÃÐòÁÐ/±¸Ñ¡Òý½ÅÅäÖÃ£¬ÆäËûÎ»ÓÐ¹æ¶¨£¬*/
+  86   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+C51 COMPILER V9.57.0.0   MAIN                                                              11/23/2021 17:36:39 PAGE 3   
+
+  87   1              Write_IIC_Command(0xdb);//--£¨3.ÉèÖÃVCOMHÊä³öµÄ¸ßµçÆ½ £¨DBH+A[6:4]£©£©set vcomh
+  88   1              Write_IIC_Command(0x20);//0x20,0.77xVcc
+  89   1          /*¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+             -¡ª¡ª¡ª¡ª¡ª*/
+  90   1              Write_IIC_Command(0x8d);//--£¨Ê¹ÄÜDC-DCÄ£¿é£©set DC-DC enable
+  91   1              Write_IIC_Command(0x14);//
+  92   1              Write_IIC_Command(0xaf);//--£¨´ò¿ªoledÃæ°å£©turn on oled panel
+  93   1      }
+  94          /***********************Picture Code**************************/
+  95          unsigned char code show1[]=
+  96          {
+  97          
+  98          0x78,0x4E,0x42,0x42,0x42,0x42,0x4E,0x78,0x78,0x4E,0x42,0x42,0x42,0x42,0x4E,0x78
+  99            
+ 100          };
+ 101          /**********************************************
+ 102          //IIC Start
+ 103          **********************************************/
+ 104          void IIC_Start()
+ 105          {
+ 106   1         SCL = high;
+ 107   1         //Delay_us(1);               
+ 108   1         SDA = high;
+ 109   1         //Delay_us(1);
+ 110   1         SDA = low;
+ 111   1        // Delay_us(1);
+ 112   1         SCL = low;
+ 113   1        // Delay_us(1);
+ 114   1      }
+ 115          
+ 116          /**********************************************
+ 117          //IIC Stop
+ 118          **********************************************/
+ 119          void IIC_Stop()
+ 120          {
+ 121   1         SCL = low;
+ 122   1         //Delay_us(1);
+ 123   1         SDA = low;
+ 124   1         //Delay_us(1);
+ 125   1         SCL = high;
+ 126   1         //Delay_us(1);
+ 127   1         SDA = high;
+ 128   1         //Delay_us(1);
+ 129   1      }
+ 130          /**********************************************
+ 131          // IIC Write byte
+ 132          **********************************************/
+ 133          void Write_IIC_Byte(unsigned char IIC_Byte)
+ 134          {
+ 135   1              unsigned char i;
+ 136   1              for(i=0;i<8;i++)               
+ 137   1              {
+ 138   2                      if(IIC_Byte & 0x80)                //1?0?
+ 139   2                      SDA=high;
+ 140   2                      else
+ 141   2                      SDA=low;
+ 142   2                      //Delay_us(1);
+ 143   2                      SCL=high;
+ 144   2                      //Delay_us(1);
+ 145   2                      SCL=low;
+ 146   2                      //Delay_us(1);
+C51 COMPILER V9.57.0.0   MAIN                                                              11/23/2021 17:36:39 PAGE 4   
+
+ 147   2                      IIC_Byte<<=1;                        //loop
+ 148   2              }
+ 149   1              SDA=1;
+ 150   1              //Delay_us(1);
+ 151   1              SCL=1;
+ 152   1              //Delay_us(1);
+ 153   1              SCL=0;
+ 154   1              //Delay_us(1);
+ 155   1      }
+ 156          /**********************************************
+ 157          // IIC Write Command
+ 158          **********************************************/
+ 159          void Write_IIC_Command(unsigned char IIC_Command)
+ 160          {
+ 161   1         IIC_Start();
+ 162   1         Write_IIC_Byte(0x78);            //Slave address,SA0=0
+ 163   1         Write_IIC_Byte(0x00);                        //write command
+ 164   1         Write_IIC_Byte(IIC_Command);
+ 165   1         IIC_Stop();
+ 166   1      }
+ 167          /**********************************************
+ 168          // IIC Write Data
+ 169          **********************************************/
+ 170          void Write_IIC_Data(unsigned char IIC_Data)
+ 171          {
+ 172   1         IIC_Start();
+ 173   1         Write_IIC_Byte(0x78);                       
+ 174   1         Write_IIC_Byte(0x40);                        //write data
+ 175   1         Write_IIC_Byte(IIC_Data);
+ 176   1         IIC_Stop();
+ 177   1      }
+ 178          /********************************************
+ 179          // fill_Picture
+ 180          ********************************************/
+ 181          void fill_picture(unsigned char fill_Data)
+ 182          {
+ 183   1              unsigned char m,n;
+ 184   1              for(m=0;m<8;m++)
+ 185   1              {
+ 186   2                      Write_IIC_Command(0xb0+m);                //page0-page1
+ 187   2                      Write_IIC_Command(0x00);                //µÍ ÁÐ ÆðÊ¼µØÖ·
+ 188   2                      Write_IIC_Command(0x10);                //¸ßÁÐ ÆðÊ¼µØÖ·
+ 189   2                      for(n=0;n<128;n++)
+ 190   2                              {
+ 191   3                                      Write_IIC_Data(fill_Data);
+ 192   3                              }
+ 193   2              }
+ 194   1      }
+ 195          /******************************************
+ 196          // picture
+ 197          ******************************************/
+ 198          /*void picture_1()
+ 199          //{
+ 200          //  unsigned char y;
+ 201          //  unsigned char i=0;
+ 202          //  for(y=0;y<8;y++)
+ 203          //    {
+ 204          //      Write_IIC_Command(0xb0+y);//
+ 205          //      Write_IIC_Command(0x00);
+ 206          //      Write_IIC_Command(0x10);
+ 207          //      for(i=0;i<16;i++)
+ 208          //        {
+C51 COMPILER V9.57.0.0   MAIN                                                              11/23/2021 17:36:39 PAGE 5   
+
+ 209          //          Write_IIC_Data(show1[i++]);
+ 210          //        }
+ 211          //        i=0;
+ 212          //    }
+ 213          //}
+ 214          */
+ 215          void display(unsigned char  x,unsigned char  y,unsigned char* hok){//x=0~7;y=0~7;hokÏñËØ=8x8
+ 216   1        unsigned int i=0;
+ 217   1            Write_IIC_Command(0xb0+y);//
+ 218   1            Write_IIC_Command(((x&0xf0)>>4)|0x00);
+ 219   1            Write_IIC_Command((x&0x0f)|0x10);
+ 220   1            for(i=0;i<12;i++)
+ 221   1              {
+ 222   2                Write_IIC_Data(hok[i]);
+ 223   2              }
+ 224   1      }
+ 225          /***********************Delay****************************************/
+ 226          void Delay_50ms(unsigned int Del_50ms)                //
+ 227          {
+ 228   1              unsigned int m;
+ 229   1              for(;Del_50ms>0;Del_50ms--)
+ 230   1                      for(m=6245;m>0;m--);
+ 231   1      }
+ 232          
+ 233          void Delay_1ms(unsigned int Del_1ms)                //
+ 234          {
+ 235   1              unsigned char j;
+ 236   1              while(Del_1ms--)
+ 237   1              {       
+ 238   2                      for(j=0;j<123;j++);
+ 239   2              }
+ 240   1      }
+ 241          /*******************************Main*******************************/
+ 242          void main(void)
+ 243          {
+ 244   1        int i=0;
+ 245   1              Initial_LY096BG30();
+ 246   1              Delay_1ms(5);
+ 247   1                 fill_picture(0x00);   
+ 248   1      
+ 249   1              while(1)
+ 250   1              {
+ 251   2                display(i,4,show1);     
+ 252   2                    i++;
+ 253   2                if(i>=8){i=0;}          
+ 254   2              }
+ 255   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    502    ----
+   CONSTANT SIZE    =     16    ----
+   XDATA SIZE       =   ----       7
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,100 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/31/2021  19:12:21  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE แÜุก8B.obj TO แÜุก8 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  แÜุก8B.obj (แ_ุก8B)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  แÜุก8 (แ_ุก8B)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0001H     UNIT         ?DT?แ_ุก8B
+            IDATA   0009H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     000DH     UNIT         ?PR?MAIN?แ_ุก8B
+            CODE    080DH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0819H     0008H     UNIT         ?CO?แ_ุก8B
+            CODE    0821H     0004H     UNIT         ?PR?INIT?แ_ุก8B
+
+
+
+OVERLAY MAP OF MODULE:   แÜุก8 (แ_ุก8B)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?แ_ุก8B
+
+?PR?MAIN?แ_ุก8B
+  +--> ?PR?INIT?แ_ุก8B
+
+
+
+SYMBOL TABLE OF MODULE:  แÜุก8 (แ_ุก8B)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        แ_ุก8B
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  C:0819H         PUBLIC        table
+  B:0090H.0       PUBLIC        P1_0
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/31/2021  19:12:21  PAGE 2
+
+
+  B:00A0H.0       PUBLIC        P2_0
+  B:00A0H.1       PUBLIC        P2_1
+  C:0800H         PUBLIC        main
+  C:0821H         PUBLIC        init
+  D:0008H         PUBLIC        i
+  -------         PROC          INIT
+  C:0821H         LINE#         7
+  C:0821H         LINE#         8
+  C:0821H         LINE#         9
+  C:0824H         LINE#         10
+  -------         ENDPROC       INIT
+  -------         PROC          MAIN
+  C:0800H         LINE#         12
+  C:0800H         LINE#         13
+  C:0800H         LINE#         14
+  C:0803H         LINE#         15
+  C:0803H         LINE#         16
+  C:0803H         LINE#         17
+  C:0806H         LINE#         18
+  C:0806H         LINE#         19
+  C:0809H         LINE#         20
+  C:0809H         LINE#         21
+  C:080BH         LINE#         22
+  C:080BH         LINE#         23
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        แ_ุก8B
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?แ_ุก8B
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0019H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=10.0 xdata=0 code=40
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

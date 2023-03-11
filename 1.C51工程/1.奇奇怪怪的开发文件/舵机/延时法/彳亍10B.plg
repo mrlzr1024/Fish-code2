@@ -1,0 +1,15 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\梁芝瑞\Desktop\奇奇怪怪的开发文件\舵机\延时法\彳亍10B.uvproj
+Project File Date:  08/26/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling 彳亍10B.c...
+linking...
+Program Size: data=13.0 xdata=0 code=55
+creating hex file from "彳亍10B"...
+"彳亍10B" - 0 Error(s), 0 Warning(s).

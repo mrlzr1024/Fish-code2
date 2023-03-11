@@ -1,0 +1,3 @@
+
+".\build\Target 1\arm.o",".\build\Target 1\engine.o",".\build\Target 1\key.o" TO ".\build\Target 1\»úĞµ±Û"
+PRINT(".\build\Target 1\»úĞµ±Û.map") REMOVEUNUSED

@@ -1,0 +1,101 @@
+C51 COMPILER V9.57.0.0   ________A                                                         11/24/2021 15:01:16 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE ________A
+OBJECT MODULE PLACED IN .\Objects\´®¿ÚÍ¨ÐÅA.obj
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.EXE ´®¿ÚÍ¨ÐÅA.c OPTIMIZE(8,SPEED) BROWSE INCDIR(..\À¶ÑÀÄ£¿é) DEBUG OBJECTEXTEN
+                    -D PRINT(.\Listings\´®¿ÚÍ¨ÐÅA.lst) TABS(2) OBJECT(.\Objects\´®¿ÚÍ¨ÐÅA.obj)
+
+line level    source
+
+   1          #include<reg52.h>
+   2          #include"spi.h"
+   3          #include"CharCode.h"
+   4          unsigned char a;
+   5          int tmp=0,j=0,i=0;
+   6           unsigned char rev;
+   7          /*void Delay10ms(unsigned int c){
+   8             unsigned char a, b;
+   9              for (;c>0;c--)
+  10              {
+  11                  for (b=38;b>0;b--)
+  12                  {
+  13                      for (a=130;a>0;a--);
+  14                  }          
+  15              }       
+  16          }*/
+  17          void init(void){
+  18   1        EA=0;
+  19   1        TMOD=0X20;
+  20   1        SCON=0X50;
+  21   1        TH1=0XFD;
+  22   1        TL1=TH1;
+  23   1        PCON=0X00;
+  24   1        EA=1;
+  25   1        ES=1;
+  26   1        TR1=1;
+  27   1        REN=1;
+  28   1      }
+  29          
+  30          int BluetoothGet(void){
+  31   1        j=0;
+  32   1        init();//åˆå§‹åŒ–ä¸²å£
+  33   1        while(j==0)
+  34   1          ;
+  35   1        switch (a){
+  36   2          case 1:
+  37   2            return 0;
+  38   2          case 2:
+  39   2            return 1;
+  40   2          case 3:
+  41   2            return 2;
+  42   2          case 4:
+  43   2            return 3;
+  44   2          case 5:
+  45   2            return 4;
+  46   2          case 6:
+  47   2            return 5;
+  48   2          case 7:
+  49   2            return 6;
+  50   2          case 8:
+  51   2              return 7;
+  52   2          default:
+  53   2            break;
+  54   2        }
+C51 COMPILER V9.57.0.0   ________A                                                         11/24/2021 15:01:16 PAGE 2   
+
+  55   1      }
+  56          void main(void){
+  57   1        j=0;
+  58   1        init();
+  59   1        LCD_init();
+  60   1        LCD_set_XY(3,9);LCD_write_char(l0);
+  61   1        while(1){
+  62   2        if(j==1){display(BluetoothGet()*8,5,l0);}
+  63   2        }
+  64   1      }
+  65          void Uart() interrupt 4
+  66          {
+  67   1          a = SBUF;
+  68   1          RI=0; // æŽ¥æ”¶ä¸­æ–­æ ‡å¿—ä½ç½®0ï¼›
+  69   1          SBUF = a;
+  70   1          while(!TI);
+  71   1          TI = 0;       // å‘é€ä¸­æ–­æ ‡å¿—ä½ç½®0ï¼›
+  72   1        if(i==0){i++;j=0;}
+  73   1        else if (i>=1){i=0;j=1;}
+  74   1      }
+*** WARNING C291 IN LINE 55 OF ´®¿ÚÍ¨ÐÅA.c: not every exit path returns a value
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    251    ----
+   CONSTANT SIZE    =    116    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      8    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

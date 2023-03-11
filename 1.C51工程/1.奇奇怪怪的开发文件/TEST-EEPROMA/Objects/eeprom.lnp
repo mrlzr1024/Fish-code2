@@ -1,0 +1,5 @@
+".\Objects\main.obj",
+".\Objects\i2cB.obj",
+".\Objects\at24c02.obj" 
+TO ".\Objects\eeprom" 
+PRINT(".\Listings\eeprom.m51") RAMSIZE(256) 

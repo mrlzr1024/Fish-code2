@@ -1,0 +1,319 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    11/27/2019  14:03:36  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+D:\KEIL\C51\BIN\BL51.EXE LCD5510_V1_Demo.obj TO LCD5510_V1_Demo RAMSIZE (256) CODE (0X0000-0X1FFF)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  LCD5510_V1_Demo.obj (LCD5510_V1_DEMO)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  LCD5510_V1_Demo (LCD5510_V1_DEMO)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0008H     UNIT         _DATA_GROUP_
+            DATA    0010H     0004H     UNIT         ?DT?LCD5510_V1_DEMO
+            IDATA   0014H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0656H     UNIT         ?CO?LCD5510_V1_DEMO
+            CODE    0659H     00F5H     UNIT         ?PR?MAIN?LCD5510_V1_DEMO
+            CODE    074EH     008CH     UNIT         ?C_C51STARTUP
+            CODE    07DAH     0073H     UNIT         ?PR?_LCD_PRINTC?LCD5510_V1_DEMO
+            CODE    084DH     003DH     UNIT         ?PR?DELAY1S?LCD5510_V1_DEMO
+            CODE    088AH     0037H     UNIT         ?PR?DELAY250MS?LCD5510_V1_DEMO
+            CODE    08C1H     0032H     UNIT         ?PR?_LCD_PRINTS?LCD5510_V1_DEMO
+            CODE    08F3H     0031H     UNIT         ?PR?LCD5510_INIT?LCD5510_V1_DEMO
+            CODE    0924H     0021H     UNIT         ?PR?LCD_CLR_SCR?LCD5510_V1_DEMO
+            CODE    0945H     0020H     UNIT         ?PR?_LCD_WRITE_BYTE?LCD5510_V1_DEMO
+            CODE    0965H     0013H     UNIT         ?PR?_LCD_CLR_ROW?LCD5510_V1_DEMO
+            CODE    0978H     0012H     UNIT         ?PR?_LCD_POS_BYTE?LCD5510_V1_DEMO
+            CODE    098AH     0009H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   LCD5510_V1_Demo (LCD5510_V1_DEMO)
+
+
+SEGMENT                                       DATA_GROUP 
+  +--> CALLED SEGMENT                       START    LENGTH
+-----------------------------------------------------------
+?C_C51STARTUP                               -----    -----
+  +--> ?PR?MAIN?LCD5510_V1_DEMO
+  +--> ?C_INITSEG
+
+?PR?MAIN?LCD5510_V1_DEMO                    0008H    0002H
+  +--> ?PR?LCD5510_INIT?LCD5510_V1_DEMO
+  +--> ?PR?_LCD_PRINTS?LCD5510_V1_DEMO
+  +--> ?PR?DELAY250MS?LCD5510_V1_DEMO
+  +--> ?PR?_LCD_CLR_ROW?LCD5510_V1_DEMO
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/27/2019  14:03:36  PAGE 2
+
+
+  +--> ?PR?DELAY1S?LCD5510_V1_DEMO
+  +--> ?PR?_LCD_PRINTC?LCD5510_V1_DEMO
+  +--> ?CO?LCD5510_V1_DEMO
+  +--> ?PR?LCD_CLR_SCR?LCD5510_V1_DEMO
+  +--> ?PR?_LCD_WRITE_BYTE?LCD5510_V1_DEMO
+
+?PR?LCD5510_INIT?LCD5510_V1_DEMO            -----    -----
+  +--> ?PR?_LCD_WRITE_BYTE?LCD5510_V1_DEMO
+  +--> ?PR?LCD_CLR_SCR?LCD5510_V1_DEMO
+
+?PR?LCD_CLR_SCR?LCD5510_V1_DEMO             -----    -----
+  +--> ?PR?_LCD_WRITE_BYTE?LCD5510_V1_DEMO
+
+?PR?_LCD_PRINTS?LCD5510_V1_DEMO             000AH    0004H
+  +--> ?PR?_LCD_PRINTC?LCD5510_V1_DEMO
+
+?PR?_LCD_PRINTC?LCD5510_V1_DEMO             000EH    0002H
+  +--> ?PR?_LCD_POS_BYTE?LCD5510_V1_DEMO
+  +--> ?CO?LCD5510_V1_DEMO
+  +--> ?PR?_LCD_WRITE_BYTE?LCD5510_V1_DEMO
+
+?PR?_LCD_POS_BYTE?LCD5510_V1_DEMO           -----    -----
+  +--> ?PR?_LCD_WRITE_BYTE?LCD5510_V1_DEMO
+
+?PR?DELAY250MS?LCD5510_V1_DEMO              -----    -----
+  +--> ?PR?_LCD_WRITE_BYTE?LCD5510_V1_DEMO
+
+?PR?_LCD_CLR_ROW?LCD5510_V1_DEMO            -----    -----
+  +--> ?PR?_LCD_POS_BYTE?LCD5510_V1_DEMO
+  +--> ?PR?_LCD_WRITE_BYTE?LCD5510_V1_DEMO
+
+?PR?DELAY1S?LCD5510_V1_DEMO                 -----    -----
+  +--> ?PR?_LCD_WRITE_BYTE?LCD5510_V1_DEMO
+
+?C_INITSEG                                  -----    -----
+  +--> ?CO?LCD5510_V1_DEMO
+
+
+
+SYMBOL TABLE OF MODULE:  LCD5510_V1_Demo (LCD5510_V1_DEMO)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LCD5510_V1_DEMO
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  C:0893H         PUBLIC        delay250ms
+  D:0010H         PUBLIC        str1
+  D:0012H         PUBLIC        str2
+  B:0080H.0       PUBLIC        LCD_CLK
+  B:0080H.1       PUBLIC        LCD_DIN
+  C:08F3H         PUBLIC        LCD5510_Init
+  C:0069H         PUBLIC        Font_code
+  C:0978H         PUBLIC        _LCD_pos_byte
+  C:0924H         PUBLIC        LCD_clr_scr
+  C:0659H         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/27/2019  14:03:36  PAGE 3
+
+
+  B:0080H.4       PUBLIC        LCD_RST
+  C:0965H         PUBLIC        _LCD_clr_row
+  C:085CH         PUBLIC        delay1s
+  B:0080H.2       PUBLIC        LCD_DC
+  C:07DAH         PUBLIC        _LCD_printc
+  B:0080H.3       PUBLIC        LCD_CS
+  C:08C1H         PUBLIC        _LCD_prints
+  C:0945H         PUBLIC        _LCD_write_byte
+  -------         PROC          _LCD_WRITE_BYTE
+  D:0007H         SYMBOL        wbyte
+  D:0005H         SYMBOL        dat_cmd
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0945H         LINE#         6
+  C:0945H         LINE#         7
+  C:0945H         LINE#         10
+  C:0947H         LINE#         11
+  C:094CH         LINE#         13
+  C:094EH         LINE#         14
+  C:094EH         LINE#         15
+  C:0956H         LINE#         16
+  C:0958H         LINE#         18
+  C:095AH         LINE#         19
+  C:095EH         LINE#         20
+  C:0960H         LINE#         21
+  C:0962H         LINE#         23
+  C:0964H         LINE#         24
+  -------         ENDPROC       _LCD_WRITE_BYTE
+  -------         PROC          LCD_CLR_SCR
+  -------         DO            
+  D:0002H         SYMBOL        i
+  -------         ENDDO         
+  C:0924H         LINE#         59
+  C:0924H         LINE#         60
+  C:0924H         LINE#         63
+  C:092BH         LINE#         64
+  C:0930H         LINE#         66
+  C:0944H         LINE#         67
+  -------         ENDPROC       LCD_CLR_SCR
+  -------         PROC          _LCD_CLR_ROW
+  D:0005H         SYMBOL        num
+  -------         DO            
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:0965H         LINE#         73
+  C:0967H         LINE#         74
+  C:0967H         LINE#         77
+  C:096CH         LINE#         78
+  C:0977H         LINE#         79
+  -------         ENDPROC       _LCD_CLR_ROW
+  -------         PROC          _LCD_POS_BYTE
+  D:0007H         SYMBOL        x
+  D:0004H         SYMBOL        y
+  C:0978H         LINE#         87
+  C:097AH         LINE#         88
+  C:097AH         LINE#         89
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/27/2019  14:03:36  PAGE 4
+
+
+  C:097DH         LINE#         90
+  C:0980H         LINE#         91
+  C:0985H         LINE#         92
+  -------         ENDPROC       _LCD_POS_BYTE
+  -------         PROC          _LCD_PRINTC
+  D:000EH         SYMBOL        x
+  D:0001H         SYMBOL        y
+  D:000FH         SYMBOL        c_dat
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0003H         SYMBOL        j
+  -------         ENDDO         
+  C:07DAH         LINE#         100
+  C:07E0H         LINE#         101
+  C:07E0H         LINE#         104
+  C:07E6H         LINE#         105
+  C:07EFH         LINE#         106
+  C:07F3H         LINE#         107
+  C:07FFH         LINE#         108
+  C:07FFH         LINE#         109
+  C:0807H         LINE#         110
+  C:0813H         LINE#         111
+  C:0849H         LINE#         112
+  C:084CH         LINE#         113
+  -------         ENDPROC       _LCD_PRINTC
+  -------         PROC          _LCD_PRINTS
+  D:000AH         SYMBOL        x
+  D:000BH         SYMBOL        y
+  D:000CH         SYMBOL        s_dat
+  C:08C1H         LINE#         120
+  C:08C9H         LINE#         121
+  C:08C9H         LINE#         122
+  C:08DFH         LINE#         123
+  C:08F2H         LINE#         124
+  -------         ENDPROC       _LCD_PRINTS
+  -------         PROC          LCD5510_INIT
+  C:08F3H         LINE#         147
+  C:08F3H         LINE#         148
+  C:08F3H         LINE#         149
+  C:08F7H         LINE#         152
+  C:08FEH         LINE#         153
+  C:0903H         LINE#         154
+  C:0908H         LINE#         155
+  C:090DH         LINE#         157
+  C:0912H         LINE#         158
+  C:0917H         LINE#         159
+  C:091CH         LINE#         160
+  C:0921H         LINE#         161
+  -------         ENDPROC       LCD5510_INIT
+  C:088CH         SYMBOL        L?0070
+  -------         PROC          L?0069
+  -------         ENDPROC       L?0069
+  C:088CH         SYMBOL        L?0070
+  -------         PROC          DELAY250MS
+  -------         DO            
+  D:0007H         SYMBOL        i
+  D:0006H         SYMBOL        j
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/27/2019  14:03:36  PAGE 5
+
+
+  D:0005H         SYMBOL        k
+  -------         ENDDO         
+  C:0893H         LINE#         12
+  C:0893H         LINE#         13
+  C:0893H         LINE#         15
+  C:089FH         LINE#         16
+  C:08ABH         LINE#         17
+  C:08C0H         LINE#         18
+  -------         ENDPROC       DELAY250MS
+  C:0857H         SYMBOL        L?0068
+  -------         PROC          L?0067
+  -------         ENDPROC       L?0067
+  C:0857H         SYMBOL        L?0068
+  -------         PROC          DELAY1S
+  -------         DO            
+  D:0007H         SYMBOL        i
+  D:0006H         SYMBOL        j
+  D:0005H         SYMBOL        k
+  -------         ENDDO         
+  C:085CH         LINE#         21
+  C:085CH         LINE#         22
+  C:085CH         LINE#         24
+  C:0868H         LINE#         25
+  C:0874H         LINE#         26
+  C:0889H         LINE#         27
+  -------         ENDPROC       DELAY1S
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        i
+  D:0009H         SYMBOL        LCD_contrast
+  -------         ENDDO         
+  C:0659H         LINE#         32
+  C:0659H         LINE#         33
+  C:0659H         LINE#         35
+  C:065CH         LINE#         37
+  C:065FH         LINE#         39
+  C:0669H         LINE#         40
+  C:0669H         LINE#         41
+  C:067BH         LINE#         42
+  C:0680H         LINE#         43
+  C:068AH         LINE#         44
+  C:068CH         LINE#         45
+  C:069FH         LINE#         46
+  C:06A8H         LINE#         48
+  C:06ABH         LINE#         49
+  C:06D5H         LINE#         51
+  C:06D8H         LINE#         52
+  C:06E3H         LINE#         53
+  C:06E6H         LINE#         55
+  C:06E8H         LINE#         56
+  C:06EBH         LINE#         57
+  C:06EDH         LINE#         58
+  C:06EDH         LINE#         59
+  C:06EDH         LINE#         60
+  C:06F0H         LINE#         61
+  C:06F2H         LINE#         62
+  C:06F2H         LINE#         63
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/27/2019  14:03:36  PAGE 6
+
+
+  C:06F2H         LINE#         64
+  C:06F5H         LINE#         65
+  C:06F8H         LINE#         66
+  C:06FBH         LINE#         67
+  C:0706H         LINE#         68
+  C:0706H         LINE#         69
+  C:0706H         LINE#         70
+  C:070DH         LINE#         72
+  C:0722H         LINE#         73
+  C:0739H         LINE#         74
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        LCD5510_V1_DEMO
+
+Program Size: data=21.0 xdata=0 code=2451
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,58 @@
+C51 COMPILER V9.00   ·_ÿ°10B                                                               08/27/2021 17:19:20 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE ·_ÿ°10B
+OBJECT MODULE PLACED IN ·‹ÿ°10B.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE ·‹ÿ°10B.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          sbit Ao=P1^0;
+   3          long i;
+   4          void init()
+   5          {
+   6   1              Ao=0;
+   7   1      }
+   8          void delay1(void)   //—” ±1.5ms
+   9          {
+  10   1          unsigned char a,b;
+  11   1          for(b=197;b>0;b--)
+  12   1              for(a=2;a>0;a--);
+  13   1      }
+  14          
+  15          void delay20(void)   //—” ±20ms
+  16          {
+  17   1          unsigned char a,b,c;
+  18   1          for(c=1;c>0;c--)
+  19   1              for(b=222;b>0;b--)
+  20   1                  for(a=40;a>0;a--);
+  21   1      }
+  22          
+  23          void main(void)
+  24          {
+  25   1              init();
+  26   1              while(1)
+  27   1                      {
+  28   2                              Ao=1;
+  29   2                              delay1();
+  30   2                              Ao=0;
+  31   2                              delay20();
+  32   2                                      
+  33   2                      }
+  34   1      }       
+  35          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     40    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

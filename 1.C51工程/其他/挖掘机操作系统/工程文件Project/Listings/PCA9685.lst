@@ -1,0 +1,139 @@
+C51 COMPILER V9.57.0.0   PCA9685                                                           11/11/2021 21:58:03 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE PCA9685
+OBJECT MODULE PLACED IN ..\输出文件Output\PCA9685.obj
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.EXE ..\源文件Soucre\PCA9685.c OPTIMIZE(8,SPEED) BROWSE INCDIR(..\源文件Soucre)
+                    - DEBUG OBJECTEXTEND PRINT(.\Listings\PCA9685.lst) TABS(2) OBJECT(..\输出文件Output\PCA9685.obj)
+
+line level    source
+
+   1          /**************************************************************************
+   2                                  PCA9685模块简单应用
+   3                          平台：STC89C52RC，晶振：11.0592
+   4                          V+===3.3v-5v
+   5                          Vcc====5v
+   6                          GND===GND
+   7                          SDA===SDA
+   8                          SCL===SCL
+   9          ***************************************************************************/
+  10          
+  11          
+  12          #include"PCA9685.h"
+  13          //#define SERVO_ANGLE0  102 //0度对应4096的脉宽计数值
+  14          //#define SERVO_ANGLE180  476 //180度对应4096的脉宽计算值，根据不同舵机修改
+  15          /**********************函数的声明*********************************/
+  16          /*---------------------------------------------------------------
+  17                            毫秒延时函数
+  18          ----------------------------------------------------------------*/
+  19          void delayms(uint z)
+  20          {
+  21   1        uint x,y;
+  22   1        for(x=z;x>0;x--)
+  23   1            for(y=148;y>0;y--);
+  24   1      }
+  25          /*---------------------------------------------------------------
+  26                          有关PCA9685模块的函数
+  27          ----------------------------------------------------------------*/
+  28          /*---------------------------------------------------------------
+  29                          向PCA9685里【写地址】，数据
+  30          ----------------------------------------------------------------*/
+  31          void PCA9685_write(uchar address,uchar date)
+  32          {
+  33   1          start();
+  34   1          write_byte(PCA9685_adrr);        //PCA9685的片选地址
+  35   1          ACK();                          
+  36   1          write_byte(address);  //写地址控制字节
+  37   1          ACK();
+  38   1          write_byte(date);          //写数据
+  39   1          ACK();
+  40   1          stop();
+  41   1      }
+  42          /*---------------------------------------------------------------
+  43                      从PCA9685里的地址值中【读数据】(有返回值)
+  44          ----------------------------------------------------------------*/
+  45          uchar PCA9685_read(uchar address)
+  46          {
+  47   1          uchar date;
+  48   1          start();
+  49   1          write_byte(PCA9685_adrr); //PCA9685的片选地址
+  50   1          ACK();
+  51   1          write_byte(address);
+  52   1          ACK();
+  53   1          start();
+  54   1          write_byte(PCA9685_adrr|0x01);        //地址的第八位控制数据流方向，就是写或读
+C51 COMPILER V9.57.0.0   PCA9685                                                           11/11/2021 21:58:03 PAGE 2   
+
+  55   1          ACK();
+  56   1          date=read_byte();
+  57   1          stop();
+  58   1          return date;
+  59   1      }
+  60          /*---------------------------------------------------------------
+  61                                  PCA9685【复位】
+  62          ----------------------------------------------------------------*/
+  63          void reset(void) 
+  64          {
+  65   1        PCA9685_write(PCA9685_MODE1,0x0);
+  66   1      }
+  67          
+  68          
+  69          void begin(void) 
+  70          {
+  71   1        reset();
+  72   1      }
+  73          /*---------------------------------------------------------------
+  74                            PCA9685【修改频率】函数
+  75          ----------------------------------------------------------------*/
+  76          void setPWMFreq(float freq) 
+  77          {
+  78   1          uint prescale,oldmode,newmode;
+  79   1          float prescaleval;
+  80   1          freq *= 0.92;  // Correct for overshoot in the frequency setting 
+  81   1          prescaleval = 25000000;
+  82   1          prescaleval /= 4096;
+  83   1          prescaleval /= freq;
+  84   1          prescaleval -= 1;
+  85   1          prescale = floor(prescaleval + 0.5);//向零取整
+  86   1          
+  87   1          oldmode = PCA9685_read(PCA9685_MODE1);
+  88   1          newmode = (oldmode&0x7F) | 0x10; // sleep
+  89   1          PCA9685_write(PCA9685_MODE1, newmode); // go to sleep
+  90   1          PCA9685_write(PCA9685_PRESCALE, prescale); // set the prescaler
+  91   1          PCA9685_write(PCA9685_MODE1, oldmode);
+  92   1          delayms(2);
+  93   1          PCA9685_write(PCA9685_MODE1, oldmode | 0xa1); 
+  94   1      }
+  95          /*---------------------------------------------------------------
+  96                                          PCA9685【修改角度】函数
+  97          num:舵机PWM输出引脚0~15，on:PWM上升计数值0~4096,off:PWM下降计数值0~4096
+  98          一个PWM周期分成4096份，由0开始+1计数，计到on时跳变为高电平，继续计数到off时
+  99          跳变为低电平，直到计满4096重新开始。所以当on不等于0时可作延时,当on等于0时，
+ 100          off/4096的值就是PWM的占空比。2^12=4096;
+ 101          ----------------------------------------------------------------*/
+ 102          void servo_control(uchar num, uchar angle) //num=管脚号
+ 103          {
+ 104   1          uint off = 102.4+2.275555556*angle;//0度对应4096的脉宽计数值
+ 105   1          PCA9685_write(LED0_ON_L+4*num,0);//4=（100）B
+ 106   1          PCA9685_write(LED0_ON_H+4*num,0);
+ 107   1          PCA9685_write(LED0_OFF_L+4*num,off);
+ 108   1          PCA9685_write(LED0_OFF_H+4*num,off>>8);
+ 109   1      }
+ 110          
+ 111          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    394    ----
+   CONSTANT SIZE    =   ----    ----
+C51 COMPILER V9.57.0.0   PCA9685                                                           11/11/2021 21:58:03 PAGE 3   
+
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      19
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

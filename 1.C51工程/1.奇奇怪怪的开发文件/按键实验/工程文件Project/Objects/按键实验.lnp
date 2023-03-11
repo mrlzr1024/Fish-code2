@@ -1,0 +1,3 @@
+".\Objects\按键实验.obj" 
+TO ".\Objects\按键实验" 
+PRINT(".\Listings\按键实验.m51") RAMSIZE(256) 

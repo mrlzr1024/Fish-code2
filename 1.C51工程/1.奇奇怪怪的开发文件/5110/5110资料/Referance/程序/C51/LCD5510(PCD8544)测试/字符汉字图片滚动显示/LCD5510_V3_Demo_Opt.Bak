@@ -1,0 +1,37 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (Target 1), 0x0000 // Tools: 'MCS-51'
+GRPOPT 1,(Source Group 1),1,0,0
+
+OPTFFF 1,1,1,301989889,0,79,4,0,<.\LCD5510_V3_Demo.C><LCD5510_V3_Demo.C> 
+
+ExtF <D:\½Ü¸ç¸øµÄ×ÊÁÏ\Nokia5110\Referance\³ÌÐò\C51\LCD5510(PCD8544)²âÊÔ\×Ö·ûºº×ÖÍ¼Æ¬¹ö¶¯ÏÔÊ¾\LCD5510_V3.H> 1,1,0,{ 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ExtF <D:\½Ü¸ç¸øµÄ×ÊÁÏ\Nokia5110\Referance\³ÌÐò\C51\LCD5510(PCD8544)²âÊÔ\×Ö·ûºº×ÖÍ¼Æ¬¹ö¶¯ÏÔÊ¾\IMG_code.c> 316,1,0,{ 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+
+TARGOPT 1, (Target 1)
+ CLK51=12000000
+  OPTTT 1,1,1,0
+  OPTHX 0,65535,0,0,0
+  OPTLX 120,65,8,<.\>
+  OPTOX 16
+  OPTLT 0,0,0,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,1
+  OPTAX 0
+  OPTDL (S8051.DLL)()(DP51.DLL)(-pAT52)(S8051.DLL)()(TP51.DLL)(-pAT52)
+  OPTDBG 44029,-1,()()()()()()()()()() (BIN\MON51.DLL)()()()
+  OPTDF 0x0
+  OPTLE <>
+  OPTLC <>
+EndOpt
+

@@ -1,0 +1,12 @@
+void delay(unsigned char x)//方式0
+{
+	TH0=(8192-x)/32;
+	TL0=(8192-x)%32;
+	TR0=1；
+	while(TF0==0)//溢出检测，记得初始化时使TF0=0
+	{
+	 ；
+	 TF0=0;
+	 TR0=0；
+	}
+}

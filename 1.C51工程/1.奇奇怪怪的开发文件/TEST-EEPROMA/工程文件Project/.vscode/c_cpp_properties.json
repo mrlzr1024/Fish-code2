@@ -1,0 +1,58 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "${default}",
+                "D:\\keil5\\C51\\INC\\Atmel",
+                "${workspaceFolder}\\.",
+                "D:\\keil5\\C51\\INC"
+            ],
+            "defines": [
+                "${default}",
+                "__VSCODE_CPPTOOL",
+                "__UVISION_VERSION=526"
+            ],
+            "intelliSenseMode": "${default}",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${default}"
+            },
+            "forcedInclude": [
+                ".\\..\\..\\..\\.vscode\\extensions\\cl.eide-2.13.1\\bin\\include\\internal_headers\\c51_intr.h"
+            ]
+        },
+        {
+            "name": "Target 1",
+            "includePath": [
+                "c:\\Users\\梁芝瑞\\Desktop\\C51编程模板\\工程文件Project"
+            ],
+            "defines": [
+                "__C51__",
+                "__VSCODE_C51__",
+                "reentrant=",
+                "compact=",
+                "small=",
+                "large=",
+                "data=",
+                "idata=",
+                "pdata=",
+                "bdata=",
+                "xdata=",
+                "code=",
+                "bit=char",
+                "sbit=char",
+                "sfr=char",
+                "sfr16=int",
+                "sfr32=int",
+                "interrupt=",
+                "using=",
+                "_at_=",
+                "_priority_=",
+                "_task_="
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

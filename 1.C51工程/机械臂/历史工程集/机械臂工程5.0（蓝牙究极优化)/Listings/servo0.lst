@@ -1,0 +1,125 @@
+C51 COMPILER V9.57.0.0   SERVO0                                                            12/08/2021 15:09:09 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE SERVO0
+OBJECT MODULE PLACED IN .\Objects\servo0.obj
+COMPILER INVOKED BY: D:\keil5B\C51\BIN\C51.EXE servo0.c COMPACT OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\List
+                    -ings\servo0.lst) TABS(2) OBJECT(.\Objects\servo0.obj)
+
+line level    source
+
+   1          #include "Servo.h"
+   2          #include "intrins.h"
+   3          int T = 0;
+   4          /*void delay20(void)   //延时至少20ms(消抖)
+   5          //{
+   6          //      unsigned char a,b,c;
+   7          //    for(c=2;c>0;c--)
+   8          //        for(b=95;b>0;b--)
+   9          //            for(a=209;a>0;a--);
+  10          //    _nop_();  //if Keil,require use intrins.h
+  11          //}
+  12          */
+  13          
+  14          /***************************************************
+  15           * 函数名称：servo0
+  16           * 入口参数：int mod,int U     //    mod--哪位舵机,U--转的角度；U=0~2000
+  17           * 输出：无
+  18           * 功能：驱动舵机
+  19          * 备注：角度=0~2000
+  20           * *************************************************/
+  21          void servo0(int mod,int U) {//mod--哪位舵机,U--转的角度
+  22   1        T =500+ U;
+  23   1        TMOD |= 0x01;//加|防止被覆盖.....
+  24   1        TH0 = 0;
+  25   1        TL0 = 0;
+  26   1        EA = 1;
+  27   1        ET0 = 1;
+  28   1        TR0 = 1;
+  29   1        PX0=0;////////////<+===================
+  30   1        while (TL0 + TH0 * 256 < T)
+  31   1        {
+  32   2          if(mod==0){M0 = 1;}
+  33   2          else if(mod==1){a1 = 1;}
+  34   2          else if(mod==2){a2 = 1;}
+  35   2          else if(mod==3){a3 = 1;}
+  36   2        }
+  37   1        while (TL0 + TH0 * 256 >= T && TL0 + TH0 * 256 <= 20000)
+  38   1        {
+  39   2          if(mod==0){M0 = 0;}
+  40   2          else if(mod==1){a1 = 0;}
+  41   2          else if(mod==2){a2 = 0;}
+  42   2          else if(mod==3){a3 = 0;}
+  43   2        }
+  44   1        TR0 = 0;
+  45   1      }
+  46          /***************************************************Semap0正转
+  47          * 函数名称：Semap0正转（映射函数）（0~2000）—>(0~20)
+  48           * 入口参数：int mod,int U     //    mod--哪位舵机,U--转的角度；U=0~20
+  49           * 输出：无
+  50           * 功能：与TuringServo.h的moves1函数对接，驱动舵机
+  51          * 备注：角度=0~20
+  52           * *************************************************
+  53          //void Semap0(int mod,int angle){//正
+  54          //    int i=0;
+C51 COMPILER V9.57.0.0   SERVO0                                                            12/08/2021 15:09:09 PAGE 2   
+
+  55          //  if(angle>=20){
+  56          //  for (i=(angle-1)*100;i<=angle*100;i+=100){
+  57          //    servo0(mod,i);
+  58          //      delay20();
+  59          //  }
+  60          //}
+  61          //}
+  62          */
+  63          /***************************************************Semap1反转
+  64          * 函数名称：Semap1反转（映射函数）（0~2000）—>(0~20)
+  65           * 入口参数：int mod,int U     //    mod--哪位舵机,U--转的角度；U=0~20
+  66           * 输出：无
+  67           * 功能：与TuringServo.h的moves1函数对接，驱动舵机
+  68          * 备注：角度=0~20
+  69           * *************************************************
+  70          //void Semap1(int mod,int angle){//反
+  71          //    int i=0;
+  72          //    if(angle<=20){
+  73          //  for (i=(angle+1)*100;i>=angle*100;i-=100){
+  74          //    servo0(mod,i);
+  75          //        delay20();
+  76          //  }
+  77          //}
+  78          //}
+  79          */
+  80          /*void main(void)
+  81          {
+  82            int i = 0;
+  83            int j = 0;
+  84            while (1)
+  85            {
+  86              {
+  87                move(0,i);
+  88              }
+  89              i+=20;
+  90              if (i > 2000)
+  91              {
+  92                i = 0;
+  93              }
+  94            }
+  95          }
+  96          */
+  97          void Timer0Interrupt(void) interrupt 1{
+  98   1        TR0 = 0;
+  99   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    184    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =      2    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,474 @@
+C51 COMPILER V9.57.0.0   KEY                                                               04/03/2022 10:57:21 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE KEY
+OBJECT MODULE PLACED IN ..\����ļ�Output\key.obj
+COMPILER INVOKED BY: D:\keil5B\C51\BIN\C51.EXE key.c COMPACT ROM(COMPACT) OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND CO
+                    -DE LISTINCLUDE SYMBOLS PRINT(.\Listings\key.lst) TABS(2) OBJECT(..\����ļ�Output\key.obj)
+
+line level    source
+
+   1          #include"key.h"
+   1      =1  /*
+   2      =1   * @Author: your name
+   3      =1   * @Date: 2021-11-17 07:46:47
+   4      =1   * @LastEditTime: 2021-11-17 08:36:26
+   5      =1   * @LastEditors: Please set LastEditors
+   6      =1   * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader
+             -/wiki/%E9%85%8D%E7%BD%AE
+   7      =1   * @FilePath: \机械臂\key.h
+   8      =1   */
+   9      =1  #ifndef __KEY_H__
+  10      =1  #define __KEY_H__
+  11      =1  #include<reg52.h>
+   1      =2  /*--------------------------------------------------------------------------
+   2      =2  REG52.H
+   3      =2  
+   4      =2  Header file for generic 80C52 and 80C32 microcontroller.
+   5      =2  Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+   6      =2  All rights reserved.
+   7      =2  --------------------------------------------------------------------------*/
+   8      =2  
+   9      =2  #ifndef __REG52_H__
+  10      =2  #define __REG52_H__
+  11      =2  
+  12      =2  /*  BYTE Registers  */
+  13      =2  sfr P0    = 0x80;
+  14      =2  sfr P1    = 0x90;
+  15      =2  sfr P2    = 0xA0;
+  16      =2  sfr P3    = 0xB0;
+  17      =2  sfr PSW   = 0xD0;
+  18      =2  sfr ACC   = 0xE0;
+  19      =2  sfr B     = 0xF0;
+  20      =2  sfr SP    = 0x81;
+  21      =2  sfr DPL   = 0x82;
+  22      =2  sfr DPH   = 0x83;
+  23      =2  sfr PCON  = 0x87;
+  24      =2  sfr TCON  = 0x88;
+  25      =2  sfr TMOD  = 0x89;
+  26      =2  sfr TL0   = 0x8A;
+  27      =2  sfr TL1   = 0x8B;
+  28      =2  sfr TH0   = 0x8C;
+  29      =2  sfr TH1   = 0x8D;
+  30      =2  sfr IE    = 0xA8;
+  31      =2  sfr IP    = 0xB8;
+  32      =2  sfr SCON  = 0x98;
+  33      =2  sfr SBUF  = 0x99;
+  34      =2  
+  35      =2  /*  8052 Extensions  */
+  36      =2  sfr T2CON  = 0xC8;
+  37      =2  sfr RCAP2L = 0xCA;
+  38      =2  sfr RCAP2H = 0xCB;
+  39      =2  sfr TL2    = 0xCC;
+  40      =2  sfr TH2    = 0xCD;
+  41      =2  
+C51 COMPILER V9.57.0.0   KEY                                                               04/03/2022 10:57:21 PAGE 2   
+
+  42      =2  
+  43      =2  /*  BIT Registers  */
+  44      =2  /*  PSW  */
+  45      =2  sbit CY    = PSW^7;
+  46      =2  sbit AC    = PSW^6;
+  47      =2  sbit F0    = PSW^5;
+  48      =2  sbit RS1   = PSW^4;
+  49      =2  sbit RS0   = PSW^3;
+  50      =2  sbit OV    = PSW^2;
+  51      =2  sbit P     = PSW^0; //8052 only
+  52      =2  
+  53      =2  /*  TCON  */
+  54      =2  sbit TF1   = TCON^7;
+  55      =2  sbit TR1   = TCON^6;
+  56      =2  sbit TF0   = TCON^5;
+  57      =2  sbit TR0   = TCON^4;
+  58      =2  sbit IE1   = TCON^3;
+  59      =2  sbit IT1   = TCON^2;
+  60      =2  sbit IE0   = TCON^1;
+  61      =2  sbit IT0   = TCON^0;
+  62      =2  
+  63      =2  /*  IE  */
+  64      =2  sbit EA    = IE^7;
+  65      =2  sbit ET2   = IE^5; //8052 only
+  66      =2  sbit ES    = IE^4;
+  67      =2  sbit ET1   = IE^3;
+  68      =2  sbit EX1   = IE^2;
+  69      =2  sbit ET0   = IE^1;
+  70      =2  sbit EX0   = IE^0;
+  71      =2  
+  72      =2  /*  IP  */
+  73      =2  sbit PT2   = IP^5;
+  74      =2  sbit PS    = IP^4;
+  75      =2  sbit PT1   = IP^3;
+  76      =2  sbit PX1   = IP^2;
+  77      =2  sbit PT0   = IP^1;
+  78      =2  sbit PX0   = IP^0;
+  79      =2  
+  80      =2  /*  P3  */
+  81      =2  sbit RD    = P3^7;
+  82      =2  sbit WR    = P3^6;
+  83      =2  sbit T1    = P3^5;
+  84      =2  sbit T0    = P3^4;
+  85      =2  sbit INT1  = P3^3;
+  86      =2  sbit INT0  = P3^2;
+  87      =2  sbit TXD   = P3^1;
+  88      =2  sbit RXD   = P3^0;
+  89      =2  
+  90      =2  /*  SCON  */
+  91      =2  sbit SM0   = SCON^7;
+  92      =2  sbit SM1   = SCON^6;
+  93      =2  sbit SM2   = SCON^5;
+  94      =2  sbit REN   = SCON^4;
+  95      =2  sbit TB8   = SCON^3;
+  96      =2  sbit RB8   = SCON^2;
+  97      =2  sbit TI    = SCON^1;
+  98      =2  sbit RI    = SCON^0;
+  99      =2  
+ 100      =2  /*  P1  */
+ 101      =2  sbit T2EX  = P1^1; // 8052 only
+ 102      =2  sbit T2    = P1^0; // 8052 only
+ 103      =2               
+C51 COMPILER V9.57.0.0   KEY                                                               04/03/2022 10:57:21 PAGE 3   
+
+ 104      =2  /*  T2CON  */
+ 105      =2  sbit TF2    = T2CON^7;
+ 106      =2  sbit EXF2   = T2CON^6;
+ 107      =2  sbit RCLK   = T2CON^5;
+ 108      =2  sbit TCLK   = T2CON^4;
+ 109      =2  sbit EXEN2  = T2CON^3;
+ 110      =2  sbit TR2    = T2CON^2;
+ 111      =2  sbit C_T2   = T2CON^1;
+ 112      =2  sbit CP_RL2 = T2CON^0;
+ 113      =2  
+ 114      =2  #endif
+  12      =1  sbit key0 = P1 ^ 6;
+  13      =1  sbit key1 = P1 ^ 7;
+  14      =1  extern int key(void);
+  15      =1  extern int key_continue(void);
+  16      =1  extern int key4x4(void);
+  17      =1  
+  18      =1  
+  19      =1  #endif // !__KEY_H__
+   2          /***************************************************
+   3           * 函数名称：key
+   4           * 入口参数：无
+   5           * 输出：无
+   6           * 功能：识别KEY0,KEY1
+   7           * 备注：阻滞性识别
+   8           * *************************************************/
+   9          int key(void)
+  10          {
+  11   1          while(key0==1&&key1==1)
+  12   1              ;
+  13   1          if (key0 == 0)
+  14   1          {
+  15   2              return 1;
+  16   2          }
+  17   1          else if (key1 == 0)
+  18   1          {
+  19   2              return 2;
+  20   2          }
+  21   1          return 0;
+  22   1      }
+  23          /***************************************************
+  24           * 函数名称：key_continue
+  25           * 入口参数：无
+  26           * 输出：无
+  27           * 功能：识别KEY0,KEY1
+  28           * 备注：连续性识别
+  29           * *************************************************/
+  30          int key_continue(void)
+  31          {
+  32   1          if (key0 == 0)
+  33   1          {
+  34   2              return 1;
+  35   2          }
+  36   1          else if (key1 == 0)
+  37   1          {
+  38   2              return 2;
+  39   2          }
+  40   1          return 0;
+  41   1      }
+  42          /***************************************************
+  43           * 函数名称：key4x4
+  44           * 入口参数：无
+C51 COMPILER V9.57.0.0   KEY                                                               04/03/2022 10:57:21 PAGE 4   
+
+  45           * 输出：无
+  46           * 功能：识别4x4矩阵按键
+  47           * 备注：连续性识别
+  48           * *************************************************/
+  49          int key4x4(void){
+  50   1        int val=0;
+  51   1        P2 = 0xf0;
+  52   1        if(P1!=0xf0)
+  53   1        {
+  54   2          switch(P2)     //行扫描
+  55   2          {
+  56   3            case 0xe0:
+  57   3              val = 0; break; 
+  58   3            case 0xd0:
+  59   3              val = 1; break; 
+  60   3            case 0xb0:
+  61   3              val = 2; break;
+  62   3            case 0x70:
+  63   3              val = 3; break;
+  64   3          } 
+  65   2          P2 = 0x0f;
+  66   2          switch(P2)       //列扫描
+  67   2          {
+  68   3            case 0x0e:
+  69   3              val += 0; break;  
+  70   3            case 0x0d:
+  71   3              val += 4; break;  
+  72   3            case 0x0b:
+  73   3              val += 8; break;
+  74   3            case 0x07:
+  75   3              val += 12; break;
+  76   3          }while(P2!=0x0f);   //等待按键松开
+  77   2          return val;
+  78   2        }
+  79   1        return -1;
+  80   1      }
+C51 COMPILER V9.57.0.0   KEY                                                               04/03/2022 10:57:21 PAGE 5   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION key (BEGIN)
+                                           ; SOURCE LINE # 9
+                                           ; SOURCE LINE # 10
+0000         ?C0001:
+                                           ; SOURCE LINE # 11
+0000 309603            JNB     key0,?C0002
+0003 2097FA            JB      key1,?C0001
+0006         ?C0002:
+                                           ; SOURCE LINE # 13
+0006 209605            JB      key0,?C0003
+                                           ; SOURCE LINE # 14
+                                           ; SOURCE LINE # 15
+0009 7E00              MOV     R6,#00H
+000B 7F01              MOV     R7,#01H
+000D 22                RET     
+                                           ; SOURCE LINE # 16
+000E         ?C0003:
+                                           ; SOURCE LINE # 17
+000E 209705            JB      key1,?C0005
+                                           ; SOURCE LINE # 18
+                                           ; SOURCE LINE # 19
+0011 7E00              MOV     R6,#00H
+0013 7F02              MOV     R7,#02H
+0015 22                RET     
+                                           ; SOURCE LINE # 20
+0016         ?C0005:
+                                           ; SOURCE LINE # 21
+0016 E4                CLR     A
+0017 FE                MOV     R6,A
+0018 FF                MOV     R7,A
+                                           ; SOURCE LINE # 22
+0019         ?C0004:
+0019 22                RET     
+             ; FUNCTION key (END)
+
+             ; FUNCTION key_continue (BEGIN)
+                                           ; SOURCE LINE # 30
+                                           ; SOURCE LINE # 31
+                                           ; SOURCE LINE # 32
+0000 209605            JB      key0,?C0007
+                                           ; SOURCE LINE # 33
+                                           ; SOURCE LINE # 34
+0003 7E00              MOV     R6,#00H
+0005 7F01              MOV     R7,#01H
+0007 22                RET     
+                                           ; SOURCE LINE # 35
+0008         ?C0007:
+                                           ; SOURCE LINE # 36
+0008 209705            JB      key1,?C0009
+                                           ; SOURCE LINE # 37
+                                           ; SOURCE LINE # 38
+000B 7E00              MOV     R6,#00H
+000D 7F02              MOV     R7,#02H
+000F 22                RET     
+                                           ; SOURCE LINE # 39
+0010         ?C0009:
+                                           ; SOURCE LINE # 40
+0010 E4                CLR     A
+0011 FE                MOV     R6,A
+C51 COMPILER V9.57.0.0   KEY                                                               04/03/2022 10:57:21 PAGE 6   
+
+0012 FF                MOV     R7,A
+                                           ; SOURCE LINE # 41
+0013         ?C0008:
+0013 22                RET     
+             ; FUNCTION key_continue (END)
+
+             ; FUNCTION key4x4 (BEGIN)
+                                           ; SOURCE LINE # 49
+                                           ; SOURCE LINE # 50
+0000 E4                CLR     A
+0001 7800        R     MOV     R0,#LOW val
+0003 F2                MOVX    @R0,A
+0004 08                INC     R0
+0005 F2                MOVX    @R0,A
+                                           ; SOURCE LINE # 51
+0006 75A0F0            MOV     P2,#0F0H
+                                           ; SOURCE LINE # 52
+0009 E590              MOV     A,P1
+000B 64F0              XRL     A,#0F0H
+000D 6071              JZ      ?C0011
+                                           ; SOURCE LINE # 53
+                                           ; SOURCE LINE # 54
+000F AFA0              MOV     R7,P2
+0011 EF                MOV     A,R7
+0012 2490              ADD     A,#090H
+0014 6027              JZ      ?C0016
+0016 24C0              ADD     A,#0C0H
+0018 6019              JZ      ?C0015
+001A 24E0              ADD     A,#0E0H
+001C 600C              JZ      ?C0014
+001E 24F0              ADD     A,#0F0H
+0020 7023              JNZ     ?C0012
+                                           ; SOURCE LINE # 55
+                                           ; SOURCE LINE # 56
+0022         ?C0013:
+                                           ; SOURCE LINE # 57
+0022 E4                CLR     A
+0023 7800        R     MOV     R0,#LOW val
+0025 F2                MOVX    @R0,A
+0026 08                INC     R0
+0027 F2                MOVX    @R0,A
+0028 801B              SJMP    ?C0012
+                                           ; SOURCE LINE # 58
+002A         ?C0014:
+                                           ; SOURCE LINE # 59
+002A 7800        R     MOV     R0,#LOW val
+002C E4                CLR     A
+002D F2                MOVX    @R0,A
+002E 08                INC     R0
+002F 04                INC     A
+0030 F2                MOVX    @R0,A
+0031 8012              SJMP    ?C0012
+                                           ; SOURCE LINE # 60
+0033         ?C0015:
+                                           ; SOURCE LINE # 61
+0033 7800        R     MOV     R0,#LOW val
+0035 E4                CLR     A
+0036 F2                MOVX    @R0,A
+0037 08                INC     R0
+0038 7402              MOV     A,#02H
+003A F2                MOVX    @R0,A
+003B 8008              SJMP    ?C0012
+C51 COMPILER V9.57.0.0   KEY                                                               04/03/2022 10:57:21 PAGE 7   
+
+                                           ; SOURCE LINE # 62
+003D         ?C0016:
+                                           ; SOURCE LINE # 63
+003D 7800        R     MOV     R0,#LOW val
+003F E4                CLR     A
+0040 F2                MOVX    @R0,A
+0041 08                INC     R0
+0042 7403              MOV     A,#03H
+0044 F2                MOVX    @R0,A
+                                           ; SOURCE LINE # 64
+0045         ?C0012:
+                                           ; SOURCE LINE # 65
+0045 75A00F            MOV     P2,#0FH
+                                           ; SOURCE LINE # 66
+0048 AFA0              MOV     R7,P2
+004A EF                MOV     A,R7
+004B 24F9              ADD     A,#0F9H
+004D 6019              JZ      ?C0021
+004F 24FC              ADD     A,#0FCH
+0051 600E              JZ      ?C0020
+0053 24FE              ADD     A,#0FEH
+0055 6003              JZ      ?C0019
+0057 14                DEC     A
+                                           ; SOURCE LINE # 67
+                                           ; SOURCE LINE # 68
+0058         ?C0018:
+                                           ; SOURCE LINE # 69
+0058 8019              SJMP    ?C0022
+                                           ; SOURCE LINE # 70
+005A         ?C0019:
+                                           ; SOURCE LINE # 71
+005A 7800        R     MOV     R0,#LOW val+01H
+005C E2                MOVX    A,@R0
+005D 2404              ADD     A,#04H
+005F 800C              SJMP    ?C0026
+                                           ; SOURCE LINE # 72
+0061         ?C0020:
+                                           ; SOURCE LINE # 73
+0061 7800        R     MOV     R0,#LOW val+01H
+0063 E2                MOVX    A,@R0
+0064 2408              ADD     A,#08H
+0066         ?C0025:
+0066 8005              SJMP    ?C0026
+                                           ; SOURCE LINE # 74
+0068         ?C0021:
+                                           ; SOURCE LINE # 75
+0068 7800        R     MOV     R0,#LOW val+01H
+006A E2                MOVX    A,@R0
+006B 240C              ADD     A,#0CH
+006D         ?C0026:
+006D F2                MOVX    @R0,A
+006E 18                DEC     R0
+006F E2                MOVX    A,@R0
+0070 3400              ADDC    A,#00H
+0072 F2                MOVX    @R0,A
+                                           ; SOURCE LINE # 76
+0073         ?C0022:
+0073 E5A0              MOV     A,P2
+0075 B40FFB            CJNE    A,#0FH,?C0022
+                                           ; SOURCE LINE # 77
+0078 7800        R     MOV     R0,#LOW val
+007A E2                MOVX    A,@R0
+C51 COMPILER V9.57.0.0   KEY                                                               04/03/2022 10:57:21 PAGE 8   
+
+007B FE                MOV     R6,A
+007C 08                INC     R0
+007D E2                MOVX    A,@R0
+007E FF                MOV     R7,A
+007F 22                RET     
+                                           ; SOURCE LINE # 78
+0080         ?C0011:
+                                           ; SOURCE LINE # 79
+0080 7EFF              MOV     R6,#0FFH
+0082 7FFF              MOV     R7,#0FFH
+                                           ; SOURCE LINE # 80
+0084         ?C0024:
+0084 22                RET     
+             ; FUNCTION key4x4 (END)
+
+C51 COMPILER V9.57.0.0   KEY                                                               04/03/2022 10:57:21 PAGE 9   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+P1 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0090H  1
+P2 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A0H  1
+P3 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B0H  1
+IE . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A8H  1
+key_continue . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+IP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B8H  1
+key4x4 . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  val. . . . . . . . . . . . . . . . .  AUTO     PDATA  INT      0000H  2
+SCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0098H  1
+TCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0088H  1
+key. . . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+T2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C8H  1
+key0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0096H  1
+PSW. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D0H  1
+key1 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0097H  1
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    179    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----       2
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

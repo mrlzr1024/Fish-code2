@@ -1,0 +1,127 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/21/2021  20:30:51  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE .\数码管实验\彳亍4.obj TO .\数码管实验\彳亍4 PRINT (.\彳亍4.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\数码管实验\彳亍4.obj (醎亍4)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\数码管实验\彳亍4 (醎亍4)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         _DATA_GROUP_
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     002AH     UNIT         ?PR?MAIN?醎亍4
+            CODE    082AH     000EH     UNIT         ?PR?_DELAY?醎亍4
+            CODE    0838H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\数码管实验\彳亍4 (醎亍4)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?醎亍4
+
+?PR?MAIN?醎亍4                 0008H    0002H
+  +--> ?PR?_DELAY?醎亍4
+
+
+
+UNRESOLVED EXTERNAL SYMBOLS:
+   DISPLAY
+
+
+
+SYMBOL TABLE OF MODULE:  .\数码管实验\彳亍4 (醎亍4)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        醎亍4
+  C:0000H         SYMBOL        _ICE_DUMMY_
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/21/2021  20:30:51  PAGE 2
+
+
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  C:082AH         PUBLIC        _delay
+  D:00B8H         PUBLIC        IP
+  C:0800H         PUBLIC        main
+  B:00A0H.0       PUBLIC        wela
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _DELAY
+  D:0007H         SYMBOL        i
+  -------         DO            
+  D:0007H         SYMBOL        j
+  D:0006H         SYMBOL        k
+  -------         ENDDO         
+  C:082AH         LINE#         5
+  C:082AH         LINE#         6
+  C:082AH         LINE#         8
+  C:0830H         LINE#         9
+  C:0837H         LINE#         10
+  -------         ENDPROC       _DELAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        a
+  -------         ENDDO         
+  C:0800H         LINE#         11
+  C:0800H         LINE#         12
+  C:0800H         LINE#         13
+  C:0803H         LINE#         14
+  C:0805H         LINE#         15
+  C:080AH         LINE#         16
+  C:080CH         LINE#         17
+  C:080CH         LINE#         20
+  C:080CH         LINE#         21
+  C:080CH         LINE#         23
+  C:0812H         LINE#         24
+  C:0812H         LINE#         25
+  C:0815H         LINE#         26
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        醎亍4
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  DISPLAY
+    MODULE:  .\数码管实验\彳亍4.obj (醎亍4)
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DISPLAY
+    MODULE:  .\数码管实验\彳亍4.obj (醎亍4)
+    ADDRESS: 0813H
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0038H BYTE ( 2%) *
+******************************************************************************
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/21/2021  20:30:51  PAGE 3
+
+
+
+Program Size: data=11.0 xdata=0 code=71
+LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)

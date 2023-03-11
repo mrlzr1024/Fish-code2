@@ -1,0 +1,4 @@
+"..\输出文件Output\main.obj",
+"..\输出文件Output\display.obj" 
+TO "..\输出文件Output\彳亍12" 
+PRINT("..\编译文件Listing\彳亍12.m51")

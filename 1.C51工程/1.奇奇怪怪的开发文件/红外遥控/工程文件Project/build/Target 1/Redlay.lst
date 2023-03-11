@@ -1,0 +1,119 @@
+C51 COMPILER V9.57.0.0   REDLAY                                                            12/10/2021 07:55:32 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE REDLAY
+OBJECT MODULE PLACED IN .\build\Target 1\Redlay.o
+COMPILER INVOKED BY: D:\keil5B\C51\BIN\C51.exe .\REDLAY.C PRINT(.\build\Target 1\Redlay.lst) OMF2 TABS(4) CODE NOCOND SY
+                    -MBOLS OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(D:\keil5B\C51\INC\Atmel;D:\keil5B\C51\INC) DEFINE(__UVISION_VERSION=526)
+                    - OBJECT(.\build\Target 1\Redlay.o)
+
+line level    source
+
+   1          #include "Hongwai.h"
+*** WARNING C318 IN LINE 1 OF .\REDLAY.C: can't open file 'Hongwai.h'
+   2          
+   3          u8 IrValue[6];//储存接受的的数据
+*** ERROR C129 IN LINE 3 OF .\REDLAY.C: missing ';' before 'IrValue'
+   4          u8 Time;
+   5          
+   6          /*******************************************************************************
+   7          * 函 数 名         : delay
+   8          * 函数功能         : 延时函数，i=1时，大约延时10us
+   9          *******************************************************************************/
+  10          void delay(u16 i)
+  11          {
+  12              while(i--); 
+  13          }
+  14          
+  15          
+  16          /*******************************************************************************
+  17          * 函数名         : ReadIr()
+  18          * 函数功能         : 读取红外数值的中断函数
+  19          * 输入           : 无
+  20          * 输出             : 无
+  21          *******************************************************************************/
+  22          
+  23          void ReadIr(void) interrupt 0
+  24          {
+  25              u8 j,k;
+  26              u16 err;
+  27              Time=0;                  
+  28              delay(700); //7ms
+  29              if(IRIN==0)     //确认是否真的接收到正确的信号
+  30              {    
+  31                  
+  32                  err=1000;               //1000*10us=10ms,超过说明接收到错误的信号
+  33                  /*当两个条件都为真是循环，如果有一个条件为假的时候跳出循环，免得程序出
+             -错的时
+  34                  侯，程序死在这里*/  
+  35                  while((IRIN==0)&&(err>0))   //等待前面9ms的低电平过去         
+  36                  {           
+  37                      delay(1);
+  38                      err--;
+  39                  } 
+  40                  if(IRIN==1)         //如果正确等到9ms低电平
+  41                  {
+  42                      err=500;
+  43                      while((IRIN==1)&&(err>0))        //等待4.5ms的起始高电平过去
+  44                      {
+  45                          delay(1);
+  46                          err--;
+  47                      }
+  48                      for(k=0;k<4;k++)        //共有4组数据
+  49                      {               
+  50                          for(j=0;j<8;j++)    //接收一组数据
+C51 COMPILER V9.57.0.0   REDLAY                                                            12/10/2021 07:55:32 PAGE 2   
+
+  51                          {
+  52          
+  53                              err=60;     
+  54                              while((IRIN==0)&&(err>0))//等待信号前面的560us低电平过去
+  55                              {
+  56                                  delay(1);
+  57                                  err--;
+  58                              }
+  59                              err=500;
+  60                              while((IRIN==1)&&(err>0))    //计算高电平的时间长度。
+  61                              {
+  62                                  delay(10);   //0.1ms
+  63                                  Time++;
+  64                                  err--;
+  65                                  if(Time>30)
+  66                                  {
+  67                                      return;
+  68                                  }
+  69                              }
+  70                              IrValue[k]>>=1;  //k表示第几组数据
+  71                              if(Time>=8)         //如果高电平出现大于565us，那么是1
+  72                              {
+  73                                  IrValue[k]|=0x80;
+  74                              }
+  75                              Time=0;     //用完时间要重新赋值                           
+  76                          }
+  77                      }
+  78                  }
+  79                  if(IrValue[2]!=~IrValue[3])
+  80                  {
+  81                      return;
+  82                  }
+  83              }           
+  84          }
+  85          
+  86          /*******************************************************************************
+  87          * 函数名         : IrInit()
+  88          * 函数功能         : 初始化红外线接收
+  89          * 输入           : 无
+  90          * 输出             : 无
+  91          *******************************************************************************/
+  92          
+  93          void IrInit(void)
+  94          {
+  95              IT0=1;//下降沿触发
+  96              EX0=1;//打开中断0允许
+  97              EA=1;   //打开总中断
+  98          
+  99              IRIN=1;//初始化端口
+ 100          }
+ 101          
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  1 ERROR(S)

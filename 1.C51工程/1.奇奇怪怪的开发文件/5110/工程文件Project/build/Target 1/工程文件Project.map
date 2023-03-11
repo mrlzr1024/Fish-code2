@@ -1,0 +1,251 @@
+LX51 LINKER/LOCATER V4.66.87.0                                                          04/03/2022  10:59:23  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.87.0, INVOKED BY:
+D:\KEIL5B\C51\BIN\LX51.EXE .\build\Target 1\5110.o, .\build\Target 1\key.o, .\build\Target 1\spi.o TO .\build\Target 1\¹
+>> ¤³ÌÎÄ¼þProject PRINT (.\build\Target 1\¹¤³ÌÎÄ¼þProject.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\build\Target 1\5110.o (5110)
+         COMMENT TYPE 0: C51 V9.57.0.0
+  .\build\Target 1\key.o (KEY)
+         COMMENT TYPE 0: C51 V9.57.0.0
+  .\build\Target 1\spi.o (SPI)
+         COMMENT TYPE 0: C51 V9.57.0.0
+  D:\KEIL5B\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5B\C51\LIB\C51S.LIB (?C?CLDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5B\C51\LIB\C51S.LIB (?C?IMUL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5B\C51\LIB\C51S.LIB (?C?ILDOPTR)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  D:\KEIL5B\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\build\Target 1\¹¤³ÌÎÄ¼þProject (5110)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   0001F9H   CODE
+I:000000H   I:000000H   I:00007FH   000025H   DATA
+C:000000H   C:000000H   C:00FFFFH   000074H   CONST
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\build\Target 1\¹¤³ÌÎÄ¼þProject (5110)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   00001FH   000018H   BYTE   UNIT     DATA           ?DT?SPI
+000020H   000024H   000005H   BYTE   UNIT     DATA           _DATA_GROUP_
+000025H   000025H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00008EH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+00008FH   000105H   000077H   BYTE   UNIT     CODE           ?C?LIB_CODE
+000106H   00013EH   000039H   BYTE   UNIT     CODE           ?PR?LCD_INIT?SPI
+00013FH   000164H   000026H   BYTE   UNIT     CODE           ?PR?_LCD_WRITE_BYTE?SPI
+000165H   00018AH   000026H   BYTE   UNIT     CODE           ?PR?_LCD_WRITE_CHAR?SPI
+00018BH   0001ACH   000022H   BYTE   UNIT     CODE           ?PR?LCD_CLEAR?SPI
+0001ADH   0001C9H   00001DH   BYTE   UNIT     CODE           ?C_INITSEG
+0001CAH   0001DFH   000016H   BYTE   UNIT     CODE           ?PR?MAIN?5110
+0001E0H   0001F1H   000012H   BYTE   UNIT     CODE           ?PR?_LCD_SET_XY?SPI
+0001F2H   0001F7H   000006H   BYTE   UNIT     CODE           ?PR?_DISPLAY?SPI
+0001F8H   0001F8H   000001H   BYTE   UNIT     CODE           ?PR?DELAY_1US?SPI
+0001F9H   00026CH   000074H   BYTE   UNIT     CONST          ?CO?5110
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+LX51 LINKER/LOCATER V4.66.87.0                                                        04/03/2022  10:59:23  PAGE 2
+
+
+   *DEL*:           00000DH   BYTE   UNIT     CODE           ?PR?DELAY?5110
+   *DEL*:           00001AH   BYTE   UNIT     CODE           ?PR?KEY?KEY
+   *DEL*:           000014H   BYTE   UNIT     CODE           ?PR?KEY_CONTINUE?KEY
+   *DEL*:           000063H   BYTE   UNIT     CODE           ?PR?KEY4X4?KEY
+   *DEL*:           000087H   BYTE   UNIT     CODE           ?PR?_LCD_DRAW_BMP_PIXEL?SPI
+   *DEL*:           00000CH   BYTE   UNIT     DATA           ?DT?_LCD_DRAW_BMP_PIXEL?SPI
+
+
+
+OVERLAY MAP OF MODULE:   .\build\Target 1\¹¤³ÌÎÄ¼þProject (5110)
+
+
+FUNCTION/MODULE               BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE   START  STOP  START  STOP
+=====================================================
+?C_C51STARTUP                ----- -----  ----- -----
+  +--> MAIN/5110
+  +--> ?C_INITSEG
+
+MAIN/5110                    ----- -----  0020H 0021H
+  +--> LCD_INIT/SPI
+  +--> _DISPLAY/SPI
+
+LCD_INIT/SPI                 ----- -----  ----- -----
+  +--> DELAY_1US/SPI
+  +--> _LCD_WRITE_BYTE/SPI
+  +--> LCD_CLEAR/SPI
+
+DELAY_1US/SPI                ----- -----  ----- -----
+
+_LCD_WRITE_BYTE/SPI          ----- -----  ----- -----
+
+LCD_CLEAR/SPI                ----- -----  ----- -----
+  +--> _LCD_WRITE_BYTE/SPI
+
+_DISPLAY/SPI                 ----- -----  ----- -----
+  +--> _LCD_SET_XY/SPI
+  +--> _LCD_WRITE_CHAR/SPI
+
+_LCD_SET_XY/SPI              ----- -----  ----- -----
+  +--> _LCD_WRITE_BYTE/SPI
+
+_LCD_WRITE_CHAR/SPI          ----- -----  0022H 0024H
+  +--> _LCD_WRITE_BYTE/SPI
+
+?C_INITSEG                   ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\build\Target 1\¹¤³ÌÎÄ¼þProject (5110)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+*DEL*:00000000H   DATA     BYTE      ?_LCD_draw_bmp_pixel?BYTE
+      0100008FH   CODE     ---       ?C?CLDOPTR
+      00000000H   NUMBER   ---       ?C?CODESEG
+      010000CEH   CODE     ---       ?C?ILDOPTR
+      010000BCH   CODE     ---       ?C?IMUL
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      0100004AH   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      010001F2H   CODE     ---       _display
+*DEL*:00000000H   CODE     ---       _LCD_draw_bmp_pixel
+      010001E0H   CODE     ---       _LCD_set_XY
+LX51 LINKER/LOCATER V4.66.87.0                                                        04/03/2022  10:59:23  PAGE 3
+
+
+      0100013FH   CODE     ---       _LCD_write_byte
+      01000165H   CODE     ---       _LCD_write_char
+      00000008H   DATA     ---       blank
+*DEL*:00000000H   CODE     ---       delay
+      010001F8H   CODE     ---       delay_1us
+      00000014H   DATA     ---       font6x8
+*DEL*:00000000H   CODE     ---       key
+*DEL*:00000000H   CODE     ---       key4x4
+*DEL*:00000000H   CODE     ---       key_continue
+      010001F9H   CONST    ---       l0
+      01000205H   CONST    ---       l1
+      01000211H   CONST    ---       l2
+      0100021DH   CONST    ---       l3
+      01000229H   CONST    ---       l4
+      01000235H   CONST    ---       l5
+      01000241H   CONST    ---       l6
+      0100018BH   CODE     ---       LCD_clear
+      01000106H   CODE     ---       LCD_init
+      010001CAH   CODE     ---       main
+      0100024DH   CONST    ---       you
+
+
+
+SYMBOL TABLE OF MODULE:  .\build\Target 1\¹¤³ÌÎÄ¼þProject (5110)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       5110
+      0100024DH   PUBLIC    CONST    ---       you
+      01000241H   PUBLIC    CONST    ---       l6
+      01000235H   PUBLIC    CONST    ---       l5
+      01000229H   PUBLIC    CONST    ---       l4
+      0100021DH   PUBLIC    CONST    ---       l3
+      01000211H   PUBLIC    CONST    ---       l2
+      01000205H   PUBLIC    CONST    ---       l1
+      010001F9H   PUBLIC    CONST    ---       l0
+      010001CAH   PUBLIC    CODE     ---       main
+      00000005H   SYMBOL    DATA     VOID      a
+      00000006H   SYMBOL    DATA     VOID      b
+      00000007H   SYMBOL    DATA     VOID      c
+
+      010001CAH   BLOCK     CODE     ---       LVL=0
+      010001CAH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000020H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       KEY
+      00000006H   SYMBOL    DATA     VOID      val
+
+      ---         MODULE    ---      ---       SPI
+      00000014H   PUBLIC    DATA     ---       font6x8
+      00000008H   PUBLIC    DATA     ---       blank
+      010001F2H   PUBLIC    CODE     ---       _display
+      01000165H   PUBLIC    CODE     ---       _LCD_write_char
+      010001E0H   PUBLIC    CODE     ---       _LCD_set_XY
+      01000106H   PUBLIC    CODE     ---       LCD_init
+      0100018BH   PUBLIC    CODE     ---       LCD_clear
+      0100013FH   PUBLIC    CODE     ---       _LCD_write_byte
+      010001F8H   PUBLIC    CODE     ---       delay_1us
+
+      010001F8H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100013FH   BLOCK     CODE     ---       LVL=0
+LX51 LINKER/LOCATER V4.66.87.0                                                        04/03/2022  10:59:23  PAGE 4
+
+
+      0100013FH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000006H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100018BH   BLOCK     CODE     ---       LVL=0
+      0100018BH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000002H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000106H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010001E0H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000165H   BLOCK     CODE     ---       LVL=0
+      0100016BH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000004H   SYMBOL    DATA     VOID      line
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010001F2H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?CLDOPTR
+      0100008FH   PUBLIC    CODE     ---       ?C?CLDOPTR
+
+      ---         MODULE    ---      ---       ?C?IMUL
+      010000BCH   PUBLIC    CODE     ---       ?C?IMUL
+
+      ---         MODULE    ---      ---       ?C?ILDOPTR
+      010000CEH   PUBLIC    CODE     ---       ?C?ILDOPTR
+
+      ---         MODULE    ---      ---       ?C_INIT
+      0100004AH   PUBLIC    CODE     ---       ?C_START
+
+Program Size: data=38.0 xdata=0 const=116 code=505
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

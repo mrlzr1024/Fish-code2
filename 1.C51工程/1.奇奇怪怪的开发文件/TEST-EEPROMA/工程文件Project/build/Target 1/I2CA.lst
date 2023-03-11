@@ -1,0 +1,446 @@
+C51 COMPILER V9.57.0.0   I2CA                                                              11/07/2021 11:32:44 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE I2CA
+OBJECT MODULE PLACED IN .\build\Target 1\I2CA.o
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.exe .\I2CA.C PRINT(.\build\Target 1\I2CA.lst) OMF2 TABS(4) CODE NOCOND SYMBOLS
+                    - OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(D:\keil5\C51\INC\Atmel;.\.;D:\keil5\C51\INC) DEFINE(__UVISION_VERSION=526) OB
+                    -JECT(.\build\Target 1\I2CA.o)
+
+line level    source
+
+   1          /*---------------------------------------------------------------
+   2                   IIC总线所需的通用函数
+   3          ----------------------------------------------------------------*/
+   4          #include"I2CA.h"
+   5          #include<reg52.h>
+   6          /*---------------------------------------------------------------
+   7                           微妙级别延时函数 大于4.7us
+   8          ----------------------------------------------------------------*/
+   9          void delayus()//延时5us(大约)
+  10          {
+  11   1              _nop_();          //在intrins.h文件里
+  12   1              _nop_();
+  13   1              _nop_();
+  14   1              _nop_();
+  15   1              _nop_();
+  16   1      }
+  17          /*---------------------------------------------------------------
+  18                           IIC总线初始化函数 
+  19          ----------------------------------------------------------------*/
+  20          void init()
+  21          {
+  22   1          sda=1;                //sda scl使用前总是被拉高
+  23   1          delayus();
+  24   1          scl=1;
+  25   1          delayus();
+  26   1      }
+  27          /*---------------------------------------------------------------
+  28                           IIC总线启动信号函数
+  29          ----------------------------------------------------------------*/
+  30          void start()
+  31          {
+  32   1          sda=1;
+  33   1          delayus();
+  34   1          scl=1;                        //scl拉高时 sda突然来个低电平 就启动了IIC总线
+  35   1          delayus();
+  36   1          sda=0;
+  37   1          delayus();
+  38   1          scl=0;
+  39   1          delayus();
+  40   1      }
+  41          /*---------------------------------------------------------------
+  42                           IIC总线停止信号函数
+  43          ----------------------------------------------------------------*/
+  44          void stop()
+  45          {
+  46   1          sda=0;
+  47   1          delayus();
+  48   1          scl=1;                         //scl拉高时 sda突然来个高电平 就停止了IIC总线
+  49   1          delayus();
+  50   1          sda=1;                   
+  51   1          delayus();
+  52   1      }
+  53          /*---------------------------------------------------------------
+C51 COMPILER V9.57.0.0   I2CA                                                              11/07/2021 11:32:44 PAGE 2   
+
+  54                           IIC总线应答信号函数
+  55          ----------------------------------------------------------------*/
+  56          void ACK()
+  57          {
+  58   1          uchar i;
+  59   1          scl=1;
+  60   1          delayus();
+  61   1          while((sda=1)&&(i<255))         
+  62   1                  i++;                                        
+  63   1          scl=0;                                  
+  64   1          delayus();
+  65   1      }
+  66          /*---------------------------------------------------------------
+  67                           写一个字节,无返回值，需输入一个字节值
+  68          ----------------------------------------------------------------*/
+  69          void write_byte(uchar byte)
+  70          {
+  71   1          uchar i,temp;
+  72   1          temp=byte;
+  73   1          for(i=0;i<8;i++)
+  74   1          {
+  75   2              temp=temp<<1;  
+  76   2              scl=0;                  
+  77   2                      delayus();
+  78   2                      sda=CY;                 
+  79   2                      delayus();
+  80   2                      scl=1;           
+  81   2                      delayus();
+  82   2          }
+  83   1          scl=0;                  
+  84   1          delayus();
+  85   1          sda=1;                 
+  86   1          delayus();
+  87   1      }
+  88          /*---------------------------------------------------------------
+  89                           读一个字节函数，有返回值
+  90          ----------------------------------------------------------------*/
+  91          uchar read_byte()//uchar 范围=（0~256）=2^8
+  92          {
+  93   1              uchar i,j,k;
+  94   1              scl=0;
+  95   1              delayus();
+  96   1              sda=1;
+  97   1              delayus();
+  98   1              for(i=0;i<8;i++)        
+  99   1              {
+ 100   2                  delayus();
+ 101   2                  scl=1;
+ 102   2                  delayus();
+ 103   2                  if(sda==1)
+ 104   2                  {
+ 105   3                          j=1;
+ 106   3                  }
+ 107   2                  else j=0;
+ 108   2                  k=(k<< 1)|j;  
+ 109   2                  scl=0;            
+ 110   2              }
+ 111   1              delayus();
+ 112   1              return k;
+ 113   1      }
+C51 COMPILER V9.57.0.0   I2CA                                                              11/07/2021 11:32:44 PAGE 3   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION L?0018 (BEGIN)
+0000         L?0019:
+0000 120000      R     LCALL   delayus
+0003 D2B4              SETB    scl
+             ; FUNCTION delayus (BEGIN)
+                                           ; SOURCE LINE # 9
+                                           ; SOURCE LINE # 10
+                                           ; SOURCE LINE # 11
+0005 00                NOP     
+                                           ; SOURCE LINE # 12
+0006 00                NOP     
+                                           ; SOURCE LINE # 13
+0007 00                NOP     
+                                           ; SOURCE LINE # 14
+0008 00                NOP     
+                                           ; SOURCE LINE # 15
+0009 00                NOP     
+                                           ; SOURCE LINE # 16
+000A 22                RET     
+             ; FUNCTION delayus (END)
+
+             ; FUNCTION init (BEGIN)
+                                           ; SOURCE LINE # 20
+                                           ; SOURCE LINE # 21
+                                           ; SOURCE LINE # 22
+0000 D2B5              SETB    sda
+                                           ; SOURCE LINE # 23
+0002 120000      R     LCALL   delayus
+                                           ; SOURCE LINE # 24
+0005 D2B4              SETB    scl
+                                           ; SOURCE LINE # 25
+0007 020000      R     LJMP    delayus
+             ; FUNCTION init (END)
+
+             ; FUNCTION start (BEGIN)
+                                           ; SOURCE LINE # 30
+                                           ; SOURCE LINE # 31
+                                           ; SOURCE LINE # 32
+0000 D2B5              SETB    sda
+                                           ; SOURCE LINE # 33
+                                           ; SOURCE LINE # 34
+                                           ; SOURCE LINE # 35
+0002 120000      R     LCALL   L?0018
+                                           ; SOURCE LINE # 36
+0005 C2B5              CLR     sda
+                                           ; SOURCE LINE # 37
+0007 120000      R     LCALL   delayus
+                                           ; SOURCE LINE # 38
+000A C2B4              CLR     scl
+                                           ; SOURCE LINE # 39
+000C 020000      R     LJMP    delayus
+             ; FUNCTION start (END)
+
+             ; FUNCTION stop (BEGIN)
+                                           ; SOURCE LINE # 44
+                                           ; SOURCE LINE # 45
+                                           ; SOURCE LINE # 46
+0000 C2B5              CLR     sda
+                                           ; SOURCE LINE # 47
+C51 COMPILER V9.57.0.0   I2CA                                                              11/07/2021 11:32:44 PAGE 4   
+
+                                           ; SOURCE LINE # 48
+                                           ; SOURCE LINE # 49
+0002 120000      R     LCALL   L?0018
+                                           ; SOURCE LINE # 50
+0005 D2B5              SETB    sda
+                                           ; SOURCE LINE # 51
+0007 020000      R     LJMP    delayus
+             ; FUNCTION stop (END)
+
+             ; FUNCTION ACK (BEGIN)
+                                           ; SOURCE LINE # 56
+                                           ; SOURCE LINE # 57
+                                           ; SOURCE LINE # 59
+0000 D2B4              SETB    scl
+                                           ; SOURCE LINE # 60
+0002 120000      R     LCALL   delayus
+0005         ?C0005:
+                                           ; SOURCE LINE # 61
+0005 D3                SETB    C
+0006 92B5              MOV     sda,C
+0008 E500        R     MOV     A,i
+000A C3                CLR     C
+000B 94FF              SUBB    A,#0FFH
+000D 5004              JNC     ?C0006
+                                           ; SOURCE LINE # 62
+000F 0500        R     INC     i
+0011 80F2              SJMP    ?C0005
+0013         ?C0006:
+                                           ; SOURCE LINE # 63
+0013 C2B4              CLR     scl
+                                           ; SOURCE LINE # 64
+0015 020000      R     LJMP    delayus
+             ; FUNCTION ACK (END)
+
+             ; FUNCTION _write_byte (BEGIN)
+                                           ; SOURCE LINE # 69
+;---- Variable 'byte' assigned to Register 'R7' ----
+                                           ; SOURCE LINE # 70
+                                           ; SOURCE LINE # 72
+;---- Variable 'temp' assigned to Register 'R7' ----
+                                           ; SOURCE LINE # 73
+;---- Variable 'i' assigned to Register 'R6' ----
+0000 E4                CLR     A
+0001 FE                MOV     R6,A
+0002         ?C0008:
+                                           ; SOURCE LINE # 74
+                                           ; SOURCE LINE # 75
+0002 EF                MOV     A,R7
+0003 25E0              ADD     A,ACC
+0005 FF                MOV     R7,A
+                                           ; SOURCE LINE # 76
+0006 C2B4              CLR     scl
+                                           ; SOURCE LINE # 77
+0008 120000      R     LCALL   delayus
+                                           ; SOURCE LINE # 78
+000B 92B5              MOV     sda,C
+                                           ; SOURCE LINE # 79
+                                           ; SOURCE LINE # 80
+                                           ; SOURCE LINE # 81
+000D 120000      R     LCALL   L?0019
+                                           ; SOURCE LINE # 82
+0010 0E                INC     R6
+C51 COMPILER V9.57.0.0   I2CA                                                              11/07/2021 11:32:44 PAGE 5   
+
+0011 BE08EE            CJNE    R6,#08H,?C0008
+0014         ?C0009:
+                                           ; SOURCE LINE # 83
+0014 C2B4              CLR     scl
+                                           ; SOURCE LINE # 84
+0016 120000      R     LCALL   delayus
+                                           ; SOURCE LINE # 85
+0019 D2B5              SETB    sda
+                                           ; SOURCE LINE # 86
+001B 020000      R     LJMP    delayus
+             ; FUNCTION _write_byte (END)
+
+             ; FUNCTION read_byte (BEGIN)
+                                           ; SOURCE LINE # 91
+;---- Variable 'k' assigned to Register 'R7' ----
+;---- Variable 'j' assigned to Register 'R6' ----
+                                           ; SOURCE LINE # 92
+                                           ; SOURCE LINE # 94
+0000 C2B4              CLR     scl
+                                           ; SOURCE LINE # 95
+0002 120000      R     LCALL   delayus
+                                           ; SOURCE LINE # 96
+0005 D2B5              SETB    sda
+                                           ; SOURCE LINE # 97
+0007 120000      R     LCALL   delayus
+                                           ; SOURCE LINE # 98
+;---- Variable 'i' assigned to Register 'R5' ----
+000A E4                CLR     A
+000B FD                MOV     R5,A
+000C         ?C0012:
+                                           ; SOURCE LINE # 99
+                                           ; SOURCE LINE # 100
+                                           ; SOURCE LINE # 101
+                                           ; SOURCE LINE # 102
+000C 120000      R     LCALL   L?0019
+                                           ; SOURCE LINE # 103
+000F 30B504            JNB     sda,?C0015
+                                           ; SOURCE LINE # 104
+                                           ; SOURCE LINE # 105
+0012 7E01              MOV     R6,#01H
+                                           ; SOURCE LINE # 106
+0014 8002              SJMP    ?C0016
+0016         ?C0015:
+                                           ; SOURCE LINE # 107
+0016 E4                CLR     A
+0017 FE                MOV     R6,A
+0018         ?C0016:
+                                           ; SOURCE LINE # 108
+0018 EF                MOV     A,R7
+0019 25E0              ADD     A,ACC
+001B 4E                ORL     A,R6
+001C FF                MOV     R7,A
+                                           ; SOURCE LINE # 109
+001D C2B4              CLR     scl
+                                           ; SOURCE LINE # 110
+001F 0D                INC     R5
+0020 BD08E9            CJNE    R5,#08H,?C0012
+0023         ?C0013:
+                                           ; SOURCE LINE # 111
+0023 020000      R     LJMP    delayus
+             ; FUNCTION read_byte (END)
+
+C51 COMPILER V9.57.0.0   I2CA                                                              11/07/2021 11:32:44 PAGE 6   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+P0 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0080H  1
+P1 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0090H  1
+P2 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A0H  1
+P3 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B0H  1
+T0 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B4H  1
+AC . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D6H  1
+T1 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B5H  1
+T2 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0090H  1
+EA . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AFH  1
+IE . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A8H  1
+uchar. . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+EXF2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CEH  1
+RD . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B7H  1
+ES . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ACH  1
+IP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B8H  1
+RI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0098H  1
+INT0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B2H  1
+CY . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D7H  1
+TI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0099H  1
+INT1 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B3H  1
+RCAP2H . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CBH  1
+PS . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BCH  1
+SP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0081H  1
+T2EX . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0091H  1
+OV . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D2H  1
+RCAP2L . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CAH  1
+C_T2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C9H  1
+WR . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B6H  1
+RCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CDH  1
+TCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CCH  1
+start. . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+SBUF . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0099H  1
+PCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0087H  1
+SCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0098H  1
+read_byte. . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  i. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0005H  1
+  j. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0006H  1
+  k. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+TMOD . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0089H  1
+TCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0088H  1
+init . . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+sda. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B5H  1
+IE0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0089H  1
+IE1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008BH  1
+B. . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F0H  1
+uint . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+scl. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B4H  1
+CP_RL2 . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C8H  1
+_write_byte. . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  byte . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+  i. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0006H  1
+  temp . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+ACC. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00E0H  1
+stop . . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+ET0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A9H  1
+ET1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ABH  1
+TF0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008DH  1
+C51 COMPILER V9.57.0.0   I2CA                                                              11/07/2021 11:32:44 PAGE 7   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+ET2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ADH  1
+TF1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008FH  1
+TF2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CFH  1
+RB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009AH  1
+TH0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008CH  1
+EX0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A8H  1
+IT0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0088H  1
+TH1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008DH  1
+TB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009BH  1
+EX1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AAH  1
+IT1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008AH  1
+TH2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CDH  1
+ACK. . . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  i. . . . . . . . . . . . . . . . . .  AUTO     DATA   U_CHAR   0000H  1
+P. . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D0H  1
+SM0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009FH  1
+TL0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008AH  1
+SM1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009EH  1
+TL1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008BH  1
+SM2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009DH  1
+TL2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CCH  1
+PT0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B9H  1
+PT1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BBH  1
+RS0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D3H  1
+PT2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BDH  1
+TR0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008CH  1
+RS1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D4H  1
+TR1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008EH  1
+TR2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CAH  1
+PX0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B8H  1
+PX1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BAH  1
+DPH. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0083H  1
+DPL. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0082H  1
+EXEN2. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CBH  1
+REN. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009CH  1
+T2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C8H  1
+RXD. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B0H  1
+TXD. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B1H  1
+F0 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D5H  1
+PSW. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D0H  1
+delayus. . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0005H  -----
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    138    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

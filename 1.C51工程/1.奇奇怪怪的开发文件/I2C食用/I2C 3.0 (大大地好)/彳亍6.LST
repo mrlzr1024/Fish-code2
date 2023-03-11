@@ -1,0 +1,167 @@
+C51 COMPILER V9.57.0.0   ____6                                                             01/28/2022 15:21:43 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE ____6
+OBJECT MODULE PLACED IN ��ء6.OBJ
+COMPILER INVOKED BY: D:\keil5B\C51\BIN\C51.EXE ��ء6.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include <reg52.h>
+   2          #include "intrins.h"
+   3          #define uchar unsigned char
+   4          #define uint unsigned int        
+   5          sbit SCL = P2^0;
+   6          sbit SDA = P2^1;
+   7          char ADDR = 0x7e;   
+   8          //***************************** 延时 y  ms ***********************************************
+   9          void delay1(int y)   // 
+  10          {
+  11   1               ;
+  12   1              while(y--)
+  13   1              {
+  14   2              unsigned char a,b,c;
+  15   2              for(c=1;c>0;c--)
+  16   2              for(b=142;b>0;b--)
+  17   2              for(a=2;a>0;a--);
+  18   2              }
+  19   1      }
+  20          //******************************** IIC 串口开始 ********************************************
+  21          void IIC_start(void)
+  22          {
+  23   1              SDA=1;
+  24   1              _nop_();
+  25   1              SCL=1;
+  26   1              _nop_();
+  27   1              _nop_();
+  28   1              _nop_();
+  29   1              _nop_();
+  30   1              _nop_();
+  31   1              SDA=0;
+  32   1              _nop_();
+  33   1              _nop_();
+  34   1              _nop_();
+  35   1              _nop_();
+  36   1              _nop_();
+  37   1              SCL=0;
+  38   1      }
+  39          //********************************** IIC 串口写1个字节 ******************************************
+  40          void IIC_writeByte(char temp)
+  41          {
+  42   1              char i;
+  43   1              for(i=0;i<8;i++)
+  44   1              {
+  45   2                      SDA=(bit)(temp & 0x80) ;   // 根据规定1602的数据最高位必须为  1  
+  46   2                      temp <<=1;
+  47   2                      _nop_();
+  48   2                      _nop_();
+  49   2                      SCL=1;
+  50   2                      _nop_();
+  51   2                      _nop_();
+  52   2                      _nop_();
+  53   2                      _nop_();
+  54   2                      _nop_();
+  55   2                      SCL=0;
+C51 COMPILER V9.57.0.0   ____6                                                             01/28/2022 15:21:43 PAGE 2   
+
+  56   2              }
+  57   1              _nop_(); 
+  58   1              _nop_();
+  59   1              _nop_();
+  60   1              _nop_();
+  61   1              SDA=1;
+  62   1              _nop_(); 
+  63   1              _nop_(); 
+  64   1              _nop_();
+  65   1              _nop_();
+  66   1              SCL=1; 
+  67   1              _nop_();
+  68   1              _nop_();
+  69   1              _nop_();
+  70   1              while(SDA);
+  71   1              _nop_();
+  72   1              SCL=0;
+  73   1      }
+  74          //******************************** 1602写命令 ********************************************
+  75          void LCD_write_command(char comm)
+  76          {
+  77   1              char tmp;
+  78   1              IIC_start();          // 串口开始
+  79   1              IIC_writeByte(ADDR);  // 先选PCF 8574T 的地址  （应该是相当于选中的意思吧）
+  80   1              
+  81   1              tmp = comm & 0xF0;    // 与0xf0 应该是取高四位的意思吧
+  82   1              tmp |= 0x0C;         //保留高4位为指令的高四位，低四位为   RS = 0, RW = 0, EN = 1 
+             -  0x[]c
+  83   1              IIC_writeByte(tmp);  //从串口送出
+  84   1              delay1(20);
+  85   1              tmp &= 0xFB;        //Make EN = 0|0x[]8
+  86   1              IIC_writeByte(tmp); 
+  87   1              
+  88   1              tmp = (comm & 0x0F) << 4 ;  //将指令的低四位 送到高位置保存
+  89   1              tmp |= 0x0C;        //RS = 0, RW = 0, EN = 1
+  90   1              IIC_writeByte(tmp);
+  91   1              delay1(20);
+  92   1              tmp &= 0xFB; // Make EN = 0
+  93   1              IIC_writeByte(tmp);
+  94   1              
+  95   1      }
+  96          //******************************** 1602写数据 ********************************************
+  97          void LCD_write_data(char data1)
+  98          {
+  99   1              char tmp;
+ 100   1              IIC_start();
+ 101   1              IIC_writeByte(ADDR);   // 先选PCF 8574T 的地址  （应该是相当于选中的意思吧）
+ 102   1              
+ 103   1              tmp = data1 & 0xF0;
+ 104   1              tmp |= 0x0D; //RS = 0, RW = 0, EN = 1
+ 105   1              IIC_writeByte(tmp);
+ 106   1              delay1(20);
+ 107   1              tmp &= 0xFB; //Make EN = 0
+ 108   1              IIC_writeByte(tmp); 
+ 109   1              
+ 110   1              tmp = (data1 & 0x0F) << 4 ;
+ 111   1              tmp |= 0x0D; //RS = 0, RW = 0, EN = 1
+ 112   1              IIC_writeByte(tmp);
+ 113   1              delay1(20);
+ 114   1              tmp &= 0xFB ; // Make EN = 0
+ 115   1              IIC_writeByte(tmp);
+ 116   1      }
+C51 COMPILER V9.57.0.0   ____6                                                             01/28/2022 15:21:43 PAGE 3   
+
+ 117          //******************************** 1602初始化 ********************************************
+ 118          void Init_Lcd(void)
+ 119          {
+ 120   1              LCD_write_command(0x33); //将8位总线转为4位总线
+ 121   1              delay1(50) ;
+ 122   1              LCD_write_command(0x32); //
+ 123   1              delay1(50) ; 
+ 124   1              LCD_write_command(0x28); // 4位数据线，显示2行，5*7点阵字符  ！如果是0x38  则为
+             -8位数据线，显示2行，5*7点阵字符
+ 125   1              delay1(50) ; 
+ 126   1              LCD_write_command(0x0C); // 开显示，关闭光标，不闪烁
+ 127   1              delay1(50) ;  
+ 128   1              LCD_write_command(0x06); // 设定输入方式，增量不位移
+ 129   1              delay1(50) ; 
+ 130   1              LCD_write_command(0x01); // 清屏
+ 131   1              delay1(50) ;
+ 132   1      }
+ 133          void main()
+ 134          {
+ 135   1        Init_Lcd();
+ 136   1        LCD_write_data(0xee);
+ 137   1        while(1);
+ 138   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    280    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      1       3
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

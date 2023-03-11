@@ -1,0 +1,120 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        08/27/2021  17:19:20  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE แÜุก10B.obj TO แÜุก10B RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  แÜุก10B.obj (แ_ุก10B)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  แÜุก10B (แ_ุก10B)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0004H     UNIT         ?DT?แ_ุก10B
+            IDATA   000CH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     000FH     UNIT         ?PR?MAIN?แ_ุก10B
+            CODE    080FH     000DH     UNIT         ?PR?DELAY20?แ_ุก10B
+            CODE    081CH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0828H     0009H     UNIT         ?PR?DELAY1?แ_ุก10B
+            CODE    0831H     0003H     UNIT         ?PR?INIT?แ_ุก10B
+
+
+
+OVERLAY MAP OF MODULE:   แÜุก10B (แ_ุก10B)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?แ_ุก10B
+
+?PR?MAIN?แ_ุก10B
+  +--> ?PR?INIT?แ_ุก10B
+  +--> ?PR?DELAY1?แ_ุก10B
+  +--> ?PR?DELAY20?แ_ุก10B
+
+
+
+SYMBOL TABLE OF MODULE:  แÜุก10B (แ_ุก10B)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        แ_ุก10B
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/27/2021  17:19:20  PAGE 2
+
+
+  C:0800H         PUBLIC        main
+  B:0090H.0       PUBLIC        Ao
+  C:0831H         PUBLIC        init
+  C:0828H         PUBLIC        delay1
+  D:0008H         PUBLIC        i
+  C:080FH         PUBLIC        delay20
+  -------         PROC          INIT
+  C:0831H         LINE#         4
+  C:0831H         LINE#         5
+  C:0831H         LINE#         6
+  C:0833H         LINE#         7
+  -------         ENDPROC       INIT
+  -------         PROC          DELAY1
+  -------         DO            
+  D:0006H         SYMBOL        a
+  D:0007H         SYMBOL        b
+  -------         ENDDO         
+  C:0828H         LINE#         8
+  C:0828H         LINE#         9
+  C:0828H         LINE#         11
+  C:082AH         LINE#         12
+  C:0830H         LINE#         13
+  -------         ENDPROC       DELAY1
+  -------         PROC          DELAY20
+  -------         DO            
+  D:0005H         SYMBOL        a
+  D:0006H         SYMBOL        b
+  D:0007H         SYMBOL        c
+  -------         ENDDO         
+  C:080FH         LINE#         15
+  C:080FH         LINE#         16
+  C:080FH         LINE#         18
+  C:0811H         LINE#         19
+  C:0813H         LINE#         20
+  C:081BH         LINE#         21
+  -------         ENDPROC       DELAY20
+  -------         PROC          MAIN
+  C:0800H         LINE#         23
+  C:0800H         LINE#         24
+  C:0800H         LINE#         25
+  C:0803H         LINE#         26
+  C:0803H         LINE#         27
+  C:0803H         LINE#         28
+  C:0805H         LINE#         29
+  C:0808H         LINE#         30
+  C:080AH         LINE#         31
+  C:080DH         LINE#         33
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        แ_ุก10B
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0028H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=13.0 xdata=0 code=55
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

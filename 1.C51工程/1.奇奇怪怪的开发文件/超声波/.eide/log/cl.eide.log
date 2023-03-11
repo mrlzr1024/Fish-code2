@@ -1,0 +1,58 @@
+
+[2021/10/29 8:48:22 GMT+0800] : launched
+
+
+
+[2021/10/29 8:49:12 GMT+0800] : launched
+
+
+
+[2021/10/29 9:0:58 GMT+0800] : launched
+
+
+
+[2021/10/29 9:2:17 GMT+0800] : launched
+
+
+
+[2021/10/29 9:5:17 GMT+0800] : launched
+[Hidden] : Command failed: null\ARMCLANG\bin\armclang.exe --target=arm-arm-none-eabi -E -dM - <nul
+ϵͳ�Ҳ���ָ����·����
+
+Error: Command failed: null\ARMCLANG\bin\armclang.exe --target=arm-arm-none-eabi -E -dM - <nul
+ϵͳ�Ҳ���ָ����·����
+
+	at checkExecSyncError (child_process.js:625:11)
+	at Object.execSync (child_process.js:661:15)
+	at Object.execSync (electron/js2c/asar_bundle.js:5:12288)
+	at C.getMacroList (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.13.1\dist\extension.js:1:128263)
+	at new C (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.13.1\dist\extension.js:1:128107)
+	at C.newInstance (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.13.1\dist\extension.js:1:128560)
+	at EventEmitter.<anonymous> (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.13.1\dist\extension.js:1:117882)
+	at EventEmitter.emit (events.js:327:22)
+	at c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.13.1\dist\extension.js:1:17278
+	at a.fire (c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:66:1712)
+	at t.$acceptConfigurationChanged (c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:98:41988)
+	at c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:98:41242
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[Hidden] : Command failed: null\ARMCLANG\bin\armclang.exe --target=arm-arm-none-eabi -E -dM - <nul
+ϵͳ�Ҳ���ָ����·����
+
+Error: Command failed: null\ARMCLANG\bin\armclang.exe --target=arm-arm-none-eabi -E -dM - <nul
+ϵͳ�Ҳ���ָ����·����
+
+	at checkExecSyncError (child_process.js:625:11)
+	at Object.execSync (child_process.js:661:15)
+	at Object.execSync (electron/js2c/asar_bundle.js:5:12288)
+	at C.getMacroList (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.13.1\dist\extension.js:1:128263)
+	at new C (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.13.1\dist\extension.js:1:128107)
+	at C.newInstance (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.13.1\dist\extension.js:1:128560)
+	at EventEmitter.<anonymous> (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.13.1\dist\extension.js:1:117882)
+	at EventEmitter.emit (events.js:327:22)
+	at c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.13.1\dist\extension.js:1:17278
+	at a.fire (c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:66:1712)
+	at t.$acceptConfigurationChanged (c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:98:41988)
+	at c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:98:41242
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+

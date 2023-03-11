@@ -1,0 +1,196 @@
+C51 COMPILER V9.57.0.0   LCD5510_V1                                                        11/16/2021 14:15:52 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE LCD5510_V1
+OBJECT MODULE PLACED IN LCD5510_V1.OBJ
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.EXE LCD5510_V1.C OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          
+   2          /*--------------------------------------------------------------*/
+   3          //写入一个字节(数据或指令)
+   4          //wbyte:  待写入的数据
+   5          //dat_cmd:  1-数据, 0-指令
+   6          void LCD_write_byte(unsigned char wbyte, unsigned char dat_cmd)
+   7          {
+   8   1        unsigned char i;
+   9   1        
+  10   1        LCD_CS = 0;     //使能
+*** ERROR C202 IN LINE 10 OF LCD5510_V1.C: 'LCD_CS': undefined identifier
+  11   1        LCD_DC = dat_cmd; //1-数据  //0-指令
+*** ERROR C202 IN LINE 11 OF LCD5510_V1.C: 'LCD_DC': undefined identifier
+  12   1      
+  13   1        for(i = 8; i; i--)  //8位数据, 先高后低
+  14   1        {
+  15   2          if(wbyte & 0x80) {LCD_DIN = 1;}
+*** ERROR C202 IN LINE 15 OF LCD5510_V1.C: 'LCD_DIN': undefined identifier
+  16   2          else       {LCD_DIN = 0;}
+*** ERROR C202 IN LINE 16 OF LCD5510_V1.C: 'LCD_DIN': undefined identifier
+  17   2          
+  18   2          LCD_CLK = 0;
+*** ERROR C202 IN LINE 18 OF LCD5510_V1.C: 'LCD_CLK': undefined identifier
+  19   2          wbyte <<= 1;  //移位(延时)
+  20   2          LCD_CLK = 1;  //上升沿写入
+*** ERROR C202 IN LINE 20 OF LCD5510_V1.C: 'LCD_CLK': undefined identifier
+  21   2        }
+  22   1        
+  23   1        LCD_CS = 1;     //禁止
+*** ERROR C202 IN LINE 23 OF LCD5510_V1.C: 'LCD_CS': undefined identifier
+  24   1      }
+  25          
+  26          
+  27          /*--------------------------------------------------------------*/
+  28          //写入n个字节(数据)(ROM)
+  29          //*wbyte: 待写入的数据指针
+  30          //num:    待写入的数据个数
+  31          /*void LCD_write_nbyte(unsigned char code *wbyte, unsigned char num)
+  32          {
+  33            unsigned char i, j;
+  34            unsigned char temp;
+  35          
+  36            LCD_CS = 0;     //使能
+  37            LCD_DC = 1;     //数据
+  38          
+  39            for(j = 0; j < num; j++)//num个数据
+  40            {
+  41              temp = wbyte[j];
+  42              for(i = 8; i; i--)  //8位数据, 先高后低
+  43              {
+  44                if(temp & 0x80) {LCD_DIN = 1;}
+  45                else      {LCD_DIN = 0;}
+  46              
+  47                LCD_CLK = 0;
+  48                temp <<= 1;   //移位(延时)
+C51 COMPILER V9.57.0.0   LCD5510_V1                                                        11/16/2021 14:15:52 PAGE 2   
+
+  49                LCD_CLK = 1;  //上升沿写入
+  50              } 
+  51            }
+  52            
+  53            LCD_CS = 1;     //禁止
+  54          }
+  55          
+  56          
+  57          /*--------------------------------------------------------------*/
+  58          //显示清屏(清DDRAM)
+  59          void LCD_clr_scr(void)
+  60          {
+  61   1        unsigned int i;
+  62   1        
+  63   1        LCD_write_cmd(X_Col_Addr);
+*** ERROR C202 IN LINE 63 OF LCD5510_V1.C: 'X_Col_Addr': undefined identifier
+  64   1        LCD_write_cmd(Y_Page_Addr);
+*** ERROR C202 IN LINE 64 OF LCD5510_V1.C: 'Y_Page_Addr': undefined identifier
+  65   1        
+  66   1        for(i = 504; i; i--) LCD_write_dat(0x00);
+  67   1      }
+  68          
+  69          
+  70          /*--------------------------------------------------------------*/
+  71          //显示清行
+  72          //num:  0 - 5
+  73          void LCD_clr_row(unsigned char num)
+  74          {
+  75   1        unsigned char i;
+  76   1        
+  77   1        LCD_pos_byte(0, num);
+  78   1        for(i = 84; i; i--) LCD_write_dat(0x00);
+  79   1      }
+  80          
+  81          
+  82          /*--------------------------------------------------------------*/
+  83          //液晶字节定位(1*1)
+  84          //液晶规划:
+  85          //x: 0 - 83
+  86          //y: 0 - 5
+  87          void LCD_pos_byte(unsigned char x, unsigned char y)
+  88          {
+  89   1        x |= X_Col_Addr;  
+  90   1        y |= Y_Page_Addr; 
+  91   1        LCD_write_cmd(x); //列地址
+  92   1        LCD_write_cmd(y); //页地址
+  93   1      }
+  94          
+  95          
+  96          /*--------------------------------------------------------------*/
+  97          //液晶字符输出(8*16字体)
+  98          //x: 0 - 9
+  99          //y: 0 - 2
+ 100          void LCD_printc(unsigned char x, unsigned char y, unsigned char c_dat)
+ 101          {
+ 102   1        unsigned char i, j;
+ 103   1      
+ 104   1        c_dat -= 32;
+ 105   1        x <<= 3;    //8
+ 106   1        y <<= 1;    //16
+ 107   1        for(j = 0; j < 2; j++)
+ 108   1        {
+C51 COMPILER V9.57.0.0   LCD5510_V1                                                        11/16/2021 14:15:52 PAGE 3   
+
+ 109   2          LCD_pos_byte(x, (y + j));
+ 110   2          for(i = 0; i < 8; i++) 
+ 111   2          LCD_write_dat(Font_code[c_dat][8 * j + i]);   
+ 112   2        }
+ 113   1      }
+ 114          
+ 115          
+ 116          /*--------------------------------------------------------------*/
+ 117          //液晶字符串输出(8*16字体)
+ 118          //x: 0 - 9
+ 119          //y: 0 - 2
+ 120          void LCD_prints(unsigned char x, unsigned char y, unsigned char code *s_dat)
+ 121          {
+ 122   1        while(*s_dat && x < 10) 
+ 123   1        {LCD_printc(x++, y, *s_dat); s_dat++;}
+ 124   1      }
+ 125          
+ 126          
+ 127          /*--------------------------------------------------------------*/
+ 128          //复位LCD5510
+ 129          /*void LCD_reset_5510(void)
+ 130          {
+ 131            LCD_clr_scr();        //清全屏
+ 132            
+ 133            LCD_write_cmd(0x25);    //省电模式, 水平寻址, 扩展指令
+ 134            LCD_write_cmd(0x04);    //VLCD温度系数0
+ 135            LCD_write_cmd(0x10);    //设置偏置系统(BSx)
+ 136            LCD_write_cmd(0xc0);    //设置电压VLCD = 3.06 + 0.06*Vop;
+ 137            
+ 138            LCD_write_cmd(0x24);    //省电模式, 水平寻址, 常规指令
+ 139            LCD_write_cmd(0x08);    //显示空白
+ 140            LCD_write_cmd(Y_Page_Addr); //起始页地址0
+ 141            LCD_write_cmd(X_Col_Addr);  //起始列地址0
+ 142          }
+ 143          
+ 144          
+ 145          /*--------------------------------------------------------------*/
+ 146          //初始化LCD5510
+ 147          void LCD5510_Init(void)
+ 148          {
+ 149   1        LCD_reset_hard;       //硬件复位
+ 150   1      //  LCD_reset_soft;       //软件复位
+ 151   1      
+ 152   1        LCD_write_cmd(0x21);    //工作模式, 水平寻址, 扩展指令
+ 153   1        LCD_write_cmd(0x06);    //VLCD温度系数2
+ 154   1        LCD_write_cmd(0x13);    //设置偏置系统(BSx) 1:48
+ 155   1        LCD_write_cmd(0xc8);    //设置电压VLCD = 3.06 + 0.06*Vop, 对比度调整
+ 156   1      
+ 157   1        LCD_write_cmd(0x20);    //工作模式, 水平寻址, 常规指令
+ 158   1        LCD_write_cmd(0x0c);    //普通模式
+ 159   1        LCD_write_cmd(Y_Page_Addr); //起始页地址0
+ 160   1        LCD_write_cmd(X_Col_Addr);  //起始列地址0
+ 161   1        LCD_clr_scr();        //清全屏
+ 162   1      }
+ 163          
+ 164          /*--------------------------------------------------------------*/
+ 165            
+ 166          
+ 167          
+ 168          
+ 169          
+ 170           
+C51 COMPILER V9.57.0.0   LCD5510_V1                                                        11/16/2021 14:15:52 PAGE 4   
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  9 ERROR(S)

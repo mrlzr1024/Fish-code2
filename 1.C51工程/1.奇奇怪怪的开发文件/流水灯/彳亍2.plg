@@ -1,0 +1,20 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\ÁºÖ¥Èğ\Desktop\ÆæÆæ¹Ö¹ÖµÄ¿ª·¢ÎÄ¼ş\Á÷Ë®µÆ\áÜØ¡2.uvproj
+Project File Date:  07/06/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+Program Size: data=9.0 xdata=0 code=48
+creating hex file from "áÜØ¡2"...
+"áÜØ¡2" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling áÜØ¡2.c...
+linking...
+Program Size: data=9.0 xdata=0 code=66
+creating hex file from "áÜØ¡2"...
+"áÜØ¡2" - 0 Error(s), 0 Warning(s).

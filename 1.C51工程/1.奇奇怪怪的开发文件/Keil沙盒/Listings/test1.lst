@@ -1,0 +1,43 @@
+C51 COMPILER V9.57.0.0   TEST1                                                             10/16/2021 21:22:30 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE TEST1
+OBJECT MODULE PLACED IN .\Objects\test1.obj
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.EXE test1.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\test1
+                    -.lst) TABS(2) OBJECT(.\Objects\test1.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          sbit RS=P2^7;
+   3          sbit RW=P2^6;
+   4          sbit EN=P2^5;
+   5          void delay(void)   //?? -0.000000000001us
+   6          {
+   7   1          unsigned char a,b;
+   8   1          for(b=15;b>0;b--)
+   9   1              for(a=152;a>0;a--);
+  10   1      }
+  11          void init(){
+  12   1        RS=0;
+  13   1        WR=1;
+  14   1        EN=1;
+  15   1      }
+  16          
+  17          void main(void){
+  18   1        
+  19   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     17    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

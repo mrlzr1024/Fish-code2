@@ -1,0 +1,293 @@
+C51 COMPILER V9.00   TEST6                                                                 07/29/2021 16:27:36 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE TEST6
+OBJECT MODULE PLACED IN test6.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE test6.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <reg52.h>
+   2          #include "intrins.h"
+   3          #define uchar unsigned char
+   4          #define uint unsigned int 
+   5          
+   6          
+   7          //#define                        L1                0x80            // µÚÒ»ÐÐÐ´ÈëµØÖ·
+   8          //#define                        L2                0xc0            // µÚ¶þÐÐÐ´ÈëµØÖ·
+   9                  
+  10          sbit SCL = P2^0;
+  11          sbit SDA = P2^1;
+  12          
+  13          
+  14          //char ADDR = 0x4E;    // PCF8574  T  Ä£¿éµÄµØÖ·Âë
+  15          char ADDR = 0x7e;    // PCF8574   AT  Ä£¿éµÄµØÖ·Âë
+  16          
+  17          
+  18          //***************************** ÑÓÊ± y  ms ***********************************************
+  19          
+  20          
+  21          void delay1(int y)   // 
+  22          {
+  23   1               ;
+  24   1              while(y--)
+  25   1              {
+  26   2              unsigned char a,b,c;
+  27   2              for(c=1;c>0;c--)
+  28   2              for(b=142;b>0;b--)
+  29   2              for(a=2;a>0;a--);
+  30   2              }
+  31   1      }
+  32          
+  33          
+  34          
+  35          
+  36          
+  37          
+  38          //******************************** IIC ´®¿Ú¿ªÊ¼ ********************************************
+  39          
+  40          
+  41          void IIC_start(void)
+  42          {
+  43   1              SDA=1;
+  44   1              _nop_();
+  45   1              SCL=1;
+  46   1              _nop_();
+  47   1              _nop_();
+  48   1              _nop_();
+  49   1              _nop_();
+  50   1              _nop_();
+  51   1              SDA=0;
+  52   1              _nop_();
+  53   1              _nop_();
+  54   1              _nop_();
+  55   1              _nop_();
+C51 COMPILER V9.00   TEST6                                                                 07/29/2021 16:27:36 PAGE 2   
+
+  56   1              _nop_();
+  57   1              SCL=0;
+  58   1      }
+  59          
+  60          
+  61          
+  62          
+  63          //********************************** IIC ´®¿ÚÐ´1¸ö×Ö½Ú ******************************************
+  64          
+  65          
+  66          void IIC_writeByte(char temp)
+  67          {
+  68   1              char i;
+  69   1              for(i=0;i<8;i++)
+  70   1              {
+  71   2                      SDA=(bit)(temp & 0x80) ;   // ¸ù¾Ý¹æ¶¨1602µÄÊý¾Ý×î¸ßÎ»±ØÐëÎª  1  
+  72   2                      temp <<=1;
+  73   2                      _nop_();
+  74   2                      _nop_();
+  75   2                      SCL=1;
+  76   2                      _nop_();
+  77   2                      _nop_();
+  78   2                      _nop_();
+  79   2                      _nop_();
+  80   2                      _nop_();
+  81   2                      SCL=0;
+  82   2              }
+  83   1              _nop_(); 
+  84   1              _nop_();
+  85   1              _nop_();
+  86   1              _nop_();
+  87   1              SDA=1;
+  88   1              _nop_(); 
+  89   1              _nop_(); 
+  90   1              _nop_();
+  91   1              _nop_();
+  92   1              SCL=1; 
+  93   1              _nop_();
+  94   1              _nop_();
+  95   1              _nop_();
+  96   1              while(SDA);
+  97   1              _nop_();
+  98   1              SCL=0;
+  99   1      }
+ 100          
+ 101          
+ 102          
+ 103          
+ 104          //******************************** 1602Ð´ÃüÁî ********************************************
+ 105          
+ 106          
+ 107          void LCD_write_command(char comm)
+ 108          {
+ 109   1              char tmp;
+ 110   1              IIC_start();          // ´®¿Ú¿ªÊ¼
+ 111   1              IIC_writeByte(ADDR);  // ÏÈÑ¡PCF 8574T µÄµØÖ·  £¨Ó¦¸ÃÊÇÏàµ±ÓÚÑ¡ÖÐµÄÒâË¼°É£©
+ 112   1              
+ 113   1              tmp = comm & 0xF0;    // Óë0xf0 Ó¦¸ÃÊÇÈ¡µÚËÄÎ»µÄÒâË¼°É
+ 114   1              tmp |= 0x0C;         //±£Áô¸ß4Î»ÎªÖ¸ÁîµÄ¸ßËÄÎ»£¬µÍËÄÎ»Îª   RS = 0, RW = 0, EN = 1  
+ 115   1              IIC_writeByte(tmp);  //´Ó´®¿ÚËÍ³ö
+ 116   1              delay1(20);
+ 117   1              tmp &= 0xFB;        //Make EN = 0
+C51 COMPILER V9.00   TEST6                                                                 07/29/2021 16:27:36 PAGE 3   
+
+ 118   1              IIC_writeByte(tmp); 
+ 119   1              
+ 120   1              tmp = (comm & 0x0F) << 4 ;  //½«Ö¸ÁîµÄµÍËÄÎ» ËÍµ½¸ßÎ»ÖÃ±£´æ
+ 121   1              tmp |= 0x0C;        //RS = 0, RW = 0, EN = 1
+ 122   1              IIC_writeByte(tmp);
+ 123   1              delay1(20);
+ 124   1              tmp &= 0xFB; // Make EN = 0
+ 125   1              IIC_writeByte(tmp);
+ 126   1              
+ 127   1      }
+ 128          //******************************** 1602Ð´Êý¾Ý ********************************************
+ 129          
+ 130          
+ 131          void LCD_write_data(char data1)
+ 132          {
+ 133   1              char tmp;
+ 134   1              IIC_start();
+ 135   1              IIC_writeByte(ADDR);   // ÏÈÑ¡PCF 8574T µÄµØÖ·  £¨Ó¦¸ÃÊÇÏàµ±ÓÚÑ¡ÖÐµÄÒâË¼°É£©
+ 136   1              
+ 137   1              tmp = data1 & 0xF0;
+ 138   1              tmp |= 0x0D; //RS = 0, RW = 0, EN = 1
+ 139   1              IIC_writeByte(tmp);
+ 140   1              delay1(20);
+ 141   1              tmp &= 0xFB; //Make EN = 0
+ 142   1              IIC_writeByte(tmp); 
+ 143   1              
+ 144   1              tmp = (data1 & 0x0F) << 4 ;
+ 145   1              tmp |= 0x0D; //RS = 0, RW = 0, EN = 1
+ 146   1              IIC_writeByte(tmp);
+ 147   1              delay1(20);
+ 148   1              tmp &= 0xFB ; // Make EN = 0
+ 149   1              IIC_writeByte(tmp);
+ 150   1      }
+ 151          
+ 152          
+ 153          //******************************** 1602³õÊ¼»¯ ********************************************
+ 154          
+ 155          
+ 156          void Init_Lcd(void)
+ 157          {
+ 158   1              LCD_write_command(0x33); //½«8Î»×ÜÏß×ªÎª4Î»×ÜÏß
+ 159   1              delay1(50) ;
+ 160   1              LCD_write_command(0x32); //
+ 161   1              delay1(50) ; 
+ 162   1              LCD_write_command(0x28); // 4Î»Êý¾ÝÏß£¬ÏÔÊ¾2ÐÐ£¬5*7µãÕó×Ö·û  £¡Èç¹ûÊÇ0x38  ÔòÎª8Î»Êý¾ÝÏß£¬ÏÔÊ¾2ÐÐ£
+             -¬5*7µãÕó×Ö·û
+ 163   1              delay1(50) ; 
+ 164   1              LCD_write_command(0x0C); // ¿ªÏÔÊ¾£¬¹Ø±Õ¹â±ê£¬²»ÉÁË¸
+ 165   1              delay1(50) ;  
+ 166   1              LCD_write_command(0x06); // Éè¶¨ÊäÈë·½Ê½£¬ÔöÁ¿²»Î»ÒÆ
+ 167   1              delay1(50) ; 
+ 168   1              LCD_write_command(0x01); // ÇåÆÁ
+ 169   1              delay1(50) ;
+ 170   1      }
+ 171          
+ 172          
+ 173          
+ 174          
+ 175          
+ 176          
+ 177          
+ 178          
+C51 COMPILER V9.00   TEST6                                                                 07/29/2021 16:27:36 PAGE 4   
+
+ 179          //*************************************** ÔÚÖ¸¶¨Î»ÖÃÏÔÊ¾×Ö·û´® *************************************
+ 180          
+ 181          
+ 182          void Write_LCD(int x, int y, char *str)
+ 183          {
+ 184   1              char addr;
+ 185   1              if( x < 0)
+ 186   1              {
+ 187   2                      x = 0;
+ 188   2              }
+ 189   1              if(x > 15)
+ 190   1              {
+ 191   2                      x = 15;
+ 192   2              }
+ 193   1              if(y<0)
+ 194   1              {
+ 195   2                      y = 0;
+ 196   2              }
+ 197   1              if(y > 1)
+ 198   1              {
+ 199   2                      y = 1;
+ 200   2              }
+ 201   1              
+ 202   1              addr = 0x80 + 0x40 * y + x;   // Move cursor  ÒÆ¶¯¹â±ê
+ 203   1              LCD_write_command(addr);
+ 204   1              while (*str) 
+ 205   1              {
+ 206   2                      LCD_write_data(*str++); 
+ 207   2              }
+ 208   1      }
+ 209          
+ 210          
+ 211          //-------------------------------------------- ÏÔÊ¾×Ö·û´®µÄº¯Êý ------------------------------------------
+             -----------
+ 212          
+ 213          
+ 214          void LCD_write_word(unsigned char *s)                  //ÏÔÊ¾×Ö·û´®µÄº¯Êý
+ 215          {
+ 216   1              while(*s>0)
+ 217   1              {
+ 218   2                      LCD_write_data(*s);
+ 219   2                      s++;
+ 220   2              }
+ 221   1      }
+ 222          
+ 223          
+ 224          
+ 225          
+ 226          //********************************* Ö¸¶¨Î»ÖÃÏÔÊ¾Ò»¸ö×Ö·û*******************************************
+ 227          
+ 228          
+ 229          /*
+ 230          void Print_Char (unsigned char line,unsigned char num,unsigned char date)
+ 231          {
+ 232                          LCD_write_command(line+num);
+ 233                          LCD_write_data(date);
+ 234          }
+ 235          
+ 236          
+ 237          */
+ 238          
+ 239          
+C51 COMPILER V9.00   TEST6                                                                 07/29/2021 16:27:36 PAGE 5   
+
+ 240          
+ 241          
+ 242          //°´Ö¸¶¨Î»ÖÃÏÔÊ¾Ò»¸ö×Ö·û(Õë¶Ô1602Òº¾§)-ÓÃÔÚÎÂ¶ÈÏÔÊ¾
+ 243          
+ 244          
+ 245          void DisplayOneChar(unsigned char X, unsigned char Y, unsigned char DData)
+ 246          {
+ 247   1      Y &= 0x1;
+ 248   1      X &= 0xF;                 //ÏÞÖÆX²»ÄÜ´óÓÚ15£¬Y²»ÄÜ´óÓÚ1
+ 249   1      if (Y) X |= 0x40;        //µ±ÒªÏÔÊ¾µÚ¶þÐÐÊ±µØÖ·Âë+0x40;
+ 250   1      X |= 0x80;               // Ëã³öÖ¸ÁîÂë
+ 251   1      LCD_write_command(X);    //ÕâÀï²»¼ì²âÃ¦ÐÅºÅ£¬·¢ËÍµØÖ·Âë
+ 252   1      LCD_write_data(DData);
+ 253   1      }
+ 254          
+ 255          void main(){
+ 256   1              Init_Lcd();
+ 257   1              DisplayOneChar(4,1,'T');
+ 258   1              while(1);
+ 259   1      
+ 260   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    452    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      1       9
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
