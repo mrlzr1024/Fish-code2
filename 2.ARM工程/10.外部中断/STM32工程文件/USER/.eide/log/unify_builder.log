@@ -1,0 +1,57 @@
+[2021-12-12 20:29:44]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\10.外部中断\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] doneList) [0x000e4] in <659107f5192b4415be1d55e0728fa07f>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x0155a] in <659107f5192b4415be1d55e0728fa07f>:0 
+
+[2021-12-12 20:30:50]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\10.外部中断\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] doneList) [0x000e4] in <659107f5192b4415be1d55e0728fa07f>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x0155a] in <659107f5192b4415be1d55e0728fa07f>:0 
+
+[2021-12-12 20:31:44]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\10.外部中断\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] doneList) [0x000e4] in <659107f5192b4415be1d55e0728fa07f>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x0155a] in <659107f5192b4415be1d55e0728fa07f>:0 
+
+[2021-12-12 20:32:00]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\10.外部中断\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] doneList) [0x000e4] in <659107f5192b4415be1d55e0728fa07f>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x0155a] in <659107f5192b4415be1d55e0728fa07f>:0 
+
+[2021-12-12 20:38:30]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\10.外部中断\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] doneList) [0x000e4] in <659107f5192b4415be1d55e0728fa07f>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x0155a] in <659107f5192b4415be1d55e0728fa07f>:0 
+
+[2021-12-12 20:40:07]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\10.外部中断\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] doneList) [0x000e4] in <659107f5192b4415be1d55e0728fa07f>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x0155a] in <659107f5192b4415be1d55e0728fa07f>:0 
+
+[2021-12-12 20:44:31]	[done]
+	build successfully !
+
+[2021-12-12 20:47:55]	[done]
+	build successfully !
+
+[2021-12-12 20:49:20]	[done]
+	build successfully !
+
+[2021-12-12 20:52:18]	[done]
+	build successfully !
+
+[2021-12-12 20:54:04]	[done]
+	build successfully !
+
+[2021-12-12 20:55:00]	[done]
+	build successfully !
+
+[2021-12-12 20:57:14]	[done]
+	build successfully !
+
+[2021-12-12 20:58:46]	[done]
+	build successfully !
+
+[2021-12-12 21:00:16]	[done]
+	build successfully !
+
+[2021-12-12 21:01:25]	[done]
+	build successfully !
+
+[2021-12-12 21:01:40]	[done]
+	build successfully !
+

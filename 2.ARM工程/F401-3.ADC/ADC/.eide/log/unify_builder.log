@@ -1,0 +1,1168 @@
+[2022-01-18 16:49:04]	[done]
+	build successfully !
+
+[2022-01-18 16:50:19]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\SPI-OLED\oled_config.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+In file included from ./Core/SPI-OLED/oled_config.c:14:
+./Core/SPI-OLED/oled_driver.h:30:29: error: unknown type name 'u8'
+ unsigned char OLED_Get_Type(u8 first, u8 second);
+                             ^~
+./Core/SPI-OLED/oled_driver.h:30:39: error: unknown type name 'u8'
+ unsigned char OLED_Get_Type(u8 first, u8 second);
+                                       ^~
+./Core/SPI-OLED/oled_driver.h:31:21: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                     ^~
+./Core/SPI-OLED/oled_driver.h:31:31: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                               ^~
+./Core/SPI-OLED/oled_driver.h:31:42: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                                          ^~
+./Core/SPI-OLED/oled_driver.h:31:53: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                                                     ^~
+./Core/SPI-OLED/oled_driver.h:32:19: error: unknown type name 'u8'
+ void OLED_WR_Byte(u8 dat,u8 cmd);
+                   ^~
+./Core/SPI-OLED/oled_driver.h:32:26: error: unknown type name 'u8'
+ void OLED_WR_Byte(u8 dat,u8 cmd);
+                          ^~
+./Core/SPI-OLED/oled_driver.h:33:25: error: unknown type name 'u8'
+ void OLED_WR_Plenty_Dat(u8 *dat,u16 lenth);
+                         ^~
+./Core/SPI-OLED/oled_driver.h:33:33: error: unknown type name 'u16'
+ void OLED_WR_Plenty_Dat(u8 *dat,u16 lenth);
+                                 ^~~
+./Core/SPI-OLED/oled_config.c:50:14: error: unknown type name 'u16'
+ void DelayMs(u16 ms)
+              ^~~
+
+[2022-01-18 16:52:16]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\Code.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+In file included from ./Core/Src/Code.c:10:
+./Core/Inc/oled_driver.h:30:29: error: unknown type name 'u8'
+ unsigned char OLED_Get_Type(u8 first, u8 second);
+                             ^~
+./Core/Inc/oled_driver.h:30:39: error: unknown type name 'u8'
+ unsigned char OLED_Get_Type(u8 first, u8 second);
+                                       ^~
+./Core/Inc/oled_driver.h:31:21: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                     ^~
+./Core/Inc/oled_driver.h:31:31: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                               ^~
+./Core/Inc/oled_driver.h:31:42: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                                          ^~
+./Core/Inc/oled_driver.h:31:53: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                                                     ^~
+./Core/Inc/oled_driver.h:32:19: error: unknown type name 'u8'
+ void OLED_WR_Byte(u8 dat,u8 cmd);
+                   ^~
+./Core/Inc/oled_driver.h:32:26: error: unknown type name 'u8'
+ void OLED_WR_Byte(u8 dat,u8 cmd);
+                          ^~
+./Core/Inc/oled_driver.h:33:25: error: unknown type name 'u8'
+ void OLED_WR_Plenty_Dat(u8 *dat,u16 lenth);
+                         ^~
+./Core/Inc/oled_driver.h:33:33: error: unknown type name 'u16'
+ void OLED_WR_Plenty_Dat(u8 *dat,u16 lenth);
+                                 ^~~
+./Core/Src/Code.c: In function 'SetPixel':
+./Core/Src/Code.c:76:5: warning: implicit declaration of function 'OLED_WR_Byte'; did you mean 'OLED_DC_Set'? [-Wimplicit-function-declaration]
+     OLED_WR_Byte(0xb0 + y / 8, OLED_CMD);  // page0-page1
+     ^~~~~~~~~~~~
+     OLED_DC_Set
+
+[2022-01-18 16:53:50]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\oled_driver.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x000e4] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018cb] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/oled_driver.c: In function 'OLED_Get_front':
+./Core/Src/oled_driver.c:38:2: error: unknown type name 'u32'
+  u32 fontaddr=0;
+  ^~~
+
+[2022-01-18 16:55:26]	[done]
+	build successfully !
+
+[2022-01-18 16:55:31]	[done]
+	build successfully !
+
+[2022-01-18 17:01:23]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:100:31: error: 'DEL_Pin' undeclared (first use in this function); did you mean 'LED_Pin'?
+     HAL_GPIO_TogglePin(GPIOC, DEL_Pin);
+                               ^~~~~~~
+                               LED_Pin
+./Core/Src/main.c:100:31: note: each undeclared identifier is reported only once for each function it appears in
+./Core/Src/main.c:102:27: error: 'hadc' undeclared (first use in this function); did you mean 'hadc1'?
+     i = HAL_ADC_GetValue(&hadc);
+                           ^~~~
+                           hadc1
+./Core/Src/main.c:103:5: warning: implicit declaration of function 'OLED_ClearScreen'; did you mean 'OLED_CS_Pin'? [-Wimplicit-function-declaration]
+     OLED_ClearScreen();
+     ^~~~~~~~~~~~~~~~
+     OLED_CS_Pin
+./Core/Src/main.c:104:5: warning: implicit declaration of function 'OLED_Rect1' [-Wimplicit-function-declaration]
+     OLED_Rect1(0, 0, 127, 63);
+     ^~~~~~~~~~
+./Core/Src/main.c:105:5: warning: implicit declaration of function 'OLED_Circle'; did you mean 'OLED_CS_Pin'? [-Wimplicit-function-declaration]
+     OLED_Circle(25, 32, 20);
+     ^~~~~~~~~~~
+     OLED_CS_Pin
+./Core/Src/main.c:107:5: warning: implicit declaration of function 'Draw_Point' [-Wimplicit-function-declaration]
+     Draw_Point(25, 32, 20, i);
+     ^~~~~~~~~~
+./Core/Src/main.c:108:5: warning: implicit declaration of function 'OLED_Bitmap' [-Wimplicit-function-declaration]
+     OLED_Bitmap(80, 30, code0_9[i % 10], 8, 16);
+     ^~~~~~~~~~~
+./Core/Src/main.c:108:25: error: 'code0_9' undeclared (first use in this function)
+     OLED_Bitmap(80, 30, code0_9[i % 10], 8, 16);
+                         ^~~~~~~
+./Core/Src/main.c:110:5: warning: implicit declaration of function 'OLED_UpdateScreen' [-Wimplicit-function-declaration]
+     OLED_UpdateScreen();
+     ^~~~~~~~~~~~~~~~~
+
+[2022-01-18 17:02:09]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\Code.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+In file included from ./Core/Inc/main.h:42,
+                 from ./Core/Inc/Code.h:18,
+                 from ./Core/Src/Code.c:9:
+./Core/Inc/oled_driver.h:30:29: error: unknown type name 'u8'
+ unsigned char OLED_Get_Type(u8 first, u8 second);
+                             ^~
+./Core/Inc/oled_driver.h:30:39: error: unknown type name 'u8'
+ unsigned char OLED_Get_Type(u8 first, u8 second);
+                                       ^~
+./Core/Inc/oled_driver.h:31:21: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                     ^~
+./Core/Inc/oled_driver.h:31:31: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                               ^~
+./Core/Inc/oled_driver.h:31:42: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                                          ^~
+./Core/Inc/oled_driver.h:31:53: error: unknown type name 'u8'
+ void OLED_Get_front(u8 first, u8 second, u8 *pbuff, u8 type);
+                                                     ^~
+./Core/Inc/oled_driver.h:32:19: error: unknown type name 'u8'
+ void OLED_WR_Byte(u8 dat,u8 cmd);
+                   ^~
+./Core/Inc/oled_driver.h:32:26: error: unknown type name 'u8'
+ void OLED_WR_Byte(u8 dat,u8 cmd);
+                          ^~
+./Core/Inc/oled_driver.h:33:25: error: unknown type name 'u8'
+ void OLED_WR_Plenty_Dat(u8 *dat,u16 lenth);
+                         ^~
+./Core/Inc/oled_driver.h:33:33: error: unknown type name 'u16'
+ void OLED_WR_Plenty_Dat(u8 *dat,u16 lenth);
+                                 ^~~
+./Core/Src/Code.c: In function 'SetPixel':
+./Core/Src/Code.c:76:5: warning: implicit declaration of function 'OLED_WR_Byte'; did you mean 'OLED_Rect2'? [-Wimplicit-function-declaration]
+     OLED_WR_Byte(0xb0 + y / 8, OLED_CMD);  // page0-page1
+     ^~~~~~~~~~~~
+     OLED_Rect2
+
+[2022-01-18 17:02:31]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:100:31: error: 'DEL_Pin' undeclared (first use in this function); did you mean 'LED_Pin'?
+     HAL_GPIO_TogglePin(GPIOC, DEL_Pin);
+                               ^~~~~~~
+                               LED_Pin
+./Core/Src/main.c:100:31: note: each undeclared identifier is reported only once for each function it appears in
+./Core/Src/main.c:102:27: error: 'hadc' undeclared (first use in this function); did you mean 'hadc1'?
+     i = HAL_ADC_GetValue(&hadc);
+                           ^~~~
+                           hadc1
+
+[2022-01-18 17:02:57]	[done]
+	build successfully !
+
+[2022-01-18 17:03:00]	[done]
+	build successfully !
+
+[2022-01-18 18:18:02]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x000e4] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018cb] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:107:42: error: expected ';' before 'i'
+     HAL_ADC_PollForConversion(&hadc1,100)
+                                          ^
+                                          ;
+     i = HAL_ADC_GetValue(&hadc1);
+     ~                                     
+./Core/Src/main.c:109:19: error: expected ';' before 'OLED_ClearScreen'
+     i=(i/4096)*100
+                   ^
+                   ;
+./Core/Src/main.c:114:5:
+     OLED_ClearScreen();
+     ~~~~~~~~~~~~~~~~
+
+[2022-01-18 18:18:10]	[done]
+	build successfully !
+
+[2022-01-18 18:19:02]	[done]
+	build successfully !
+
+[2022-01-18 18:22:30]	[done]
+	build successfully !
+
+[2022-01-18 18:22:35]	[done]
+	build successfully !
+
+[2022-01-18 18:24:08]	[done]
+	build successfully !
+
+[2022-01-18 18:25:19]	[done]
+	build successfully !
+
+[2022-01-18 18:25:57]	[done]
+	build successfully !
+
+[2022-01-18 18:27:23]	[done]
+	build successfully !
+
+[2022-01-18 18:30:48]	[done]
+	build successfully !
+
+[2022-01-18 18:31:35]	[done]
+	build successfully !
+
+[2022-01-18 18:35:28]	[done]
+	build successfully !
+
+[2022-01-18 18:35:39]	[done]
+	build successfully !
+
+[2022-01-18 18:37:14]	[done]
+	build successfully !
+
+[2022-01-18 18:37:30]	[done]
+	build successfully !
+
+[2022-01-18 18:41:41]	[done]
+	build successfully !
+
+[2022-01-18 19:51:12]	[done]
+	build successfully !
+
+[2022-01-18 21:40:17]	[done]
+	build successfully !
+
+[2022-01-18 21:41:54]	[done]
+	build successfully !
+
+[2022-01-18 21:52:35]	[done]
+	build successfully !
+
+[2022-01-18 21:53:58]	[done]
+	build successfully !
+
+[2022-01-18 21:54:03]	[done]
+	build successfully !
+
+[2022-01-18 22:14:27]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:122:17: error: 'x' undeclared (first use in this function)
+     OLED_Bitmap(x+8*3, 30, code0_9[i % 10], 8, 16);
+                 ^
+./Core/Src/main.c:122:17: note: each undeclared identifier is reported only once for each function it appears in
+./Core/Src/main.c:94:9: warning: variable 'a1' set but not used [-Wunused-but-set-variable]
+   float a1;
+         ^~
+./Core/Src/main.c:93:7: warning: unused variable 'star_x' [-Wunused-variable]
+   int star_x=72;
+       ^~~~~~
+
+[2022-01-18 22:14:49]	[done]
+	build successfully !
+
+[2022-01-19 11:00:44]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:131:9: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+         delay(5);
+         ^~~~~
+./Core/Src/main.c:136:21: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+       for (; tmp < i, tmp++)
+                     ^
+./Core/Src/main.c:136:28: error: expected ';' before ')' token
+       for (; tmp < i, tmp++)
+                            ^
+                            ;
+./Core/Src/main.c:94:16: warning: unused variable 'tmp2' [-Wunused-variable]
+   int tmp = 0, tmp2 = 0;
+                ^~~~
+
+[2022-01-19 11:00:58]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x019f5] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        2928 B        96 KB      2.98%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/main.o: in function `main':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Src/main.c:131: undefined reference to `delay'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Src/main.c:139: undefined reference to `delay'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:       11596 B       384 KB      2.95%
+
+
+[2022-01-19 11:01:28]	[done]
+	build successfully !
+
+[2022-01-19 11:01:38]	[done]
+	build successfully !
+
+[2022-01-19 11:01:57]	[done]
+	build successfully !
+
+[2022-01-19 11:04:18]	[done]
+	build successfully !
+
+[2022-01-19 11:05:59]	[done]
+	build successfully !
+
+[2022-01-19 11:07:08]	[done]
+	build successfully !
+
+[2022-01-19 11:07:17]	[done]
+	build successfully !
+
+[2022-01-19 11:13:19]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x019f5] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        2928 B        96 KB      2.98%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/main.o: in function `main':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Src/main.c:121: undefined reference to `OLED_Char'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Src/main.c:122: undefined reference to `OLED_Char'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Src/main.c:123: undefined reference to `OLED_Char'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:       11536 B       384 KB      2.93%
+
+
+[2022-01-19 11:19:12]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\Code.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/Code.c:56:3: error: expected ',' or ';' before 'unsigned'
+ } unsigned char Sbmp[1024]; //鍥惧儚缂撳啿鍖股   ^~~~~~~~
+
+[2022-01-19 11:19:37]	[done]
+	build successfully !
+
+[2022-01-19 11:20:40]	[done]
+	build successfully !
+
+[2022-01-19 11:21:19]	[done]
+	build successfully !
+
+[2022-01-20 15:43:42]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'display':
+./Core/Src/main.c:54:15: error: 'star_x' undeclared (first use in this function)
+   OLED_Bitmap(star_x - 8 * 3, 30, codea_g[0], 8, 16);
+               ^~~~~~
+./Core/Src/main.c:54:15: note: each undeclared identifier is reported only once for each function it appears in
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:107:7: warning: unused variable 'star_x' [-Wunused-variable]
+   int star_x = 72;
+       ^~~~~~
+
+[2022-01-20 15:45:07]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'display':
+./Core/Src/main.c:54:15: error: 'star_x' undeclared (first use in this function); did you mean 'start_x'?
+   OLED_Bitmap(star_x - 8 * 3, 30, codea_g[0], 8, 16);
+               ^~~~~~
+               start_x
+./Core/Src/main.c:54:15: note: each undeclared identifier is reported only once for each function it appears in
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:129:13: error: 'start_x' undeclared (first use in this function); did you mean 'star_x'?
+     display(start_x, i);
+             ^~~~~~~
+             star_x
+./Core/Src/main.c:107:7: warning: unused variable 'star_x' [-Wunused-variable]
+   int star_x = 72;
+       ^~~~~~
+
+[2022-01-20 15:45:17]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'display':
+./Core/Src/main.c:54:15: error: 'star_x' undeclared (first use in this function); did you mean 'start_x'?
+   OLED_Bitmap(star_x - 8 * 3, 30, codea_g[0], 8, 16);
+               ^~~~~~
+               start_x
+./Core/Src/main.c:54:15: note: each undeclared identifier is reported only once for each function it appears in
+
+[2022-01-20 15:45:29]	[done]
+	build successfully !
+
+[2022-01-20 15:48:56]	[done]
+	build successfully !
+
+[2022-01-20 15:50:56]	[done]
+	build successfully !
+
+[2022-01-20 15:51:33]	[done]
+	build successfully !
+
+[2022-01-20 15:53:10]	[done]
+	build successfully !
+
+[2022-01-20 15:53:23]	[done]
+	build successfully !
+
+[2022-01-20 15:55:02]	[done]
+	build successfully !
+
+[2022-01-20 15:55:30]	[done]
+	build successfully !
+
+[2022-01-20 15:56:42]	[done]
+	build successfully !
+
+[2022-01-20 15:57:53]	[done]
+	build successfully !
+
+[2022-01-20 16:03:58]	[done]
+	build successfully !
+
+[2022-01-20 16:06:03]	[done]
+	build successfully !
+
+[2022-01-20 16:08:31]	[done]
+	build successfully !
+
+[2022-01-20 16:09:44]	[done]
+	build successfully !
+
+[2022-01-20 16:11:20]	[done]
+	build successfully !
+
+[2022-01-20 16:12:25]	[done]
+	build successfully !
+
+[2022-01-20 16:13:42]	[done]
+	build successfully !
+
+[2022-01-20 16:14:29]	[done]
+	build successfully !
+
+[2022-01-20 16:19:33]	[done]
+	build successfully !
+
+[2022-01-20 16:21:46]	[done]
+	build successfully !
+
+[2022-01-20 16:22:43]	[done]
+	build successfully !
+
+[2022-01-20 16:23:59]	[done]
+	build successfully !
+
+[2022-01-20 16:24:26]	[done]
+	build successfully !
+
+[2022-01-20 16:29:22]	[done]
+	build successfully !
+
+[2022-01-20 16:29:37]	[done]
+	build successfully !
+
+[2022-01-20 16:45:22]	[done]
+	build successfully !
+
+[2022-01-20 16:46:19]	[done]
+	build successfully !
+
+[2022-01-20 16:48:20]	[done]
+	build successfully !
+
+[2022-01-20 16:49:08]	[done]
+	build successfully !
+
+[2022-01-20 17:58:09]	[done]
+	build successfully !
+
+[2022-01-20 17:58:54]	[done]
+	build successfully !
+
+[2022-01-20 18:06:54]	[done]
+	build successfully !
+
+[2022-01-20 18:07:57]	[done]
+	build successfully !
+
+[2022-01-20 18:43:15]	[done]
+	build successfully !
+
+[2022-01-20 18:43:37]	[done]
+	build successfully !
+
+[2022-01-20 18:44:51]	[done]
+	build successfully !
+
+[2022-01-20 18:45:59]	[done]
+	build successfully !
+
+[2022-01-20 18:58:10]	[done]
+	build successfully !
+
+[2022-01-20 19:00:09]	[done]
+	build successfully !
+
+[2022-01-20 19:01:22]	[done]
+	build successfully !
+
+[2022-01-20 19:02:14]	[done]
+	build successfully !
+
+[2022-01-20 19:05:05]	[done]
+	build successfully !
+
+[2022-01-21 15:55:08]	[done]
+	build successfully !
+
+[2022-01-21 15:56:22]	[done]
+	build successfully !
+
+[2022-01-21 15:58:25]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x000e4] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018cb] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:122:30: error: 'GPIO_Pin_14' undeclared (first use in this function); did you mean 'GPIO_PIN_14'?
+     HAL_GPIO_TogglePin(GPIOC,GPIO_Pin_14);
+                              ^~~~~~~~~~~
+                              GPIO_PIN_14
+./Core/Src/main.c:122:30: note: each undeclared identifier is reported only once for each function it appears in
+
+[2022-01-21 15:58:35]	[done]
+	build successfully !
+
+[2022-01-21 15:59:43]	[done]
+	build successfully !
+
+[2022-01-21 16:00:50]	[done]
+	build successfully !
+
+[2022-01-21 16:01:03]	[done]
+	build successfully !
+
+[2022-01-21 16:02:26]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:128:5: error: 'i' undeclared (first use in this function)
+     i = HAL_ADC_GetValue(&hadc1);
+     ^
+./Core/Src/main.c:128:5: note: each undeclared identifier is reported only once for each function it appears in
+
+[2022-01-21 16:02:52]	[done]
+	build successfully !
+
+[2022-01-21 16:03:00]	[done]
+	build successfully !
+
+[2022-01-21 16:08:28]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:107:3: error: unknown type name 'HAL_ADC_'
+   HAL_ADC_
+   ^~~~~~~~
+./Core/Src/main.c:109:3: error: conflicting types for 'InitGraph'
+   InitGraph();
+   ^~~~~~~~~
+In file included from ./Core/Inc/main.h:37,
+                 from ./Core/Src/main.c:20:
+./Core/Inc/draw_api.h:13:6: note: previous declaration of 'InitGraph' was here
+ void InitGraph(void);
+      ^~~~~~~~~
+
+[2022-01-21 16:08:42]	[done]
+	build successfully !
+
+[2022-01-21 16:16:09]	[done]
+	build successfully !
+
+[2022-01-21 16:19:13]	[done]
+	build successfully !
+
+[2022-01-21 16:21:37]	[done]
+	build successfully !
+
+[2022-01-21 16:23:54]	[done]
+	build successfully !
+
+[2022-01-21 16:24:48]	[done]
+	build successfully !
+
+[2022-01-21 16:25:18]	[done]
+	build successfully !
+
+[2022-01-21 16:27:04]	[done]
+	build successfully !
+
+[2022-01-21 16:28:47]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:131:8: error: 'a1' undeclared (first use in this function)
+     i=(a1/4096)*100;
+        ^~
+./Core/Src/main.c:131:8: note: each undeclared identifier is reported only once for each function it appears in
+
+[2022-01-21 16:28:57]	[done]
+	build successfully !
+
+[2022-01-21 16:30:10]	[done]
+	build successfully !
+
+[2022-01-21 16:36:11]	[done]
+	build successfully !
+
+[2022-01-21 16:36:23]	[done]
+	build successfully !
+
+[2022-01-21 16:37:15]	[done]
+	build successfully !
+
+[2022-01-21 16:38:17]	[done]
+	build successfully !
+
+[2022-01-21 16:43:09]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x019f5] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        2768 B        96 KB      2.82%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/stm32f4xx_it.o: in function `ADC_IRQHandler':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Src/stm32f4xx_it.c:213: undefined reference to `result'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:        8796 B       384 KB      2.24%
+
+
+[2022-01-21 16:43:52]	[done]
+	build successfully !
+
+[2022-01-21 16:44:04]	[done]
+	build successfully !
+
+[2022-01-21 16:45:14]	[done]
+	build successfully !
+
+[2022-01-21 16:46:48]	[done]
+	build successfully !
+
+[2022-01-21 16:47:18]	[done]
+	build successfully !
+
+[2022-01-21 16:55:21]	[done]
+	build successfully !
+
+[2022-01-21 16:57:09]	[done]
+	build successfully !
+
+[2022-01-21 17:00:53]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:128:7: error: 'result1' undeclared (first use in this function); did you mean 'result'?
+     i=result1;
+       ^~~~~~~
+       result
+./Core/Src/main.c:128:7: note: each undeclared identifier is reported only once for each function it appears in
+
+[2022-01-21 17:01:38]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\stm32f4xx_it.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/stm32f4xx_it.c: In function 'ADC_IRQHandler':
+./Core/Src/stm32f4xx_it.c:210:3: error: 'result' undeclared (first use in this function); did you mean 'result1'?
+   result = HAL_ADC_GetValue(&hadc1);
+   ^~~~~~
+   result1
+./Core/Src/stm32f4xx_it.c:210:3: note: each undeclared identifier is reported only once for each function it appears in
+
+[2022-01-21 17:01:50]	[done]
+	build successfully !
+
+[2022-01-21 17:02:33]	[done]
+	build successfully !
+
+[2022-01-21 17:03:08]	[done]
+	build successfully !
+
+[2022-01-21 17:04:21]	[done]
+	build successfully !
+
+[2022-01-21 17:05:54]	[done]
+	build successfully !
+
+[2022-01-21 17:06:53]	[done]
+	build successfully !
+
+[2022-01-21 17:10:38]	[done]
+	build successfully !
+
+[2022-01-21 17:24:18]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:133:18: error: stray '\357' in program
+         Memory++ 锛毶                  ^
+./Core/Src/main.c:133:19: error: stray '\274' in program
+         Memory++ 锛毶                   ^
+./Core/Src/main.c:133:20: error: stray '\233' in program
+         Memory++ 锛毶                    ^
+./Core/Src/main.c:133:17: error: expected ';' before '}' token
+         Memory++ 锛毶                 ^
+                 ;
+       }
+       ~          
+./Core/Src/main.c:143:49: error: expected ';' before 'Memory'
+     } while (Memory > i - 10 && Memory < i + 10)
+                                                 ^
+                                                 ;
+     Memory=i;
+     ~~~~~~
+
+[2022-01-21 17:24:29]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:133:18: error: stray '\357' in program
+         Memory++ 锛毶                  ^
+./Core/Src/main.c:133:19: error: stray '\274' in program
+         Memory++ 锛毶                   ^
+./Core/Src/main.c:133:20: error: stray '\233' in program
+         Memory++ 锛毶                    ^
+./Core/Src/main.c:133:17: error: expected ';' before '}' token
+         Memory++ 锛毶                 ^
+                 ;
+       }
+       ~
+
+[2022-01-21 17:25:09]	[done]
+	build successfully !
+
+[2022-01-21 17:25:13]	[done]
+	build successfully !
+
+[2022-01-21 17:26:57]	[done]
+	build successfully !
+
+[2022-01-21 17:30:11]	[done]
+	build successfully !
+
+[2022-01-21 17:31:45]	[done]
+	build successfully !
+
+[2022-01-21 17:32:44]	[done]
+	build successfully !
+
+[2022-01-21 17:36:13]	[done]
+	build successfully !
+
+[2022-01-21 17:37:03]	[done]
+	build successfully !
+
+[2022-01-21 18:07:50]	[done]
+	build successfully !
+
+[2022-01-21 18:09:44]	[done]
+	build successfully !
+
+[2022-01-22 22:11:07]	[done]
+	build successfully !
+
+[2022-01-22 22:12:34]	[done]
+	build successfully !
+
+[2022-01-22 22:14:09]	[done]
+	build successfully !
+
+[2022-01-22 22:15:02]	[done]
+	build successfully !
+
+[2022-01-22 22:20:07]	[done]
+	build successfully !
+
+[2022-01-22 22:21:03]	[done]
+	build successfully !
+
+[2022-01-22 22:23:26]	[done]
+	build successfully !
+
+[2022-01-22 22:23:38]	[done]
+	build successfully !
+
+[2022-01-22 22:31:02]	[done]
+	build successfully !
+
+[2022-01-22 22:32:58]	[done]
+	build successfully !
+
+[2022-01-22 22:41:50]	[done]
+	build successfully !
+
+[2022-01-22 22:44:28]	[done]
+	build successfully !
+
+[2022-01-22 22:45:49]	[done]
+	build successfully !
+
+[2022-01-22 22:46:38]	[done]
+	build successfully !
+
+[2022-01-23 16:05:10]	[done]
+	build successfully !
+
+[2022-01-23 16:06:13]	[done]
+	build successfully !
+
+[2022-01-23 16:06:18]	[done]
+	build successfully !
+
+[2022-01-23 16:07:38]	[done]
+	build successfully !
+
+[2022-01-23 16:08:58]	[done]
+	build successfully !
+
+[2022-01-23 16:10:28]	[done]
+	build successfully !
+
+[2022-01-23 16:11:42]	[done]
+	build successfully !
+
+[2022-01-23 16:11:53]	[done]
+	build successfully !
+
+[2022-01-23 16:13:08]	[done]
+	build successfully !
+
+[2022-01-23 16:13:17]	[done]
+	build successfully !
+
+[2022-01-23 16:14:50]	[done]
+	build successfully !
+
+[2022-01-23 16:15:23]	[done]
+	build successfully !
+
+[2022-01-23 16:22:55]	[done]
+	build successfully !
+
+[2022-01-23 16:23:33]	[done]
+	build successfully !
+
+[2022-01-23 16:23:41]	[done]
+	build successfully !
+
+[2022-01-23 17:17:29]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\oled_driver.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+In file included from ./Core/Src/oled_driver.c:19:
+./Core/Src/oled_driver.c: In function 'OLED_Get_front':
+./Core/Inc/oled_driver.h:24:43: error: 'ZK_CS_GPIO_Port' undeclared (first use in this function); did you mean 'OLED_CS_GPIO_Port'?
+ #define ZK_CS_Clr()     HAL_GPIO_WritePin(ZK_CS_GPIO_Port, ZK_CS_Pin, GPIO_PIN_RESET)//CS2
+                                           ^~~~~~~~~~~~~~~
+./Core/Src/oled_driver.c:49:4: note: in expansion of macro 'ZK_CS_Clr'
+    ZK_CS_Clr();
+    ^~~~~~~~~
+./Core/Inc/oled_driver.h:24:43: note: each undeclared identifier is reported only once for each function it appears in
+ #define ZK_CS_Clr()     HAL_GPIO_WritePin(ZK_CS_GPIO_Port, ZK_CS_Pin, GPIO_PIN_RESET)//CS2
+                                           ^~~~~~~~~~~~~~~
+./Core/Src/oled_driver.c:49:4: note: in expansion of macro 'ZK_CS_Clr'
+    ZK_CS_Clr();
+    ^~~~~~~~~
+./Core/Inc/oled_driver.h:24:60: error: 'ZK_CS_Pin' undeclared (first use in this function); did you mean 'ZK_CS_Clr'?
+ #define ZK_CS_Clr()     HAL_GPIO_WritePin(ZK_CS_GPIO_Port, ZK_CS_Pin, GPIO_PIN_RESET)//CS2
+                                                            ^~~~~~~~~
+./Core/Src/oled_driver.c:49:4: note: in expansion of macro 'ZK_CS_Clr'
+    ZK_CS_Clr();
+    ^~~~~~~~~
+
+[2022-01-23 17:19:04]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\oled_driver.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+In file included from ./Core/Src/oled_driver.c:19:
+./Core/Src/oled_driver.c: In function 'OLED_Get_front':
+./Core/Inc/oled_driver.h:24:43: error: 'ZK_CS_GPIO_Port' undeclared (first use in this function); did you mean 'OLED_CS_GPIO_Port'?
+ #define ZK_CS_Clr()     HAL_GPIO_WritePin(ZK_CS_GPIO_Port, ZK_CS_Pin, GPIO_PIN_RESET)//CS2
+                                           ^~~~~~~~~~~~~~~
+./Core/Src/oled_driver.c:49:4: note: in expansion of macro 'ZK_CS_Clr'
+    ZK_CS_Clr();
+    ^~~~~~~~~
+./Core/Inc/oled_driver.h:24:43: note: each undeclared identifier is reported only once for each function it appears in
+ #define ZK_CS_Clr()     HAL_GPIO_WritePin(ZK_CS_GPIO_Port, ZK_CS_Pin, GPIO_PIN_RESET)//CS2
+                                           ^~~~~~~~~~~~~~~
+./Core/Src/oled_driver.c:49:4: note: in expansion of macro 'ZK_CS_Clr'
+    ZK_CS_Clr();
+    ^~~~~~~~~
+./Core/Inc/oled_driver.h:24:60: error: 'ZK_CS_Pin' undeclared (first use in this function); did you mean 'ZK_CS_Clr'?
+ #define ZK_CS_Clr()     HAL_GPIO_WritePin(ZK_CS_GPIO_Port, ZK_CS_Pin, GPIO_PIN_RESET)//CS2
+                                                            ^~~~~~~~~
+./Core/Src/oled_driver.c:49:4: note: in expansion of macro 'ZK_CS_Clr'
+    ZK_CS_Clr();
+    ^~~~~~~~~
+
+[2022-01-23 17:20:30]	[done]
+	build successfully !
+
+[2022-01-23 17:20:56]	[done]
+	build successfully !
+
+[2022-01-23 17:47:15]	[done]
+	build successfully !
+
+[2022-01-23 17:48:59]	[done]
+	build successfully !
+
+[2022-01-23 17:53:41]	[done]
+	build successfully !
+
+[2022-01-23 17:57:23]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:159:5: error: 'else' without a previous 'if'
+     else if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1) == 0)
+     ^~~~
+./Core/Src/main.c:130:20: warning: unused variable 'Memory' [-Wunused-variable]
+   int star_x = 72, Memory = 0;
+                    ^~~~~~
+
+[2022-01-23 17:57:35]	[done]
+	build successfully !
+
+[2022-01-23 18:00:36]	[done]
+	build successfully !
+
+[2022-01-23 18:39:40]	[done]
+	build successfully !
+
+[2022-01-23 18:40:48]	[done]
+	build successfully !
+
+[2022-01-23 18:43:22]	[done]
+	build successfully !
+
+[2022-01-23 18:48:27]	[done]
+	build successfully !
+
+[2022-01-23 19:04:02]	[done]
+	build successfully !
+
+[2022-01-23 19:04:07]	[done]
+	build successfully !
+
+[2022-02-14 14:22:13]	[done]
+	build successfully !
+
+[2022-02-14 14:24:18]	[done]
+	build successfully !
+
+[2022-02-14 14:37:38]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:96:3: warning: implicit declaration of function 'InitGraph' [-Wimplicit-function-declaration]
+   InitGraph();
+   ^~~~~~~~~
+./Core/Src/main.c:97:3: warning: implicit declaration of function 'OLED_Rect1' [-Wimplicit-function-declaration]
+   OLED_Rect1(0, 0, 127, 63);
+   ^~~~~~~~~~
+./Core/Src/main.c:100:3: warning: implicit declaration of function 'OLED_UpdateScreen' [-Wimplicit-function-declaration]
+   OLED_UpdateScreen();
+   ^~~~~~~~~~~~~~~~~
+./Core/Src/main.c:115:11: error: 'result' undeclared (first use in this function)
+       i = result;
+           ^~~~~~
+./Core/Src/main.c:115:11: note: each undeclared identifier is reported only once for each function it appears in
+./Core/Src/main.c:116:7: warning: implicit declaration of function 'SetPointBuffer' [-Wimplicit-function-declaration]
+       SetPointBuffer(j, i / 90, 1);
+       ^~~~~~~~~~~~~~
+./Core/Src/main.c:119:5: warning: implicit declaration of function 'OLED_ClearScreen'; did you mean 'OLED_CS_Pin'? [-Wimplicit-function-declaration]
+     OLED_ClearScreen();
+     ^~~~~~~~~~~~~~~~
+     OLED_CS_Pin
+
+[2022-02-14 14:38:22]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:99:3: warning: implicit declaration of function 'InitGraph' [-Wimplicit-function-declaration]
+   InitGraph();
+   ^~~~~~~~~
+./Core/Src/main.c:100:3: warning: implicit declaration of function 'OLED_Rect1' [-Wimplicit-function-declaration]
+   OLED_Rect1(0, 0, 127, 63);
+   ^~~~~~~~~~
+./Core/Src/main.c:103:3: warning: implicit declaration of function 'OLED_UpdateScreen' [-Wimplicit-function-declaration]
+   OLED_UpdateScreen();
+   ^~~~~~~~~~~~~~~~~
+./Core/Src/main.c:118:11: error: 'result' undeclared (first use in this function)
+       i = result;
+           ^~~~~~
+./Core/Src/main.c:118:11: note: each undeclared identifier is reported only once for each function it appears in
+./Core/Src/main.c:119:7: warning: implicit declaration of function 'SetPointBuffer' [-Wimplicit-function-declaration]
+       SetPointBuffer(j, i / 90, 1);
+       ^~~~~~~~~~~~~~
+./Core/Src/main.c:122:5: warning: implicit declaration of function 'OLED_ClearScreen'; did you mean 'OLED_CS_Pin'? [-Wimplicit-function-declaration]
+     OLED_ClearScreen();
+     ^~~~~~~~~~~~~~~~
+     OLED_CS_Pin
+
+[2022-02-14 14:40:24]	[done]
+	build successfully !
+
+[2022-02-14 14:40:36]	[done]
+	build successfully !
+
+[2022-02-14 14:40:49]	[done]
+	build successfully !
+
+[2022-02-14 14:42:37]	[done]
+	build successfully !
+
+[2022-02-14 14:44:10]	[done]
+	build successfully !
+
+[2022-02-14 14:45:29]	[done]
+	build successfully !
+
+[2022-02-14 14:46:52]	[done]
+	build successfully !
+
+[2022-02-14 14:51:34]	[done]
+	build successfully !
+
+[2022-02-14 14:53:43]	[done]
+	build successfully !
+
+[2022-02-15 07:03:02]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:93:3: warning: implicit declaration of function 'HAL_TIM_Base_Start_IT'; did you mean 'HAL_DMA_Start_IT'? [-Wimplicit-function-declaration]
+   HAL_TIM_Base_Start_IT(&htim3);
+   ^~~~~~~~~~~~~~~~~~~~~
+   HAL_DMA_Start_IT
+./Core/Src/main.c:93:26: error: 'htim3' undeclared (first use in this function)
+   HAL_TIM_Base_Start_IT(&htim3);
+                          ^~~~~
+./Core/Src/main.c:93:26: note: each undeclared identifier is reported only once for each function it appears in
+
+[2022-02-15 07:03:19]	[done]
+	build successfully !
+
+[2022-02-15 07:05:14]	[done]
+	build successfully !
+
+[2022-02-15 07:05:28]	[done]
+	build successfully !
+
+[2022-02-15 07:08:17]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        2784 B        96 KB      2.83%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/adc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: multiple definition of `wide'; ./build/Debug/Core/Src/Code.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/gpio.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: multiple definition of `wide'; ./build/Debug/Core/Src/Code.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/image.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: multiple definition of `wide'; ./build/Debug/Core/Src/Code.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/main.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: multiple definition of `wide'; ./build/Debug/Core/Src/Code.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/oled_config.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: multiple definition of `wide'; ./build/Debug/Core/Src/Code.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/oled_draw.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: multiple definition of `wide'; ./build/Debug/Core/Src/Code.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/oled_driver.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: multiple definition of `wide'; ./build/Debug/Core/Src/Code.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/spi.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: multiple definition of `wide'; ./build/Debug/Core/Src/Code.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/stm32f4xx_hal_msp.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: multiple definition of `wide'; ./build/Debug/Core/Src/Code.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/stm32f4xx_it.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: multiple definition of `wide'; ./build/Debug/Core/Src/Code.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Inc/stm32f4xx_it.h:46: first defined here
+collect2.exe: error: ld returned 1 exit status
+           FLASH:        8752 B       384 KB      2.23%
+
+
+[2022-02-15 07:08:52]	[done]
+	build successfully !
+
+[2022-02-15 07:08:57]	[done]
+	build successfully !
+
+[2022-02-15 07:10:57]	[done]
+	build successfully !
+
+[2022-02-15 07:15:32]	[done]
+	build successfully !
+
+[2022-02-15 07:21:54]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC\Core\Src\stm32f4xx_it.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/stm32f4xx_it.c: In function 'EXTI0_IRQHandler':
+./Core/Src/stm32f4xx_it.c:208:4: warning: implicit declaration of function 'DelayMs' [-Wimplicit-function-declaration]
+    DelayMs(20);
+    ^~~~~~~
+./Core/Src/stm32f4xx_it.c:209:7: warning: implicit declaration of function 'HAL_GPIO_rEADpIN'; did you mean 'HAL_GPIO_LockPin'? [-Wimplicit-function-declaration]
+   if (HAL_GPIO_rEADpIN(GPIOB, GPIO_Pin_0) == 0 && step <64)
+       ^~~~~~~~~~~~~~~~
+       HAL_GPIO_LockPin
+./Core/Src/stm32f4xx_it.c:209:31: error: 'GPIO_Pin_0' undeclared (first use in this function); did you mean 'GPIO_PIN_0'?
+   if (HAL_GPIO_rEADpIN(GPIOB, GPIO_Pin_0) == 0 && step <64)
+                               ^~~~~~~~~~
+                               GPIO_PIN_0
+./Core/Src/stm32f4xx_it.c:209:31: note: each undeclared identifier is reported only once for each function it appears in
+./Core/Src/stm32f4xx_it.c: In function 'EXTI1_IRQHandler':
+./Core/Src/stm32f4xx_it.c:227:31: error: 'GPIO_Pin_1' undeclared (first use in this function); did you mean 'GPIO_PIN_1'?
+   if (HAL_GPIO_rEADpIN(GPIOB, GPIO_Pin_1) == 0 && step > 1)
+                               ^~~~~~~~~~
+                               GPIO_PIN_1
+
+[2022-02-15 07:22:13]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        2776 B        96 KB      2.82%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/stm32f4xx_it.o: in function `EXTI0_IRQHandler':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Src/stm32f4xx_it.c:209: undefined reference to `HAL_GPIO_rEADpIN'
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Core/Src/stm32f4xx_it.o: in function `EXTI1_IRQHandler':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-3.ADC\ADC/./Core/Src/stm32f4xx_it.c:227: undefined reference to `HAL_GPIO_rEADpIN'
+collect2.exe: error: ld returned 1 exit status
+           FLASH:        8800 B       384 KB      2.24%
+
+
+[2022-02-15 07:23:01]	[done]
+	build successfully !
+
+[2022-02-15 07:26:23]	[done]
+	build successfully !
+
+[2022-02-15 07:27:13]	[done]
+	build successfully !
+
+[2022-02-15 07:27:19]	[done]
+	build successfully !
+
+[2022-02-15 07:28:19]	[done]
+	build successfully !
+

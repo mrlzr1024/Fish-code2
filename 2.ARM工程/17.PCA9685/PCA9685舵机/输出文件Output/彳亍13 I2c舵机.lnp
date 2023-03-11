@@ -1,0 +1,5 @@
+"..\输出文件Output\main.obj",
+"..\输出文件Output\I2CA.obj",
+"..\输出文件Output\PCA9685.obj" 
+TO "..\输出文件Output\彳亍13 I2c舵机" 
+PRINT(".\Listings\彳亍13 I2c舵机.m51") RAMSIZE(256) 

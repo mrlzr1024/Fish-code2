@@ -1,0 +1,6 @@
+--cpu Cortex-M4.fp.sp -g --apcs=interwork 
+-I.\RTE\_F401CED_UART
+-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+-ID:\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+--pd "__UVISION_VERSION SETA 533" --pd "_RTE_ SETA 1" --pd "STM32F401xE SETA 1" --pd "_RTE_ SETA 1"
+--list startup_stm32f401xe.lst --xref -o f401ced_uart\startup_stm32f401xe.o --depend f401ced_uart\startup_stm32f401xe.d "startup_stm32f401xe.s"

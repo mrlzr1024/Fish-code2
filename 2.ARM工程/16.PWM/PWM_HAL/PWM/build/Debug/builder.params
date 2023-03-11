@@ -1,0 +1,97 @@
+{
+    "name": "PWM",
+    "target": "Debug",
+    "toolchain": "GCC",
+    "showRepathOnLog": true,
+    "threadNum": 10,
+    "rootDir": "e:\\咸鱼先生的单片机开发文件\\2.ARM工程\\16.PWM\\PWM_HAL\\PWM",
+    "dumpPath": ".eide/log",
+    "outDir": "build/Debug",
+    "ram": 20480,
+    "rom": 65536,
+    "incDirs": [
+        ".eide/deps",
+        ".eide/deps",
+        "Core/Src",
+        "Core/Inc",
+        "Drivers",
+        "Drivers/STM32F1xx_HAL_Driver/Src",
+        "Drivers/STM32F1xx_HAL_Driver/Inc",
+        "Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+        "Drivers/CMSIS/Include",
+        "Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+    ],
+    "libDirs": [],
+    "defines": [
+        "STM32F1xx"
+    ],
+    "sourceList": [
+        "Core/Src/gpio.c",
+        "Core/Src/main.c",
+        "Core/Src/stm32f1xx_hal_msp.c",
+        "Core/Src/stm32f1xx_it.c",
+        "Core/Src/system_stm32f1xx.c",
+        "Core/Src/tim.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c",
+        "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c",
+        "Drivers/startup_stm32f103xb.s"
+    ],
+    "sourceParams": {},
+    "sourceParamsMtime": 1648391658277.7158,
+    "options": {
+        "version": 4,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [],
+        "global": {
+            "$float-abi-type": "softfp",
+            "output-debug-info": "enable",
+            "toolPrefix": "arm-none-eabi-",
+            "microcontroller-cpu": "cortex-m3",
+            "microcontroller-fpu": "cortex-m3",
+            "microcontroller-float": "cortex-m3",
+            "target": "cortex-m3"
+        },
+        "c/cpp-compiler": {
+            "language-c": "c11",
+            "language-cpp": "c++11",
+            "optimization": "level-debug",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true,
+            "C_FLAGS": "",
+            "CXX_FLAGS": ""
+        },
+        "asm-compiler": {
+            "ASM_FLAGS": ""
+        },
+        "linker": {
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "LD_FLAGS": "--specs=nosys.specs --specs=nano.specs",
+            "LIB_FLAGS": "-lm",
+            "link-scatter": [
+                "\"e:/咸鱼先生的单片机开发文件/2.ARM工程/16.PWM/PWM_HAL/PWM/Drivers/STM32F103C8Tx_FLASH.ld\""
+            ]
+        }
+    },
+    "sha": {
+        "c/cpp-defines": "259c4ab7dc596436fc7a85762b3e5b4a",
+        "beforeBuildTasks": "d751713988987e9331980363e24189ce",
+        "afterBuildTasks": "d751713988987e9331980363e24189ce",
+        "global": "30aa8671b8ec650757758fe00f264e94",
+        "c/cpp-compiler": "292b10e2fef533def4cb15297b4e0391",
+        "asm-compiler": "dd2e48fddd09233278cb37447cf1e693",
+        "linker": "f80bf125a4ed471c30f63bb4d4f94570"
+    }
+}

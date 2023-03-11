@@ -1,0 +1,6 @@
+r
+halt
+loadfile "d:\天堂制造\时钟立方沙盒\红外沙盒\11.时钟立方\STM32工程文件\USER\build\Template\USER.hex"
+r
+go
+exit

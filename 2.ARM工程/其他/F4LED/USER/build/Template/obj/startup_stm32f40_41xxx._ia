@@ -1,0 +1,1 @@
+--apcs=interwork --cpu Cortex-M4.fp --li --pd "__MICROLIB SETA 1" -g -I.\..\CORE -I.\..\SYSTEM\delay -I.\..\SYSTEM\sys -I.\..\SYSTEM\usart -Ie:\咸鱼先生的单片机开发文件\2.ARM工程\其他\F4LED\USER\. -I.\..\FWLIB\inc -I.\.eide\deps -o .\build\Template\obj\startup_stm32f40_41xxx.o --depend .\build\Template\obj\startup_stm32f40_41xxx.d e:\咸鱼先生的单片机开发文件\2.ARM工程\其他\F4LED\CORE\startup_stm32f40_41xxx.s

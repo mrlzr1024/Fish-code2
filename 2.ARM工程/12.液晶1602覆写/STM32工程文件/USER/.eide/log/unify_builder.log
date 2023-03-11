@@ -1,0 +1,149 @@
+[2021-12-22 22:37:55]	[done]
+	build successfully !
+
+[2021-12-22 22:38:23]	[done]
+	build successfully !
+
+[2021-12-22 22:38:44]	[done]
+	build successfully !
+
+[2021-12-22 22:39:47]	[done]
+	build successfully !
+
+[2021-12-22 22:40:10]	[done]
+	build successfully !
+
+[2021-12-22 22:41:27]	[done]
+	build successfully !
+
+[2021-12-22 22:47:19]	[done]
+	build successfully !
+
+[2021-12-22 22:49:46]	[done]
+	build successfully !
+
+[2021-12-22 22:51:49]	[done]
+	build successfully !
+
+[2021-12-22 22:52:32]	[done]
+	build successfully !
+
+[2021-12-22 22:52:58]	[done]
+	build successfully !
+
+[2021-12-22 22:53:11]	[done]
+	build successfully !
+
+[2021-12-22 22:54:06]	[done]
+	build successfully !
+
+[2021-12-22 22:55:07]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\12.液晶1602覆写\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x000e4] in <21713b1a1a2e41dd95f1e8662ec70b4e>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x01629] in <21713b1a1a2e41dd95f1e8662ec70b4e>:0 
+---
+".\main.c", line 58: Error:  #65: expected a ";"
+  		PAout(0) ~=PAout(0);
+  		         ^
+.\main.c: 0 warnings, 1 error
+
+[2021-12-22 22:55:23]	[done]
+	build successfully !
+
+[2021-12-23 07:18:52]	[done]
+	build successfully !
+
+[2021-12-23 07:21:57]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01752] in <21713b1a1a2e41dd95f1e8662ec70b4e>:0 
+---
+Error: L6200E: Symbol MSR_MSP multiply defined (by sys.o and sys.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2021-12-23 07:22:31]	[done]
+	build successfully !
+
+[2021-12-23 07:23:34]	[done]
+	build successfully !
+
+[2021-12-23 07:24:09]	[done]
+	build successfully !
+
+[2021-12-23 07:26:54]	[done]
+	build successfully !
+
+[2021-12-23 07:39:15]	[done]
+	build successfully !
+
+[2021-12-23 07:54:50]	[done]
+	build successfully !
+
+[2021-12-23 07:55:29]	[done]
+	build successfully !
+
+[2021-12-23 08:00:15]	[done]
+	build successfully !
+
+[2021-12-23 08:01:33]	[done]
+	build successfully !
+
+[2021-12-23 08:03:06]	[done]
+	build successfully !
+
+[2021-12-23 08:12:34]	[done]
+	build successfully !
+
+[2021-12-23 08:13:05]	[done]
+	build successfully !
+
+[2021-12-23 08:15:06]	[done]
+	build successfully !
+
+[2021-12-23 08:16:16]	[done]
+	build successfully !
+
+[2021-12-23 08:17:41]	[done]
+	build successfully !
+
+[2021-12-23 08:21:18]	[done]
+	build successfully !
+
+[2021-12-23 08:56:44]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01752] in <21713b1a1a2e41dd95f1e8662ec70b4e>:0 
+---
+Error: L6218E: Undefined symbol uart_init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2021-12-23 08:56:53]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\12.液晶1602覆写\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x000e4] in <21713b1a1a2e41dd95f1e8662ec70b4e>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x01629] in <21713b1a1a2e41dd95f1e8662ec70b4e>:0 
+---
+".\main.c", line 85: Warning:  #870-D: invalid multibyte character sequence
+  		printf("璇烽敭鍏ユ寚浠?");
+  		               ^
+".\main.c", line 97: Error:  #65: expected a ";"
+  	}
+  	^
+.\main.c: 1 warning, 1 error
+
+[2021-12-23 08:57:03]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01752] in <21713b1a1a2e41dd95f1e8662ec70b4e>:0 
+---
+Error: L6218E: Undefined symbol USART_RX_BUF (referred from main.o).
+Error: L6218E: Undefined symbol uart_init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2021-12-23 08:57:50]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01752] in <21713b1a1a2e41dd95f1e8662ec70b4e>:0 
+---
+Error: L6218E: Undefined symbol USART_RX_BUF (referred from main.o).
+Error: L6218E: Undefined symbol uart_init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+

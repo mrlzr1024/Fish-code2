@@ -1,0 +1,39 @@
+-mthumb -mfloat-abi=soft -mcpu=cortex-m4 -T "e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-3.ADC/ADC/STM32F401CDUx_FLASH.ld" --specs=nosys.specs --specs=nano.specs -Wl,--gc-sections -Wl,--print-memory-usage
+-Wl,-Map=./build/Debug/ADC.map
+-o ./build/Debug/ADC.elf ./build/Debug/Core/Src/Code.o
+./build/Debug/Core/Src/adc.o
+./build/Debug/Core/Src/gpio.o
+./build/Debug/Core/Src/image.o
+./build/Debug/Core/Src/main.o
+./build/Debug/Core/Src/oled_basic.o
+./build/Debug/Core/Src/oled_bmp.o
+./build/Debug/Core/Src/oled_buffer.o
+./build/Debug/Core/Src/oled_color.o
+./build/Debug/Core/Src/oled_config.o
+./build/Debug/Core/Src/oled_draw.o
+./build/Debug/Core/Src/oled_driver.o
+./build/Debug/Core/Src/oled_font.o
+./build/Debug/Core/Src/spi.o
+./build/Debug/Core/Src/stm32f4xx_hal_msp.o
+./build/Debug/Core/Src/stm32f4xx_it.o
+./build/Debug/Core/Src/system_stm32f4xx.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
+./build/Debug/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.o
+./build/Debug/Drivers/startup_stm32f401xe.o -lm

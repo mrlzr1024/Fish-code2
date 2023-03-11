@@ -1,0 +1,6 @@
+EIDE_UNIFY_BUILDER := 1
+CFLAGS := -c --apcs=interwork --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -I.\..\CORE -Id:\天堂制造\时钟立方沙盒\红外沙盒\11.时钟立方\STM32工程文件\USER\. -I.\..\HALLIB\inc -I.\..\SYSTEM\sys -I.\..\SYSTEM\delay -I.\..\SYSTEM\usart -I.\.eide\deps -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER
+CXXFLAGS := -c --cpp --apcs=interwork --cpu Cortex-M3 --li -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -I.\..\CORE -Id:\天堂制造\时钟立方沙盒\红外沙盒\11.时钟立方\STM32工程文件\USER\. -I.\..\HALLIB\inc -I.\..\SYSTEM\sys -I.\..\SYSTEM\delay -I.\..\SYSTEM\usart -I.\.eide\deps -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER
+ASMFLAGS := --apcs=interwork --cpu Cortex-M3 --li --pd "__MICROLIB SETA 1" -g -I.\..\CORE -Id:\天堂制造\时钟立方沙盒\红外沙盒\11.时钟立方\STM32工程文件\USER\. -I.\..\HALLIB\inc -I.\..\SYSTEM\sys -I.\..\SYSTEM\delay -I.\..\SYSTEM\usart -I.\.eide\deps
+LDFLAGS := --cpu Cortex-M3 --library_type=microlib --scatter "d:/天堂制造/时钟立方沙盒/红外沙盒/11.时钟立方/STM32工程文件/USER/build/Template/USER.sct" --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers --list .\build\Template\USER.map
+LDLIBS := 

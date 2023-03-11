@@ -1,0 +1,107 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: l 梁芝瑞, w, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.14.0.0
+Toolchain Path:  D:\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      CMSIS_AGDI.dll V1.21.0.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+E:\咸鱼先生的单片机开发文件\2.ARM工程\其他\F4LED\USER\Template.uvprojx
+Project File Date:  01/15/2022
+
+<h2>Output:</h2>
+Rebuild target 'Template'
+compiling main.c...
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+compiling oled_basic.c...
+compiling oled_bmp.c...
+compiling oled_buffer.c...
+compiling oled_color.c...
+compiling oled_config.c...
+oled_config.c(52): warning:  #223-D: function "HAL_Delay" declared implicitly
+        HAL_Delay(ms);
+oled_config.c: 1 warning, 0 errors
+compiling oled_draw.c...
+oled_draw.c(819): error:  #28: expression must have a constant value
+        unsigned char Printf_buf[Buf_Len];
+oled_draw.c(821): error:  #268: declaration may not appear after executable statement in block
+        va_list args;
+oled_draw.c: 0 warnings, 2 errors
+compiling oled_driver.c...
+oled_driver.c(23): error:  #20: identifier "SPI_HandleTypeDef" is undefined
+  extern SPI_HandleTypeDef hspi2;
+oled_driver.c(49): warning:  #223-D: function "HAL_GPIO_WritePin" declared implicitly
+                        ZK_CS_Clr();
+oled_driver.c(49): error:  #20: identifier "GPIO_PIN_2" is undefined
+                        ZK_CS_Clr();
+oled_driver.c(49): error:  #20: identifier "GPIO_PIN_RESET" is undefined
+                        ZK_CS_Clr();
+oled_driver.c(50): warning:  #223-D: function "HAL_SPI_Transmit" declared implicitly
+                        HAL_SPI_Transmit(&ZK_SPI, command, 4, 0xffff);                  
+oled_driver.c(51): warning:  #223-D: function "HAL_SPI_Receive" declared implicitly
+                        HAL_SPI_Receive(&ZK_SPI, pbuff, 32, 0xffff);
+oled_driver.c(52): error:  #20: identifier "GPIO_PIN_SET" is undefined
+                        ZK_CS_Set();
+oled_driver.c(95): warning:  #223-D: function "HAL_GPIO_WritePin" declared implicitly
+        if(cmd) OLED_DC_Set();//写命令
+oled_driver.c(95): error:  #20: identifier "GPIO_PIN_10" is undefined
+        if(cmd) OLED_DC_Set();//写命令
+oled_driver.c(95): error:  #20: identifier "GPIO_PIN_SET" is undefined
+        if(cmd) OLED_DC_Set();//写命令
+oled_driver.c(96): error:  #20: identifier "GPIO_PIN_RESET" is undefined
+                else    OLED_DC_Clr();
+oled_driver.c(97): error:  #20: identifier "GPIO_PIN_12" is undefined
+        OLED_CS_Clr();            
+oled_driver.c(98): warning:  #223-D: function "HAL_SPI_Transmit" declared implicitly
+        HAL_SPI_Transmit(&OLED_SPI, &dat, 1, 0x100);             
+oled_driver.c(105): warning:  #223-D: function "HAL_GPIO_WritePin" declared implicitly
+        OLED_DC_Set();//写命令
+oled_driver.c(105): error:  #20: identifier "GPIO_PIN_10" is undefined
+        OLED_DC_Set();//写命令
+oled_driver.c(105): error:  #20: identifier "GPIO_PIN_SET" is undefined
+        OLED_DC_Set();//写命令
+oled_driver.c(107): error:  #20: identifier "GPIO_PIN_12" is undefined
+        OLED_CS_Clr();            
+oled_driver.c(107): error:  #20: identifier "GPIO_PIN_RESET" is undefined
+        OLED_CS_Clr();            
+oled_driver.c(108): warning:  #223-D: function "HAL_SPI_Transmit" declared implicitly
+        HAL_SPI_Transmit(&OLED_SPI, dat, lenth, 0x100);          
+oled_driver.c(135): warning:  #223-D: function "HAL_Delay" declared implicitly
+        HAL_Delay(200);
+oled_driver.c: 8 warnings, 12 errors
+compiling oled_font.c...
+assembling startup_stm32f40_41xxx.s...
+compiling misc.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_crc.c...
+compiling stm32f4xx_cryp.c...
+compiling stm32f4xx_cryp_aes.c...
+compiling stm32f4xx_cryp_des.c...
+compiling stm32f4xx_cryp_tdes.c...
+
+<h2>Collection of Component include folders:</h2>
+  E:\咸鱼先生的单片机开发文件\2.ARM工程\其他\F4LED\USER\RTE
+  D:\keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0
+
+<h2>Collection of Component Files used:</h2>
+Project build/rebuild aborted.
+</pre>
+</body>
+</html>

@@ -1,0 +1,4 @@
+[2021-10-30 09:33:59]	compilation failed at : "e:\咸鱼先生的单片机开发文件\ARM工程\ADM彳亍1\STM32基于固件库的工程模板\STM32基于固件库的工程模板\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] doneList) [0x000e4] in <0145ce9df5474e8894a187804b43ab23>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x011ed] in <0145ce9df5474e8894a187804b43ab23>:0 
+

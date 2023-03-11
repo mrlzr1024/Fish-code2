@@ -1,0 +1,114 @@
+
+[2021/12/4 9:4:58 GMT+0800] : launched
+[Hidden] : Command failed: null\ARMCLANG\bin\armclang.exe --target=arm-arm-none-eabi -E -dM - <nul
+ϵͳ�Ҳ���ָ����·����
+
+Error: Command failed: null\ARMCLANG\bin\armclang.exe --target=arm-arm-none-eabi -E -dM - <nul
+ϵͳ�Ҳ���ָ����·����
+
+	at checkExecSyncError (child_process.js:633:11)
+	at Object.execSync (child_process.js:669:15)
+	at Object.execSync (electron/js2c/asar_bundle.js:5:12288)
+	at C.getMacroList (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:130495)
+	at new C (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:130339)
+	at C.newInstance (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:130792)
+	at EventEmitter.<anonymous> (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:120114)
+	at EventEmitter.emit (events.js:327:22)
+	at c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:15508
+	at l.fire (c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:66:1712)
+	at t.$acceptConfigurationChanged (c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:98:41988)
+	at c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:98:41242
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[Hidden] : Command failed: null\ARMCLANG\bin\armclang.exe --target=arm-arm-none-eabi -E -dM - <nul
+ϵͳ�Ҳ���ָ����·����
+
+Error: Command failed: null\ARMCLANG\bin\armclang.exe --target=arm-arm-none-eabi -E -dM - <nul
+ϵͳ�Ҳ���ָ����·����
+
+	at checkExecSyncError (child_process.js:633:11)
+	at Object.execSync (child_process.js:669:15)
+	at Object.execSync (electron/js2c/asar_bundle.js:5:12288)
+	at C.getMacroList (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:130495)
+	at new C (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:130339)
+	at C.newInstance (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:130792)
+	at EventEmitter.<anonymous> (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:120114)
+	at EventEmitter.emit (events.js:327:22)
+	at c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:15508
+	at l.fire (c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:66:1712)
+	at t.$acceptConfigurationChanged (c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:98:41988)
+	at c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:98:41242
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[Hidden] : Command failed: D:\keil5\ARM\ARMCLANG\bin\armclang.exe --target=arm-arm-none-eabi -E -dM - <nul
+ϵͳ�Ҳ���ָ����·����
+
+Error: Command failed: D:\keil5\ARM\ARMCLANG\bin\armclang.exe --target=arm-arm-none-eabi -E -dM - <nul
+ϵͳ�Ҳ���ָ����·����
+
+	at checkExecSyncError (child_process.js:633:11)
+	at Object.execSync (child_process.js:669:15)
+	at Object.execSync (electron/js2c/asar_bundle.js:5:12288)
+	at C.getMacroList (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:130495)
+	at new C (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:130339)
+	at C.newInstance (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:130792)
+	at EventEmitter.<anonymous> (c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:120114)
+	at EventEmitter.emit (events.js:327:22)
+	at c:\Users\梁芝瑞\.vscode\extensions\cl.eide-2.14.0\dist\extension.js:1:15508
+	at l.fire (c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:66:1712)
+	at t.$acceptConfigurationChanged (c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:98:41988)
+	at c:\Users\梁芝瑞\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:98:41242
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+
+
+[2021/12/4 9:56:35 GMT+0800] : launched
+
+
+
+[2021/12/5 16:14:4 GMT+0800] : launched
+
+
+
+[2021/12/5 16:43:47 GMT+0800] : launched
+
+
+[2021/12/12 21:21:35 GMT+0800] : launched
+
+
+[2022/3/26 9:23:4 GMT+0800] : launched
+[2022/3/26 21:54:22 GMT+0800] : launched
+
+
+[2022/3/27 12:33:9 GMT+0800] : launched
+
+
+[2022/3/27 22:14:56 GMT+0800] : launched
+
+
+[2022/3/27 22:37:19 GMT+0800] : launched
+
+
+[2022/3/28 12:58:28 GMT+0800] : launched
+
+
+[2022/3/28 20:12:43 GMT+0800] : launched
+
+
+[2022/3/29 14:3:52 GMT+0800] : launched
+
+
+[2022/3/29 14:10:53 GMT+0800] : launched
+
+
+[2022/3/29 15:14:51 GMT+0800] : launched
+
+
+[2022/4/8 13:50:35 GMT+0800] : launched
+
+
+[2022/4/9 23:4:7 GMT+0800] : launched
+[2022/4/16 12:6:47 GMT+0800] : launched
+
+
+[2022/4/21 14:8:36 GMT+0800] : launched
+
+

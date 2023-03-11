@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"dac\main.o"
+"dac\gpio.o"
+"dac\dac.o"
+"dac\dma.o"
+"dac\stm32f1xx_it.o"
+"dac\stm32f1xx_hal_msp.o"
+"dac\stm32f1xx_hal_gpio_ex.o"
+"dac\stm32f1xx_hal_dac.o"
+"dac\stm32f1xx_hal_dac_ex.o"
+"dac\stm32f1xx_hal.o"
+"dac\stm32f1xx_hal_rcc.o"
+"dac\stm32f1xx_hal_rcc_ex.o"
+"dac\stm32f1xx_hal_gpio.o"
+"dac\stm32f1xx_hal_dma.o"
+"dac\stm32f1xx_hal_cortex.o"
+"dac\stm32f1xx_hal_pwr.o"
+"dac\stm32f1xx_hal_flash.o"
+"dac\stm32f1xx_hal_flash_ex.o"
+"dac\stm32f1xx_hal_exti.o"
+"dac\stm32f1xx_hal_tim.o"
+"dac\stm32f1xx_hal_tim_ex.o"
+"dac\system_stm32f1xx.o"
+--entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "./DAC/\DAC.map" -o DAC\DAC.axf

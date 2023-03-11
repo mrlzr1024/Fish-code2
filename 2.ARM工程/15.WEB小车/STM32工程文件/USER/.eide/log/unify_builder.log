@@ -1,0 +1,438 @@
+[2021-12-04 09:19:58]	compilation failed at : "e:\咸鱼先生的单片机开发文件\ARM工程\4.流水灯\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] doneList) [0x000e4] in <881485cd164b4f5a918f957d29d55652>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x011e7] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-04 09:50:46]	compilation failed at : "e:\咸鱼先生的单片机开发文件\ARM工程\4.流水灯\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-04 09:58:21]	compilation failed at : "e:\咸鱼先生的单片机开发文件\ARM工程\4.流水灯\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-04 12:43:30]	compilation failed at : "e:\咸鱼先生的单片机开发文件\ARM工程\4.流水灯\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-05 16:38:01]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\5.串口通信\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-05 16:43:53]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\5.串口通信\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-12 21:21:45]	[done]
+	build successfully !
+
+[2022-03-26 09:29:45]	[done]
+	build successfully !
+
+[2022-03-26 09:35:08]	[done]
+	build successfully !
+
+[2022-03-26 09:35:22]	[done]
+	build successfully !
+
+[2022-03-26 09:37:11]	[done]
+	build successfully !
+
+[2022-03-26 09:38:25]	[done]
+	build successfully !
+
+[2022-03-26 09:51:15]	[done]
+	build successfully !
+
+[2022-03-26 09:52:37]	[done]
+	build successfully !
+
+[2022-03-26 11:58:36]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol Init_Car (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-03-27 12:34:27]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+Error: L6218E: Undefined symbol LZR_init_PWM (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-03-27 12:35:03]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+Error: L6218E: Undefined symbol LZR_init_PWM (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-03-29 14:18:31]	[done]
+	build successfully !
+
+[2022-03-29 14:24:21]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\main.c", line 76: Error:  #167: argument of type "char *" is incompatible with parameter of type "uint16_t"
+  		USART_SendData(USART1, "ANDDDD");
+  		                       ^
+".\main.c", line 79: Error:  #167: argument of type "char *" is incompatible with parameter of type "uint16_t"
+  		USART_SendData(USART1, "END");
+  		                       ^
+.\main.c: 0 warnings, 2 errors
+
+[2022-03-29 14:24:41]	[done]
+	build successfully !
+
+[2022-03-29 14:27:11]	[done]
+	build successfully !
+
+[2022-03-29 14:29:22]	[done]
+	build successfully !
+
+[2022-03-29 14:31:47]	[done]
+	build successfully !
+
+[2022-03-29 14:32:21]	[done]
+	build successfully !
+
+[2022-03-29 14:33:06]	[done]
+	build successfully !
+
+[2022-03-29 14:34:59]	[done]
+	build successfully !
+
+[2022-03-29 14:35:22]	[done]
+	build successfully !
+
+[2022-03-29 14:49:00]	[done]
+	build successfully !
+
+[2022-03-29 15:02:29]	[done]
+	build successfully !
+
+[2022-03-29 15:05:45]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\main.c", line 24: Error:  #101: "USART0" has already been declared in the current scope
+  	USART_InitTypeDef USART0;
+  	                  ^
+".\main.c", line 25: Error:  #101: "NVIC0" has already been declared in the current scope
+  	NVIC_InitTypeDef NVIC0;
+  	                 ^
+".\main.c", line 16: Warning:  #177-D: variable "USART0" was declared but never referenced
+  	USART_InitTypeDef USART0;
+  	                  ^
+".\main.c", line 17: Warning:  #177-D: variable "NVIC0" was declared but never referenced
+  	NVIC_InitTypeDef NVIC0;
+  	                 ^
+".\main.c", line 18: Warning:  #177-D: variable "led" was declared but never referenced
+  	 u16 led = 0;
+  	     ^
+".\main.c", line 19: Warning:  #177-D: variable "dir" was declared but never referenced
+      u8 dir = 1;
+         ^
+.\main.c: 4 warnings, 2 errors
+
+[2022-03-29 15:06:03]	[done]
+	build successfully !
+
+[2022-03-29 15:08:01]	[done]
+	build successfully !
+
+[2022-03-29 15:09:21]	[done]
+	build successfully !
+
+[2022-03-29 15:12:11]	[done]
+	build successfully !
+
+[2022-03-29 15:17:31]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\main.c", line 27: Warning:  #223-D: function "LZR_init_PWM" declared implicitly
+  	LZR_init_PWM(999,712);
+  	^
+".\main.c", line 28: Warning:  #223-D: function "My_Usart_Init" declared implicitly
+  	My_Usart_Init(USART0,NVIC0)
+  	^
+".\main.c", line 29: Error:  #32: expression must have arithmetic type
+  	PCout(13) = 1;
+  	^
+.\main.c: 2 warnings, 1 error
+
+[2022-03-29 15:18:25]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\main.c", line 27: Warning:  #223-D: function "Init_Car" declared implicitly
+  	Init_Car(1,2,3,4);
+  	^
+".\main.c", line 28: Warning:  #223-D: function "LZR_init_PWM" declared implicitly
+  	LZR_init_PWM(999,712);
+  	^
+".\main.c", line 29: Warning:  #223-D: function "My_Usart_Init" declared implicitly
+  	My_Usart_Init(USART0,NVIC0)
+  	^
+".\main.c", line 30: Error:  #32: expression must have arithmetic type
+  	PCout(13) = 1;
+  	^
+.\main.c: 3 warnings, 1 error
+
+[2022-03-29 15:18:33]	[done]
+	build successfully !
+
+[2022-03-29 15:18:40]	[done]
+	build successfully !
+
+[2022-03-29 15:19:38]	[done]
+	build successfully !
+
+[2022-03-29 15:20:57]	[done]
+	build successfully !
+
+[2022-03-29 15:24:17]	[done]
+	build successfully !
+
+[2022-03-29 15:24:39]	[done]
+	build successfully !
+
+[2022-03-29 15:45:12]	[done]
+	build successfully !
+
+[2022-03-29 15:58:32]	[done]
+	build successfully !
+
+[2022-03-29 15:58:38]	[done]
+	build successfully !
+
+[2022-03-29 16:14:15]	[done]
+	build successfully !
+
+[2022-03-29 18:11:04]	[done]
+	build successfully !
+
+[2022-03-29 18:24:20]	[done]
+	build successfully !
+
+[2022-03-29 18:28:25]	[done]
+	build successfully !
+
+[2022-03-30 13:26:43]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\main.c", line 55: Error:  #20: identifier "j" is undefined
+  			for(;local>=0;j--){
+  			              ^
+.\main.c: 0 warnings, 1 error
+
+[2022-03-30 13:26:53]	[done]
+	build successfully !
+
+[2022-03-30 18:24:48]	[done]
+	build successfully !
+
+[2022-03-30 18:26:44]	[done]
+	build successfully !
+
+[2022-03-31 13:12:18]	[done]
+	build successfully !
+
+[2022-03-31 17:00:15]	[done]
+	build successfully !
+
+[2022-03-31 17:27:25]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\Car.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\Car.c", line 27: Warning:  #223-D: function "translate" declared implicitly
+  	TIM_SetCompare1(TIM2, translate());
+  	                      ^
+".\Car.c", line 32: Error:  #147-D: declaration is incompatible with "void left(int)" (declared at line 19 of ".\Car.h")
+  void left(void){
+       ^
+".\Car.c", line 38: Error:  #147-D: declaration is incompatible with "void right(int)" (declared at line 20 of ".\Car.h")
+  void right(void){
+       ^
+".\Car.c", line 44: Error:  #147-D: declaration is incompatible with "void back(int)" (declared at line 21 of ".\Car.h")
+  void back(void){
+       ^
+.\Car.c: 1 warning, 3 errors
+
+[2022-03-31 17:27:55]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\Car.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\Car.c", line 32: Error:  #147-D: declaration is incompatible with "void left(int)" (declared at line 19 of ".\Car.h")
+  void left(void){
+       ^
+".\Car.c", line 38: Error:  #147-D: declaration is incompatible with "void right(int)" (declared at line 20 of ".\Car.h")
+  void right(void){
+       ^
+".\Car.c", line 44: Error:  #147-D: declaration is incompatible with "void back(int)" (declared at line 21 of ".\Car.h")
+  void back(void){
+       ^
+.\Car.c: 0 warnings, 3 errors
+
+[2022-03-31 17:28:48]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\Car.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\Car.c", line 32: Error:  #79: expected a type specifier
+  void left((int num){
+            ^
+".\Car.c", line 32: Error:  #18: expected a ")"
+  void left((int num){
+                     ^
+".\Car.c", line 32: Error:  #141-D: unnamed prototyped parameters not allowed when body is present
+  void left((int num){
+       ^
+".\Car.c", line 38: Error:  #79: expected a type specifier
+  void right((int num){
+             ^
+".\Car.c", line 38: Error:  #18: expected a ")"
+  void right((int num){
+                      ^
+".\Car.c", line 38: Error:  #141-D: unnamed prototyped parameters not allowed when body is present
+  void right((int num){
+       ^
+".\Car.c", line 44: Error:  #79: expected a type specifier
+  void back((int num){
+            ^
+".\Car.c", line 44: Error:  #18: expected a ")"
+  void back((int num){
+                     ^
+".\Car.c", line 44: Error:  #141-D: unnamed prototyped parameters not allowed when body is present
+  void back((int num){
+       ^
+".\Car.c", line 50: Error:  #79: expected a type specifier
+  void stop((int num){
+            ^
+".\Car.c", line 50: Error:  #18: expected a ")"
+  void stop((int num){
+                     ^
+".\Car.c", line 50: Error:  #141-D: unnamed prototyped parameters not allowed when body is present
+  void stop((int num){
+       ^
+.\Car.c: 0 warnings, 12 errors
+
+[2022-03-31 17:29:17]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\main.c", line 38: Error:  #165: too few arguments in function call
+  		forward();
+  		        ^
+".\main.c", line 41: Error:  #165: too few arguments in function call
+  		left();
+  		     ^
+".\main.c", line 44: Error:  #165: too few arguments in function call
+  		right();
+  		      ^
+".\main.c", line 47: Error:  #165: too few arguments in function call
+  		back();
+  		     ^
+.\main.c: 0 warnings, 4 errors
+
+[2022-03-31 17:30:33]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\main.c", line 38: Error:  #165: too few arguments in function call
+  		forward();
+  		        ^
+".\main.c", line 41: Error:  #165: too few arguments in function call
+  		left();
+  		     ^
+".\main.c", line 44: Error:  #165: too few arguments in function call
+  		right();
+  		      ^
+".\main.c", line 47: Error:  #165: too few arguments in function call
+  		back();
+  		     ^
+.\main.c: 0 warnings, 4 errors
+
+[2022-03-31 17:31:35]	[done]
+	build successfully !
+
+[2022-03-31 17:33:15]	[done]
+	build successfully !
+
+[2022-03-31 17:36:07]	[done]
+	build successfully !
+
+[2022-03-31 17:39:56]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\Car.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\Car.c", line 10: Error:  #130: expected a "{"
+  int pin_A=0;
+  ^
+".\Car.c", line 15: Warning:  #12-D: parsing restarts here after previous syntax error
+  {
+  ^
+".\Car.c", line 16: Error:  #20: identifier "pin_A" is undefined
+  	pin_A=pin_a;
+  	^
+".\Car.c", line 16: Error:  #20: identifier "pin_a" is undefined
+  	pin_A=pin_a;
+  	      ^
+".\Car.c", line 17: Error:  #20: identifier "pin_B" is undefined
+  	pin_B=pin_b;
+  	^
+".\Car.c", line 17: Error:  #20: identifier "pin_b" is undefined
+  	pin_B=pin_b;
+  	      ^
+".\Car.c", line 18: Error:  #20: identifier "pin_C" is undefined
+  	pin_C=pin_c;
+  	^
+".\Car.c", line 18: Error:  #20: identifier "pin_c" is undefined
+  	pin_C=pin_c;
+  	      ^
+".\Car.c", line 19: Error:  #20: identifier "pin_D" is undefined
+  	pin_D=pin_d;
+  	^
+".\Car.c", line 19: Error:  #20: identifier "pin_d" is undefined
+  	pin_D=pin_d;
+  	      ^
+".\Car.c", line 50: Error:  #247: function "stop" has already been defined
+  void stop(void){
+       ^
+.\Car.c: 1 warning, 10 errors
+
+[2022-03-31 17:40:27]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\main.c", line 50: Error:  #140: too many arguments in function call
+  		stop(translate());
+  		     ^
+.\main.c: 0 warnings, 1 error
+
+[2022-03-31 17:40:37]	[done]
+	build successfully !
+
+[2022-04-02 19:11:57]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\main.c", line 55: Error:  #65: expected a ";"
+  			break;
+  			^
+".\main.c", line 56: Error:  #2706: case label value has already appeared in this switch at line 47
+  		case 'b'://鍚戝彸鍋?  		     ^
+".\main.c", line 58: Error:  #65: expected a ";"
+  			break;
+  			^
+.\main.c: 0 warnings, 3 errors
+
+[2022-04-02 19:12:11]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\15.WEB小车\STM32工程文件\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\main.c", line 56: Error:  #2706: case label value has already appeared in this switch at line 47
+  		case 'b'://鍚戝彸鍋?  		     ^
+.\main.c: 0 warnings, 1 error
+
+[2022-04-02 19:12:49]	[done]
+	build successfully !
+
+[2022-04-02 19:13:05]	[done]
+	build successfully !
+
+[2022-04-02 19:26:14]	[done]
+	build successfully !
+
+[2022-04-02 19:59:38]	[done]
+	build successfully !
+
+[2022-04-02 20:09:46]	[done]
+	build successfully !
+

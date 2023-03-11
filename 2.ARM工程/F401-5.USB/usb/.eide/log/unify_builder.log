@@ -1,0 +1,984 @@
+[2022-02-12 17:58:53]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\USB\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/main.c:21:10: fatal error: usb_device.h: No such file or directory
+ #include "usb_device.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+
+[2022-02-12 18:00:18]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/USB/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 18:00:31]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/USB/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 18:00:54]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/USB/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 18:01:50]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/usb/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 18:01:55]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/main.c:21:10: fatal error: usb_device.h: No such file or directory
+ #include "usb_device.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+
+[2022-02-12 18:02:39]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+In file included from ./Core/Src/usbd_cdc_if.c:22:
+./Core/Inc/usbd_cdc_if.h:30:10: fatal error: usbd_cdc.h: No such file or directory
+ #include "usbd_cdc.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+In file included from ./Core/Src/main.c:21:
+./Core/Inc/usb_device.h:32:10: fatal error: usbd_def.h: No such file or directory
+ #include "usbd_def.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+
+[2022-02-12 18:03:34]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+In file included from ./Core/Src/usbd_cdc_if.c:22:
+./Core/Inc/usbd_cdc_if.h:30:10: fatal error: usbd_cdc.h: No such file or directory
+ #include "usbd_cdc.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+In file included from ./Core/Src/main.c:21:
+./Core/Inc/usb_device.h:32:10: fatal error: usbd_def.h: No such file or directory
+ #include "usbd_def.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+
+[2022-02-12 18:04:20]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/usb/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 18:05:59]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/usb/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 18:07:26]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/main.c:21:10: fatal error: usb_device.h: No such file or directory
+ #include "usb_device.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+
+[2022-02-12 18:07:47]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/usbd_cdc_if.c:22:10: fatal error: usbd_cdc_if.h: No such file or directory
+ #include "usbd_cdc_if.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Core/Src/main.c:21:
+./Core/Inc/usb_device.h:32:10: fatal error: usbd_def.h: No such file or directory
+ #include "usbd_def.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+
+[2022-02-12 18:13:20]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+In file included from ./Core/Src/main.c:21:
+./Core/Inc/usb_device.h:32:10: fatal error: usbd_def.h: No such file or directory
+ #include "usbd_def.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+
+[2022-02-12 18:15:02]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Core\Src\usbd_cdc_if.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+In file included from ./Core/Inc/usbd_cdc_if.h:30,
+                 from ./Core/Src/usbd_cdc_if.c:22:
+./Core/Inc/usbd_cdc.h:29:11: fatal error: usbd_ioreq.h: No such file or directory
+ #include  "usbd_ioreq.h"
+           ^~~~~~~~~~~~~~
+compilation terminated.
+
+[2022-02-12 18:16:04]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Core\Src\usb_device.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/usbd_conf.c:25:10: fatal error: usbd_core.h: No such file or directory
+ #include "usbd_core.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+./Core/Src/usb_device.c:24:10: fatal error: usbd_core.h: No such file or directory
+ #include "usbd_core.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+
+[2022-02-12 18:17:05]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Core\Src\usb_device.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+In file included from ./Core/Src/usbd_core.c:21:
+./Core/Inc/usbd_core.h:32:10: fatal error: usbd_ctlreq.h: No such file or directory
+ #include "usbd_ctlreq.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Core/Src/usb_device.c:24:
+./Core/Inc/usbd_core.h:32:10: fatal error: usbd_ctlreq.h: No such file or directory
+ #include "usbd_ctlreq.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+[2022-02-12 18:18:02]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/usb/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 20:49:38]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/usb/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 20:50:53]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/usb/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 20:52:53]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/usb/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 20:53:02]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/usb/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 20:59:57]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/usb/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 21:01:22]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file e:/咸鱼先生的单片机开发文件/2.ARM工程/F401-5.USB/usb/undefined: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+
+
+[2022-02-12 21:01:38]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:95: multiple definition of `USBD_Init'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:95: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_DeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:131: multiple definition of `USBD_DeInit'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:131: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_RegisterClass':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:166: multiple definition of `USBD_RegisterClass'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:166: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Start':
+             RAM:        8856 B        96 KB      9.01%
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:203: multiple definition of `USBD_Start'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:203: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Stop':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:215: multiple definition of `USBD_Stop'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:215: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_RunTestMode':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:240: multiple definition of `USBD_RunTestMode'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:240: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_SetClassConfig':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:251: multiple definition of `USBD_SetClassConfig'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:251: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_ClrClassConfig':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:271: multiple definition of `USBD_ClrClassConfig'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:271: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SetupStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:289: multiple definition of `USBD_LL_SetupStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:289: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DataOutStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:330: multiple definition of `USBD_LL_DataOutStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:330: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DataInStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:401: multiple definition of `USBD_LL_DataInStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:401: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Reset':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:493: multiple definition of `USBD_LL_Reset'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:493: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SetSpeed':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:535: multiple definition of `USBD_LL_SetSpeed'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:535: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Suspend':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:549: multiple definition of `USBD_LL_Suspend'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:549: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Resume':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:564: multiple definition of `USBD_LL_Resume'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:564: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SOF':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:581: multiple definition of `USBD_LL_SOF'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:581: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_IsoINIncomplete':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:606: multiple definition of `USBD_LL_IsoINIncomplete'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:606: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_IsoOUTIncomplete':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:631: multiple definition of `USBD_LL_IsoOUTIncomplete'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:631: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DevConnected':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:659: multiple definition of `USBD_LL_DevConnected'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:659: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DevDisconnected':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:668: multiple definition of `USBD_LL_DevDisconnected'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:668: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_ParseSetupRequest':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:843: multiple definition of `USBD_ParseSetupRequest'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:843: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_CtlError':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:869: multiple definition of `USBD_CtlError'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:869: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdDevReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:101: multiple definition of `USBD_StdDevReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:101: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdItfReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:164: multiple definition of `USBD_StdItfReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:164: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdEPReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:215: multiple definition of `USBD_StdEPReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:215: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_GetString':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:890: multiple definition of `USBD_GetString'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:890: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlSendData':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:89: multiple definition of `USBD_CtlSendData'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:89: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlContinueSendData':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:116: multiple definition of `USBD_CtlContinueSendData'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:116: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlPrepareRx':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:133: multiple definition of `USBD_CtlPrepareRx'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:133: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlContinueRx':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:160: multiple definition of `USBD_CtlContinueRx'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:160: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlSendStatus':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:173: multiple definition of `USBD_CtlSendStatus'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:173: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlReceiveStatus':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:190: multiple definition of `USBD_CtlReceiveStatus'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:190: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_GetRxCount':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:208: multiple definition of `USBD_GetRxCount'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:208: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usb_device.o: in function `MX_USB_DEVICE_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usb_device.c:65: multiple definition of `MX_USB_DEVICE_Init'; ./build/Debug/Core/Src/usb_device.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usb_device.c:65: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_cdc_if.o: in function `CDC_Transmit_FS':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_cdc_if.c:285: multiple definition of `CDC_Transmit_FS'; ./build/Debug/Core/Src/usbd_cdc_if.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_cdc_if.c:285: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_cdc_if.o:(.data.USBD_Interface_fops_FS+0x0): multiple definition of `USBD_Interface_fops_FS'; ./build/Debug/Core/Src/usbd_cdc_if.o:(.data.USBD_Interface_fops_FS+0x0): first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_DeviceDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:261: multiple definition of `USBD_FS_DeviceDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:261: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_LangIDStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:274: multiple definition of `USBD_FS_LangIDStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:274: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_SerialStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:317: multiple definition of `USBD_FS_SerialStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:317: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ProductStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:285: multiple definition of `USBD_FS_ProductStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:285: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ManufacturerStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:304: multiple definition of `USBD_FS_ManufacturerStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:304: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ConfigStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:337: multiple definition of `USBD_FS_ConfigStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:337: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_InterfaceStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:356: multiple definition of `USBD_FS_InterfaceStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:356: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:238: multiple definition of `USBD_StringSerial'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:238: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:221: multiple definition of `USBD_LangIDDesc'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:221: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:155: multiple definition of `USBD_FS_DeviceDesc'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:155: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:(.data.FS_Desc+0x0): multiple definition of `FS_Desc'; ./build/Debug/Core/Src/usbd_desc.o:(.data.FS_Desc+0x0): first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_MspInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:70: multiple definition of `HAL_PCD_MspInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:70: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_MspDeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:103: multiple definition of `HAL_PCD_MspDeInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:103: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SetupStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:137: multiple definition of `HAL_PCD_SetupStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:137: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DataOutStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:152: multiple definition of `HAL_PCD_DataOutStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:152: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DataInStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:167: multiple definition of `HAL_PCD_DataInStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:167: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SOFCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:181: multiple definition of `HAL_PCD_SOFCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:181: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ResetCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:195: multiple definition of `HAL_PCD_ResetCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:195: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SuspendCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:228: multiple definition of `HAL_PCD_SuspendCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:228: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ResumeCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:253: multiple definition of `HAL_PCD_ResumeCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:253: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ISOOUTIncompleteCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:271: multiple definition of `HAL_PCD_ISOOUTIncompleteCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:271: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ISOINIncompleteCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:286: multiple definition of `HAL_PCD_ISOINIncompleteCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:286: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ConnectCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:300: multiple definition of `HAL_PCD_ConnectCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:300: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DisconnectCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:314: multiple definition of `HAL_PCD_DisconnectCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:314: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:330: multiple definition of `USBD_LL_Init'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:330: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_IsStallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:523: multiple definition of `USBD_LL_IsStallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:523: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_GetRxDataSize':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:600: multiple definition of `USBD_LL_GetRxDataSize'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:600: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_static_malloc':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:613: multiple definition of `USBD_static_malloc'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:613: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_static_free':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:623: multiple definition of `USBD_static_free'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:623: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Delay':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:631: multiple definition of `USBD_LL_Delay'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:631: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_Get_USB_Status':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:644: multiple definition of `USBD_Get_USB_Status'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:644: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_DeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:378: multiple definition of `USBD_LL_DeInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:378: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Start':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:395: multiple definition of `USBD_LL_Start'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:395: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Stop':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:412: multiple definition of `USBD_LL_Stop'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:412: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_OpenEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:432: multiple definition of `USBD_LL_OpenEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:432: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_CloseEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:450: multiple definition of `USBD_LL_CloseEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:450: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_FlushEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:468: multiple definition of `USBD_LL_FlushEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:468: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_StallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:486: multiple definition of `USBD_LL_StallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:486: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_ClearStallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:504: multiple definition of `USBD_LL_ClearStallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:504: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_SetUSBAddress':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:542: multiple definition of `USBD_LL_SetUSBAddress'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:542: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Transmit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:562: multiple definition of `USBD_LL_Transmit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:562: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_PrepareReceive':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:582: multiple definition of `USBD_LL_PrepareReceive'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:582: first defined here
+collect2.exe: error: ld returned 1 exit status
+           FLASH:       15264 B       384 KB      3.88%
+
+
+[2022-02-12 21:01:50]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        8856 B        96 KB      9.01%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:95: multiple definition of `USBD_Init'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:95: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_DeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:131: multiple definition of `USBD_DeInit'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:131: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_RegisterClass':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:166: multiple definition of `USBD_RegisterClass'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:166: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Start':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:203: multiple definition of `USBD_Start'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:203: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Stop':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:215: multiple definition of `USBD_Stop'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:215: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_RunTestMode':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:240: multiple definition of `USBD_RunTestMode'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:240: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_SetClassConfig':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:251: multiple definition of `USBD_SetClassConfig'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:251: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_ClrClassConfig':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:271: multiple definition of `USBD_ClrClassConfig'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:271: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SetupStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:289: multiple definition of `USBD_LL_SetupStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:289: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DataOutStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:330: multiple definition of `USBD_LL_DataOutStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:330: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DataInStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:401: multiple definition of `USBD_LL_DataInStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:401: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Reset':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:493: multiple definition of `USBD_LL_Reset'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:493: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SetSpeed':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:535: multiple definition of `USBD_LL_SetSpeed'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:535: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Suspend':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:549: multiple definition of `USBD_LL_Suspend'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:549: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Resume':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:564: multiple definition of `USBD_LL_Resume'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:564: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SOF':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:581: multiple definition of `USBD_LL_SOF'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:581: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_IsoINIncomplete':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:606: multiple definition of `USBD_LL_IsoINIncomplete'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:606: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_IsoOUTIncomplete':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:631: multiple definition of `USBD_LL_IsoOUTIncomplete'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:631: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DevConnected':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:659: multiple definition of `USBD_LL_DevConnected'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:659: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DevDisconnected':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:668: multiple definition of `USBD_LL_DevDisconnected'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:668: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_ParseSetupRequest':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:843: multiple definition of `USBD_ParseSetupRequest'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:843: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_CtlError':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:869: multiple definition of `USBD_CtlError'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:869: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdDevReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:101: multiple definition of `USBD_StdDevReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:101: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdItfReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:164: multiple definition of `USBD_StdItfReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:164: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdEPReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:215: multiple definition of `USBD_StdEPReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:215: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_GetString':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:890: multiple definition of `USBD_GetString'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:890: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlSendData':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:89: multiple definition of `USBD_CtlSendData'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:89: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlContinueSendData':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:116: multiple definition of `USBD_CtlContinueSendData'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:116: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlPrepareRx':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:133: multiple definition of `USBD_CtlPrepareRx'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:133: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlContinueRx':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:160: multiple definition of `USBD_CtlContinueRx'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:160: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlSendStatus':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:173: multiple definition of `USBD_CtlSendStatus'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:173: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlReceiveStatus':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:190: multiple definition of `USBD_CtlReceiveStatus'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:190: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_GetRxCount':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:208: multiple definition of `USBD_GetRxCount'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:208: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usb_device.o: in function `MX_USB_DEVICE_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usb_device.c:65: multiple definition of `MX_USB_DEVICE_Init'; ./build/Debug/Core/Src/usb_device.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usb_device.c:65: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_cdc_if.o: in function `CDC_Transmit_FS':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_cdc_if.c:285: multiple definition of `CDC_Transmit_FS'; ./build/Debug/Core/Src/usbd_cdc_if.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_cdc_if.c:285: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_cdc_if.o:(.data.USBD_Interface_fops_FS+0x0): multiple definition of `USBD_Interface_fops_FS'; ./build/Debug/Core/Src/usbd_cdc_if.o:(.data.USBD_Interface_fops_FS+0x0): first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_DeviceDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:261: multiple definition of `USBD_FS_DeviceDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:261: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_LangIDStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:274: multiple definition of `USBD_FS_LangIDStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:274: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_SerialStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:317: multiple definition of `USBD_FS_SerialStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:317: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ProductStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:285: multiple definition of `USBD_FS_ProductStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:285: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ManufacturerStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:304: multiple definition of `USBD_FS_ManufacturerStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:304: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ConfigStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:337: multiple definition of `USBD_FS_ConfigStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:337: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_InterfaceStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:356: multiple definition of `USBD_FS_InterfaceStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:356: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:238: multiple definition of `USBD_StringSerial'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:238: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:221: multiple definition of `USBD_LangIDDesc'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:221: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:155: multiple definition of `USBD_FS_DeviceDesc'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:155: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:(.data.FS_Desc+0x0): multiple definition of `FS_Desc'; ./build/Debug/Core/Src/usbd_desc.o:(.data.FS_Desc+0x0): first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_MspInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:70: multiple definition of `HAL_PCD_MspInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:70: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_MspDeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:103: multiple definition of `HAL_PCD_MspDeInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:103: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SetupStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:137: multiple definition of `HAL_PCD_SetupStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:137: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DataOutStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:152: multiple definition of `HAL_PCD_DataOutStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:152: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DataInStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:167: multiple definition of `HAL_PCD_DataInStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:167: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SOFCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:181: multiple definition of `HAL_PCD_SOFCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:181: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ResetCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:195: multiple definition of `HAL_PCD_ResetCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:195: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SuspendCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:228: multiple definition of `HAL_PCD_SuspendCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:228: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ResumeCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:253: multiple definition of `HAL_PCD_ResumeCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:253: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ISOOUTIncompleteCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:271: multiple definition of `HAL_PCD_ISOOUTIncompleteCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:271: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ISOINIncompleteCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:286: multiple definition of `HAL_PCD_ISOINIncompleteCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:286: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ConnectCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:300: multiple definition of `HAL_PCD_ConnectCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:300: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DisconnectCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:314: multiple definition of `HAL_PCD_DisconnectCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:314: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:330: multiple definition of `USBD_LL_Init'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:330: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_IsStallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:523: multiple definition of `USBD_LL_IsStallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:523: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_GetRxDataSize':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:600: multiple definition of `USBD_LL_GetRxDataSize'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:600: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_static_malloc':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:613: multiple definition of `USBD_static_malloc'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:613: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_static_free':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:623: multiple definition of `USBD_static_free'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:623: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Delay':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:631: multiple definition of `USBD_LL_Delay'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:631: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_Get_USB_Status':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:644: multiple definition of `USBD_Get_USB_Status'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:644: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_DeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:378: multiple definition of `USBD_LL_DeInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:378: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Start':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:395: multiple definition of `USBD_LL_Start'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:395: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Stop':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:412: multiple definition of `USBD_LL_Stop'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:412: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_OpenEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:432: multiple definition of `USBD_LL_OpenEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:432: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_CloseEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:450: multiple definition of `USBD_LL_CloseEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:450: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_FlushEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:468: multiple definition of `USBD_LL_FlushEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:468: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_StallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:486: multiple definition of `USBD_LL_StallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:486: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_ClearStallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:504: multiple definition of `USBD_LL_ClearStallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:504: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_SetUSBAddress':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:542: multiple definition of `USBD_LL_SetUSBAddress'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:542: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Transmit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:562: multiple definition of `USBD_LL_Transmit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:562: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_PrepareReceive':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:582: multiple definition of `USBD_LL_PrepareReceive'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:582: first defined here
+collect2.exe: error: ld returned 1 exit status
+           FLASH:       15264 B       384 KB      3.88%
+
+
+[2022-02-12 21:03:57]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        8856 B        96 KB      9.01%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:95: multiple definition of `USBD_Init'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:95: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_DeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:131: multiple definition of `USBD_DeInit'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:131: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_RegisterClass':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:166: multiple definition of `USBD_RegisterClass'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:166: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Start':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:203: multiple definition of `USBD_Start'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:203: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Stop':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:215: multiple definition of `USBD_Stop'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:215: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_RunTestMode':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:240: multiple definition of `USBD_RunTestMode'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:240: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_SetClassConfig':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:251: multiple definition of `USBD_SetClassConfig'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:251: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_ClrClassConfig':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:271: multiple definition of `USBD_ClrClassConfig'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:271: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SetupStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:289: multiple definition of `USBD_LL_SetupStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:289: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DataOutStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:330: multiple definition of `USBD_LL_DataOutStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:330: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DataInStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:401: multiple definition of `USBD_LL_DataInStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:401: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Reset':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:493: multiple definition of `USBD_LL_Reset'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:493: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SetSpeed':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:535: multiple definition of `USBD_LL_SetSpeed'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:535: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Suspend':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:549: multiple definition of `USBD_LL_Suspend'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:549: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Resume':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:564: multiple definition of `USBD_LL_Resume'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:564: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SOF':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:581: multiple definition of `USBD_LL_SOF'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:581: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_IsoINIncomplete':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:606: multiple definition of `USBD_LL_IsoINIncomplete'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:606: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_IsoOUTIncomplete':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:631: multiple definition of `USBD_LL_IsoOUTIncomplete'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:631: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DevConnected':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:659: multiple definition of `USBD_LL_DevConnected'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:659: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DevDisconnected':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:668: multiple definition of `USBD_LL_DevDisconnected'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:668: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_ParseSetupRequest':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:843: multiple definition of `USBD_ParseSetupRequest'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:843: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_CtlError':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:869: multiple definition of `USBD_CtlError'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:869: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdDevReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:101: multiple definition of `USBD_StdDevReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:101: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdItfReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:164: multiple definition of `USBD_StdItfReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:164: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdEPReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:215: multiple definition of `USBD_StdEPReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:215: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_GetString':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:890: multiple definition of `USBD_GetString'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:890: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlSendData':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:89: multiple definition of `USBD_CtlSendData'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:89: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlContinueSendData':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:116: multiple definition of `USBD_CtlContinueSendData'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:116: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlPrepareRx':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:133: multiple definition of `USBD_CtlPrepareRx'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:133: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlContinueRx':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:160: multiple definition of `USBD_CtlContinueRx'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:160: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlSendStatus':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:173: multiple definition of `USBD_CtlSendStatus'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:173: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlReceiveStatus':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:190: multiple definition of `USBD_CtlReceiveStatus'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:190: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_GetRxCount':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:208: multiple definition of `USBD_GetRxCount'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:208: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usb_device.o: in function `MX_USB_DEVICE_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usb_device.c:65: multiple definition of `MX_USB_DEVICE_Init'; ./build/Debug/Core/Src/usb_device.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usb_device.c:65: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_cdc_if.o: in function `CDC_Transmit_FS':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_cdc_if.c:285: multiple definition of `CDC_Transmit_FS'; ./build/Debug/Core/Src/usbd_cdc_if.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_cdc_if.c:285: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_cdc_if.o:(.data.USBD_Interface_fops_FS+0x0): multiple definition of `USBD_Interface_fops_FS'; ./build/Debug/Core/Src/usbd_cdc_if.o:(.data.USBD_Interface_fops_FS+0x0): first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_DeviceDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:261: multiple definition of `USBD_FS_DeviceDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:261: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_LangIDStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:274: multiple definition of `USBD_FS_LangIDStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:274: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_SerialStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:317: multiple definition of `USBD_FS_SerialStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:317: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ProductStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:285: multiple definition of `USBD_FS_ProductStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:285: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ManufacturerStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:304: multiple definition of `USBD_FS_ManufacturerStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:304: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ConfigStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:337: multiple definition of `USBD_FS_ConfigStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:337: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_InterfaceStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:356: multiple definition of `USBD_FS_InterfaceStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:356: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:238: multiple definition of `USBD_StringSerial'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:238: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:221: multiple definition of `USBD_LangIDDesc'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:221: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:155: multiple definition of `USBD_FS_DeviceDesc'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:155: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:(.data.FS_Desc+0x0): multiple definition of `FS_Desc'; ./build/Debug/Core/Src/usbd_desc.o:(.data.FS_Desc+0x0): first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_MspInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:70: multiple definition of `HAL_PCD_MspInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:70: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_MspDeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:103: multiple definition of `HAL_PCD_MspDeInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:103: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SetupStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:137: multiple definition of `HAL_PCD_SetupStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:137: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DataOutStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:152: multiple definition of `HAL_PCD_DataOutStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:152: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DataInStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:167: multiple definition of `HAL_PCD_DataInStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:167: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SOFCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:181: multiple definition of `HAL_PCD_SOFCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:181: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ResetCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:195: multiple definition of `HAL_PCD_ResetCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:195: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SuspendCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:228: multiple definition of `HAL_PCD_SuspendCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:228: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ResumeCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:253: multiple definition of `HAL_PCD_ResumeCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:253: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ISOOUTIncompleteCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:271: multiple definition of `HAL_PCD_ISOOUTIncompleteCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:271: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ISOINIncompleteCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:286: multiple definition of `HAL_PCD_ISOINIncompleteCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:286: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ConnectCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:300: multiple definition of `HAL_PCD_ConnectCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:300: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DisconnectCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:314: multiple definition of `HAL_PCD_DisconnectCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:314: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:330: multiple definition of `USBD_LL_Init'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:330: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_IsStallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:523: multiple definition of `USBD_LL_IsStallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:523: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_GetRxDataSize':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:600: multiple definition of `USBD_LL_GetRxDataSize'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:600: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_static_malloc':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:613: multiple definition of `USBD_static_malloc'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:613: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_static_free':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:623: multiple definition of `USBD_static_free'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:623: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Delay':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:631: multiple definition of `USBD_LL_Delay'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:631: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_Get_USB_Status':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:644: multiple definition of `USBD_Get_USB_Status'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:644: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_DeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:378: multiple definition of `USBD_LL_DeInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:378: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Start':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:395: multiple definition of `USBD_LL_Start'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:395: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Stop':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:412: multiple definition of `USBD_LL_Stop'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:412: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_OpenEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:432: multiple definition of `USBD_LL_OpenEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:432: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_CloseEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:450: multiple definition of `USBD_LL_CloseEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:450: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_FlushEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:468: multiple definition of `USBD_LL_FlushEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:468: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_StallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:486: multiple definition of `USBD_LL_StallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:486: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_ClearStallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:504: multiple definition of `USBD_LL_ClearStallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:504: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_SetUSBAddress':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:542: multiple definition of `USBD_LL_SetUSBAddress'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:542: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Transmit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:562: multiple definition of `USBD_LL_Transmit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:562: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_PrepareReceive':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:582: multiple definition of `USBD_LL_PrepareReceive'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:582: first defined here
+collect2.exe: error: ld returned 1 exit status
+           FLASH:       15264 B       384 KB      3.88%
+
+
+[2022-02-12 21:04:47]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Memory region         Used Size  Region Size  %age Used
+             RAM:        8856 B        96 KB      9.01%
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:95: multiple definition of `USBD_Init'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:95: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_DeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:131: multiple definition of `USBD_DeInit'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:131: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_RegisterClass':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:166: multiple definition of `USBD_RegisterClass'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:166: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Start':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:203: multiple definition of `USBD_Start'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:203: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_Stop':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:215: multiple definition of `USBD_Stop'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:215: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_RunTestMode':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:240: multiple definition of `USBD_RunTestMode'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:240: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_SetClassConfig':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:251: multiple definition of `USBD_SetClassConfig'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:251: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_ClrClassConfig':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:271: multiple definition of `USBD_ClrClassConfig'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:271: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SetupStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:289: multiple definition of `USBD_LL_SetupStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:289: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DataOutStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:330: multiple definition of `USBD_LL_DataOutStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:330: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DataInStage':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:401: multiple definition of `USBD_LL_DataInStage'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:401: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Reset':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:493: multiple definition of `USBD_LL_Reset'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:493: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SetSpeed':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:535: multiple definition of `USBD_LL_SetSpeed'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:535: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Suspend':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:549: multiple definition of `USBD_LL_Suspend'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:549: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_Resume':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:564: multiple definition of `USBD_LL_Resume'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:564: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_SOF':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:581: multiple definition of `USBD_LL_SOF'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:581: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_IsoINIncomplete':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:606: multiple definition of `USBD_LL_IsoINIncomplete'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:606: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_IsoOUTIncomplete':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:631: multiple definition of `USBD_LL_IsoOUTIncomplete'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:631: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DevConnected':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:659: multiple definition of `USBD_LL_DevConnected'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:659: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o: in function `USBD_LL_DevDisconnected':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c:668: multiple definition of `USBD_LL_DevDisconnected'; ./build/Debug/Core/Src/usbd_core.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_core.c:668: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_ParseSetupRequest':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:843: multiple definition of `USBD_ParseSetupRequest'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:843: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_CtlError':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:869: multiple definition of `USBD_CtlError'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:869: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdDevReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:101: multiple definition of `USBD_StdDevReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:101: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdItfReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:164: multiple definition of `USBD_StdItfReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:164: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_StdEPReq':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:215: multiple definition of `USBD_StdEPReq'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:215: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o: in function `USBD_GetString':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c:890: multiple definition of `USBD_GetString'; ./build/Debug/Core/Src/usbd_ctlreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ctlreq.c:890: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlSendData':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:89: multiple definition of `USBD_CtlSendData'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:89: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlContinueSendData':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:116: multiple definition of `USBD_CtlContinueSendData'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:116: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlPrepareRx':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:133: multiple definition of `USBD_CtlPrepareRx'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:133: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlContinueRx':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:160: multiple definition of `USBD_CtlContinueRx'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:160: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlSendStatus':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:173: multiple definition of `USBD_CtlSendStatus'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:173: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_CtlReceiveStatus':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:190: multiple definition of `USBD_CtlReceiveStatus'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:190: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o: in function `USBD_GetRxCount':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:208: multiple definition of `USBD_GetRxCount'; ./build/Debug/Core/Src/usbd_ioreq.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_ioreq.c:208: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usb_device.o: in function `MX_USB_DEVICE_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usb_device.c:65: multiple definition of `MX_USB_DEVICE_Init'; ./build/Debug/Core/Src/usb_device.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usb_device.c:65: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_cdc_if.o: in function `CDC_Transmit_FS':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_cdc_if.c:285: multiple definition of `CDC_Transmit_FS'; ./build/Debug/Core/Src/usbd_cdc_if.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_cdc_if.c:285: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_cdc_if.o:(.data.USBD_Interface_fops_FS+0x0): multiple definition of `USBD_Interface_fops_FS'; ./build/Debug/Core/Src/usbd_cdc_if.o:(.data.USBD_Interface_fops_FS+0x0): first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_DeviceDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:261: multiple definition of `USBD_FS_DeviceDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:261: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_LangIDStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:274: multiple definition of `USBD_FS_LangIDStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:274: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_SerialStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:317: multiple definition of `USBD_FS_SerialStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:317: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ProductStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:285: multiple definition of `USBD_FS_ProductStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:285: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ManufacturerStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:304: multiple definition of `USBD_FS_ManufacturerStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:304: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_ConfigStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:337: multiple definition of `USBD_FS_ConfigStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:337: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o: in function `USBD_FS_InterfaceStrDescriptor':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:356: multiple definition of `USBD_FS_InterfaceStrDescriptor'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:356: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:238: multiple definition of `USBD_StringSerial'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:238: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:221: multiple definition of `USBD_LangIDDesc'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:221: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/App/usbd_desc.c:155: multiple definition of `USBD_FS_DeviceDesc'; ./build/Debug/Core/Src/usbd_desc.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_desc.c:155: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/App/usbd_desc.o:(.data.FS_Desc+0x0): multiple definition of `FS_Desc'; ./build/Debug/Core/Src/usbd_desc.o:(.data.FS_Desc+0x0): first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_MspInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:70: multiple definition of `HAL_PCD_MspInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:70: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_MspDeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:103: multiple definition of `HAL_PCD_MspDeInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:103: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SetupStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:137: multiple definition of `HAL_PCD_SetupStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:137: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DataOutStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:152: multiple definition of `HAL_PCD_DataOutStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:152: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DataInStageCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:167: multiple definition of `HAL_PCD_DataInStageCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:167: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SOFCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:181: multiple definition of `HAL_PCD_SOFCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:181: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ResetCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:195: multiple definition of `HAL_PCD_ResetCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:195: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_SuspendCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:228: multiple definition of `HAL_PCD_SuspendCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:228: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ResumeCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:253: multiple definition of `HAL_PCD_ResumeCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:253: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ISOOUTIncompleteCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:271: multiple definition of `HAL_PCD_ISOOUTIncompleteCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:271: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ISOINIncompleteCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:286: multiple definition of `HAL_PCD_ISOINIncompleteCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:286: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_ConnectCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:300: multiple definition of `HAL_PCD_ConnectCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:300: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `HAL_PCD_DisconnectCallback':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:314: multiple definition of `HAL_PCD_DisconnectCallback'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:314: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Init':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:330: multiple definition of `USBD_LL_Init'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:330: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_IsStallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:523: multiple definition of `USBD_LL_IsStallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:523: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_GetRxDataSize':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:600: multiple definition of `USBD_LL_GetRxDataSize'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:600: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_static_malloc':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:613: multiple definition of `USBD_static_malloc'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:613: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_static_free':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:623: multiple definition of `USBD_static_free'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:623: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Delay':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:631: multiple definition of `USBD_LL_Delay'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:631: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_Get_USB_Status':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:644: multiple definition of `USBD_Get_USB_Status'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:644: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_DeInit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:378: multiple definition of `USBD_LL_DeInit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:378: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Start':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:395: multiple definition of `USBD_LL_Start'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:395: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Stop':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:412: multiple definition of `USBD_LL_Stop'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:412: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_OpenEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:432: multiple definition of `USBD_LL_OpenEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:432: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_CloseEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:450: multiple definition of `USBD_LL_CloseEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:450: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_FlushEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:468: multiple definition of `USBD_LL_FlushEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:468: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_StallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:486: multiple definition of `USBD_LL_StallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:486: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_ClearStallEP':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:504: multiple definition of `USBD_LL_ClearStallEP'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:504: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_SetUSBAddress':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:542: multiple definition of `USBD_LL_SetUSBAddress'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:542: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_Transmit':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:562: multiple definition of `USBD_LL_Transmit'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:562: first defined here
+c:/users/梁芝瑞/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/USB_DEVICE/Target/usbd_conf.o: in function `USBD_LL_PrepareReceive':
+e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./USB_DEVICE/Target/usbd_conf.c:582: multiple definition of `USBD_LL_PrepareReceive'; ./build/Debug/Core/Src/usbd_conf.o:e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb/./Core/Src/usbd_conf.c:582: first defined here
+collect2.exe: error: ld returned 1 exit status
+           FLASH:       15264 B       384 KB      3.88%
+
+
+[2022-02-12 21:05:26]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c:25:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c:36:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c:58:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c:64:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c:186:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c:40:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ./Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:29,
+                 from ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:29,
+                 from ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c:59:
+./USB_DEVICE/Target/usbd_conf.h:33:10: fatal error: main.h: No such file or directory
+ #include "main.h"
+          ^~~~~~~~
+compilation terminated.
+In file included from ./Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ./Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:29,
+                 from ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:21:
+./USB_DEVICE/Target/usbd_conf.h:33:10: fatal error: main.h: No such file or directory
+ #include "main.h"
+          ^~~~~~~~
+compilation terminated.
+
+[2022-02-12 21:05:38]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c:36:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c:25:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c:40:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c:58:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c:64:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c:186:
+./Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30:10: fatal error: stm32f4xx_hal_conf.h: No such file or directory
+ #include "stm32f4xx_hal_conf.h"
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ./Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ./Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:29,
+                 from ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:29,
+                 from ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c:59:
+./USB_DEVICE/Target/usbd_conf.h:33:10: fatal error: main.h: No such file or directory
+ #include "main.h"
+          ^~~~~~~~
+compilation terminated.
+In file included from ./Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ./Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:29,
+                 from ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c:21:
+./USB_DEVICE/Target/usbd_conf.h:33:10: fatal error: main.h: No such file or directory
+ #include "main.h"
+          ^~~~~~~~
+compilation terminated.
+
+[2022-02-12 21:05:52]	[done]
+	build successfully !
+
+[2022-02-12 21:12:06]	compilation failed at : "e:\咸鱼先生的单片机开发文件\2.ARM工程\F401-5.USB\usb\Core\Src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:97:31: error: 'GPIO_Pin_13' undeclared (first use in this function); did you mean 'GPIO_PIN_13'?
+     HAL_GPIO_TogglePin(GPIOC, GPIO_Pin_13);
+                               ^~~~~~~~~~~
+                               GPIO_PIN_13
+./Core/Src/main.c:97:31: note: each undeclared identifier is reported only once for each function it appears in
+./Core/Src/main.c:99:5: warning: implicit declaration of function 'CDC_Transmit_FS' [-Wimplicit-function-declaration]
+     CDC_Transmit_FS("123", 3);
+     ^~~~~~~~~~~~~~~
+
+[2022-02-12 21:12:23]	[done]
+	build successfully !
+
+[2022-02-12 21:15:30]	[done]
+	build successfully !
+
+[2022-02-12 21:21:01]	[done]
+	build successfully !
+
+[2022-02-12 21:21:22]	[done]
+	build successfully !
+
+[2022-02-12 21:22:31]	[done]
+	build successfully !
+
+[2022-02-12 21:23:26]	[done]
+	build successfully !
+

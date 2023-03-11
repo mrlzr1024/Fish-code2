@@ -1,0 +1,15 @@
+[2022-06-12 16:55:48]	compilation failed at : "e:\1.咸鱼先生的单片机开发文件\2.ARM工程\4.流水灯\STM32工程文件\SYSTEM\usart\usart.c", exit code: 1
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args)
+---
+".\..\SYSTEM\usart\usart.c", line 52: Error:  #260-D: explicit type is missing ("int" assumed)
+  _sys_exit(int x) 
+  ^
+.\..\SYSTEM\usart\usart.c: 0 warnings, 1 error
+
+[2022-06-12 16:57:14]	[done]
+	build successfully !
+
+[2022-06-29 14:48:41]	[done]
+	build successfully !
+
