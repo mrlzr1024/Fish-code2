@@ -1,0 +1,184 @@
+
+
+#include "main.h"
+#define Jiasu 80  //90
+#define Jiansu 80
+#define zhuanwan 60
+//#include <BluetoothSerial.h>
+
+// MPU6050 mpu6050(Wire);
+Display OLED;
+hw_timer_t *tim1 = NULL;
+int cont = 0;
+int max_out = 40;
+float piancha_max = 30;
+bool state[8];
+void my_time_init();
+float piancha = 0, last_piancha = 0, last_last_piancha = 0, pwmout = 0, jifen = 0;
+int Support = 65;
+float p = 1.5 , I = 0.01, d = 0; //  1.5 0,01 0
+long my_time, last;
+int shuliang = 0;
+int jieshu = 0, shizilukou = 3, last_ji = 0;
+int zhuan = 0;
+void setup()
+{
+    pinMode(14, INPUT_PULLUP);
+    Serial.begin(115200); // 初始化日志打印串口
+    Serial2.begin(9600);  // 初始化循迹串口
+    // SerialBT.begin("ESP-Car"); // 如果没有参数传入则默认是蓝牙名称是: "ESP32"
+    OLED.display_init();
+    OLED.Car_init("电机", "正在配置");
+    Car_init();
+    Action(0, 1, 0, 1);
+    encode_init(); // 100===3.5  50===0.98  200===5.50(max_out)
+    Wire.begin(23, 22);
+    OLED.Car_init("电机", "完成");
+    delay(500);
+    if (digitalRead(14) == LOW)
+    {
+        Action(0, 0, 0, 0);
+        OLED.Center("Oh on ! =(");
+        while (digitalRead(14) == LOW)
+            ;
+        Action(0, 1, 0, 1);
+    }
+}
+char Cmd;
+
+void loop()
+{
+    my_time = millis();
+    Serial2.write(0x57);
+    delay(15);
+    if (Serial2.available())
+    {
+        Cmd = Serial2.read();
+        /* code */
+    }
+    // Serial.write(Cmd);
+    for (int i = 0; i < 8; i++)
+    {
+        state[i] = int(Cmd & 1 << i) > 0;
+        jieshu += int(Cmd & 1 << i) > 0;
+        // Serial.print(state[i]);
+        // Serial.print(" ");
+    }
+    if (jieshu <= 0 && jieshu != last_ji)
+    {
+        shizilukou--;
+        if (shizilukou == 0)
+        {
+            Action(0, 0, 0, 0);
+            while (1)
+                ;
+        }
+    }
+
+    Serial.println();
+    for (int i = 2, j = 1; i >= 0; i--, j++)
+    {
+        piancha += state[i] * pow(2, j);
+        shuliang += !state[i];
+    }
+    for (int i = 4, j = 1; i < 7; i++, j++)
+    {
+        piancha -= state[i] * pow(2, j);
+        shuliang += !state[i];
+    }
+    if (shuliang == 1 || shuliang >= 3)
+    {
+        if (shuliang == 1 && (state[0] == 1 || state[6] == 1))
+        {
+            piancha *= 3;
+            
+        }
+        else if(shuliang>=3)
+            {zhuan = 1;
+
+                piancha *= 10;
+            }
+        else
+            piancha *= 2;
+        
+    }
+    else if (shuliang == 0)
+        piancha = last_piancha;
+    Serial.print(piancha);
+    Serial.print("  ");
+    Serial.print(shuliang);
+    Serial.print("  ");
+    if (abs(piancha) > piancha_max)
+        piancha = piancha < 0 ? -piancha_max : piancha_max;
+    jifen += piancha;
+    pwmout = p * piancha + I * jifen + d * (piancha - last_piancha);
+    /*=PID区============================================================================*/
+    if (state[3] == 0 && state[2] == 1 && state[4] == 1)
+    {
+        jifen = 0;
+        pwmout = 0;
+    }
+    if (state[3] == 0 && shuliang <= 1 && shuliang != 0 )
+    {
+        Support = Jiasu;
+        zhuan=0;
+         Action(0, 1, 0, 1);
+    }
+    else if(zhuan){
+        Support = zhuanwan;
+        // if(pwmout>0) Action(0, 1, 1, 0);
+        // else if(pwmout<0) Action(1, 0, 0, 1);
+        if(state[6]==0) Action(0, 1, 1, 0);
+        else if(state[0]==0) Action(1, 0, 0, 1);
+        pwmout=0;
+    }
+    else
+        Support = Jiansu;
+    // else
+    if (abs(pwmout) > max_out)
+        pwmout = pwmout < 0 ? -max_out : max_out;
+    Serial.printf("l=%f,r=%f", (Support + pwmout), (Support - pwmout));
+    // OLED.Car_init( Cmd, " ");
+    pwm_write(int(Support + pwmout), int(Support - pwmout));
+    if (digitalRead(14) == LOW)
+    {
+        Action(0, 0, 0, 0);
+        OLED.Center("Oh on ! =(");
+        while (digitalRead(14) == LOW)
+            ;
+        Action(0, 1, 0, 1);
+    }
+    else
+    {
+        OLED.Center("Run ! =)");
+    }
+    last_ji = jieshu;
+    last_last_piancha = last_piancha;
+    last_piancha = piancha;
+    last = my_time;
+    piancha = 0;
+    shuliang = 0;
+    jieshu = 0;
+}
+
+int Incremental_PI(int Encoder, int Target)
+{
+    static float Bias, Pwm, Last_bias;
+    Bias = Target - Encoder;                  //计算偏差
+    Pwm += p * (Bias - Last_bias) + I * Bias; //增量式PI控制器
+    Last_bias = Bias;                         //保存上一次偏差
+    return Pwm;                               //增量输出
+}
+// 定时器中断回调函数=====执行=====
+// void IRAM_ATTR wc()
+// {
+//     //  mpu6050.update();
+// }
+
+// void my_time_init()
+// {
+//     tim1 = my_timerBegin(2, 80, true);
+//     my_timerAttachInterrupt(tim1, wc, true);
+//     my_timerAlarmWrite(tim1, 10000, true); // 1000us一次
+//     my_timerAlarmEnable(tim1);
+// }

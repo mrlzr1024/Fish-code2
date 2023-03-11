@@ -1,0 +1,59 @@
+// Look at values within URL to determine function
+  if (!strcmp(variable, "framesize"))
+  {
+    Serial.println("framesize");
+    if (s->pixformat == PIXFORMAT_JPEG) res = s->set_framesize(s, (framesize_t)val);
+  }
+  else if (!strcmp(variable, "quality"))
+  {
+    Serial.println("quality");
+    res = s->set_quality(s, val);
+  }
+  else if (!strcmp(variable, "flash"))
+  {
+    ledcWrite(7, val);
+  }
+  else if (!strcmp(variable, "flashoff"))
+  {
+    ledcWrite(7, val);
+  }
+  else if (!strcmp(variable, "speed"))
+  {
+    if      (val > 255) val = 255;
+    else if (val <   0) val = 0;
+    speed = val;
+    ledcWrite(8, speed);
+  }
+  else if (!strcmp(variable, "nostop"))
+  {
+    noStop = val;
+  }
+  else if (!strcmp(variable, "car")) {
+    if (val == 1) {
+      Serial.println("Forward");
+      robot_fwd();
+      robo = 1;
+    }
+    else if (val == 2) {
+      Serial.println("TurnLeft");
+      robot_left();
+      robo = 1;
+    }
+    else if (val == 3) {
+      Serial.println("Stop");
+      robot_stop();
+    }
+    else if (val == 4) {
+      Serial.println("TurnRight");
+      robot_right();
+      robo = 1;
+    }
+    else if (val == 5) {
+      Serial.println("Backward");
+      robot_back();
+      robo = 1;
+    }
+    if (noStop != 1)
+    {
+
+    }

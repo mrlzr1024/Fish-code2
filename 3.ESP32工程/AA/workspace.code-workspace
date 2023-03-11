@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "T-2",
+			"path": "C:\\Users\\梁芝瑞\\Documents\\PlatformIO\\Projects\\T-2"
+		},
+		{
+			"name": "T2",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"hz.c": "cpp"
+		}
+	}
+}

@@ -1,0 +1,29 @@
+
+#include <Arduino.h>
+hw_timer_t *timer = NULL; //定义存放定时器的指针
+int count = 0;
+//定时器中断函数
+void IRAM_ATTR onTimer()
+{
+    //   Serial.print("ok");
+    count++;
+}
+
+void setup()
+{
+    Serial.begin(115200);
+    timer = timerBegin(0, 40, true);            //设置定时器x，80分频，定时器是否上下计数
+    timerAttachInterrupt(timer, onTimer, true); //定时器地址指针，中断函数名称，中断边沿触发类型
+    timerAlarmWrite(timer, 1000000, true);      //操作那个定时器，定时时长单位us，是否自动重装载
+    timerAlarmEnable(timer);                    //打开那个定时器
+}
+
+void loop()
+{
+    // put your main code here, to run repeatedly:
+    Serial.println(count);
+    if (count >= 999)
+    {
+        count = 0;
+    }
+}

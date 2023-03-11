@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "ios": "cpp",
+        "*.tcc": "cpp"
+    },
+    "commentTranslate.hover.enabled": false
+}

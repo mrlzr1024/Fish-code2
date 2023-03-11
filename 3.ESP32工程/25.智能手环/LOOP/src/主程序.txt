@@ -1,0 +1,25 @@
+/**************************************************************************
+ **************************************************************************/
+#include "main.h"
+// hw_timer_t *timer = NULL;
+//取模方式（阴码+逐行式+顺向）
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT,
+                         OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
+Bracelet Loop;
+
+void setup()
+{
+    Serial.begin(115200);
+
+    Display_init(); // oled初始化
+    Encode_init();  //编码器初始化
+    Temp_init();    //温度模块初始化
+    Timer0_init();  //定时器0初始化(1s)
+    
+}
+
+void loop()
+{
+    versatile_encoder->ReadEncoder(); //检测输入
+    
+}

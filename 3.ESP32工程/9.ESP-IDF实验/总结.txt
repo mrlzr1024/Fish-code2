@@ -1,0 +1,17 @@
+1.Arduino也可以支持ESP-IDF编程，只不过：app_main=>setup;while(1)=>loop;
+2.gpio输出：	
+	初始化;
+	gpio_pad_select_gpio(GPIO_NUM_22);                // 选择一个GPIO
+	gpio_set_direction(GPIO_NUM_22, GPIO_MODE_OUTPUT);// 把这个GPIO作为输出
+	输出：
+	gpio_set_level(GPIO_NUM_22, 0);                   // 把这个GPIO输出低电平
+3.延时：vTaskDelay(1000 / portTICK_PERIOD_MS);//延时1000/(端口周期)(portTICK_PERIOD_MS) 秒
+4.GPIO输入：
+	初始化：
+	gpio_pad_select_gpio(GPIO_NUM_36)；
+   	gpio_set_direction(GPIO_NUM_36, GPIO_MODE_INPUT);
+	查询：
+	gpio_get_level(GPIO_NUM_36));
+
+	
+

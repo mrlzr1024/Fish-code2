@@ -1,0 +1,146 @@
+
+// #include <MPU6050_tockn.h>
+// #include <Wire.h>
+// #include "SSD1306.h" // legacy include: `#include "SSD1306.h"`
+// #include "Car_pin.hpp"
+// #include <BluetoothSerial.h>
+// #include <SimpleKalmanFilter.h>
+// MPU6050 mpu6050(Wire);
+// SimpleKalmanFilter simpleKalmanFilter(5, 5, 1);
+
+// long timer = 0;
+// void Adjust();
+// SSD1306 display(0x3c, SDA, SCL); // ADDRESS, SDA, SCL  -  SDA and SCL usually populate automatically based on your board's pins_arduino.h e.g. https://github.com/esp8266/Arduino/blob/master/variants/nodemcu/pins_arduino.h
+// bool staut = LOW;
+// int pwm_pin[] = {pwm_pin_A, pwm_pin_B};
+// int channal[] = {channal_A, channal_B};
+// int pin[] = {2, 3, 8, 9};
+// bool statue[] = {0, 0, 0, 0};
+// float parameter[] = {
+//     0, // B_KP ,
+//     0, // B_KI ,
+//     0, // B_KD ,
+//     0, // V_KP ,
+//     0, // V_KI ,
+//     0, // V_KD
+// };
+// String set[] = {
+//     "B_KP",
+//     "B_KI",
+//     "B_KD",
+//     "V_KP",
+//     "V_KI",
+//     "V_KD",
+// };
+// int mindex = 0;
+// int CMD, MOVE;
+
+// void setup()
+// {
+//     Serial.begin(115200);
+
+//     for (int i = 0; i < 4; i++)
+//     {
+//         pinMode(pin[i], OUTPUT);
+//         digitalWrite(pin[i], statue[i]);
+//         // staut =! staut;
+//     }
+//     for (int i = 0; i < 2; i++)
+//     {
+//         ledcSetup(channal[i], 1000, 8);
+//         ledcAttachPin(pwm_pin[i], channal[i]);
+//     }
+//     ledcWrite(channal[0], 100);
+//     ledcWrite(channal[1], 100);
+
+//     pinMode(12, INPUT_PULLUP);
+//     pinMode(13, INPUT_PULLUP);
+//     pinMode(1, INPUT_PULLUP);
+//     pinMode(0, INPUT_PULLUP);
+
+
+
+//     Wire.begin();
+//     display.init();
+//     display.flipScreenVertically(); // 反转屏幕
+//     display.setContrast(255);
+//     display.setTextAlignment(TEXT_ALIGN_LEFT);
+//     display.setFont(ArialMT_Plain_10);
+//     // display.clear();
+//     // display.drawString(display.getWidth() / 8, 15, "Servo init...");
+//     // display.display();
+//     int a = 10;
+//     display.drawProgressBar(0, 10, 128, 8, a);
+//     display.drawString(display.getWidth() / 8, 30, "MPU init...");
+//     display.drawString(display.getWidth() / 2, 40, "IX");
+//     display.display();
+//     mpu6050.begin();
+//     mpu6050.calcGyroOffsets(true);
+//     display.clear();
+//     while (a <= 100)
+//     {
+//         a += 1;
+//         display.drawProgressBar(0, 10, 128, 8, a);
+//         display.drawString(display.getWidth() / 8, 30, "Complete...");
+//         display.drawString(display.getWidth() / 2, 40, "IX");
+//         display.display();
+//         delay(10);
+//     }
+// }
+// float x = 0, g_x;
+// int pwm;
+// int size = 12;
+// void loop()
+// {
+//     mpu6050.update();
+//     float tmp = mpu6050.getAccAngleX();
+//     float angle = simpleKalmanFilter.updateEstimate(tmp); // 卡尔曼滤波更新！！！！
+//     display.clear();
+//     display.drawString(0, size, String(angle));
+//     display.drawString(50, size, set[mindex]);
+//     display.drawString(0, size * 2, "Bp=" + String(parameter[0]) + "    Vp=" + String(parameter[3]));
+//     display.drawString(0, size * 3, "Bi=" + String(parameter[1]) + "    Vi=" + String(parameter[4]));
+//     display.drawString(0, size * 4, "Bd=" + String(parameter[2]) + "    Vd=" + String(parameter[5]));
+//     display.display();
+//     Serial.printf("orginal:%f,", tmp);
+//     Serial.printf("kalman:%f \r\n", angle);
+//     delay(100);
+//     Adjust();
+// }
+// void Adjust()
+// {
+//     if (digitalRead(12) == LOW)
+//     {
+//         parameter[mindex]++;
+//         while (digitalRead(12) == LOW)
+//             ;
+//     }
+//     else if (digitalRead(13) == LOW)
+//     {
+//         parameter[mindex]--;
+//         while (digitalRead(13) == LOW)
+//             ;
+//     }
+//     if (digitalRead(1) == LOW)
+//     {
+//         mindex++;
+//         while (digitalRead(1) == LOW)
+//             ;
+//     }
+//     else if (digitalRead(0) == LOW)
+//     {
+//         mindex--;
+//         while (digitalRead(0) == LOW)
+//             ;
+//     }
+//     mindex = mindex < 0 ? 5 : mindex;
+//     mindex = mindex > 5 ? 0 : mindex;
+// }
+
+// void IRAM_ATTR TimerEvent()
+// {
+// }
+
+
+
+

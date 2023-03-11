@@ -1,0 +1,96 @@
+
+
+#include "main.h"
+
+unsigned long timer = 0;
+
+MPU6050 mpu6050(Wire);
+PID_Contral pid;
+Kalman_filtering fl;
+
+bool Accident(float angle);
+void output(float pidd);
+
+void setup()
+{
+    // 初始化日志打印串口
+    Serial.begin(115200);
+    Car_init();
+    Action(1, 0, 1, 0);
+    encode_init(); // 100===3.5  50===0.98  200===5.50(max)
+    Wire.begin(23, 22);
+    mpu6050.begin();
+    mpu6050.calcGyroOffsets(true);
+
+    fl.Filter_init(&mpu6050);
+}
+long timer2 = 0;
+String count = "";
+
+/*
+ * 原始数据:90~180 -180~-90
+ * (直立)=-176 (前90°)=90 (后90°)=-90
+ * 角速度：
+ *
+ *
+ */
+void loop()
+{
+    digitalWrite(2, HIGH);
+    delay(500);
+    while (1)
+    {
+        // analogWrite();
+        int angle = -fl.Filtering(&mpu6050)[0];
+        float l_sp = left_speed()*direction,
+              r_sp = right_speed()*direction;
+        Serial.printf("r:%f\t,l:%f\t,direction:%d  ,", r_sp, l_sp,direction);
+        Serial.printf("angle:%d \t,", angle);
+        Serial.printf("w_X:%f\t,", mpu6050.getGyroX());
+        Serial.print("pid:");
+        int pidd = pid.balance(angle, mpu6050.getGyroX()); //+ pid.velocity(l_sp, r_sp);
+        // int pidd = pid.velocity(l_sp, r_sp); //+ pid.velocity(l_sp, r_sp);
+        // int pidd = pid.balance(angle, mpu6050.getGyroY()) + pid.velocity(l_sp, r_sp);
+        if (!Accident(angle))
+        {
+            Serial.println();
+            continue;
+        }
+        if (abs(pidd) > 250)
+            pidd = pidd < 0 ? -250 : 250;
+        Serial.println(pidd);
+        output(pidd);
+    }
+}
+
+void output(float pidd)
+{
+
+    if (pidd > 0)
+    {
+        Action(1, 0, 1, 0);
+    }
+    else if (pidd < 0)
+    {
+        pidd = -pidd;
+        Action(0, 1, 0, 1);
+    }
+    else
+    {
+        Action(0, 0, 0, 0);
+    }
+    pwm_write(pidd, pidd);
+}
+bool Accident(float angle)
+{
+    if (abs(angle) > 45 ) //摔了就不动了(摆)....
+    {
+        pwm_write(0, 0);
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+    return true;
+}

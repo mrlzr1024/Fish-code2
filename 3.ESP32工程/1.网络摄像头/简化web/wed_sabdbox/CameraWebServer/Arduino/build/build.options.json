@@ -1,0 +1,12 @@
+{
+  "additionalFiles": "..,..,..",
+  "builtInLibrariesFolders": "D:\\Arduino\\libraries",
+  "builtInToolsFolders": "D:\\Arduino\\tools-builder,D:\\Arduino\\hardware\\tools\\avr,C:\\Users\\Mrlzr\\AppData\\Local\\Arduino15\\packages",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "build.path=e:\\1.咸鱼先生的单片机开发文件\\3.ESP32工程\\1.网络摄像头\\简化web\\wed_sabdbox\\CameraWebServer\\Arduino\\build,build.warn_data_percentage=75,runtime.tools.esptool_py.path=C:\\Users\\Mrlzr\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esptool_py\\3.0.0,runtime.tools.esptool_py-3.0.0.path=C:\\Users\\Mrlzr\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esptool_py\\3.0.0,runtime.tools.xtensa-esp32-elf-gcc.path=C:\\Users\\Mrlzr\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\xtensa-esp32-elf-gcc\\1.22.0-97-gc752ad5-5.2.0,runtime.tools.xtensa-esp32-elf-gcc-1.22.0-97-gc752ad5-5.2.0.path=C:\\Users\\Mrlzr\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\xtensa-esp32-elf-gcc\\1.22.0-97-gc752ad5-5.2.0,runtime.tools.mkspiffs.path=C:\\Users\\Mrlzr\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\mkspiffs\\0.2.3,runtime.tools.mkspiffs-0.2.3.path=C:\\Users\\Mrlzr\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\mkspiffs\\0.2.3",
+  "fqbn": "esp32:esp32:esp32:PSRAM=disabled,PartitionScheme=default,CPUFreq=240,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=115200,DebugLevel=none",
+  "hardwareFolders": "D:\\Arduino\\hardware,C:\\Users\\Mrlzr\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "C:\\Users\\MRLZR\\Documents\\Arduino\\libraries",
+  "runtime.ide.version": "10819",
+  "sketchLocation": "e:\\1.咸鱼先生的单片机开发文件\\3.ESP32工程\\1.网络摄像头\\简化web\\wed_sabdbox\\CameraWebServer\\CameraWebServer.ino"
+}

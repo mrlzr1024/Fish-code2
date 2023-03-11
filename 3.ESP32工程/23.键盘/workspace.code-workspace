@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "220618-110944-featheresp32",
+			"path": "C:\\Users\\梁芝瑞\\Documents\\PlatformIO\\Projects\\220618-110944-featheresp32"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ios": "cpp",
+			"*.tcc": "cpp"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "trash_can",
+			"path": ".."
+		}
+	],
+    "settings": {
+        "files.associations": {
+            "algorithm": "cpp",
+            "cmath": "cpp",
+            "ostream": "cpp"
+        }
+    }
+}
