@@ -1,0 +1,249 @@
+<html>
+<body>
+<pre>
+<h1>ตVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\มบึฅศ๐\Desktop\ฦๆฦๆนึนึตฤฟชทขฮฤผþ\ธ฿ฝเตฤทจปส\แÜุก7.uvproj
+Project File Date:  07/24/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling แÜุก7.c...
+แÜุก7.C(26): error C141: syntax error near 'unsigned', expected ';'
+แÜุก7.C(27): error C129: missing ';' before 'unsigned'
+Target not created
+Build target 'Target 1'
+compiling แÜุก7.c...
+แÜุก7.C(26): error C141: syntax error near 'unsigned', expected ';'
+แÜุก7.C(45): error C202: 'm6h2': undefined identifier
+แÜุก7.C(51): error C202: 'h12': undefined identifier
+แÜุก7.C(52): error C202: 'm8': undefined identifier
+แÜุก7.C(52): error C202: 'm8': undefined identifier
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(66): error C141: syntax error near ','
+แÜุก7.C(68): error C141: syntax error near '{'
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(72): error C141: syntax error near 'while'
+แÜุก7.C(72): error C141: syntax error near '1'
+แÜุก7.C(74): error C231: 'a': redefinition
+แÜุก7.C(75): error C141: syntax error near 'while'
+แÜุก7.C(75): error C141: syntax error near '!=', expected ')'
+แÜุก7.C(77): error C231: 'C': redefinition
+แÜุก7.C(77): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(78): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(79): error C247: non-address/-constant initializer
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(81): error C141: syntax error near 'for'
+แÜุก7.C(81): error C141: syntax error near '=', expected ')'
+แÜุก7.C(81): error C129: missing ';' before '<'
+Target not created
+Build target 'Target 1'
+compiling แÜุก7.c...
+แÜุก7.C(26): error C141: syntax error near 'unsigned', expected ';'
+แÜุก7.C(45): error C202: 'm6h2': undefined identifier
+แÜุก7.C(51): error C202: 'h12': undefined identifier
+แÜุก7.C(52): error C202: 'm8': undefined identifier
+แÜุก7.C(52): error C202: 'm8': undefined identifier
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(66): error C141: syntax error near ','
+แÜุก7.C(68): error C141: syntax error near '{'
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(72): error C141: syntax error near 'while'
+แÜุก7.C(72): error C141: syntax error near '1'
+แÜุก7.C(74): error C231: 'a': redefinition
+แÜุก7.C(75): error C141: syntax error near 'while'
+แÜุก7.C(75): error C141: syntax error near '!=', expected ')'
+แÜุก7.C(77): error C231: 'C': redefinition
+แÜุก7.C(77): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(78): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(79): error C247: non-address/-constant initializer
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(81): error C141: syntax error near 'for'
+แÜุก7.C(81): error C141: syntax error near '=', expected ')'
+แÜุก7.C(81): error C129: missing ';' before '<'
+Target not created
+Build target 'Target 1'
+compiling แÜุก7.c...
+แÜุก7.C(45): error C202: 'm6h2': undefined identifier
+แÜุก7.C(51): error C202: 'h12': undefined identifier
+แÜุก7.C(52): error C202: 'm8': undefined identifier
+แÜุก7.C(52): error C202: 'm8': undefined identifier
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(66): error C141: syntax error near ','
+แÜุก7.C(68): error C141: syntax error near '{'
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(72): error C141: syntax error near 'while'
+แÜุก7.C(72): error C141: syntax error near '1'
+แÜุก7.C(74): error C231: 'a': redefinition
+แÜุก7.C(75): error C141: syntax error near 'while'
+แÜุก7.C(75): error C141: syntax error near '!=', expected ')'
+แÜุก7.C(77): error C231: 'C': redefinition
+แÜุก7.C(77): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(78): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(79): error C247: non-address/-constant initializer
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(81): error C141: syntax error near 'for'
+แÜุก7.C(81): error C141: syntax error near '=', expected ')'
+แÜุก7.C(81): error C129: missing ';' before '<'
+Target not created
+Build target 'Target 1'
+compiling แÜุก7.c...
+แÜุก7.C(51): error C202: 'h12': undefined identifier
+แÜุก7.C(52): error C202: 'm8': undefined identifier
+แÜุก7.C(52): error C202: 'm8': undefined identifier
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(66): error C141: syntax error near ','
+แÜุก7.C(68): error C141: syntax error near '{'
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(72): error C141: syntax error near 'while'
+แÜุก7.C(72): error C141: syntax error near '1'
+แÜุก7.C(74): error C231: 'a': redefinition
+แÜุก7.C(75): error C141: syntax error near 'while'
+แÜุก7.C(75): error C141: syntax error near '!=', expected ')'
+แÜุก7.C(77): error C231: 'C': redefinition
+แÜุก7.C(77): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(78): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(79): error C247: non-address/-constant initializer
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(81): error C141: syntax error near 'for'
+แÜุก7.C(81): error C141: syntax error near '=', expected ')'
+แÜุก7.C(81): error C129: missing ';' before '<'
+Target not created
+Build target 'Target 1'
+compiling แÜุก7.c...
+แÜุก7.C(52): error C202: 'm8': undefined identifier
+แÜุก7.C(52): error C202: 'm8': undefined identifier
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(66): error C141: syntax error near ','
+แÜุก7.C(68): error C141: syntax error near '{'
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(72): error C141: syntax error near 'while'
+แÜุก7.C(72): error C141: syntax error near '1'
+แÜุก7.C(74): error C231: 'a': redefinition
+แÜุก7.C(75): error C141: syntax error near 'while'
+แÜุก7.C(75): error C141: syntax error near '!=', expected ')'
+แÜุก7.C(77): error C231: 'C': redefinition
+แÜุก7.C(77): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(78): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(79): error C247: non-address/-constant initializer
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(81): error C141: syntax error near 'for'
+แÜุก7.C(81): error C141: syntax error near '=', expected ')'
+แÜุก7.C(81): error C129: missing ';' before '<'
+Target not created
+Build target 'Target 1'
+compiling แÜุก7.c...
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(65): error C202: 'm8': undefined identifier
+แÜุก7.C(66): error C141: syntax error near ','
+แÜุก7.C(68): error C141: syntax error near '{'
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(72): error C141: syntax error near 'while'
+แÜุก7.C(72): error C141: syntax error near '1'
+แÜุก7.C(74): error C231: 'a': redefinition
+แÜุก7.C(75): error C141: syntax error near 'while'
+แÜุก7.C(75): error C141: syntax error near '!=', expected ')'
+แÜุก7.C(77): error C231: 'C': redefinition
+แÜุก7.C(77): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(78): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(79): error C247: non-address/-constant initializer
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(81): error C141: syntax error near 'for'
+แÜุก7.C(81): error C141: syntax error near '=', expected ')'
+แÜุก7.C(81): error C129: missing ';' before '<'
+Target not created
+Build target 'Target 1'
+compiling แÜุก7.c...
+แÜุก7.C(66): error C141: syntax error near ','
+แÜุก7.C(68): error C141: syntax error near '{'
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(69): error C231: 'EA': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(71): error C231: 'TMOD': redefinition
+แÜุก7.C(72): error C141: syntax error near 'while'
+แÜุก7.C(72): error C141: syntax error near '1'
+แÜุก7.C(74): error C231: 'a': redefinition
+แÜุก7.C(75): error C141: syntax error near 'while'
+แÜุก7.C(75): error C141: syntax error near '!=', expected ')'
+แÜุก7.C(77): error C231: 'C': redefinition
+แÜุก7.C(77): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(78): error C247: non-address/-constant initializer
+แÜุก7.C(78): error C231: 'TH0': redefinition
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(79): error C247: non-address/-constant initializer
+แÜุก7.C(79): error C231: 'TL0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(80): error C231: 'TR0': redefinition
+แÜุก7.C(81): error C141: syntax error near 'for'
+แÜุก7.C(81): error C141: syntax error near '=', expected ')'
+แÜุก7.C(81): error C129: missing ';' before '<'
+Target not created
+Build target 'Target 1'
+compiling แÜุก7.c...
+แÜุก7.C(70): error C202: 'ETA': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling แÜุก7.c...
+linking...
+Program Size: data=13.0 xdata=0 code=995
+"แÜุก7" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling แÜุก7.c...
+linking...
+Program Size: data=13.0 xdata=0 code=995
+creating hex file from "แÜุก7"...
+"แÜุก7" - 0 Error(s), 0 Warning(s).

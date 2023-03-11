@@ -1,0 +1,8 @@
+".\Objects\arm.obj",
+".\Objects\key.obj",
+".\Objects\oled.obj",
+".\Objects\串口通信A.obj",
+".\Objects\TuringServo.obj",
+".\Objects\servo0.obj" 
+TO ".\Objects\机械臂" 
+PRINT(".\Listings\机械臂.m51") RAMSIZE(256) 

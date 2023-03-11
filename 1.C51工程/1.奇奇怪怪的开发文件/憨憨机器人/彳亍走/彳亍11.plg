@@ -1,0 +1,181 @@
+<html>
+<body>
+<pre>
+<h1>ตVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\มบึฅศ๐\Desktop\ฦๆฦๆนึนึตฤฟชทขฮฤผþ\ถๆป๚\แÜุก11.uvproj
+Project File Date:  08/27/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+Program Size: data=10.0 xdata=0 code=388
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+Program Size: data=9.0 xdata=0 code=380
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+Program Size: data=10.0 xdata=0 code=374
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+Program Size: data=10.0 xdata=0 code=374
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+Program Size: data=10.0 xdata=0 code=358
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+Program Size: data=10.0 xdata=0 code=358
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+Program Size: data=10.0 xdata=0 code=358
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER20?แ_ุก11
+Program Size: data=10.0 xdata=0 code=350
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+Program Size: data=10.0 xdata=0 code=347
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+Program Size: data=10.0 xdata=0 code=359
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+Program Size: data=10.0 xdata=0 code=351
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+Program Size: data=10.0 xdata=0 code=373
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER17?แ_ุก11
+Program Size: data=10.0 xdata=0 code=373
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER17?แ_ุก11
+Program Size: data=10.0 xdata=0 code=378
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER17?แ_ุก11
+Program Size: data=10.0 xdata=0 code=378
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER17?แ_ุก11
+Program Size: data=10.0 xdata=0 code=375
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling แÜุก11.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER13?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER18?แ_ุก11
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INITTIMER17?แ_ุก11
+Program Size: data=10.0 xdata=0 code=383
+creating hex file from "แÜุก11"...
+"แÜุก11" - 0 Error(s), 3 Warning(s).

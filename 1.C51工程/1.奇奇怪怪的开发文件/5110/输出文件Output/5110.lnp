@@ -1,0 +1,6 @@
+COMMON {"..\输出文件Output\5110.obj"},
+COMMON {"..\输出文件Output\spi.obj"},
+COMMON {"..\输出文件Output\key.obj"} 
+TO "..\输出文件Output\5110" BankArea(0x0000,0xFFFF) Rtx51Tiny 
+PRINT(".\Listings\5110.m51") RAMSIZE(256) 
+CODE( 0X0000-0X1FFF )

@@ -1,0 +1,171 @@
+<html>
+<body>
+<pre>
+<h1>ตVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\มบึฅศ๐\Desktop\ฦๆฦๆนึนึตฤฟชทขฮฤผþ\ฒโฦตยสฃจสตั้ฃฉ\แÜุก8.uvproj
+Project File Date:  07/31/2021
+
+<h2>Output:</h2>
+compiling แÜุก8.c...
+แÜุก8.c(2): warning C315: unknown #directive 'defined'
+แÜุก8.C(6): error C129: missing ';' before 'i'
+แÜุก8.c - 1 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8.c...
+แÜุก8.C(6): error C129: missing ';' before 'i'
+Target not created
+compiling แÜุก8.c...
+แÜุก8.C(6): error C129: missing ';' before 'i'
+แÜุก8.c - 1 Error(s), 0 Warning(s).
+compiling แÜุก8.c...
+แÜุก8.C(19): error C141: syntax error near 'for'
+แÜุก8.C(19): error C231: 'a': redefinition
+แÜุก8.C(19): error C231: 'a': redefinition
+แÜุก8.C(22): error C141: syntax error near '['
+แÜุก8.C(24): error C141: syntax error near '{'
+แÜุก8.C(30): error C141: syntax error near 'void'
+แÜุก8.c - 6 Error(s), 0 Warning(s).
+compiling แÜุก8.c...
+แÜุก8.C(22): error C136: 'table': 'void' on variable
+แÜุก8.C(22): error C141: syntax error near '['
+แÜุก8.C(48): error C186: invalid dereference
+แÜุก8.C(49): error C141: syntax error near '}'
+แÜุก8.c - 4 Error(s), 0 Warning(s).
+compiling แÜุก8.c...
+แÜุก8.C(22): error C160: 'table': void invalid
+แÜุก8.C(22): error C141: syntax error near ';'
+แÜุก8.C(22): error C141: syntax error near '0xfc'
+แÜุก8.C(49): error C141: syntax error near '}'
+แÜุก8.c - 4 Error(s), 0 Warning(s).
+compiling แÜุก8.c...
+แÜุก8.C(22): error C129: missing ';' before 'code'
+แÜุก8.c - 1 Error(s), 0 Warning(s).
+compiling แÜุก8.c...
+แÜุก8.C(22): error C129: missing ';' before 'code'
+แÜุก8.c - 1 Error(s), 0 Warning(s).
+compiling แÜุก8.c...
+แÜุก8.C(22): error C141: syntax error near ';'
+แÜุก8.C(22): error C141: syntax error near '0xfc'
+แÜุก8.C(49): error C141: syntax error near '}'
+แÜุก8.c - 3 Error(s), 0 Warning(s).
+compiling แÜุก8.c...
+แÜุก8.C(22): error C141: syntax error near ';'
+แÜุก8.C(22): error C141: syntax error near '0xfc'
+แÜุก8.c - 2 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?แ_ุก8
+Program Size: data=11.0 xdata=0 code=158
+"แÜุก8" - 0 Error(s), 1 Warning(s).
+compiling แÜุก8.c...
+แÜุก8.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?แ_ุก8
+Program Size: data=11.0 xdata=0 code=158
+creating hex file from "แÜุก8"...
+"แÜุก8" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?แ_ุก8
+Program Size: data=11.0 xdata=0 code=118
+creating hex file from "แÜุก8"...
+"แÜุก8" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?แ_ุก8
+Program Size: data=11.0 xdata=0 code=118
+creating hex file from "แÜุก8"...
+"แÜุก8" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?แ_ุก8
+Program Size: data=11.0 xdata=0 code=104
+creating hex file from "แÜุก8"...
+"แÜุก8" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8.c...
+แÜุก8.C(47): error C141: syntax error near '='
+Target not created
+Build target 'Target 1'
+compiling แÜุก8.c...
+แÜุก8.C(47): warning C275: expression with possibly no effect
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?แ_ุก8
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?แ_ุก8
+Program Size: data=11.0 xdata=0 code=95
+creating hex file from "แÜุก8"...
+"แÜุก8" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?แ_ุก8
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?แ_ุก8
+Program Size: data=11.0 xdata=0 code=99
+creating hex file from "แÜุก8"...
+"แÜุก8" - 0 Error(s), 2 Warning(s).
+compiling แÜุก8.c...
+แÜุก8.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?แ_ุก8
+Program Size: data=10.0 xdata=0 code=72
+creating hex file from "แÜุก8"...
+"แÜุก8" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?แ_ุก8
+Program Size: data=10.0 xdata=0 code=72
+creating hex file from "แÜุก8"...
+"แÜุก8" - 0 Error(s), 1 Warning(s).
+compiling แÜุก8B.c...
+แÜุก8B.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8B.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?แ_ุก8B
+Program Size: data=10.0 xdata=0 code=40
+creating hex file from "แÜุก8"...
+"แÜุก8" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8B.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?แ_ุก8B
+Program Size: data=10.0 xdata=0 code=40
+creating hex file from "แÜุก8b"...
+"แÜุก8b" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling แÜุก8B.c...
+แÜุก8B.C(21): error C141: syntax error near '['
+Target not created
+Build target 'Target 1'
+compiling แÜุก8B.c...
+แÜุก8B.C(21): error C141: syntax error near '['
+Target not created
+Build target 'Target 1'
+compiling แÜุก8B.c...
+linking...
+Program Size: data=10.0 xdata=0 code=59
+creating hex file from "แÜุก8b"...
+"แÜุก8b" - 0 Error(s), 0 Warning(s).

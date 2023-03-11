@@ -1,0 +1,392 @@
+C51 COMPILER V9.00   1100                                                                  10/16/2021 08:55:51 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE 1100
+OBJECT MODULE PLACED IN ..\..\..\1100.obj
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE 1100.c BROWSE DEBUG OBJECTEXTEND OBJECT(..\..\..\1100.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          sbit P1_0=P1^0;//A
+   3          sbit P1_1=P1^1;//B
+   4          sbit P1_2=P1^2;//C
+   5          sbit P1_3=P1^3;//D
+   6          sbit P1_4=P1^4;//E
+   7          char i;
+   8          #include "intrins.h"
+   9          #define uchar unsigned char
+  10          #define uint unsigned int        
+  11          sbit SCL = P2^0;
+  12          sbit SDA = P2^1;
+  13          char ADDR = 0x7e;   
+  14          //***************************** ÑÓÊ± y  ms ***********************************************
+  15          void delay1(int y)   // 
+  16          {
+  17   1               ;
+  18   1              while(y--)
+  19   1              {
+  20   2              unsigned char a,b,c;
+  21   2              for(c=1;c>0;c--)
+  22   2              for(b=142;b>0;b--)
+  23   2              for(a=2;a>0;a--);
+  24   2              }
+  25   1      }
+  26          //******************************** IIC ´®¿Ú¿ªÊ¼ ********************************************
+  27          void IIC_start(void)
+  28          {
+  29   1              SDA=1;
+  30   1              _nop_();
+  31   1              SCL=1;
+  32   1              _nop_();
+  33   1              _nop_();
+  34   1              _nop_();
+  35   1              _nop_();
+  36   1              _nop_();
+  37   1              SDA=0;
+  38   1              _nop_();
+  39   1              _nop_();
+  40   1              _nop_();
+  41   1              _nop_();
+  42   1              _nop_();
+  43   1              SCL=0;
+  44   1      }
+  45          //********************************** IIC ´®¿ÚÐ´1¸ö×Ö½Ú ******************************************
+  46          void IIC_writeByte(char temp)
+  47          {
+  48   1              char i;
+  49   1              for(i=0;i<8;i++)
+  50   1              {
+  51   2                      SDA=(bit)(temp & 0x80) ;   // ¸ù¾Ý¹æ¶¨1602µÄÊý¾Ý×î¸ßÎ»±ØÐëÎª  1  
+  52   2                      temp <<=1;
+  53   2                      _nop_();
+  54   2                      _nop_();
+  55   2                      SCL=1;
+C51 COMPILER V9.00   1100                                                                  10/16/2021 08:55:51 PAGE 2   
+
+  56   2                      _nop_();
+  57   2                      _nop_();
+  58   2                      _nop_();
+  59   2                      _nop_();
+  60   2                      _nop_();
+  61   2                      SCL=0;
+  62   2              }
+  63   1              _nop_(); 
+  64   1              _nop_();
+  65   1              _nop_();
+  66   1              _nop_();
+  67   1              SDA=1;
+  68   1              _nop_(); 
+  69   1              _nop_(); 
+  70   1              _nop_();
+  71   1              _nop_();
+  72   1              SCL=1; 
+  73   1              _nop_();
+  74   1              _nop_();
+  75   1              _nop_();
+  76   1              while(SDA);
+  77   1              _nop_();
+  78   1              SCL=0;
+  79   1      }
+  80          //******************************** 1602Ð´ÃüÁî ********************************************
+  81          void LCD_write_command(char comm)
+  82          {
+  83   1              char tmp;
+  84   1              IIC_start();          // ´®¿Ú¿ªÊ¼
+  85   1              IIC_writeByte(ADDR);  // ÏÈÑ¡PCF 8574T µÄµØÖ·  £¨Ó¦¸ÃÊÇÏàµ±ÓÚÑ¡ÖÐµÄÒâË¼°É£©
+  86   1              
+  87   1              tmp = comm & 0xF0;    // Óë0xf0 Ó¦¸ÃÊÇÈ¡µÍËÄÎ»µÄÒâË¼°É
+  88   1              tmp |= 0x0C;         //±£Áô¸ß4Î»ÎªÖ¸ÁîµÄ¸ßËÄÎ»£¬µÍËÄÎ»Îª   RS = 0, RW = 0, EN = 1  
+  89   1              IIC_writeByte(tmp);  //´Ó´®¿ÚËÍ³ö
+  90   1              delay1(20);
+  91   1              tmp &= 0xFB;        //Make EN = 0
+  92   1              IIC_writeByte(tmp); 
+  93   1              
+  94   1              tmp = (comm & 0x0F) << 4 ;  //½«Ö¸ÁîµÄµÍËÄÎ» ËÍµ½¸ßÎ»ÖÃ±£´æ
+  95   1              tmp |= 0x0C;        //RS = 0, RW = 0, EN = 1
+  96   1              IIC_writeByte(tmp);
+  97   1              delay1(20);
+  98   1              tmp &= 0xFB; // Make EN = 0
+  99   1              IIC_writeByte(tmp);
+ 100   1              
+ 101   1      }
+ 102          //******************************** 1602Ð´Êý¾Ý ********************************************
+ 103          void LCD_write_data(char data1)
+ 104          {
+ 105   1              char tmp;
+ 106   1              IIC_start();
+ 107   1              IIC_writeByte(ADDR);   // ÏÈÑ¡PCF 8574T µÄµØÖ·  £¨Ó¦¸ÃÊÇÏàµ±ÓÚÑ¡ÖÐµÄÒâË¼°É£©
+ 108   1              
+ 109   1              tmp = data1 & 0xF0;
+ 110   1              tmp |= 0x0D; //RS = 0, RW = 0, EN = 1
+ 111   1              IIC_writeByte(tmp);
+ 112   1              delay1(20);
+ 113   1              tmp &= 0xFB; //Make EN = 0
+ 114   1              IIC_writeByte(tmp); 
+ 115   1              
+ 116   1              tmp = (data1 & 0x0F) << 4 ;
+ 117   1              tmp |= 0x0D; //RS = 0, RW = 0, EN = 1
+C51 COMPILER V9.00   1100                                                                  10/16/2021 08:55:51 PAGE 3   
+
+ 118   1              IIC_writeByte(tmp);
+ 119   1              delay1(20);
+ 120   1              tmp &= 0xFB ; // Make EN = 0
+ 121   1              IIC_writeByte(tmp);
+ 122   1      }
+ 123          //******************************** 1602³õÊ¼»¯ ********************************************
+ 124          void Init_Lcd(void)
+ 125          {
+ 126   1              LCD_write_command(0x33); //½«8Î»×ÜÏß×ªÎª4Î»×ÜÏß
+ 127   1              delay1(50) ;
+ 128   1              LCD_write_command(0x32); //
+ 129   1              delay1(50) ; 
+ 130   1              LCD_write_command(0x28); // 4Î»Êý¾ÝÏß£¬ÏÔÊ¾2ÐÐ£¬5*7µãÕó×Ö·û  £¡Èç¹ûÊÇ0x38  ÔòÎª8Î»Êý¾ÝÏß£¬ÏÔÊ¾2ÐÐ£
+             -¬5*7µãÕó×Ö·û
+ 131   1              delay1(50) ; 
+ 132   1              LCD_write_command(0x0C); // ¿ªÏÔÊ¾£¬¹Ø±Õ¹â±ê£¬²»ÉÁË¸
+ 133   1              delay1(50) ;  
+ 134   1              LCD_write_command(0x06); // Éè¶¨ÊäÈë·½Ê½£¬ÔöÁ¿²»Î»ÒÆ
+ 135   1              delay1(50) ; 
+ 136   1              LCD_write_command(0x01); // ÇåÆÁ
+ 137   1              delay1(50) ;
+ 138   1      }
+ 139          
+ 140          void InitTimer5(void)//0.5ms
+ 141          {
+ 142   1          TMOD = 0x01;
+ 143   1          TH0 = 0x0FE;
+ 144   1          TL0 = 0x33;
+ 145   1          EA = 1;
+ 146   1          ET0 = 1;
+ 147   1          TR0 = 1;
+ 148   1      }
+ 149          void InitTimer9(void)//0.9ms
+ 150          {
+ 151   1          TMOD = 0x01;
+ 152   1          TH0 = 0x0FC;
+ 153   1          TL0 = 0x0C3;
+ 154   1          EA = 1;
+ 155   1          ET0 = 1;
+ 156   1          TR0 = 1;
+ 157   1      }
+ 158          void InitTimer1(void)//1ms
+ 159          {
+ 160   1          TMOD = 0x01;
+ 161   1          TH0 = 0x0FC;
+ 162   1          TL0 = 0x66;
+ 163   1          EA = 1;
+ 164   1          ET0 = 1;
+ 165   1          TR0 = 1;
+ 166   1      }
+ 167          void InitTimer13(void)//1.3ms
+ 168          {
+ 169   1          TMOD = 0x01;
+ 170   1          TH0 = 0x0FA;
+ 171   1          TL0 = 0x0EC;
+ 172   1          EA = 1;
+ 173   1          ET0 = 1;
+ 174   1          TR0 = 1;
+ 175   1      }
+ 176          void InitTimer18(void) //1.8ms
+ 177          {
+ 178   1          TMOD = 0x01;
+C51 COMPILER V9.00   1100                                                                  10/16/2021 08:55:51 PAGE 4   
+
+ 179   1          TH0 = 0x0F8;
+ 180   1          TL0 = 0x0F8;
+ 181   1          EA = 1;
+ 182   1          ET0 = 1;
+ 183   1          TR0 = 1;
+ 184   1      }
+ 185          void InitTimer15(void)//1.5ms
+ 186          {
+ 187   1          TMOD = 0x01;
+ 188   1          TH0 = 0x0FA;
+ 189   1          TL0 = 0x24;
+ 190   1          EA = 1;
+ 191   1          ET0 = 1;
+ 192   1          TR0 = 1;
+ 193   1      }
+ 194          void InitTimer17(void)//1.7ms
+ 195          {
+ 196   1          TMOD = 0x01;
+ 197   1          TH0 = 0x0F9;
+ 198   1          TL0 = 0x5C;
+ 199   1          EA = 1;
+ 200   1          ET0 = 1;
+ 201   1          TR0 = 1;
+ 202   1      }
+ 203          void InitTimer20(void)//2ms
+ 204          {
+ 205   1          TMOD = 0x01;
+ 206   1          TH0 = 0x0F8;
+ 207   1          TL0 = 0x30;
+ 208   1          EA = 1;
+ 209   1          ET0 = 1;
+ 210   1          TR0 = 1;
+ 211   1      }
+ 212          void delay1s(void)   //1s
+ 213          {
+ 214   1          unsigned char a,b,c;
+ 215   1          for(c=13;c>0;c--)
+ 216   1              for(b=247;b>0;b--)
+ 217   1                  for(a=142;a>0;a--);
+ 218   1      }
+ 219          
+ 220          void delay20(void)   //ÑÓÊ±20ms
+ 221          {
+ 222   1          unsigned char a,b,c;
+ 223   1          for(c=1;c>0;c--)
+ 224   1              for(b=222;b>0;b--)
+ 225   1                  for(a=40;a>0;a--);
+ 226   1      }
+ 227          void left()
+ 228          {
+ 229   1              P1_4=1;
+ 230   1              InitTimer5();
+ 231   1              delay20();
+ 232   1              delay1s();
+ 233   1              P1_0=1;
+ 234   1              InitTimer20();
+ 235   1              delay20();
+ 236   1              delay1s();
+ 237   1               P1_2=1;
+ 238   1              InitTimer5();//
+ 239   1              delay20();
+ 240   1              delay1s();
+C51 COMPILER V9.00   1100                                                                  10/16/2021 08:55:51 PAGE 5   
+
+ 241   1              P1_3=1;
+ 242   1              InitTimer1();///
+ 243   1              delay20();
+ 244   1              delay1s();
+ 245   1              P1_0=1;
+ 246   1              InitTimer5();
+ 247   1              delay20();
+ 248   1              delay1s();
+ 249   1      }
+ 250          void right()
+ 251          {
+ 252   1              P1_4=1;
+ 253   1              InitTimer15();
+ 254   1              delay20();
+ 255   1              delay1s();
+ 256   1              //P1_0=1;
+ 257   1              //InitTimer9();
+ 258   1              //delay20();
+ 259   1              //delay1s();
+ 260   1              P1_2=1;
+ 261   1              InitTimer9(); //
+ 262   1              delay20();
+ 263   1              delay1s();
+ 264   1              P1_1=1;
+ 265   1              InitTimer9();///
+ 266   1              delay20();
+ 267   1              delay1s();
+ 268   1              P1_0=1;
+ 269   1              InitTimer5();
+ 270   1              delay20();
+ 271   1              delay1s();
+ 272   1      
+ 273   1      }
+ 274          void init()
+ 275          {
+ 276   1              P1_0=0;
+ 277   1              P1_1=0;
+ 278   1              P1_2=0;
+ 279   1              P1_3=0;
+ 280   1              P1_4=0; 
+ 281   1                      
+ 282   1      }
+ 283          void delay5(void)   //Îó²î -0.000000000114us
+ 284          {
+ 285   1          unsigned char a,b,c;
+ 286   1          for(c=98;c>0;c--)
+ 287   1              for(b=127;b>0;b--)
+ 288   1                  for(a=17;a>0;a--);
+ 289   1      }
+ 290          void init2()
+ 291          {
+ 292   1              P1_0=1;
+ 293   1              InitTimer5();
+ 294   1              delay20();
+ 295   1              delay1s();
+ 296   1              P1_2=1;
+ 297   1              InitTimer5();
+ 298   1              delay20();
+ 299   1              delay1s();
+ 300   1                      P1_1=1;
+ 301   1              InitTimer20();
+ 302   1              delay20();
+C51 COMPILER V9.00   1100                                                                  10/16/2021 08:55:51 PAGE 6   
+
+ 303   1              delay1s();
+ 304   1              P1_3=1;
+ 305   1              InitTimer5();
+ 306   1              delay20();
+ 307   1              delay1s();
+ 308   1              P1_4=1;
+ 309   1              InitTimer15();
+ 310   1              delay20();
+ 311   1              delay1s();
+ 312   1      }
+ 313          void init3()
+ 314          {
+ 315   1              P1_2=1;
+ 316   1              InitTimer1();
+ 317   1              delay20();
+ 318   1              delay1s();
+ 319   1              P1_2=1;
+ 320   1              InitTimer15();
+ 321   1              delay20();
+ 322   1              delay1s();
+ 323   1              P1_0=1;
+ 324   1              InitTimer5();
+ 325   1              delay20();
+ 326   1              delay1s();
+ 327   1      }
+ 328          void main()
+ 329          {
+ 330   1              TMOD=0x00;
+ 331   1              EA=1;
+ 332   1              EX0=1;
+ 333   1              init();
+ 334   1              while(1)
+ 335   1              {
+ 336   2              Init_Lcd();
+ 337   2              LCD_write_data('1');
+ 338   2              init2();
+ 339   2              init();
+ 340   2              delay1s();                                               
+ 341   2              left();
+ 342   2              delay5();
+ 343   2              init3();
+ 344   2              right();
+ 345   2              delay1s();
+ 346   2              init2();
+ 347   2              }
+ 348   1      }
+ 349          void Timer0Interrupt(void) interrupt 1
+ 350          {
+ 351   1          TH0 = 0x0FA;
+ 352   1          TL0 = 0x9A;
+ 353   1          init();
+ 354   1              TR0=0;
+ 355   1      }
+ 356          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    646    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2       3
+C51 COMPILER V9.00   1100                                                                  10/16/2021 08:55:51 PAGE 7   
+
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

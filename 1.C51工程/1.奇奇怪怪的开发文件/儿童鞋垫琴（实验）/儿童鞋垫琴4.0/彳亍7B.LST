@@ -1,0 +1,95 @@
+C51 COMPILER V9.57.0.0   ____7B                                                            12/02/2021 13:53:47 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE ____7B
+OBJECT MODULE PLACED IN ·‹ÿ°7B.OBJ
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.EXE ·‹ÿ°7B.c OPTIMIZE(8,SPEED) BROWSE INCDIR(..\∂˘ÕØ–¨µÊ«Ÿ4.0) DEBUG OBJECTEXT
+                    -END TABS(2)
+
+line level    source
+
+   1          #include <reg52.h>
+   2          #include <INTRINS.H>
+   3          #include "key.h"
+   4          #define uchar unsigned char 
+   5          #define l1  262
+   6          #define l2  286
+   7          #define l3  311
+   8          #define l4  349
+   9          #define l5  392
+  10          #define l6  440
+  11          #define l7  494
+  12          #define m1  523
+  13          #define m2  587
+  14          #define m3  659
+  15          #define m4   698
+  16          #define m5   784
+  17          #define m6   880
+  18          #define m7   987
+  19          #define h1   1046
+  20          #define h2   1174
+  21          #define h3   1318
+  22          #define h4   1396
+  23          #define h5   1567
+  24          #define h6   1760
+  25          #define h7   1975
+  26          sbit sound=P2^0;
+  27          unsigned int  C;
+  28          unsigned char a;
+  29          unsigned char b;
+  30          void delay()
+  31          {
+  32   1        unsigned char i,j;
+  33   1          for(i=0;i<250;i++)
+  34   1           for(j=0;j<250;j++)
+  35   1              ;
+  36   1      }
+  37          void time0() interrupt 1
+  38          {
+  39   1        sound=!sound;
+  40   1        TH0=(8192-C)/32;
+  41   1        TL0=(8192-C)%32;
+  42   1      }
+  43          unsigned code table[]={l1,l2,l3,l4,l5,l6,l7,m1,m2,m3,m4,m5,m6,m7,h1,h2,h3,h4,h5,h6,h7,0xff};
+  44          void main()
+  45          {
+  46   1        EA=1;
+  47   1        ET0=1;
+  48   1        TMOD=0x00;
+  49   1        while(1)
+  50   1        {
+  51   2            a=key4x4();
+  52   2          while(a!=21)
+  53   2          {
+  54   3            C=460830/table[a];
+C51 COMPILER V9.57.0.0   ____7B                                                            12/02/2021 13:53:47 PAGE 2   
+
+  55   3            TH0=(8192-C)/32;
+  56   3            TL0=(8192-C)%32;
+  57   3            TR0=1;
+  58   3              for(b=0;b<2;b++)
+  59   3              delay();
+  60   3              TR0=0;
+  61   3              sound=1;
+  62   3              a=21;
+  63   3          }
+  64   2        }
+  65   1      }
+  66          
+  67          
+  68          
+  69          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    184    ----
+   CONSTANT SIZE    =     44    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

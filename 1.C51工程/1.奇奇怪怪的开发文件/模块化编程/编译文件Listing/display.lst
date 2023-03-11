@@ -1,0 +1,58 @@
+C51 COMPILER V9.57.0.0   DISPLAY                                                           10/22/2021 11:22:41 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE DISPLAY
+OBJECT MODULE PLACED IN ..\输出文件Output\display.obj
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.EXE display.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(..\编译文件Lis
+                    -ting\display.lst) TABS(2) OBJECT(..\输出文件Output\display.obj)
+
+line level    source
+
+   1          #include"main.h"
+   2          void delay(int z)
+   3          {
+   4   1        uint x,y;
+   5   1        for(x=z;x>0;x--);
+   6   1          for(y=110;y>0;y--);
+   7   1      }
+   8          void write_com(uint COM)
+   9          {
+  10   1        RS=0;
+  11   1        RW=0;
+  12   1        P0=COM;
+  13   1        delay(5);
+  14   1        EN=1;
+  15   1        delay(5);
+  16   1        EN=0;
+  17   1      }
+  18          void write_data(char date)
+  19          {
+  20   1        RS=1;
+  21   1        P0=date;
+  22   1        delay(5);
+  23   1        EN=1;
+  24   1        delay(5);
+  25   1        EN=0;
+  26   1      } 
+  27          void init()
+  28          {
+  29   1        EN=0;
+  30   1        write_com(0x38);
+  31   1        write_com(0x0e);
+  32   1        write_com(0x06);
+  33   1        write_com(0x80+54);
+  34   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     93    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

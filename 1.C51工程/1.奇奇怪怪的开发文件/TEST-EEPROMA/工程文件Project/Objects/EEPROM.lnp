@@ -1,0 +1,4 @@
+".\Objects\EEPROM.obj",
+".\Objects\I2CA.obj" 
+TO ".\Objects\EEPROM" 
+PRINT(".\Listings\EEPROM.m51") RAMSIZE(256) 

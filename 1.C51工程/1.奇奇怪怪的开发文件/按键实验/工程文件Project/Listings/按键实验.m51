@@ -1,0 +1,120 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    11/12/2021  08:46:20  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+D:\KEIL5\C51\BIN\BL51.EXE .\Objects\按键实验.obj TO .\Objects\按键实验 PRINT (.\Listings\按键实验.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\按键实验.obj (________)
+  D:\KEIL5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\按键实验 (________)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         _DATA_GROUP_
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     004FH     UNIT         ?PR?MAIN?________
+            CODE    0052H     000DH     UNIT         ?PR?DELAY10MS?________
+            CODE    005FH     000CH     UNIT         ?C_C51STARTUP
+            CODE    006BH     000AH     UNIT         ?CO?________
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\按键实验 (________)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?________
+
+?PR?MAIN?________              0008H    0002H
+  +--> ?CO?________
+  +--> ?PR?DELAY10MS?________
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\按键实验 (________)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ________
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/12/2021  08:46:20  PAGE 2
+
+
+  C:006BH         PUBLIC        table
+  D:00A8H         PUBLIC        IE
+  B:00A0H.3       PUBLIC        P2_0
+  D:00B8H         PUBLIC        IP
+  B:00A0H.4       PUBLIC        KEY0
+  C:0003H         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:0052H         PUBLIC        delay10ms
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          DELAY10MS
+  -------         DO            
+  D:0005H         SYMBOL        a
+  D:0006H         SYMBOL        b
+  D:0007H         SYMBOL        c
+  -------         ENDDO         
+  C:0052H         LINE#         11
+  C:0052H         LINE#         12
+  C:0052H         LINE#         15
+  C:0054H         LINE#         17
+  C:0056H         LINE#         19
+  C:005EH         LINE#         21
+  -------         ENDPROC       DELAY10MS
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        count
+  D:0002H         SYMBOL        i
+  -------         ENDDO         
+  C:0003H         LINE#         23
+  C:0003H         LINE#         25
+  C:0008H         LINE#         27
+  C:000AH         LINE#         29
+  C:000AH         LINE#         30
+  C:000CH         LINE#         32
+  C:001AH         LINE#         34
+  C:001DH         LINE#         36
+  C:001FH         LINE#         38
+  C:0022H         LINE#         40
+  C:0025H         LINE#         42
+  C:002EH         LINE#         44
+  C:0036H         LINE#         46
+  C:003BH         LINE#         47
+  C:003BH         LINE#         48
+  C:003DH         LINE#         49
+  C:003DH         LINE#         51
+  C:0042H         LINE#         53
+  C:0042H         LINE#         55
+  C:004DH         LINE#         57
+  C:0050H         LINE#         59
+  C:0050H         LINE#         61
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        ________
+
+Program Size: data=11.0 xdata=0 code=117
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

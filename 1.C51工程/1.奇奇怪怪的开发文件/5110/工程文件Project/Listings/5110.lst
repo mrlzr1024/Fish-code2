@@ -1,0 +1,668 @@
+C51 COMPILER V9.57.0.0   5110                                                              04/03/2022 10:57:21 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE 5110
+OBJECT MODULE PLACED IN ..\输出文件Output\5110.obj
+COMPILER INVOKED BY: D:\keil5B\C51\BIN\C51.EXE 5110.c COMPACT ROM(COMPACT) OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND C
+                    -ODE LISTINCLUDE SYMBOLS PRINT(.\Listings\5110.lst) TABS(2) OBJECT(..\输出文件Output\5110.obj)
+
+line level    source
+
+   1          #include<reg52.h>
+   1      =1  /*--------------------------------------------------------------------------
+   2      =1  REG52.H
+   3      =1  
+   4      =1  Header file for generic 80C52 and 80C32 microcontroller.
+   5      =1  Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+   6      =1  All rights reserved.
+   7      =1  --------------------------------------------------------------------------*/
+   8      =1  
+   9      =1  #ifndef __REG52_H__
+  10      =1  #define __REG52_H__
+  11      =1  
+  12      =1  /*  BYTE Registers  */
+  13      =1  sfr P0    = 0x80;
+  14      =1  sfr P1    = 0x90;
+  15      =1  sfr P2    = 0xA0;
+  16      =1  sfr P3    = 0xB0;
+  17      =1  sfr PSW   = 0xD0;
+  18      =1  sfr ACC   = 0xE0;
+  19      =1  sfr B     = 0xF0;
+  20      =1  sfr SP    = 0x81;
+  21      =1  sfr DPL   = 0x82;
+  22      =1  sfr DPH   = 0x83;
+  23      =1  sfr PCON  = 0x87;
+  24      =1  sfr TCON  = 0x88;
+  25      =1  sfr TMOD  = 0x89;
+  26      =1  sfr TL0   = 0x8A;
+  27      =1  sfr TL1   = 0x8B;
+  28      =1  sfr TH0   = 0x8C;
+  29      =1  sfr TH1   = 0x8D;
+  30      =1  sfr IE    = 0xA8;
+  31      =1  sfr IP    = 0xB8;
+  32      =1  sfr SCON  = 0x98;
+  33      =1  sfr SBUF  = 0x99;
+  34      =1  
+  35      =1  /*  8052 Extensions  */
+  36      =1  sfr T2CON  = 0xC8;
+  37      =1  sfr RCAP2L = 0xCA;
+  38      =1  sfr RCAP2H = 0xCB;
+  39      =1  sfr TL2    = 0xCC;
+  40      =1  sfr TH2    = 0xCD;
+  41      =1  
+  42      =1  
+  43      =1  /*  BIT Registers  */
+  44      =1  /*  PSW  */
+  45      =1  sbit CY    = PSW^7;
+  46      =1  sbit AC    = PSW^6;
+  47      =1  sbit F0    = PSW^5;
+  48      =1  sbit RS1   = PSW^4;
+  49      =1  sbit RS0   = PSW^3;
+  50      =1  sbit OV    = PSW^2;
+  51      =1  sbit P     = PSW^0; //8052 only
+  52      =1  
+  53      =1  /*  TCON  */
+C51 COMPILER V9.57.0.0   5110                                                              04/03/2022 10:57:21 PAGE 2   
+
+  54      =1  sbit TF1   = TCON^7;
+  55      =1  sbit TR1   = TCON^6;
+  56      =1  sbit TF0   = TCON^5;
+  57      =1  sbit TR0   = TCON^4;
+  58      =1  sbit IE1   = TCON^3;
+  59      =1  sbit IT1   = TCON^2;
+  60      =1  sbit IE0   = TCON^1;
+  61      =1  sbit IT0   = TCON^0;
+  62      =1  
+  63      =1  /*  IE  */
+  64      =1  sbit EA    = IE^7;
+  65      =1  sbit ET2   = IE^5; //8052 only
+  66      =1  sbit ES    = IE^4;
+  67      =1  sbit ET1   = IE^3;
+  68      =1  sbit EX1   = IE^2;
+  69      =1  sbit ET0   = IE^1;
+  70      =1  sbit EX0   = IE^0;
+  71      =1  
+  72      =1  /*  IP  */
+  73      =1  sbit PT2   = IP^5;
+  74      =1  sbit PS    = IP^4;
+  75      =1  sbit PT1   = IP^3;
+  76      =1  sbit PX1   = IP^2;
+  77      =1  sbit PT0   = IP^1;
+  78      =1  sbit PX0   = IP^0;
+  79      =1  
+  80      =1  /*  P3  */
+  81      =1  sbit RD    = P3^7;
+  82      =1  sbit WR    = P3^6;
+  83      =1  sbit T1    = P3^5;
+  84      =1  sbit T0    = P3^4;
+  85      =1  sbit INT1  = P3^3;
+  86      =1  sbit INT0  = P3^2;
+  87      =1  sbit TXD   = P3^1;
+  88      =1  sbit RXD   = P3^0;
+  89      =1  
+  90      =1  /*  SCON  */
+  91      =1  sbit SM0   = SCON^7;
+  92      =1  sbit SM1   = SCON^6;
+  93      =1  sbit SM2   = SCON^5;
+  94      =1  sbit REN   = SCON^4;
+  95      =1  sbit TB8   = SCON^3;
+  96      =1  sbit RB8   = SCON^2;
+  97      =1  sbit TI    = SCON^1;
+  98      =1  sbit RI    = SCON^0;
+  99      =1  
+ 100      =1  /*  P1  */
+ 101      =1  sbit T2EX  = P1^1; // 8052 only
+ 102      =1  sbit T2    = P1^0; // 8052 only
+ 103      =1               
+ 104      =1  /*  T2CON  */
+ 105      =1  sbit TF2    = T2CON^7;
+ 106      =1  sbit EXF2   = T2CON^6;
+ 107      =1  sbit RCLK   = T2CON^5;
+ 108      =1  sbit TCLK   = T2CON^4;
+ 109      =1  sbit EXEN2  = T2CON^3;
+ 110      =1  sbit TR2    = T2CON^2;
+ 111      =1  sbit C_T2   = T2CON^1;
+ 112      =1  sbit CP_RL2 = T2CON^0;
+ 113      =1  
+ 114      =1  #endif
+   2          #include"spi.h"
+C51 COMPILER V9.57.0.0   5110                                                              04/03/2022 10:57:21 PAGE 3   
+
+   1      =1  #ifndef __SPI_H__
+   2      =1  #define __SPI_H__
+   3      =1  #include<reg52.h>
+   1      =2  /*--------------------------------------------------------------------------
+   2      =2  REG52.H
+   3      =2  
+   4      =2  Header file for generic 80C52 and 80C32 microcontroller.
+   5      =2  Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+   6      =2  All rights reserved.
+   7      =2  --------------------------------------------------------------------------*/
+   8      =2  
+   9      =2  #ifndef __REG52_H__
+           =2 #define __REG52_H__
+           =2 
+           =2 /*  BYTE Registers  */
+           =2 sfr P0    = 0x80;
+           =2 sfr P1    = 0x90;
+           =2 sfr P2    = 0xA0;
+           =2 sfr P3    = 0xB0;
+           =2 sfr PSW   = 0xD0;
+           =2 sfr ACC   = 0xE0;
+           =2 sfr B     = 0xF0;
+           =2 sfr SP    = 0x81;
+           =2 sfr DPL   = 0x82;
+           =2 sfr DPH   = 0x83;
+           =2 sfr PCON  = 0x87;
+           =2 sfr TCON  = 0x88;
+           =2 sfr TMOD  = 0x89;
+           =2 sfr TL0   = 0x8A;
+           =2 sfr TL1   = 0x8B;
+           =2 sfr TH0   = 0x8C;
+           =2 sfr TH1   = 0x8D;
+           =2 sfr IE    = 0xA8;
+           =2 sfr IP    = 0xB8;
+           =2 sfr SCON  = 0x98;
+           =2 sfr SBUF  = 0x99;
+           =2 
+           =2 /*  8052 Extensions  */
+           =2 sfr T2CON  = 0xC8;
+           =2 sfr RCAP2L = 0xCA;
+           =2 sfr RCAP2H = 0xCB;
+           =2 sfr TL2    = 0xCC;
+           =2 sfr TH2    = 0xCD;
+           =2 
+           =2 
+           =2 /*  BIT Registers  */
+           =2 /*  PSW  */
+           =2 sbit CY    = PSW^7;
+           =2 sbit AC    = PSW^6;
+           =2 sbit F0    = PSW^5;
+           =2 sbit RS1   = PSW^4;
+           =2 sbit RS0   = PSW^3;
+           =2 sbit OV    = PSW^2;
+           =2 sbit P     = PSW^0; //8052 only
+           =2 
+           =2 /*  TCON  */
+           =2 sbit TF1   = TCON^7;
+           =2 sbit TR1   = TCON^6;
+           =2 sbit TF0   = TCON^5;
+           =2 sbit TR0   = TCON^4;
+           =2 sbit IE1   = TCON^3;
+           =2 sbit IT1   = TCON^2;
+C51 COMPILER V9.57.0.0   5110                                                              04/03/2022 10:57:21 PAGE 4   
+
+           =2 sbit IE0   = TCON^1;
+           =2 sbit IT0   = TCON^0;
+           =2 
+           =2 /*  IE  */
+           =2 sbit EA    = IE^7;
+           =2 sbit ET2   = IE^5; //8052 only
+           =2 sbit ES    = IE^4;
+           =2 sbit ET1   = IE^3;
+           =2 sbit EX1   = IE^2;
+           =2 sbit ET0   = IE^1;
+           =2 sbit EX0   = IE^0;
+           =2 
+           =2 /*  IP  */
+           =2 sbit PT2   = IP^5;
+           =2 sbit PS    = IP^4;
+           =2 sbit PT1   = IP^3;
+           =2 sbit PX1   = IP^2;
+           =2 sbit PT0   = IP^1;
+           =2 sbit PX0   = IP^0;
+           =2 
+           =2 /*  P3  */
+           =2 sbit RD    = P3^7;
+           =2 sbit WR    = P3^6;
+           =2 sbit T1    = P3^5;
+           =2 sbit T0    = P3^4;
+           =2 sbit INT1  = P3^3;
+           =2 sbit INT0  = P3^2;
+           =2 sbit TXD   = P3^1;
+           =2 sbit RXD   = P3^0;
+           =2 
+           =2 /*  SCON  */
+           =2 sbit SM0   = SCON^7;
+           =2 sbit SM1   = SCON^6;
+           =2 sbit SM2   = SCON^5;
+           =2 sbit REN   = SCON^4;
+           =2 sbit TB8   = SCON^3;
+           =2 sbit RB8   = SCON^2;
+           =2 sbit TI    = SCON^1;
+           =2 sbit RI    = SCON^0;
+           =2 
+           =2 /*  P1  */
+           =2 sbit T2EX  = P1^1; // 8052 only
+           =2 sbit T2    = P1^0; // 8052 only
+           =2              
+           =2 /*  T2CON  */
+           =2 sbit TF2    = T2CON^7;
+           =2 sbit EXF2   = T2CON^6;
+           =2 sbit RCLK   = T2CON^5;
+           =2 sbit TCLK   = T2CON^4;
+           =2 sbit EXEN2  = T2CON^3;
+           =2 sbit TR2    = T2CON^2;
+           =2 sbit C_T2   = T2CON^1;
+           =2 sbit CP_RL2 = T2CON^0;
+           =2 
+           =2 #endif
+   4      =1  sbit LCD_CE=P1^1;
+   5      =1  sbit LCD_DC=P1^2;
+   6      =1  sbit SDIN=P1^3;
+   7      =1  sbit SCLK=P1^4;
+   8      =1  sbit LCD_RST=P1^0;
+   9      =1  extern int font6x8[][6];
+  10      =1  extern int blank[][6];
+C51 COMPILER V9.57.0.0   5110                                                              04/03/2022 10:57:21 PAGE 5   
+
+  11      =1  extern void LCD_write_byte(unsigned char dat, unsigned char command);//spi写数据或命令
+  12      =1  extern   void LCD_init(void);
+  13      =1  extern void LCD_write_char(int h[][6]);
+  14      =1  extern void LCD_set_XY(unsigned char X, unsigned char Y);
+  15      =1  extern void LCD_draw_bmp_pixel(unsigned char X,unsigned char Y,unsigned char *map, unsigned char Pix_x,uns
+             -igned char Pix_y);
+  16      =1  extern void display(unsigned char x,unsigned char y,int h[][6]);
+  17      =1  #endif
+   3          #include"CharCode.h"
+   1      =1  #ifndef __CHARCODE_H__
+   2      =1  #define __CHARCODE_H__
+   3      =1  #include<reg52.h>
+   1      =2  /*--------------------------------------------------------------------------
+   2      =2  REG52.H
+   3      =2  
+   4      =2  Header file for generic 80C52 and 80C32 microcontroller.
+   5      =2  Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+   6      =2  All rights reserved.
+   7      =2  --------------------------------------------------------------------------*/
+   8      =2  
+   9      =2  #ifndef __REG52_H__
+           =2 #define __REG52_H__
+           =2 
+           =2 /*  BYTE Registers  */
+           =2 sfr P0    = 0x80;
+           =2 sfr P1    = 0x90;
+           =2 sfr P2    = 0xA0;
+           =2 sfr P3    = 0xB0;
+           =2 sfr PSW   = 0xD0;
+           =2 sfr ACC   = 0xE0;
+           =2 sfr B     = 0xF0;
+           =2 sfr SP    = 0x81;
+           =2 sfr DPL   = 0x82;
+           =2 sfr DPH   = 0x83;
+           =2 sfr PCON  = 0x87;
+           =2 sfr TCON  = 0x88;
+           =2 sfr TMOD  = 0x89;
+           =2 sfr TL0   = 0x8A;
+           =2 sfr TL1   = 0x8B;
+           =2 sfr TH0   = 0x8C;
+           =2 sfr TH1   = 0x8D;
+           =2 sfr IE    = 0xA8;
+           =2 sfr IP    = 0xB8;
+           =2 sfr SCON  = 0x98;
+           =2 sfr SBUF  = 0x99;
+           =2 
+           =2 /*  8052 Extensions  */
+           =2 sfr T2CON  = 0xC8;
+           =2 sfr RCAP2L = 0xCA;
+           =2 sfr RCAP2H = 0xCB;
+           =2 sfr TL2    = 0xCC;
+           =2 sfr TH2    = 0xCD;
+           =2 
+           =2 
+           =2 /*  BIT Registers  */
+           =2 /*  PSW  */
+           =2 sbit CY    = PSW^7;
+           =2 sbit AC    = PSW^6;
+           =2 sbit F0    = PSW^5;
+           =2 sbit RS1   = PSW^4;
+           =2 sbit RS0   = PSW^3;
+           =2 sbit OV    = PSW^2;
+C51 COMPILER V9.57.0.0   5110                                                              04/03/2022 10:57:21 PAGE 6   
+
+           =2 sbit P     = PSW^0; //8052 only
+           =2 
+           =2 /*  TCON  */
+           =2 sbit TF1   = TCON^7;
+           =2 sbit TR1   = TCON^6;
+           =2 sbit TF0   = TCON^5;
+           =2 sbit TR0   = TCON^4;
+           =2 sbit IE1   = TCON^3;
+           =2 sbit IT1   = TCON^2;
+           =2 sbit IE0   = TCON^1;
+           =2 sbit IT0   = TCON^0;
+           =2 
+           =2 /*  IE  */
+           =2 sbit EA    = IE^7;
+           =2 sbit ET2   = IE^5; //8052 only
+           =2 sbit ES    = IE^4;
+           =2 sbit ET1   = IE^3;
+           =2 sbit EX1   = IE^2;
+           =2 sbit ET0   = IE^1;
+           =2 sbit EX0   = IE^0;
+           =2 
+           =2 /*  IP  */
+           =2 sbit PT2   = IP^5;
+           =2 sbit PS    = IP^4;
+           =2 sbit PT1   = IP^3;
+           =2 sbit PX1   = IP^2;
+           =2 sbit PT0   = IP^1;
+           =2 sbit PX0   = IP^0;
+           =2 
+           =2 /*  P3  */
+           =2 sbit RD    = P3^7;
+           =2 sbit WR    = P3^6;
+           =2 sbit T1    = P3^5;
+           =2 sbit T0    = P3^4;
+           =2 sbit INT1  = P3^3;
+           =2 sbit INT0  = P3^2;
+           =2 sbit TXD   = P3^1;
+           =2 sbit RXD   = P3^0;
+           =2 
+           =2 /*  SCON  */
+           =2 sbit SM0   = SCON^7;
+           =2 sbit SM1   = SCON^6;
+           =2 sbit SM2   = SCON^5;
+           =2 sbit REN   = SCON^4;
+           =2 sbit TB8   = SCON^3;
+           =2 sbit RB8   = SCON^2;
+           =2 sbit TI    = SCON^1;
+           =2 sbit RI    = SCON^0;
+           =2 
+           =2 /*  P1  */
+           =2 sbit T2EX  = P1^1; // 8052 only
+           =2 sbit T2    = P1^0; // 8052 only
+           =2              
+           =2 /*  T2CON  */
+           =2 sbit TF2    = T2CON^7;
+           =2 sbit EXF2   = T2CON^6;
+           =2 sbit RCLK   = T2CON^5;
+           =2 sbit TCLK   = T2CON^4;
+           =2 sbit EXEN2  = T2CON^3;
+           =2 sbit TR2    = T2CON^2;
+           =2 sbit C_T2   = T2CON^1;
+           =2 sbit CP_RL2 = T2CON^0;
+C51 COMPILER V9.57.0.0   5110                                                              04/03/2022 10:57:21 PAGE 7   
+
+           =2 
+           =2 #endif
+   4      =1  //6x8;
+   5      =1  int code l0[][6]={ 0x78,0xBE,0x1F,0xBE,0x78,0x00};
+   6      =1  int code l1[][6]={ 0x18,0x18,0x18,0x7E,0x3C,0x18};//--右1
+   7      =1  int code l2[][6]={ 0x18,0x3C,0x7E,0x18,0x18,0x18};//--左2
+   8      =1  int code l3[][6]={ 0x10,0x30,0x7F,0x7F,0x30,0x10};//--下3
+   9      =1  int code l4[][6]={ 0x08,0x0C,0xFE,0xFE,0x0C,0x08};//--上4
+  10      =1  int code l5[][6]={ 0x00,0x4A,0xFF,0xFF,0x4A,0x00};//--竖中5
+  11      =1  int code l6[][6]={ 0x3C,0x18,0x3C,0x18,0x18,0x3C};//--横中6
+  12      =1  unsigned char code you[]={ 0x00,0x00,0x40,0x00,0xE0,0x00,0xE0,0x00,0xA0,0x00,0xB0,0x01,0xB0,0x01,0x10,0x01
+             -,
+  13      =1  0x10,0x01,0x18,0x03,0x0C,0x06,0x0C,0x06,0xFE,0x0F,0x00,0x00,0x00,0x00,0x00,0x00};//“有”
+  14      =1  
+  15      =1  
+  16      =1  
+  17      =1  
+  18      =1  
+  19      =1  
+  20      =1  
+  21      =1  
+  22      =1  
+  23      =1  
+  24      =1  #endif
+  25      =1  
+   4          #include"key.h"
+   1      =1  /*
+   2      =1   * @Author: your name
+   3      =1   * @Date: 2021-11-17 07:46:47
+   4      =1   * @LastEditTime: 2021-11-17 08:36:26
+   5      =1   * @LastEditors: Please set LastEditors
+   6      =1   * @Description: 鎵撳紑koroFileHeader鏌ョ湅閰嶇疆 杩涜璁剧疆: https://github.com/OBKoro1/koro1FileHeader
+             -/wiki/%E9%85%8D%E7%BD%AE
+   7      =1   * @FilePath: \鏈烘鑷俓key.h
+   8      =1   */
+   9      =1  #ifndef __KEY_H__
+  10      =1  #define __KEY_H__
+  11      =1  #include<reg52.h>
+   1      =2  /*--------------------------------------------------------------------------
+   2      =2  REG52.H
+   3      =2  
+   4      =2  Header file for generic 80C52 and 80C32 microcontroller.
+   5      =2  Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+   6      =2  All rights reserved.
+   7      =2  --------------------------------------------------------------------------*/
+   8      =2  
+   9      =2  #ifndef __REG52_H__
+           =2 #define __REG52_H__
+           =2 
+           =2 /*  BYTE Registers  */
+           =2 sfr P0    = 0x80;
+           =2 sfr P1    = 0x90;
+           =2 sfr P2    = 0xA0;
+           =2 sfr P3    = 0xB0;
+           =2 sfr PSW   = 0xD0;
+           =2 sfr ACC   = 0xE0;
+           =2 sfr B     = 0xF0;
+           =2 sfr SP    = 0x81;
+           =2 sfr DPL   = 0x82;
+           =2 sfr DPH   = 0x83;
+           =2 sfr PCON  = 0x87;
+           =2 sfr TCON  = 0x88;
+C51 COMPILER V9.57.0.0   5110                                                              04/03/2022 10:57:21 PAGE 8   
+
+           =2 sfr TMOD  = 0x89;
+           =2 sfr TL0   = 0x8A;
+           =2 sfr TL1   = 0x8B;
+           =2 sfr TH0   = 0x8C;
+           =2 sfr TH1   = 0x8D;
+           =2 sfr IE    = 0xA8;
+           =2 sfr IP    = 0xB8;
+           =2 sfr SCON  = 0x98;
+           =2 sfr SBUF  = 0x99;
+           =2 
+           =2 /*  8052 Extensions  */
+           =2 sfr T2CON  = 0xC8;
+           =2 sfr RCAP2L = 0xCA;
+           =2 sfr RCAP2H = 0xCB;
+           =2 sfr TL2    = 0xCC;
+           =2 sfr TH2    = 0xCD;
+           =2 
+           =2 
+           =2 /*  BIT Registers  */
+           =2 /*  PSW  */
+           =2 sbit CY    = PSW^7;
+           =2 sbit AC    = PSW^6;
+           =2 sbit F0    = PSW^5;
+           =2 sbit RS1   = PSW^4;
+           =2 sbit RS0   = PSW^3;
+           =2 sbit OV    = PSW^2;
+           =2 sbit P     = PSW^0; //8052 only
+           =2 
+           =2 /*  TCON  */
+           =2 sbit TF1   = TCON^7;
+           =2 sbit TR1   = TCON^6;
+           =2 sbit TF0   = TCON^5;
+           =2 sbit TR0   = TCON^4;
+           =2 sbit IE1   = TCON^3;
+           =2 sbit IT1   = TCON^2;
+           =2 sbit IE0   = TCON^1;
+           =2 sbit IT0   = TCON^0;
+           =2 
+           =2 /*  IE  */
+           =2 sbit EA    = IE^7;
+           =2 sbit ET2   = IE^5; //8052 only
+           =2 sbit ES    = IE^4;
+           =2 sbit ET1   = IE^3;
+           =2 sbit EX1   = IE^2;
+           =2 sbit ET0   = IE^1;
+           =2 sbit EX0   = IE^0;
+           =2 
+           =2 /*  IP  */
+           =2 sbit PT2   = IP^5;
+           =2 sbit PS    = IP^4;
+           =2 sbit PT1   = IP^3;
+           =2 sbit PX1   = IP^2;
+           =2 sbit PT0   = IP^1;
+           =2 sbit PX0   = IP^0;
+           =2 
+           =2 /*  P3  */
+           =2 sbit RD    = P3^7;
+           =2 sbit WR    = P3^6;
+           =2 sbit T1    = P3^5;
+           =2 sbit T0    = P3^4;
+           =2 sbit INT1  = P3^3;
+           =2 sbit INT0  = P3^2;
+C51 COMPILER V9.57.0.0   5110                                                              04/03/2022 10:57:21 PAGE 9   
+
+           =2 sbit TXD   = P3^1;
+           =2 sbit RXD   = P3^0;
+           =2 
+           =2 /*  SCON  */
+           =2 sbit SM0   = SCON^7;
+           =2 sbit SM1   = SCON^6;
+           =2 sbit SM2   = SCON^5;
+           =2 sbit REN   = SCON^4;
+           =2 sbit TB8   = SCON^3;
+           =2 sbit RB8   = SCON^2;
+           =2 sbit TI    = SCON^1;
+           =2 sbit RI    = SCON^0;
+           =2 
+           =2 /*  P1  */
+           =2 sbit T2EX  = P1^1; // 8052 only
+           =2 sbit T2    = P1^0; // 8052 only
+           =2              
+           =2 /*  T2CON  */
+           =2 sbit TF2    = T2CON^7;
+           =2 sbit EXF2   = T2CON^6;
+           =2 sbit RCLK   = T2CON^5;
+           =2 sbit TCLK   = T2CON^4;
+           =2 sbit EXEN2  = T2CON^3;
+           =2 sbit TR2    = T2CON^2;
+           =2 sbit C_T2   = T2CON^1;
+           =2 sbit CP_RL2 = T2CON^0;
+           =2 
+           =2 #endif
+  12      =1  sbit key0 = P1 ^ 6;
+  13      =1  sbit key1 = P1 ^ 7;
+  14      =1  extern int key(void);
+  15      =1  extern int key_continue(void);
+  16      =1  extern int key4x4(void);
+  17      =1  
+  18      =1  
+  19      =1  #endif // !__KEY_H__
+   5          
+   6          
+   7           void delay(void)   //误差 -0.000000000045us
+   8          {
+   9   1          unsigned char a,b,c;
+  10   1          for(c=131;c>0;c--)
+  11   1              for(b=156;b>0;b--)
+  12   1                  for(a=3;a>0;a--);
+  13   1      }
+  14          
+  15          
+  16          
+  17          
+  18          void main(void){
+  19   1        int i=0;
+  20   1        LCD_init();
+  21   1        while(1){
+  22   2          display(0,0,l0);
+  23   2        }
+  24   1      }
+C51 COMPILER V9.57.0.0   5110                                                              04/03/2022 10:57:21 PAGE 10  
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION delay (BEGIN)
+                                           ; SOURCE LINE # 7
+                                           ; SOURCE LINE # 8
+                                           ; SOURCE LINE # 10
+;---- Variable 'c' assigned to Register 'R7' ----
+0000 7F83              MOV     R7,#083H
+0002         ?C0001:
+                                           ; SOURCE LINE # 11
+;---- Variable 'b' assigned to Register 'R6' ----
+0002 7E9C              MOV     R6,#09CH
+0004         ?C0004:
+                                           ; SOURCE LINE # 12
+;---- Variable 'a' assigned to Register 'R5' ----
+0004 7D03              MOV     R5,#03H
+0006         ?C0007:
+0006 DDFE              DJNZ    R5,?C0007
+0008         ?C0006:
+0008 DEFA              DJNZ    R6,?C0004
+000A         ?C0003:
+000A DFF6              DJNZ    R7,?C0001
+                                           ; SOURCE LINE # 13
+000C         ?C0010:
+000C 22                RET     
+             ; FUNCTION delay (END)
+
+             ; FUNCTION main (BEGIN)
+                                           ; SOURCE LINE # 18
+                                           ; SOURCE LINE # 19
+0000 E4                CLR     A
+0001 7800        R     MOV     R0,#LOW i
+0003 F2                MOVX    @R0,A
+0004 08                INC     R0
+0005 F2                MOVX    @R0,A
+                                           ; SOURCE LINE # 20
+0006 120000      E     LCALL   LCD_init
+0009         ?C0011:
+                                           ; SOURCE LINE # 21
+                                           ; SOURCE LINE # 22
+0009 7BFF              MOV     R3,#0FFH
+000B 7A00        R     MOV     R2,#HIGH l0
+000D 7900        R     MOV     R1,#LOW l0
+000F E4                CLR     A
+0010 FD                MOV     R5,A
+0011 FF                MOV     R7,A
+0012 120000      E     LCALL   _display
+                                           ; SOURCE LINE # 23
+0015 80F2              SJMP    ?C0011
+             ; FUNCTION main (END)
+
+C51 COMPILER V9.57.0.0   5110                                                              04/03/2022 10:57:21 PAGE 11  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+P1 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0090H  1
+P3 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B0H  1
+IE . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A8H  1
+delay. . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  a. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0005H  1
+  b. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0006H  1
+  c. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+IP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B8H  1
+l0 . . . . . . . . . . . . . . . . . .  PUBLIC   CODE   ARRAY    0000H  12
+l1 . . . . . . . . . . . . . . . . . .  PUBLIC   CODE   ARRAY    000CH  12
+l2 . . . . . . . . . . . . . . . . . .  PUBLIC   CODE   ARRAY    0018H  12
+l3 . . . . . . . . . . . . . . . . . .  PUBLIC   CODE   ARRAY    0024H  12
+l4 . . . . . . . . . . . . . . . . . .  PUBLIC   CODE   ARRAY    0030H  12
+l5 . . . . . . . . . . . . . . . . . .  PUBLIC   CODE   ARRAY    003CH  12
+l6 . . . . . . . . . . . . . . . . . .  PUBLIC   CODE   ARRAY    0048H  12
+main . . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  i. . . . . . . . . . . . . . . . . .  AUTO     PDATA  INT      0000H  2
+SCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0098H  1
+TCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0088H  1
+you. . . . . . . . . . . . . . . . . .  PUBLIC   CODE   ARRAY    0054H  32
+T2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C8H  1
+LCD_init . . . . . . . . . . . . . . .  EXTERN   CODE   PROC     -----  -----
+_display . . . . . . . . . . . . . . .  EXTERN   CODE   PROC     -----  -----
+PSW. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D0H  1
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     36    ----
+   CONSTANT SIZE    =    116    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----       2
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

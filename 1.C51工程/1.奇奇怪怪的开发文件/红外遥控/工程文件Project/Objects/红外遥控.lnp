@@ -1,0 +1,4 @@
+".\Objects\RADMain.obj",
+".\Objects\redmod.obj" 
+TO ".\Objects\КьЭтвЃПи" 
+PRINT(".\Listings\КьЭтвЃПи.m51") RAMSIZE(256) 

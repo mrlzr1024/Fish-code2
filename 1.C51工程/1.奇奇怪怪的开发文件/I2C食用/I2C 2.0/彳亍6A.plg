@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\¡∫÷•»\Desktop\∆Ê∆Êπ÷π÷µƒø™∑¢Œƒº˛\I2C ≥”√\·‹ÿ°6.uvproj
+Project File Date:  07/29/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling ·‹ÿ°6.c...
+·‹ÿ°6.C(135): warning C206: 'init': missing function-prototype
+·‹ÿ°6.C(136): warning C206: 'write_data': missing function-prototype
+·‹ÿ°6.C(136): error C267: 'write_data': requires ANSI-style prototype
+·‹ÿ°6.C(138): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling ·‹ÿ°6.c...
+·‹ÿ°6.C(136): warning C206: 'write_data': missing function-prototype
+·‹ÿ°6.C(136): error C267: 'write_data': requires ANSI-style prototype
+·‹ÿ°6.C(138): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling ·‹ÿ°6.c...
+·‹ÿ°6.C(136): warning C206: 'Lcd_write_data': missing function-prototype
+·‹ÿ°6.C(136): error C267: 'Lcd_write_data': requires ANSI-style prototype
+·‹ÿ°6.C(138): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling ·‹ÿ°6.c...
+·‹ÿ°6.C(138): error C141: syntax error near '}'
+Target not created
+compiling ·‹ÿ°6.c...
+·‹ÿ°6.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling ·‹ÿ°6.c...
+linking...
+Program Size: data=13.0 xdata=0 code=427
+creating hex file from "·‹ÿ°6A"...
+"·‹ÿ°6A" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling ·‹ÿ°6.c...
+linking...
+Program Size: data=13.0 xdata=0 code=427
+creating hex file from "·‹ÿ°6B"...
+"·‹ÿ°6B" - 0 Error(s), 0 Warning(s).

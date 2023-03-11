@@ -1,0 +1,4 @@
+"..\输出文件Output\EEPROM.obj",
+"..\输出文件Output\I2CA.obj" 
+TO "..\输出文件Output\EEPROM" 
+PRINT(".\Listings\EEPROM.m51") RAMSIZE(256) 

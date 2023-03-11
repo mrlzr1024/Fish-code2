@@ -1,0 +1,120 @@
+C51 COMPILER V9.57.0.0   ____7                                                             12/18/2021 15:54:24 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE ____7
+OBJECT MODULE PLACED IN ��ء7.OBJ
+COMPILER INVOKED BY: D:\keil5B\C51\BIN\C51.EXE ��ء7.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          #include <INTRINS.H>
+   3          #define uchar unsigned char 
+   4          #define l1  262
+   5          #define l2  286
+   6          #define l3  311
+   7          #define l4  349
+   8          #define l5  392
+   9          #define l6  440
+  10          #define l7  494
+  11          #define m1  523
+  12          #define m2  587
+  13          #define m3  659
+  14          #define m4   698
+  15          #define m5   784
+  16          #define m6   880
+  17          #define m7   987
+  18          #define h1   1046
+  19          #define h2   1174
+  20          #define h3   1318
+  21          #define h4   1396
+  22          #define h5   1567
+  23          #define h6   1760
+  24          #define h7   1975
+  25          sbit sound=P3^6;
+  26          unsigned int  C;
+  27          unsigned char a;
+  28          unsigned char b;
+  29          void delay()
+  30          {
+  31   1        unsigned char i,j;
+  32   1          for(i=0;i<250;i++)
+  33   1           for(j=0;j<250;j++)
+  34   1              ;
+  35   1      }
+  36          void time0() interrupt 1
+  37          {
+  38   1        sound=!sound;
+  39   1        TH0=(8192-C)/32;
+  40   1        TL0=(8192-C)%32;
+  41   1      }
+  42          unsigned code table[]={//前奏
+  43          l6, l5, l4, l3,
+  44          m6,m7,h1,h2,h3, m6,m6, m6,h3, m6, h3,
+  45          m6,m7,h1,h2,h3, m6, m6,h3, m6, h3,
+  46          m6,m7,h1,h3,h2,m6,m6, h2,
+  47          m6,m7,h1,h2,h3, m6, m6,h2, m6,h1,h2,h3,h5,
+  48          m6,m7,h1,h2,h3, m6,m6, m6,h3, m6, h3,
+  49          m6,m7,h1,h3,h2, m6, m6,h2, m6, h1,h2,h3,h6,
+  50          //主旋律
+  51          m6,m7,h1,h2,h3, m6,h3,h2,m6,
+  52          m6,m7,h1, m7,m6,m5, m3,m5,m6,
+  53          m6,m6,m6,m7,h1,h2,h3, m6, m6,h2,h1,m5,
+  54          m5,m6, m7,m6,m7, h1,m7,h1, h2,h1,h2, h5,
+  55          //间奏
+C51 COMPILER V9.57.0.0   ____7                                                             12/18/2021 15:54:24 PAGE 2   
+
+  56          l6,l7,m1,m2,m3, l6,l6, l6,m3, l6, m3,
+  57          l6,l7,m1,m2,m3, l6,l6,m2, l6, m2,
+  58          l6,l7,m1,m3,m2, l6, l6, m2,
+  59          l6,l7,m1,m2,m3, l6, l6,m2, l6,m1,m2,m3,m5,
+  60          l6,l7,m1,m2,m3, l6,l6, l6,m3, l6, m3,
+  61          l6,l7,m1,m3,m2,l6, l6,m2, l6, m1,m2,m3,m6,
+  62          //主旋律接.上
+  63          l6,l7,m1,m2,m3, l6,m3,m2,l6, l6,l7, m1, l7,l6,l5,l3,l5,l6,
+  64          l6,l6,l6,l7,m1,m2,m3,l6,l6,m2,m1,l5,
+  65          l5,l6,l7,l6,l7, m1,l7,m1, m2,m1,m2,m5,
+  66          m6,m7,h1,h2,h3, m6,h3,h2,m6,
+  67          m6,m7,h1, m7,m6,m5, m3,m5,m6,
+  68          m6,m6,m6,m7,h1,h2,h3, m6, m6,h2,h1,m5,
+  69          m5,m6, m7,m6,m7, h1,m7,h1, h2,h1,h2, h5,
+  70          0xff};
+  71          void main()
+  72          {
+  73   1        EA=1;
+  74   1        ET0=1;
+  75   1        TMOD=0x00;
+  76   1        while(1)
+  77   1        {
+  78   2          a=0;
+  79   2          while(a!=0xff)
+  80   2          {
+  81   3            C=460830/table[a];
+  82   3            TH0=(8192-C)/32;
+  83   3            TL0=(8192-C)%32;
+  84   3            TR0=1;
+  85   3              for(b=0;b<2;b++)
+  86   3              delay();
+  87   3                TR0=0;
+  88   3                a++;
+  89   3          }
+  90   2        }
+  91   1      }
+  92          
+  93          
+  94          
+  95          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    181    ----
+   CONSTANT SIZE    =    526    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

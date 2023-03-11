@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}\\..\\..\\..\\.eide\\tools\\sdcc\\include",
+                "${workspaceFolder}\\..\\..\\..\\.eide\\tools\\sdcc\\include\\mcs51",
+                "${workspaceFolder}\\src",
+                "${workspaceFolder}\\inc"
+            ],
+            "defines": [
+                "${default}",
+                "__VSCODE_CPPTOOL",
+                "__SDCC",
+                "__SDCC_VERSION_MAJOR=4",
+                "__SDCC_VERSION_MINOR=1",
+                "__SDCC_VERSION_PATCH=0",
+                "__SDCC_mcs51"
+            ],
+            "intelliSenseMode": "${default}",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${default}"
+            },
+            "forcedInclude": [
+                ".\\..\\..\\..\\.vscode\\extensions\\cl.eide-2.13.1\\bin\\include\\internal_headers\\c51_intr.h"
+            ]
+        }
+    ],
+    "version": 4
+}

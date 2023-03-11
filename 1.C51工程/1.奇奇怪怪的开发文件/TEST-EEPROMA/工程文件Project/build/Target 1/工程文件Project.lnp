@@ -1,0 +1,3 @@
+
+".\build\Target 1\EEPROM.o",".\build\Target 1\I2CA.o" TO ".\build\Target 1\工程文件Project"
+PRINT(".\build\Target 1\工程文件Project.map") REMOVEUNUSED

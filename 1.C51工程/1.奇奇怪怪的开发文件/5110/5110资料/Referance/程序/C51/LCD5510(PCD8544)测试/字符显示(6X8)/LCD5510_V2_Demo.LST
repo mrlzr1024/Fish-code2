@@ -1,0 +1,121 @@
+C51 COMPILER V9.57.0.0   LCD5510_V2_DEMO                                                   04/03/2022 10:22:31 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE LCD5510_V2_DEMO
+OBJECT MODULE PLACED IN LCD5510_V2_Demo.OBJ
+COMPILER INVOKED BY: D:\keil5B\C51\BIN\C51.EXE LCD5510_V2_Demo.C OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          /*--------------------------------------------------------------*/
+   2          #include <AT89X52.H>
+   3          #include "Font_code.c"
+   4          #include "LCD5510_V2.H"
+   5          
+   6          unsigned char code *str1 = {"Nokia 5510 Test, Haha^_^ I am so glad to see you agian! Do you think so?"};
+   7          unsigned char code *str2 = {"I Love You AVR"};
+   8          
+   9          /*--------------------------------------------------------------*/
+  10          //延时250000+1us 函数定义
+  11          void delay250ms(void)
+  12          {
+  13   1          unsigned char i,j,k;
+  14   1          for(i=251;i>0;i--)
+  15   1          for(j=3;j>0;j--)
+  16   1          for(k=164;k>0;k--);
+  17   1      }
+  18          
+  19          //延时1000000+1us 函数定义
+  20          void delay1s(void)
+  21          {
+  22   1          unsigned char i,j,k;
+  23   1          for(i=167;i>0;i--)
+  24   1          for(j=171;j>0;j--)
+  25   1          for(k=16;k>0;k--);
+  26   1      }
+  27          
+  28          
+  29          /*--------------------------------------------------------------*/
+  30          //主函数
+  31          void main(void)
+  32          {
+  33   1        unsigned char i, j, k;
+  34   1        unsigned char LCD_contrast = 0xc8;
+  35   1      
+  36   1        LCD5510_Init();
+  37   1      
+  38   1        while(*str1)
+  39   1        {
+  40   2          LCD_prints(0, 0, str1++); 
+  41   2          delay250ms(); i++;
+  42   2          LCD_clr_row(0);
+  43   2        }
+  44   1        str1 -= i;
+  45   1        LCD_printsl(0, 0, str1);
+  46   1      
+  47   1        delay1s(); delay1s();
+  48   1        LCD_clr_scr();    //清屏
+  49   1        for(i = 0; i < 14; i++) {LCD_printc(i, 2, str2[i]); delay250ms();}
+  50   1      
+  51   1        delay1s();
+  52   1        LCD_prints(0, 3, ">--(*^_^*)--<");
+  53   1        delay1s();
+  54   1      
+  55   1        LCD_prints(0, 0, "Blank Test ");
+C51 COMPILER V9.57.0.0   LCD5510_V2_DEMO                                                   04/03/2022 10:22:31 PAGE 2   
+
+  56   1        delay1s();
+  57   1        LCD_show_blank;   //空白测试
+  58   1        delay1s();
+  59   1        LCD_prints(0, 0, "Normal Test");
+  60   1        LCD_show_normal;  //恢复正常
+  61   1        delay1s();
+  62   1        LCD_prints(0, 0, "Black Test ");
+  63   1        delay1s();
+  64   1        LCD_show_black;   //全黑检测坏点
+  65   1        delay1s();
+  66   1        LCD_show_normal;  //恢复正常
+  67   1        delay1s();
+  68   1        LCD_prints(0, 0, "Inverse Test");
+  69   1        LCD_show_inverse; //反色
+  70   1        delay1s();
+  71   1        LCD_prints(0, 0, "Normal again");
+  72   1        LCD_show_normal;  //恢复正常
+  73   1        delay1s();
+  74   1        LCD_clr_scr();    //清屏
+  75   1        delay1s();
+  76   1        
+  77   1        i = 0; j = 0; k =0;
+  78   1        while(k++ < 101)  //ASCII字符测试
+  79   1        { 
+  80   2          LCD_printc(i, j, k + 32); 
+  81   2          delay250ms(); 
+  82   2          i++; if(i == 14) {i = 0; j++;}
+  83   2          if(j == 6) j = 0;
+  84   2        }
+  85   1        
+  86   1        LCD_prints(2, 1, "Alexi2008");
+  87   1        while(1)        //对比度软件调节
+  88   1        {
+  89   2          //LCD_write_cmd(0x23);//工作模式, 水平寻址, 扩展指令  
+  90   2      
+  91   2        //  for(i = 0; i < 10; i++) {LCD_contrast++; LCD_write_cmd(LCD_contrast); delay250ms();}
+  92   2        //  for(i = 0; i < 20; i++) {LCD_contrast--; LCD_write_cmd(LCD_contrast); delay250ms();}
+  93   2        //  for(i = 0; i < 10; i++) {LCD_contrast++; LCD_write_cmd(LCD_contrast); delay250ms();}
+  94   2        }
+  95   1      }
+  96          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    653    ----
+   CONSTANT SIZE    =    780    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4      12
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,5 @@
+"..\输出文件Output\挖掘机.obj",
+"..\输出文件Output\I2CA.obj",
+"..\输出文件Output\PCA9685.obj" 
+TO "..\输出文件Output\挖掘机操作系统" 
+PRINT(".\Listings\挖掘机操作系统.m51") RAMSIZE(256) 

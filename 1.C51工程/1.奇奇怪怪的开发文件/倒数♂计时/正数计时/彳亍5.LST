@@ -1,0 +1,80 @@
+C51 COMPILER V9.00   แ_ุก5                                                                 07/22/2021 21:10:08 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE แ_ุก5
+OBJECT MODULE PLACED IN แÜุก5.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE แÜุก5.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #define uchar unsigned char 
+   3          sbit P2_0=P2^0;
+   4          sbit P2_1=P2^1;
+   5          uchar t;
+   6          uchar num;
+   7          void delay(uchar i)
+   8          {
+   9   1        uchar j,k; 
+  10   1        for(j=i;j>0;j--)
+  11   1          for(k=200;k>0;k--);
+  12   1      }
+  13          uchar code table[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+  14          void  time0() interrupt 1
+  15          {
+  16   1              TH0=(65536-50000)/256;
+  17   1              TL0=(65536-50000)%256;
+  18   1              t++;    
+  19   1      }
+  20          void main()
+  21          {
+  22   1              t=0;
+  23   1              num=0;
+  24   1              EA=1;
+  25   1              ET0=1;
+  26   1              TMOD=0x01;
+  27   1              TH0=(65536-50000)/256;
+  28   1              TL0=(65536-50000)%256;
+  29   1              TR0=1;
+  30   1              while(1)
+  31   1       {
+  32   2              if(t==20)
+  33   2              {
+  34   3                      num++;
+  35   3                      P0=table[num];
+  36   3                      P2_0 = 0;
+  37   3                      delay(50);
+  38   3                      P2_0 = 1;
+  39   3                      t=0;
+  40   3      
+  41   3              }
+  42   2              else if(t!=20)
+  43   2              {
+  44   3                      P0=table[num];
+  45   3                      P2_0=0;
+  46   3                      delay(100);
+  47   3                      P2_0=1;
+  48   3              }
+  49   2              if(num>9)
+  50   2              {
+  51   3                      num=0;
+  52   3              }
+  53   2       }
+  54   1      
+  55   1      }
+C51 COMPILER V9.00   แ_ุก5                                                                 07/22/2021 21:10:08 PAGE 2   
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    107    ----
+   CONSTANT SIZE    =     10    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

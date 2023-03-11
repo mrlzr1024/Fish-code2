@@ -1,0 +1,112 @@
+C51 COMPILER V9.57.0.0   ______                                                            11/11/2021 21:58:03 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE ______
+OBJECT MODULE PLACED IN ..\输出文件Output\挖掘机.obj
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.EXE 挖掘机.c OPTIMIZE(8,SPEED) BROWSE INCDIR(..\源文件Soucre) DEBUG OBJECTEXTE
+                    -ND PRINT(.\Listings\挖掘机.lst) TABS(2) OBJECT(..\输出文件Output\挖掘机.obj)
+
+line level    source
+
+   1          #include<reg52.h>
+   2          #include"PCA9685.h"
+   3          sbit A=P2^1;
+   4          #define uchar unsigned char 
+   5          uchar code table[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+   6          sbit KEY0=P2^4;
+   7          sbit KEY1=P2^5;
+   8          sbit KEY2=P2^6;
+   9          int count=0;
+  10          void delay10ms(void){
+  11   1          unsigned char a,b;
+  12   1          for(b=249;b>0;b--)
+  13   1              for(a=17;a>0;a--);
+  14   1      }
+  15          
+  16          int KEYB(void){
+  17   1        if(KEY2==0){
+  18   2          delay10ms();
+  19   2          delay10ms();
+  20   2          delay10ms();
+  21   2          delay10ms();
+  22   2          delay10ms();
+  23   2          if(KEY2==0&&count==0){
+  24   3            count++;
+  25   3            return 1;
+  26   3            }
+  27   2          }
+  28   1          else{
+  29   2          count=0;
+  30   2          }
+  31   1        return 0;
+  32   1            }
+  33          
+  34          int KEYA(void){
+  35   1      if(KEY1==0){
+  36   2        delay10ms();
+  37   2        if(KEY1==0&&count==0){
+  38   3          count++;
+  39   3          return 1;
+  40   3          }
+  41   2        }
+  42   1        else{
+  43   2        count=0;
+  44   2        }
+  45   1      return 0;
+  46   1          }
+  47          int KEY(void){
+  48   1      if(KEY0==0){
+  49   2        delay10ms();
+  50   2        if(KEY0==0&&count==0){
+  51   3          count++;
+  52   3          return 1;
+  53   3          }
+  54   2        }
+C51 COMPILER V9.57.0.0   ______                                                            11/11/2021 21:58:03 PAGE 2   
+
+  55   1      else{
+  56   2      count=0;
+  57   2      }
+  58   1      return 0;
+  59   1          }
+  60          void main(void){
+  61   1        int i=0;
+  62   1        int mod=0;
+  63   1          init();
+  64   1          begin();
+  65   1          setPWMFreq(50);
+  66   1        
+  67   1        while(1){
+  68   2          A=0;
+  69   2          P0=table[mod];
+  70   2          delayms(10);
+  71   2          A=1;
+  72   2          if(KEYB()){mod++;if(mod>=3){mod=0;}}
+  73   2          
+  74   2          if(KEY()){
+  75   3            servo_control(mod,i);//num为管脚号
+  76   3            delayms(10);
+  77   3            i+=10;
+  78   3            if(i>180){i=180;}}
+  79   2          
+  80   2          else if(KEYA()){
+  81   3            servo_control(mod,i);//num为管脚号
+  82   3            delayms(10);
+  83   3            i-=10;
+  84   3            if(i<0){i=0;}}
+  85   2          }
+  86   1        }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    317    ----
+   CONSTANT SIZE    =     10    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

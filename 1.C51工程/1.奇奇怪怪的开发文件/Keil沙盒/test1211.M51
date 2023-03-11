@@ -1,0 +1,247 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/17/2021  16:24:29  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+D:\KEIL5\C51\BIN\BL51.EXE test.obj TO test1211 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  test.obj (TEST)
+  D:\KEIL5\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\KEIL5\C51\LIB\C51S.LIB (?C?IMUL)
+
+
+LINK MAP OF MODULE:  test1211 (TEST)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0001H     UNIT         _DATA_GROUP_
+            IDATA   0009H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0047H     UNIT         ?PR?MAIN?TEST
+            CODE    004AH     002BH     UNIT         ?PR?INIT?TEST
+            CODE    0075H     0012H     UNIT         ?PR?DELAY5?TEST
+            CODE    0087H     0012H     UNIT         ?C?LIB_CODE
+            CODE    0099H     000DH     UNIT         ?PR?DELAY10?TEST
+            CODE    00A6H     000DH     UNIT         ?PR?DELAY?TEST
+            CODE    00B3H     000DH     UNIT         ?PR?DELAY15?TEST
+            CODE    00C0H     000CH     UNIT         ?C_C51STARTUP
+            CODE    00CCH     0009H     UNIT         ?PR?READ?TEST
+            CODE    00D5H     0009H     UNIT         ?PR?READ2?TEST
+            CODE    00DEH     0008H     UNIT         ?PR?_COMMAND?TEST
+            CODE    00E6H     0008H     UNIT         ?PR?_WRITE?TEST
+
+
+
+OVERLAY MAP OF MODULE:   test1211 (TEST)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?TEST
+
+?PR?MAIN?TEST                  0008H    0001H
+  +--> ?PR?INIT?TEST
+  +--> ?PR?DELAY10?TEST
+  +--> ?PR?_WRITE?TEST
+  +--> ?PR?DELAY5?TEST
+  +--> ?PR?DELAY?TEST
+  +--> ?PR?_COMMAND?TEST
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/17/2021  16:24:29  PAGE 2
+
+
+?PR?INIT?TEST                  -----    -----
+  +--> ?PR?READ?TEST
+  +--> ?PR?_COMMAND?TEST
+  +--> ?PR?DELAY5?TEST
+  +--> ?PR?READ2?TEST
+
+?PR?READ?TEST                  -----    -----
+  +--> ?PR?DELAY15?TEST
+
+?PR?_COMMAND?TEST              -----    -----
+  +--> ?PR?DELAY5?TEST
+
+?PR?READ2?TEST                 -----    -----
+  +--> ?PR?DELAY15?TEST
+
+?PR?_WRITE?TEST                -----    -----
+  +--> ?PR?DELAY5?TEST
+
+
+
+SYMBOL TABLE OF MODULE:  test1211 (TEST)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TEST
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:00A0H         PUBLIC        P2
+  C:00E6H         PUBLIC        _Write
+  C:00A6H         PUBLIC        delay
+  B:00A0H.5       PUBLIC        EN
+  B:00A0H.3       PUBLIC        RS
+  C:0003H         PUBLIC        main
+  B:00A0H.4       PUBLIC        RW
+  C:00D5H         PUBLIC        Read2
+  C:004AH         PUBLIC        init
+  B:00A0H.0       PUBLIC        A
+  B:00A0H.1       PUBLIC        C
+  C:007EH         PUBLIC        delay5
+  C:00DEH         PUBLIC        _command
+  C:0099H         PUBLIC        delay10
+  C:00B3H         PUBLIC        delay15
+  C:00CCH         PUBLIC        Read
+  -------         PROC          DELAY10
+  -------         DO            
+  D:0005H         SYMBOL        a
+  D:0006H         SYMBOL        b
+  D:0007H         SYMBOL        c
+  -------         ENDDO         
+  C:0099H         LINE#         8
+  C:0099H         LINE#         10
+  C:009BH         LINE#         11
+  C:009DH         LINE#         12
+  C:00A5H         LINE#         13
+  -------         ENDPROC       DELAY10
+  -------         PROC          DELAY
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/17/2021  16:24:29  PAGE 3
+
+
+  -------         DO            
+  D:0005H         SYMBOL        a
+  D:0006H         SYMBOL        b
+  D:0007H         SYMBOL        c
+  -------         ENDDO         
+  C:00A6H         LINE#         15
+  C:00A6H         LINE#         17
+  C:00A8H         LINE#         18
+  C:00AAH         LINE#         19
+  C:00B2H         LINE#         20
+  -------         ENDPROC       DELAY
+  -------         PROC          L?0050
+  -------         ENDPROC       L?0050
+  -------         PROC          DELAY5
+  -------         DO            
+  D:0006H         SYMBOL        a
+  D:0007H         SYMBOL        b
+  -------         ENDDO         
+  C:007EH         LINE#         22
+  C:007EH         LINE#         24
+  C:0080H         LINE#         25
+  C:0086H         LINE#         26
+  -------         ENDPROC       DELAY5
+  -------         PROC          DELAY15
+  -------         DO            
+  D:0005H         SYMBOL        a
+  D:0006H         SYMBOL        b
+  D:0007H         SYMBOL        c
+  -------         ENDDO         
+  C:00B3H         LINE#         27
+  C:00B3H         LINE#         29
+  C:00B5H         LINE#         30
+  C:00B7H         LINE#         31
+  C:00BFH         LINE#         32
+  -------         ENDPROC       DELAY15
+  -------         PROC          READ
+  C:00CCH         LINE#         33
+  C:00CCH         LINE#         34
+  C:00CEH         LINE#         35
+  C:00D0H         LINE#         36
+  C:00D2H         LINE#         37
+  -------         ENDPROC       READ
+  -------         PROC          _COMMAND
+  D:0006H         SYMBOL        com
+  C:00DEH         LINE#         39
+  C:00DEH         LINE#         40
+  C:00E0H         LINE#         41
+  C:00E0H         LINE#         42
+  C:00E0H         LINE#         43
+  C:00E0H         LINE#         44
+  C:00E0H         LINE#         45
+  C:00E3H         LINE#         46
+  C:00E5H         LINE#         47
+  -------         ENDPROC       _COMMAND
+  -------         PROC          READ2
+  C:00D5H         LINE#         48
+  C:00D5H         LINE#         49
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/17/2021  16:24:29  PAGE 4
+
+
+  C:00D7H         LINE#         50
+  C:00D9H         LINE#         51
+  C:00DBH         LINE#         52
+  -------         ENDPROC       READ2
+  -------         PROC          _WRITE
+  D:0007H         SYMBOL        txt
+  C:00E6H         LINE#         54
+  C:00E6H         LINE#         55
+  C:00E8H         LINE#         56
+  C:00E8H         LINE#         57
+  C:00E8H         LINE#         58
+  C:00E8H         LINE#         59
+  C:00E8H         LINE#         60
+  C:00EBH         LINE#         61
+  C:00EDH         LINE#         62
+  -------         ENDPROC       _WRITE
+  -------         PROC          INIT
+  C:004AH         LINE#         63
+  C:004AH         LINE#         64
+  C:004CH         LINE#         65
+  C:004EH         LINE#         66
+  C:0050H         LINE#         67
+  C:0053H         LINE#         68
+  C:005AH         LINE#         69
+  C:0061H         LINE#         70
+  C:0068H         LINE#         71
+  C:006FH         LINE#         72
+  C:0072H         LINE#         73
+  -------         ENDPROC       INIT
+  -------         PROC          MAIN
+  -------         DO            
+  D:0002H         SYMBOL        i
+  -------         DO            
+  D:0008H         SYMBOL        a
+  -------         ENDDO         
+  -------         ENDDO         
+  C:0003H         LINE#         77
+  C:0003H         LINE#         79
+  C:0006H         LINE#         80
+  C:0009H         LINE#         82
+  C:000BH         LINE#         83
+  C:000DH         LINE#         84
+  C:0010H         LINE#         85
+  C:0015H         LINE#         86
+  C:0019H         LINE#         87
+  C:001CH         LINE#         88
+  C:001FH         LINE#         89
+  C:0034H         LINE#         90
+  C:003BH         LINE#         91
+  C:003DH         LINE#         92
+  C:0048H         LINE#         93
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        TEST
+
+  -------         MODULE        ?C?IMUL
+  C:0087H         PUBLIC        ?C?IMUL
+  -------         ENDMOD        ?C?IMUL
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/17/2021  16:24:29  PAGE 5
+
+
+
+Program Size: data=10.0 xdata=0 code=238
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

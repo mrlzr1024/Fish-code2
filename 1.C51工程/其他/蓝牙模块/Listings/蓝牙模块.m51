@@ -1,0 +1,376 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    11/24/2021  15:01:17  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+D:\KEIL5\C51\BIN\BL51.EXE .\Objects\´®¿ÚÍ¨ÐÅA.obj, .\Objects\spi.obj TO .\Objects\À¶ÑÀÄ£¿é PRINT (.\Listings\À¶ÑÀÄ£¿é.m5
+>> 1) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\´®¿ÚÍ¨ÐÅA.obj (________A)
+  .\Objects\spi.obj (SPI)
+  D:\KEIL5\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\KEIL5\C51\LIB\C51S.LIB (?C?CLDOPTR)
+  D:\KEIL5\C51\LIB\C51S.LIB (?C?IMUL)
+  D:\KEIL5\C51\LIB\C51S.LIB (?C?ILDOPTR)
+  D:\KEIL5\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  .\Objects\À¶ÑÀÄ£¿é (________A)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0018H     UNIT         ?DT?SPI
+            DATA    0020H     000CH     UNIT         ?DT?_LCD_DRAW_BMP_PIXEL?SPI
+            DATA    002CH     0008H     UNIT         ?DT?________A
+            DATA    0034H     0003H     UNIT         _DATA_GROUP_
+            IDATA   0037H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     001AH     UNIT         ?PR?INIT?________A
+            CODE    001DH     0006H     UNIT         ?PR?_DISPLAY?SPI
+            CODE    0023H     0003H     ABSOLUTE     
+            CODE    0026H     008CH     UNIT         ?C_C51STARTUP
+            CODE    00B2H     0087H     UNIT         ?PR?_LCD_DRAW_BMP_PIXEL?SPI
+            CODE    0139H     0077H     UNIT         ?C?LIB_CODE
+            CODE    01B0H     0074H     UNIT         ?CO?________A
+            CODE    0224H     0063H     UNIT         ?PR?BLUETOOTHGET?________A
+            CODE    0287H     0045H     UNIT         ?PR?UART?________A
+            CODE    02CCH     0039H     UNIT         ?PR?MAIN?________A
+            CODE    0305H     0039H     UNIT         ?PR?LCD_INIT?SPI
+            CODE    033EH     0029H     UNIT         ?C_INITSEG
+            CODE    0367H     0026H     UNIT         ?PR?_LCD_WRITE_BYTE?SPI
+            CODE    038DH     0026H     UNIT         ?PR?_LCD_WRITE_CHAR?SPI
+            CODE    03B3H     0022H     UNIT         ?PR?LCD_CLEAR?SPI
+            CODE    03D5H     0012H     UNIT         ?PR?_LCD_SET_XY?SPI
+            CODE    03E7H     0001H     UNIT         ?PR?DELAY_1US?SPI
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\À¶ÑÀÄ£¿é (________A)
+
+
+SEGMENT                               DATA_GROUP 
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/24/2021  15:01:17  PAGE 2
+
+
+  +--> CALLED SEGMENT               START    LENGTH
+---------------------------------------------------
+?C_C51STARTUP                       -----    -----
+  +--> ?PR?MAIN?________A
+  +--> ?C_INITSEG
+
+?PR?MAIN?________A                  -----    -----
+  +--> ?PR?INIT?________A
+  +--> ?PR?LCD_INIT?SPI
+  +--> ?PR?_LCD_SET_XY?SPI
+  +--> ?CO?________A
+  +--> ?PR?_LCD_WRITE_CHAR?SPI
+  +--> ?PR?BLUETOOTHGET?________A
+  +--> ?PR?_DISPLAY?SPI
+
+?PR?LCD_INIT?SPI                    -----    -----
+  +--> ?PR?DELAY_1US?SPI
+  +--> ?PR?_LCD_WRITE_BYTE?SPI
+  +--> ?PR?LCD_CLEAR?SPI
+
+?PR?LCD_CLEAR?SPI                   -----    -----
+  +--> ?PR?_LCD_WRITE_BYTE?SPI
+
+?PR?_LCD_SET_XY?SPI                 -----    -----
+  +--> ?PR?_LCD_WRITE_BYTE?SPI
+
+?PR?_LCD_WRITE_CHAR?SPI             0034H    0003H
+  +--> ?PR?_LCD_WRITE_BYTE?SPI
+
+?PR?BLUETOOTHGET?________A          -----    -----
+  +--> ?PR?INIT?________A
+
+?PR?_DISPLAY?SPI                    -----    -----
+  +--> ?PR?_LCD_SET_XY?SPI
+  +--> ?PR?_LCD_WRITE_CHAR?SPI
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\À¶ÑÀÄ£¿é (________A)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ________A
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IE
+  B:00A8H.4       PUBLIC        ES
+  D:00B8H         PUBLIC        IP
+  B:0098H.0       PUBLIC        RI
+  C:01B0H         PUBLIC        l0
+  C:01BCH         PUBLIC        l1
+  B:0098H.1       PUBLIC        TI
+  C:0287H         PUBLIC        Uart
+  C:01C8H         PUBLIC        l2
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/24/2021  15:01:17  PAGE 3
+
+
+  C:01D4H         PUBLIC        l3
+  C:01E0H         PUBLIC        l4
+  C:01ECH         PUBLIC        l5
+  C:01F8H         PUBLIC        l6
+  C:02CCH         PUBLIC        main
+  D:0099H         PUBLIC        SBUF
+  D:0087H         PUBLIC        PCON
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:0088H         PUBLIC        TCON
+  C:0003H         PUBLIC        init
+  D:008DH         PUBLIC        TH1
+  D:002CH         PUBLIC        rev
+  D:008BH         PUBLIC        TL1
+  D:002DH         PUBLIC        tmp
+  B:0088H.6       PUBLIC        TR1
+  C:0224H         PUBLIC        BluetoothGet
+  C:0204H         PUBLIC        you
+  D:002FH         PUBLIC        a
+  B:0098H.4       PUBLIC        REN
+  D:00C8H         PUBLIC        T2CON
+  D:0030H         PUBLIC        i
+  D:0032H         PUBLIC        j
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          INIT
+  C:0003H         LINE#         17
+  C:0003H         LINE#         18
+  C:0005H         LINE#         19
+  C:0008H         LINE#         20
+  C:000BH         LINE#         21
+  C:000EH         LINE#         22
+  C:0011H         LINE#         23
+  C:0014H         LINE#         24
+  C:0016H         LINE#         25
+  C:0018H         LINE#         26
+  C:001AH         LINE#         27
+  C:001CH         LINE#         28
+  -------         ENDPROC       INIT
+  -------         PROC          BLUETOOTHGET
+  C:0224H         LINE#         30
+  C:0224H         LINE#         31
+  C:0229H         LINE#         32
+  C:022CH         LINE#         33
+  C:0232H         LINE#         35
+  C:0260H         LINE#         36
+  C:0260H         LINE#         37
+  C:0264H         LINE#         38
+  C:0264H         LINE#         39
+  C:0269H         LINE#         40
+  C:0269H         LINE#         41
+  C:026EH         LINE#         42
+  C:026EH         LINE#         43
+  C:0273H         LINE#         44
+  C:0273H         LINE#         45
+  C:0278H         LINE#         46
+  C:0278H         LINE#         47
+  C:027DH         LINE#         48
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/24/2021  15:01:17  PAGE 4
+
+
+  C:027DH         LINE#         49
+  C:0282H         LINE#         50
+  C:0282H         LINE#         51
+  C:0286H         LINE#         52
+  C:0286H         LINE#         53
+  C:0286H         LINE#         54
+  C:0286H         LINE#         55
+  -------         ENDPROC       BLUETOOTHGET
+  -------         PROC          MAIN
+  C:02CCH         LINE#         56
+  C:02CCH         LINE#         57
+  C:02D1H         LINE#         58
+  C:02D4H         LINE#         59
+  C:02D7H         LINE#         60
+  C:02E7H         LINE#         61
+  C:02E7H         LINE#         62
+  C:0303H         LINE#         63
+  -------         ENDPROC       MAIN
+  -------         PROC          UART
+  C:0287H         LINE#         65
+  C:028BH         LINE#         67
+  C:028EH         LINE#         68
+  C:0290H         LINE#         69
+  C:0293H         LINE#         70
+  C:0296H         LINE#         71
+  C:0298H         LINE#         72
+  C:02AEH         LINE#         73
+  C:02C7H         LINE#         74
+  -------         ENDPROC       UART
+  -------         ENDMOD        ________A
+
+  -------         MODULE        SPI
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+  D:0008H         PUBLIC        blank
+  C:00B2H         PUBLIC        _LCD_draw_bmp_pixel
+  C:03E7H         PUBLIC        delay_1us
+  D:00A8H         PUBLIC        IE
+  C:03D5H         PUBLIC        _LCD_set_XY
+  D:00B8H         PUBLIC        IP
+  D:0014H         PUBLIC        font6x8
+  B:0090H.0       PUBLIC        LCD_RST
+  B:0090H.4       PUBLIC        SCLK
+  B:0090H.3       PUBLIC        SDIN
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  B:0090H.2       PUBLIC        LCD_DC
+  B:0090H.1       PUBLIC        LCD_CE
+  C:03B3H         PUBLIC        LCD_clear
+  C:038DH         PUBLIC        _LCD_write_char
+  D:00C8H         PUBLIC        T2CON
+  C:0305H         PUBLIC        LCD_init
+  C:0367H         PUBLIC        _LCD_write_byte
+  C:001DH         PUBLIC        _display
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          DELAY_1US
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/24/2021  15:01:17  PAGE 5
+
+
+  C:03E7H         LINE#         5
+  C:03E7H         LINE#         6
+  -------         ENDPROC       DELAY_1US
+  -------         PROC          _LCD_WRITE_BYTE
+  D:0007H         SYMBOL        dat
+  D:0005H         SYMBOL        command
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0367H         LINE#         22
+  C:0367H         LINE#         27
+  C:0369H         LINE#         29
+  C:036CH         LINE#         31
+  C:0370H         LINE#         33
+  C:0372H         LINE#         35
+  C:0374H         LINE#         37
+  C:0374H         LINE#         39
+  C:0378H         LINE#         41
+  C:037CH         LINE#         45
+  C:037EH         LINE#         47
+  C:0380H         LINE#         49
+  C:0384H         LINE#         51
+  C:0386H         LINE#         53
+  C:038AH         LINE#         55
+  C:038CH         LINE#         57
+  -------         ENDPROC       _LCD_WRITE_BYTE
+  -------         PROC          LCD_CLEAR
+  -------         DO            
+  D:0002H         SYMBOL        i
+  -------         ENDDO         
+  C:03B3H         LINE#         71
+  C:03B3H         LINE#         74
+  C:03BAH         LINE#         75
+  C:03BFH         LINE#         77
+  C:03C2H         LINE#         78
+  C:03D4H         LINE#         79
+  -------         ENDPROC       LCD_CLEAR
+  -------         PROC          LCD_INIT
+  C:0305H         LINE#         95
+  C:0305H         LINE#         97
+  C:0307H         LINE#         99
+  C:030AH         LINE#         101
+  C:030CH         LINE#         103
+  C:030EH         LINE#         105
+  C:0311H         LINE#         107
+  C:0313H         LINE#         109
+  C:0316H         LINE#         111
+  C:031DH         LINE#         113
+  C:0322H         LINE#         115
+  C:0327H         LINE#         117
+  C:032CH         LINE#         119
+  C:0331H         LINE#         121
+  C:0334H         LINE#         123
+  C:033BH         LINE#         125
+  C:033DH         LINE#         126
+  -------         ENDPROC       LCD_INIT
+  -------         PROC          _LCD_SET_XY
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/24/2021  15:01:17  PAGE 6
+
+
+  D:0004H         SYMBOL        X
+  D:0005H         SYMBOL        Y
+  C:03D5H         LINE#         143
+  C:03D7H         LINE#         145
+  C:03E0H         LINE#         147
+  -------         ENDPROC       _LCD_SET_XY
+  -------         PROC          _LCD_WRITE_CHAR
+  D:0034H         SYMBOL        h
+  -------         DO            
+  D:0004H         SYMBOL        line
+  -------         ENDDO         
+  C:038DH         LINE#         163
+  C:0393H         LINE#         169
+  C:0395H         LINE#         171
+  C:03B2H         LINE#         173
+  -------         ENDPROC       _LCD_WRITE_CHAR
+  -------         PROC          _LCD_DRAW_BMP_PIXEL
+  D:0020H         SYMBOL        X
+  D:0021H         SYMBOL        Y
+  D:0001H         SYMBOL        map
+  D:0025H         SYMBOL        Pix_x
+  D:0026H         SYMBOL        Pix_y
+  -------         DO            
+  D:0027H         SYMBOL        i
+  D:0029H         SYMBOL        n
+  D:002BH         SYMBOL        row
+  -------         ENDDO         
+  C:00B2H         LINE#         175
+  C:00B6H         LINE#         178
+  C:00BCH         LINE#         179
+  C:00C7H         LINE#         181
+  C:00D1H         LINE#         182
+  C:00D8H         LINE#         183
+  C:00E8H         LINE#         184
+  C:00E8H         LINE#         185
+  C:00F8H         LINE#         186
+  C:00F8H         LINE#         187
+  C:0105H         LINE#         188
+  C:0124H         LINE#         189
+  C:012EH         LINE#         190
+  C:0138H         LINE#         191
+  -------         ENDPROC       _LCD_DRAW_BMP_PIXEL
+  -------         PROC          _DISPLAY
+  D:0007H         SYMBOL        x
+  D:0005H         SYMBOL        y
+  D:0001H         SYMBOL        h
+  C:001DH         LINE#         192
+  C:001DH         LINE#         193
+  C:0020H         LINE#         194
+  -------         ENDPROC       _DISPLAY
+  -------         ENDMOD        SPI
+
+  -------         MODULE        ?C?CLDOPTR
+  C:0139H         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+  -------         MODULE        ?C?IMUL
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/24/2021  15:01:17  PAGE 7
+
+
+  C:0166H         PUBLIC        ?C?IMUL
+  -------         ENDMOD        ?C?IMUL
+
+  -------         MODULE        ?C?ILDOPTR
+  C:0178H         PUBLIC        ?C?ILDOPTR
+  -------         ENDMOD        ?C?ILDOPTR
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_DRAW_BMP_PIXEL?SPI
+
+Program Size: data=56.0 xdata=0 code=1000
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

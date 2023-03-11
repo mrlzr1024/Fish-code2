@@ -1,0 +1,119 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        08/07/2021  16:24:30  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE .\แÜุก8C\แÜุกC.obj TO .\แÜุก8C\แÜุก8C PRINT (.\แÜุก8C.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\แÜุก8C\แÜุกC.obj (แ_ุกC)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\แÜุก8C\แÜุก8C (แ_ุกC)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         ?DT?แ_ุกC
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0003H     ABSOLUTE     
+                    0006H     0005H                  *** GAP ***
+            CODE    000BH     0003H     ABSOLUTE     
+                    000EH     07F2H                  *** GAP ***
+            CODE    0800H     0039H     UNIT         ?PR?TIME0?แ_ุกC
+            CODE    0839H     0019H     UNIT         ?PR?MAIN?แ_ุกC
+            CODE    0852H     000CH     UNIT         ?C_C51STARTUP
+            CODE    085EH     0006H     UNIT         ?PR?INT0?แ_ุกC
+
+
+
+OVERLAY MAP OF MODULE:   .\แÜุก8C\แÜุก8C (แ_ุกC)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?แ_ุกC
+
+
+
+SYMBOL TABLE OF MODULE:  .\แÜุก8C\แÜุก8C (แ_ุกC)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        แ_ุกC
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+  B:00A8H.7       PUBLIC        EA
+  C:0839H         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/07/2021  16:24:30  PAGE 2
+
+
+  D:0089H         PUBLIC        TMOD
+  C:0800H         PUBLIC        Time0
+  D:0008H         PUBLIC        C
+  B:00A8H.1       PUBLIC        ET0
+  D:008CH         PUBLIC        TH0
+  B:00A8H.0       PUBLIC        EX0
+  B:0088H.0       PUBLIC        IT0
+  D:008AH         PUBLIC        TL0
+  D:0009H         PUBLIC        T
+  B:0088H.4       PUBLIC        TR0
+  C:085EH         PUBLIC        int0
+  -------         PROC          MAIN
+  C:0839H         LINE#         5
+  C:0839H         LINE#         6
+  C:0839H         LINE#         7
+  C:083BH         LINE#         8
+  C:083DH         LINE#         9
+  C:083FH         LINE#         10
+  C:0841H         LINE#         11
+  C:0844H         LINE#         12
+  C:0846H         LINE#         13
+  C:0848H         LINE#         14
+  C:084BH         LINE#         15
+  C:084EH         LINE#         16
+  C:0850H         LINE#         17
+  -------         ENDPROC       MAIN
+  -------         PROC          TIME0
+  C:0800H         LINE#         20
+  C:0807H         LINE#         22
+  C:080AH         LINE#         23
+  C:081CH         LINE#         24
+  C:081CH         LINE#         25
+  C:081EH         LINE#         26
+  C:0820H         LINE#         27
+  C:082BH         LINE#         28
+  C:082BH         LINE#         29
+  C:082EH         LINE#         30
+  C:0831H         LINE#         31
+  C:0834H         LINE#         33
+  C:0834H         LINE#         34
+  -------         ENDPROC       TIME0
+  -------         PROC          INT0
+  C:085EH         LINE#         35
+  C:085EH         LINE#         37
+  C:0860H         LINE#         38
+  C:0863H         LINE#         39
+  -------         ENDPROC       INT0
+  -------         ENDMOD        แ_ุกC
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 005EH BYTE ( 4%) *
+******************************************************************************
+
+Program Size: data=11.0 xdata=0 code=109
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

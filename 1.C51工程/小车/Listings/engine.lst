@@ -1,0 +1,125 @@
+C51 COMPILER V9.57.0.0   ENGINE                                                            11/26/2021 09:11:36 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE ENGINE
+OBJECT MODULE PLACED IN .\Objects\engine.obj
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.EXE engine.c COMPACT OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listi
+                    -ngs\engine.lst) TABS(2) OBJECT(.\Objects\engine.obj)
+
+line level    source
+
+   1          /*
+   2           * @Author: your name
+   3           * @Date: 2021-11-17 07:38:08
+   4           * @LastEditTime: 2021-11-17 08:22:32
+   5           * @LastEditors: Please set LastEditors
+   6           * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%
+             -85%8D%E7%BD%AE
+   7           * @FilePath: \机械臂\engine.c
+   8           */
+   9          #include <REG52.h>
+  10          #include "engine.h"
+  11          static int T;
+  12          /***************************************************
+  13           * 函数名称：delay100us
+  14           * 入口参数：倍数 k
+  15           * 输出：无
+  16           * 功能：延时100*k us
+  17           * 备注：无
+  18           * *************************************************/
+  19          void delay100us(int k){ //延时k*100us
+  20   1        k = k - 2;
+  21   1        T = k;
+  22   1        TMOD = 0x02;
+  23   1        EA = 1;
+  24   1        ET0 = 1;
+  25   1        TH0 = 157; //100us要计92.16次 164
+  26   1        TL0 = 0;
+  27   1        TR0 = 1;
+  28   1        while (T > 0)
+  29   1          ;
+  30   1        TR0 = 0;
+  31   1      }
+  32          /***************************************************
+  33           * 函数名称：move
+  34           * 入口参数：舵机第mod个 角度angle(0~20)
+  35           * 输出：无
+  36           * 功能：模拟pwm信号控制四个舵机
+  37           * 备注：无
+  38           * *************************************************/
+  39          void move(int mod, int angle) //180度舵机控制程序
+  40          {
+  41   1        int pwm = 0;
+  42   1        pwm = 5 + angle;
+  43   1        switch (mod)
+  44   1        {
+  45   2        case 0:
+  46   2          M0 = 1;
+  47   2          delay100us(pwm);
+  48   2          M0 = 0;
+  49   2          delay100us(202 - pwm);
+  50   2          break;
+  51   2        case 1:
+  52   2          a1 = 1;
+  53   2          delay100us(pwm);
+C51 COMPILER V9.57.0.0   ENGINE                                                            11/26/2021 09:11:36 PAGE 2   
+
+  54   2          a1 = 0;
+  55   2          delay100us(202 - pwm);
+  56   2          break;
+  57   2        case 2:
+  58   2          a2 = 1;
+  59   2          delay100us(pwm);
+  60   2          a2 = 0;
+  61   2          delay100us(202 - pwm);
+  62   2          break;
+  63   2        case 3:
+  64   2          a3 = 1;
+  65   2          delay100us(pwm);
+  66   2          a3 = 0;
+  67   2          delay100us(202 - pwm);
+  68   2          break;
+  69   2        default:
+  70   2          break;
+  71   2        }
+  72   1      }
+  73          //  void main(void){
+  74          //    int i=0;
+  75          //    M0=0;
+  76          //    while(i<=3){
+  77          //      move(15);
+  78          //
+  79          //      i++;
+  80          //      }
+  81          //      i=0;
+  82          //    while(i<=3){
+  83          //      i++;
+  84          //      delay();
+  85          //    }
+  86          //      i=0;
+  87          //    while(i<=3){
+  88          //
+  89          //    move(5);
+  90          //    i++;
+  91          //      }
+  92          //    while(1)
+  93          //      ;
+  94          //    }
+  95          void time0(void) interrupt 1
+  96          {
+  97   1        T--;
+  98   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    146    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =      2    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,9 @@
+[2021-12-10 07:52:44]	compilation failed at : "e:\咸鱼先生的单片机开发文件\1.C51工程\1.奇奇怪怪的开发文件\红外遥控\工程文件Project\Redlay.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-10 07:53:19]	compilation failed at : "e:\咸鱼先生的单片机开发文件\1.C51工程\1.奇奇怪怪的开发文件\红外遥控\工程文件Project\Redlay.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-10 07:55:32]	compilation failed at : "e:\咸鱼先生的单片机开发文件\1.C51工程\1.奇奇怪怪的开发文件\红外遥控\工程文件Project\Redlay.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+

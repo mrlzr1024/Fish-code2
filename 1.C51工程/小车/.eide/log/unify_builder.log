@@ -1,0 +1,15 @@
+[2021-11-21 09:07:04]	compilation failed at : "e:\咸鱼先生的单片机开发文件\机械臂\arm.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-11-21 09:07:31]	compilation failed at : "e:\咸鱼先生的单片机开发文件\机械臂\arm.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-08 12:53:27]	compilation failed at : "e:\咸鱼先生的单片机开发文件\机械臂\arm.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-08 12:53:46]	compilation failed at : "e:\咸鱼先生的单片机开发文件\机械臂\arm.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-12-11 19:35:59]	compilation failed at : "e:\咸鱼先生的单片机开发文件\机械臂\arm.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+

@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "Target 1",
+            "includePath": [
+                "e:\\咸鱼先生的单片机开发文件\\1.C51工程\\1.奇奇怪怪的开发文件\\5110\\工程文件Project"
+            ],
+            "defines": [
+                "__C51__",
+                "__VSCODE_C51__",
+                "reentrant=",
+                "compact=",
+                "small=",
+                "large=",
+                "data=",
+                "idata=",
+                "pdata=",
+                "bdata=",
+                "xdata=",
+                "code=",
+                "bit=char",
+                "sbit=char",
+                "sfr=char",
+                "sfr16=int",
+                "sfr32=int",
+                "interrupt=",
+                "using=",
+                "_at_=",
+                "_priority_=",
+                "_task_="
+            ],
+            "intelliSenseMode": "${default}",
+            "configurationProvider": "cl.eide"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,102 @@
+C51 COMPILER V9.00   ·_ÿ°5B                                                                07/23/2021 11:29:14 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE ·_ÿ°5B
+OBJECT MODULE PLACED IN ·‹ÿ°5B.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE ·‹ÿ°5B.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #define uchar unsigned char 
+   3          sbit P2_0=P2^1;
+   4          sbit P2_1=P2^0;
+   5          uchar t;
+   6          char num;
+   7          char num1;
+   8          void delay(uchar i)
+   9          {
+  10   1        uchar j,k; 
+  11   1        for(j=i;j>0;j--)
+  12   1          for(k=200;k>0;k--);
+  13   1      }
+  14          uchar code table[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+  15          uchar code table1[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+  16          void main()
+  17          {
+  18   1              t=0;    //≥ı ºªØ
+  19   1              num=9;
+  20   1              num1=5;
+  21   1              EA=1;
+  22   1              ET0=1;
+  23   1              TMOD=0x01;
+  24   1              TH0=(65536-50000)/256;
+  25   1              TL0=(65536-50000)%256;
+  26   1              TR0=1;
+  27   1              P0=table1[num1];
+  28   1                      P2_1=0;
+  29   1                      delay(100);
+  30   1                      P2_1=1;
+  31   1              while(1)
+  32   1       {
+  33   2              if(t==20)
+  34   2              {
+  35   3                      num--;
+  36   3                      P0=table[num];
+  37   3                      P2_0 = 0;
+  38   3                      delay(5);
+  39   3                      P2_0 = 1;
+  40   3                      delay(2);
+  41   3                 P0=table1[num1];
+  42   3                      P2_1=0;
+  43   3                      delay(5);
+  44   3                      P2_1=1;
+  45   3                      t=0;
+  46   3      
+  47   3              }
+  48   2              else if(t!=20)
+  49   2              {
+  50   3                      P0=table[num];
+  51   3                      P2_0=0;
+  52   3                      delay(5);
+  53   3                      P2_0=1;
+  54   3                       P0=table1[num1];
+  55   3                      P2_1=0;
+C51 COMPILER V9.00   ·_ÿ°5B                                                                07/23/2021 11:29:14 PAGE 2   
+
+  56   3                      delay(5);
+  57   3                      P2_1=1;
+  58   3              }
+  59   2              if(num<0)
+  60   2              {
+  61   3                      num=9;
+  62   3                      num1--;
+  63   3              }
+  64   2        if(num1<0)
+  65   2              {
+  66   3                      num1=5;
+  67   3              }
+  68   2      
+  69   2       }
+  70   1      
+  71   1      }
+  72          void  time0() interrupt 1
+  73          {
+  74   1              TH0=(65536-50000)/256;
+  75   1              TL0=(65536-50000)%256;
+  76   1              t++;    
+  77   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    225    ----
+   CONSTANT SIZE    =     20    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      3    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

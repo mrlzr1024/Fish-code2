@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>ตVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\มบึฅศ๐\Desktop\ฦๆฦๆนึนึตฤฟชทขฮฤผþ\แÜุก4.uvproj
+Project File Date:  07/21/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling แÜุก4.c...
+แÜุก4.c(1): error C318: can't open file 'แÜุก4.c'
+Target not created
+Build target 'Target 1'
+compiling แÜุก4.c...
+แÜุก4.C(3): error C141: syntax error near 'sbit', expected ';'
+แÜุก4.C(4): error C141: syntax error near 'void', expected ';'
+แÜุก4.C(7): error C141: syntax error near 'P0'
+แÜุก4.C(8): error C141: syntax error near 'wela'
+แÜุก4.C(9): error C141: syntax error near 'dula'
+แÜุก4.C(10): error C141: syntax error near 'P0'
+แÜุก4.C(11): error C141: syntax error near 'dula'
+แÜุก4.C(12): error C141: syntax error near 'while'
+แÜุก4.C(13): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling แÜุก4.c...
+แÜุก4.C(13): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling แÜุก4.c...
+linking...
+Program Size: data=9.0 xdata=0 code=31
+"แÜุก4" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling แÜุก4.c...
+linking...
+Program Size: data=9.0 xdata=0 code=31
+creating hex file from ".\สýย๋นÜสตั้\แÜุก4"...
+".\สýย๋นÜสตั้\แÜุก4" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling แÜุก4.c...
+แÜุก4.c(1): error C318: can't open file 'แÜุก4.c'
+Target not created
+Build target 'Target 1'
+compiling แÜุก4.c...
+แÜุก4.c(1): error C318: can't open file 'แÜุก4.c'
+Target not created
+Build target 'Target 1'
+compiling แÜุก4.c...
+แÜุก4.c(1): error C318: can't open file 'แÜุก4.c'
+Target not created
+Build target 'Target 1'
+compiling แÜุก4.c...
+แÜุก4.c(1): error C318: can't open file 'แÜุก4.c'
+Target not created

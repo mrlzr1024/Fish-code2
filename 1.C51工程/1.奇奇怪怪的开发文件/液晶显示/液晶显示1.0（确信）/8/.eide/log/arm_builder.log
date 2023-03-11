@@ -1,0 +1,6 @@
+[2021-11-03 14:03:49]	compilation failed at : "e:\咸鱼先生的单片机开发文件\C51工程\奇奇怪怪的开发文件\液晶显示\液晶显示1.0（确信）\8\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01175] in <0145ce9df5474e8894a187804b43ab23>:0 
+
+[2021-11-04 13:15:18]	compilation failed at : "e:\咸鱼先生的单片机开发文件\C51工程\奇奇怪怪的开发文件\液晶显示\液晶显示1.0（确信）\8\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01175] in <0145ce9df5474e8894a187804b43ab23>:0 
+

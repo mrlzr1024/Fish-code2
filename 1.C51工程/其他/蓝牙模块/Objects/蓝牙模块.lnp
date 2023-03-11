@@ -1,0 +1,4 @@
+".\Objects\串口通信A.obj",
+".\Objects\spi.obj" 
+TO ".\Objects\蓝牙模块" 
+PRINT(".\Listings\蓝牙模块.m51") RAMSIZE(256) 

@@ -1,0 +1,66 @@
+{
+    "configurations": [
+        {
+            "name": "windows-gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${default}",
+                "${workspaceFolder}\\null\\INC\\Atmel",
+                "null\\INC"
+            ],
+            "defines": [
+                "${default}",
+                "__VSCODE_CPPTOOL",
+                "__UVISION_VERSION=526"
+            ],
+            "intelliSenseMode": "windows-gcc-x64",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${default}"
+            },
+            "forcedInclude": [
+                "c:\\Users\\梁芝瑞\\.vscode\\extensions\\cl.eide-2.13.1\\bin\\include\\internal_headers\\c51_intr.h"
+            ],
+            "compilerArgs": [
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic"
+            ],
+            "cStandard": "${default}",
+            "cppStandard": "${default}",
+            "compilerPath": "D:\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe"
+        },
+        {
+            "name": "Target 1",
+            "includePath": [
+                "e:\\咸鱼先生的单片机开发文件\\C51工程\\奇奇怪怪的开发文件\\超声波"
+            ],
+            "defines": [
+                "__C51__",
+                "__VSCODE_C51__",
+                "reentrant=",
+                "compact=",
+                "small=",
+                "large=",
+                "data=",
+                "idata=",
+                "pdata=",
+                "bdata=",
+                "xdata=",
+                "code=",
+                "bit=char",
+                "sbit=char",
+                "sfr=char",
+                "sfr16=int",
+                "sfr32=int",
+                "interrupt=",
+                "using=",
+                "_at_=",
+                "_priority_=",
+                "_task_="
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

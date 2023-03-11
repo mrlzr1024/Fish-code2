@@ -1,0 +1,3 @@
+".\Objects\挖掘机.obj" 
+TO ".\Objects\挖掘机操作系统" 
+PRINT(".\Listings\挖掘机操作系统.m51") RAMSIZE(256) 

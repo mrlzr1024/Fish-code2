@@ -1,0 +1,134 @@
+C51 COMPILER V9.57.0.0   MAIN                                                              11/07/2021 11:25:03 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: D:\keil5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main.l
+                    -st) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include <reg52.h>
+   2          #include "at24c02.h"
+   3          //#include "uart.h"
+   4          void  MCUBinit(void){
+   5   1        TMOD=0X20;
+   6   1        SCON=0X40;
+   7   1        
+   8   1        PCON=0x00;
+   9   1        TH1=0Xfd;
+  10   1        TR1=1;
+  11   1      }
+  12          void MCUBack(unsigned char k){
+  13   1        MCUBinit();
+  14   1        SBUF=k;
+  15   1      }
+  16          
+  17          
+  18          
+  19          void delay20ms(void)   //误差 -0.000000000005us
+  20          {
+  21   1          unsigned char a,b,c;
+  22   1          for(c=1;c>0;c--)
+  23   1              for(b=222;b>0;b--)
+  24   1                  for(a=40;a>0;a--);
+  25   1      }
+  26          
+  27          /*******************************************************************************
+  28          * 函 数 名         : main
+  29          * 函数功能         : 主函数
+  30          * 输    入         : 无
+  31          * 输    出         : 无
+  32          *******************************************************************************/
+  33          
+  34          void main()
+  35          {
+  36   1        int x=0;
+  37   1          unsigned char i;
+  38   1          unsigned char addr; 
+  39   1          unsigned char src_data[] = "()ab#cde!fg1234567";    
+  40   1          unsigned char buf[8] = "ABCDEFGH";
+  41   1          //MCUBinit();
+  42   1      /*
+  43   1          for (i=0; i<128; i++)
+  44   1          {
+  45   1              uart_send_byte(i);
+  46   1          }
+  47   1          while (1);
+  48   1      */
+  49   1          // 先随便找一堆数据，譬如"abcdefg1234567-_-*&%@/\"
+  50   1          // 把这些写入EEPROM的特定地址中
+  51   1          // 然后读EEROM的这些地址，读出后通过串口打印出来看是不是我们写入的
+  52   1        for(x=0;x<20;x++){
+  53   2          MCUBack('T');
+  54   2          delay20ms();
+C51 COMPILER V9.57.0.0   MAIN                                                              11/07/2021 11:25:03 PAGE 2   
+
+  55   2          MCUBack('%');
+  56   2            delay20ms();
+  57   2        }
+  58   1      
+  59   1          addr = 4;
+  60   1          for (i=0; i<8; i++)
+  61   1          {
+  62   2              At24c02Write(addr, src_data[i]);
+  63   2              delay20ms();
+  64   2            MCUBack('o');
+  65   2            delay20ms();
+  66   2              addr++;
+  67   2          }
+  68   1      
+  69   1          for (i=0; i<8; i++)
+  70   1          {
+  71   2              MCUBack(buf[i]);
+  72   2            delay20ms();
+  73   2            
+  74   2          }
+  75   1      
+  76   1      
+  77   1          for (i=0; i<20; i++)
+  78   1          {
+  79   2              MCUBack('-');
+  80   2            delay20ms();
+  81   2          }
+  82   1      
+  83   1          // 读出测试
+  84   1          addr = 4;
+  85   1          for (i=0; i<8; i++)
+  86   1          {
+  87   2              buf[i] = At24c02Read(addr);
+  88   2              delay20ms();
+  89   2              addr++;
+  90   2          }
+  91   1      
+  92   1          for (i=0; i<8; i++)
+  93   1          {
+  94   2            MCUBack('*');
+  95   2            delay20ms();
+  96   2              MCUBack(buf[i]);
+  97   2            delay20ms();
+  98   2          }
+  99   1      MCUBack('|');
+ 100   1            delay20ms();
+ 101   1          while (1);
+ 102   1      
+ 103   1          // 进一步测试
+ 104   1          // 先写入一些特定内容，然后关机断电；然后改代码为读出并打印显示看内容
+ 105   1      
+ 106   1      }           
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    251    ----
+   CONSTANT SIZE    =     27    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      29
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+C51 COMPILER V9.57.0.0   MAIN                                                              11/07/2021 11:25:03 PAGE 3   
+
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
